@@ -28,7 +28,6 @@ export class NavbarComponent {
     { name: 'Marketplace', href: '/marketplace', hasDropdown: true },
     { name: 'Become a Partner', href: '/partner', hasDropdown: false },
     { name: 'Pricing', href: '/pricing', hasDropdown: false },
-    { name: 'Contact', href: '/contact', hasDropdown: false },
   ];
 
   productCategories = [
@@ -66,12 +65,24 @@ export class NavbarComponent {
 
   businessTypes = [
     {
-      title: 'BUSINESS SECTORS',
+      title: 'RESTAURANT SECTORS',
+      description: 'Solutions tailored for restaurants, cafes, quick service, and mobile food businesses.',
       items: [
-        { icon: 'restaurant', name: 'Restaurants', href: '/business-types/restaurants', description: 'Complete restaurant management solution.' },
-        { icon: 'local_cafe', name: 'Cafes', href: '/business-types/cafes', description: 'Streamlined operations for cafes and coffee shops.' },
-        { icon: 'shopping_bag', name: 'Retail', href: '/business-types/retail', description: 'Retail management and point of sale system.' },
-        { icon: 'food_bank', name: 'Food Trucks', href: '/business-types/food-trucks', description: 'Mobile solutions for food trucks and pop-ups.' },
+        { icon: 'restaurant', name: 'Dine-In Services Restaurants', href: '/business-types/restaurants', description: 'Complete restaurant management solution.' },
+        { icon: 'local_cafe', name: 'Cafes & Bakery', href: '/business-types/cafes', description: 'Streamlined operations for cafes and coffee shops.' },
+        { icon: 'fastfood', name: 'Quick Services', href: '/business-types/food-trucks', description: 'Mobile solutions for food trucks and pop-ups.' },
+        { icon: 'local_shipping', name: 'Kiosks & Food Trucks', href: '/business-types/kiosks-food-trucks', description: 'Mobile solutions for kiosks and food trucks.' },
+      ]
+    },
+    {
+      title: 'RETAIL SECTORS',
+      description: 'Comprehensive POS and management tools for pharmacies, laundries, apparel, florists, salons, and supermarkets.',
+      items: [
+        { icon: 'local_pharmacy', name: 'Pharmacy', href: '/business-types/restaurants', description: 'Complete pharmacy management solution.' },
+        { icon: 'local_laundry_service', name: 'Laundry', href: '/business-types/cafes', description: 'Efficient POS and workflow for laundries.' },
+        { icon: 'checkroom', name: 'Apparel', href: '/business-types/food-trucks', description: 'Retail management for clothing and apparel stores.' },
+        { icon: 'local_florist', name: 'Flower shop', href: '/business-types/supermarkets', description: 'POS and inventory for florists.' },
+        { icon: 'content_cut', name: 'Salon', href: '/business-types/supermarkets', description: 'Salon appointment and sales management.' },
         { icon: 'shopping_cart', name: 'Supermarkets', href: '/business-types/supermarkets', description: 'Comprehensive supermarket management system.' },
       ]
     }

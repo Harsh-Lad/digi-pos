@@ -4,12 +4,366 @@
 <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * to get started with your project! * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <app-navbar></app-navbar>
 <main class="main mt-20 h-[300vh]">
-  <p class="text-5xl">Lund lele mera</p>
+  <section class="w-full flex items-center justify-center py-12 md:py-16 lg:py-20 bg-white relative">
+    <div class="container px-4 md:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start pt-16 px-12">
+
+        <div class="space-y-6">
+          <div
+            class="inline-block px-3 py-1 text-sm font-medium text-orange-600 bg-orange-100 rounded-full animate-fade-in">
+            Next-Generation POS System
+          </div>
+
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-fade-in-up">
+            Revolutionize Your Business with
+            <span class="relative inline-block">
+              <span
+                class="bg-gradient-to-r from-indigo-800 to-amber-600 bg-clip-text text-transparent animate-gradient-x">
+                DigiPOS
+              </span>
+              <span class="absolute left-0 right-0 -bottom-2 h-1 rounded-full"
+                style="background: linear-gradient(to right, #3730a3, #f59e42);"></span>
+            </span>
+          </h1>
+
+          <p class="text-xl text-gray-600 max-w-md animate-fade-in-slow">
+            A versatile, cloud-based Point of Sale system designed for the modern hospitality and retail sectors.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a routerLink="#demo"
+              class="inline-flex h-12 items-center justify-center rounded-md bg-amber-600 px-6 font-medium text-white transition-transform duration-200 hover:scale-105 animate-fade-in-up">
+              Contact Us </a>
+            <a routerLink="#products"
+              class="inline-flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white px-6 font-medium text-slate-900 hover:bg-slate-50 transition-transform duration-200 hover:scale-105 animate-fade-in-up delay-100">
+              Explore Products
+              <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative animate-fade-in-img">
+          <div class="relative  overflow-hidden  transition-shadow duration-300">
+            <img src="product.jpeg" alt="DigiPOS in action"
+              class="w-full h-auto object-cover scale-100 hover:scale-105 transition-transform duration-500" />
+          </div>
+
+          <div
+            class="absolute top-4 right-4 bg-white rounded-lg p-3 shadow-lg flex items-center gap-3 max-w-[250px] animate-float">
+            <svg class="h-5 w-5 text-green-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17l-4-4 1.414-1.414L11 14.172l6.586-6.586L19 9l-8 8z" />
+            </svg>
+            <div>
+              <h3 class="font-medium text-gray-900">Cloud Kitchen Ready</h3>
+              <p class="text-sm text-gray-600">Works online & offline</p>
+            </div>
+          </div>
+
+          <div
+            class="absolute bottom-0 -left-4 bg-white rounded-lg p-3 shadow-lg flex items-center gap-3 max-w-[250px] animate-float delay-200">
+            <svg class="h-5 w-5 text-blue-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17l-4-4 1.414-1.414L11 14.172l6.586-6.586L19 9l-8 8z" />
+            </svg>
+            <div>
+              <h3 class="font-medium text-gray-900">Real-time Analytics</h3>
+              <p class="text-sm text-gray-600">Monitor your business anywhere</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden absolute left-1/2 -bottom-10 transform -translate-x-1/2 md:flex flex-col items-center">
+      <div class="animate-bounce">
+        <svg width="24" height="64" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1.5" y="1.5" width="29" height="51" rx="14.5" stroke="#64748b" stroke-width="3" fill="none" />
+          <circle cx="16" cy="12" r="3" fill="#64748b" />
+        </svg>
+      </div>
+      <span class="mt-2 text-slate-500 text-xs">Scroll Down</span>
+    </div>
+
+  </section>
+
+  <!-- about-section.component.html -->
+  <section class="w-full py-16 bg-white my-24">
+    <div class="w-[90%] mx-auto px-4 md:px-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="relative rounded-xl overflow-hidden bg-white beam-border"
+          (mousedown)="handleMouseDown($event, cardRef)" (mouseup)="handleMouseUp()" (mouseleave)="handleMouseUp()"
+          (mousemove)="isDragging && updateBeamPosition($event, cardRef)" #cardRef
+          style="position: relative; height: 500px; animation: beam-animate 4s linear infinite;">
+          <div class="absolute inset-0 pointer-events-none" [ngStyle]="{
+              'border-radius': '16px'
+            }"></div>
+
+          <div class="p-6 h-full relative">
+            <!-- Top left image - Category Sales -->
+            <div class="absolute top-6 left-6 w-[55%] h-[55%] transition-all duration-300" [ngClass]="{
+                'blur-sm opacity-50': blurTarget === 'hourly',
+                'blur-0 opacity-100': blurTarget !== 'hourly'
+              }" (mouseenter)="handleImageMouseDown('category', $event)" (mouseup)="handleMouseUp()"
+              (mouseleave)="handleMouseUp()">
+              <div class="rounded-lg p-3 h-full">
+                <h3
+                  class="text-lg  absolute -right-2/5 top-1/4 z-10 font-medium text-slate-800 mb-2 bg-slate-700 text-white inline-block px-5 py-3 rounded-xl">
+                  Category wise Sales
+                </h3>
+                <div class="relative h-[calc(100%-30px)] w-full">
+                  <img src="digidash.png" alt="Category wise sales chart"
+                    class="object-cover h-full w-full rounded-lg" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom right image - Hourly Sales -->
+            <div class="absolute bottom-6 right-6 w-[55%] h-[55%] transition-all duration-300" [ngClass]="{
+                'blur-sm opacity-50': blurTarget === 'category',
+                'blur-0 opacity-100': blurTarget !== 'category'
+              }" (mouseenter)="handleImageMouseDown('hourly', $event)" (mouseup)="handleMouseUp()"
+              (mouseleave)="handleMouseUp()">
+              <div class="rounded-lg p-3  h-full">
+                <h3
+                  class="text-lg  absolute -left-2/5 top-2/4 z-10 font-medium text-slate-800 mb-2 bg-slate-700 text-white inline-block px-12 py-3 rounded-xl">
+                  Hourly Sales
+                </h3>
+                <div class="relative h-[calc(100%-30px)] w-full">
+                  <img src="digigraph.png" alt="Hourly sales chart" class="object-cover h-full w-full rounded-lg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <h2 class="text-4xl font-semibold tracking-tight text-slate-900">About DigiPOS</h2>
+          <p class="text-lg text-slate-700 leading-relaxed w-4/5">
+            Built by restaurant owners for restaurant owners, DigiPOS is a cloud-based POS system designed to simplify
+            your daily grind. Whether you're running a café, food truck, or retail outlet, we help you manage orders,
+            inventory, staff, and reports—all in one place, online or offline.
+          </p>
+          <a routerLink="#learn-more"
+            class="inline-flex h-10 items-center justify-center rounded-md bg-amber-600 px-6 font-medium text-white">
+            Learn more
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mt-12">
+    <p class="text-4xl text-center">Trusted by Leading Restaurants</p>
+    <p class="text-center my-4">Join hundreds of successful food businesses across the Middle East who rely on DigiPOS daily.</p>
+    
+    <div class="relative overflow-x-hidden py-4 group px-4 md:px-12 w-[85%] mx-auto">
+      <!-- Main marquee container with double content for seamless looping -->
+      <div
+        class="flex space-x-8 animate-marquee whitespace-wrap px-4 md:px-12 "
+        (mouseenter)="marqueePaused = true"
+        (mouseleave)="marqueePaused = false"
+        [ngStyle]="{ 'animation-play-state': marqueePaused ? 'paused' : 'running' }"
+        style="will-change: transform;"
+      >
+        <!-- First set of images -->
+        <img *ngFor="let logo of clientelleImages" [src]="logo.src" [alt]="logo.alt" class="h-10 w-auto my-4 mx-4" />
+        
+        <!-- Duplicate set of images for seamless looping -->
+        <img *ngFor="let logo of clientelleImages" [src]="logo.src" [alt]="logo.alt" class="h-10 w-auto my-4 mx-4" />
+      </div>
+    </div>
+    <style>
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-50%)); /* Move exactly half way */
+      }
+    }
+    .animate-marquee {
+      animation: marquee 20s linear infinite;
+      min-width: 100%; /* Ensure we have enough width */
+    }
+    </style>
+
+  
+  </section>
+
+  <app-about-digipos></app-about-digipos>
+  <style>
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fade-in-img {
+      from {
+        opacity: 0;
+        transform: scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    @keyframes gradient-x {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 1s ease 0.1s both;
+    }
+
+    .animate-fade-in-slow {
+      animation: fade-in 1.4s ease 0.3s both;
+    }
+
+    .animate-fade-in-up {
+      animation: fade-in-up 1s cubic-bezier(.4, 0, .2, 1) 0.2s both;
+    }
+
+    .animate-fade-in-img {
+      animation: fade-in-img 1.2s cubic-bezier(.4, 0, .2, 1) 0.2s both;
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-gradient-x {
+      background-size: 200% 200%;
+      animation: gradient-x 3s linear infinite alternate;
+    }
+
+    .delay-100 {
+      animation-delay: 0.1s !important;
+    }
+
+    .delay-200 {
+      animation-delay: 0.2s !important;
+    }
+  </style>
+
+  <style>
+    .beam-border {
+      border: 3px solid transparent;
+      /* Changed from border-image to simple transparent border */
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .beam-border::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 3px solid transparent;
+      border-radius: inherit;
+      background: linear-gradient(var(--angle),
+          transparent 0%,
+          transparent 20%,
+          /* Reduced start point to make beam longer */
+          rgba(55, 48, 163, 0.3) 30%,
+          #3730a3 40%,
+          #f59e42 50%,
+          rgba(245, 158, 66, 0.3) 60%,
+          transparent 70%,
+          /* Extended end point to make beam longer */
+          transparent 100%) border-box;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+      -webkit-mask-composite: xor;
+      animation: beam-cycle 4s linear infinite;
+      /* Slowed down animation */
+    }
+
+    @keyframes beam-animate {
+      0% {
+        border-image-source: linear-gradient(120deg,
+            transparent 0%,
+            rgba(217, 119, 6, 0.2) 25%,
+            rgba(217, 119, 6, 0.8) 50%,
+            rgba(217, 119, 6, 0.2) 75%,
+            transparent 100%);
+      }
+
+      100% {
+        border-image-source: linear-gradient(480deg,
+            transparent 0%,
+            rgba(217, 119, 6, 0.2) 25%,
+            rgba(217, 119, 6, 0.8) 50%,
+            rgba(217, 119, 6, 0.2) 75%,
+            transparent 100%);
+      }
+    }
+
+    @keyframes beam-cycle {
+      0% {
+        --angle: 0deg;
+      }
+
+      100% {
+        --angle: 360deg;
+      }
+    }
+
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+  </style>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

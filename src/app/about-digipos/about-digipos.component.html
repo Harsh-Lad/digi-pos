@@ -1,0 +1,28 @@
+<div class="container mx-auto px-4 py-16 text-center  mt-24">
+    <div class="max-w-3xl mx-auto mb-12">
+        <div class="inline-block bg-orange-100 text-orange-600 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+            About DigiPOS
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Transforming Business Operations</h2>
+        <p class="text-lg text-gray-600">
+            DigiPOS is a versatile, cloud-based Point of Sale (POS) system designed to streamline operations for
+            hospitality and retail businesses of all sizes.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let card of cards"
+            class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 relative overflow-hidden">
+            <div
+                class="absolute w-32 h-32 bg-gradient-to-br from-orange-50 to-transparent rounded-full -top-16 -right-16 opacity-70">
+            </div>
+            <div class="card-icon bg-orange-50 rounded-full w-14 h-14 flex items-center justify-center mb-5">
+                <mat-icon class="text-orange-500 text-2xl">{{ card.icon }}</mat-icon>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-left">{{ card.title }}</h3>
+            <p class="text-gray-600 text-left leading-relaxed">{{ card.description }}</p>
+            <div class="w-12 h-1 bg-gradient-to-r from-orange-400 to-orange-600 mt-5 rounded-full"></div>
+        </div>
+    </div>
+
+</div>

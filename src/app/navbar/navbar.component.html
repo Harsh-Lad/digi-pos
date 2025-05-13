@@ -1,0 +1,52 @@
+<header class="w-full fixed top-0 left-0 bg-white py-2 shadow z-50">
+    <div class="container mx-auto px-4 flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a routerLink="/" class="flex items-center space-x-1">
+        <img src="logo.png" alt="" class="h-10 w-auto">
+      </a>
+  
+      <!-- Nav Links -->
+      <nav class="hidden md:flex space-x-6 items-center">
+        <!-- Mega Menu Trigger -->
+        <div class="relative group" (mouseenter)="toggleMegaMenu()" (mouseleave)="closeMegaMenu()">
+          <button class="text-orange-600 font-semibold flex items-center gap-1">
+            Products
+            <svg class="w-3 h-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M5.25 6.75L10 11.5l4.75-4.75" />
+            </svg>
+          </button>
+  
+          <!-- Mega Menu Panel -->
+          <div
+            *ngIf="isMegaMenuOpen"
+            class="absolute left-0 mt-2 w-64 bg-white shadow-lg border rounded-lg p-4 z-10"
+          >
+            <ul class="space-y-2">
+              <li><a href="#" class="block hover:underline">POS Software</a></li>
+              <li><a href="#" class="block hover:underline">Billing & Inventory</a></li>
+              <li><a href="#" class="block hover:underline">Restaurant Solutions</a></li>
+              <li><a href="#" class="block hover:underline">Retail POS</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <a href="#" class="hover:underline">Hardware</a>
+        <a href="#" class="hover:underline">Business Types</a>
+        <a href="#" class="hover:underline">Marketplace</a>
+        <a href="#" class="hover:underline">Become a Partner</a>
+        <a href="#" class="hover:underline">Pricing</a>
+      </nav>
+  
+      <!-- CTA + Language -->
+      <div class="flex items-center gap-4">
+        <a href="#" class="bg-blue-900 text-orange-400 font-semibold py-2 px-4 rounded-full hover:bg-blue-800">
+          Get a Demo
+        </a>
+        <a href="#" class="flex items-center text-sm font-medium">
+          العربية
+          <img src="https://flagcdn.com/w40/sa.png" alt="SA Flag" class="ml-1 w-5 h-4" />
+        </a>
+      </div>
+    </div>
+  </header>
+  

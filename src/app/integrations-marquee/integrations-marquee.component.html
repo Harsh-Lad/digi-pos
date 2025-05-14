@@ -1,16 +1,16 @@
-<div class="relative overflow-hidden w-full bg-white py-4 pt-8">
+<div class="relative overflow-hidden w-full bg-white py-4">
     <!-- Edge fade effect -->
     <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
     <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
   
     <!-- Scrolling content -->
-    <div class="animate-marquee whitespace-nowrap flex gap-10 gap-x-20 my-10">
+    <div class="animate-marquee whitespace-nowrap flex gap-10 gap-x-4 my-10">
       <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Marquee Image" class="h-24 w-auto object-contain grayscale hover:grayscale-0" />
+        <img [src]="image" alt="Marquee Image" class="h-20 w-32 bg-white shadow-xl p-2 rounded-xs  object-contain" />
       </ng-container>
       <!-- Repeat images for seamless looping -->
       <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Marquee Image" class="h-24 w-auto object-contain grayscale hover:grayscale-0" />
+        <img [src]="image" alt="Marquee Image" class="h-20 w-32 bg-white shadow-xl p-2 rounded-xs  object-contain" />
       </ng-container>
     </div>
   </div>

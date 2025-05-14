@@ -1,0 +1,36 @@
+<div class="bg-transparent text-white py-16 relative h-full">
+    <div class="text-center mb-12">
+        <h2 class="text-5xl font-bold">{{ selectedCard.title }} with DigiPOS</h2>
+        <p class="text-xl text-gray-200 mt-2">{{ selectedCard.description }}</p>
+    </div>
+
+    <div class="flex justify-center items-center  gap-6  px-4 h-full">
+        <div *ngFor="let card of cards; let i = index" (click)="setActiveCard(i)"
+            class="cursor-pointer  transition-transform duration-300 flex items-center" [ngClass]="{
+             'bg-[#002999] text-white rounded-full scale-105 shadow-xl h-full': selectedIndex === i,
+             'bg-transparent text-white rounded-xl h-full': selectedIndex !== i
+           }">
+            <div class="flex flex-col items-center p-6 h-full py-24 w-64 rounded-full">
+                <div class="">
+                    <div class="text-5xl mb-4 flex justify-center items-center">
+                        <!-- Use Material Icon if available, otherwise fall back to image -->
+                        <span *ngIf="card.materialIcon" class="material-icons m-0 p-0 "
+                            [ngStyle]="{'font-size': '8rem'}"
+                            [ngClass]="{'text-orange-500': selectedIndex === i, 'text-white': selectedIndex !== i}">
+                            {{ card.materialIcon }}
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-center text-2xl">{{ card.title }}</h3>
+                    <p class="text-[20px] font-light mt-1 text-center">
+                        <ng-container *ngFor="let word of card.subtext.split(' '); let j = index">
+                            {{ word }}
+                            <br *ngIf="j % 3 === 2; else space">
+                            <ng-template #space> </ng-template>
+                        </ng-container>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

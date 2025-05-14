@@ -12,8 +12,8 @@ export class HeroComponent implements OnInit {
   words = ['Operations', 'Billing', 'Inventory'];
   images = [
     'assets/images/man.jpg',
-    'assets/images/man2.webp',
-    'assets/images/man.jpg'
+    'assets/images/man2.jpeg',
+    'assets/images/man3.jpg'
   ];
 
   currentWord = '';

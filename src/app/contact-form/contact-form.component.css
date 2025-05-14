@@ -1,0 +1,8 @@
+.ng-touched.ng-invalid {
+  border-color: #ef4444;
+}
+
+input[type="checkbox"].ng-touched.ng-invalid {
+  outline: 1px solid #ef4444;
+  outline-offset: 2px;
+}

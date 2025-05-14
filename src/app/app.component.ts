@@ -9,11 +9,13 @@ import { OfficeSectionsComponent } from "./office-sections/office-sections.compo
 import { IntegrationsMarqueeComponent } from "./integrations-marquee/integrations-marquee.component";
 import { TestimonialsComponent } from "./testimoials/testimoials.component";
 import { PlatformsComponent } from "./platforms/platforms.component";
+import { FooterComponent } from "./footer/footer.component";
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, HeroComponent, MarqueeComponent, ImageMarqueeComponent, DigiPosSectionsComponent, OfficeSectionsComponent, IntegrationsMarqueeComponent, TestimonialsComponent, PlatformsComponent],
+  imports: [RouterOutlet, NavbarComponent, HeroComponent, MarqueeComponent, ImageMarqueeComponent, ContactFormComponent, DigiPosSectionsComponent, OfficeSectionsComponent, IntegrationsMarqueeComponent, TestimonialsComponent, PlatformsComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

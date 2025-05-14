@@ -4,7 +4,7 @@
 <!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
@@ -13,9 +13,10 @@
   <app-navbar></app-navbar>
   <app-hero></app-hero>
 
-  <section >
+  <section>
     <h2 class="text-center text-[#002999] mt-24 mb-8 font-bold tracking-tight text-5xl">Built for Modern Businesses.
-      <br> Trusted by Growing Ones.</h2>
+      <br> Trusted by Growing Ones.
+    </h2>
     <p class="text-center text-gray-600 text-2xl tracking-wider">DigiPOS is a next-generation Point of Sale system <br>
       tailored for restaurants retail, food service, and <br> service-based businesses.</p>
     <p class="text-center font-bold text-orange-500 underline underline-offset-2 cursor-pointer my-5 text-xl ">Learn
@@ -72,13 +73,19 @@
       don’t just take our word for it! Here’s what our clients have to say <br>
 
       about their experience with our system.</p>
-      <app-testimonials></app-testimonials>
+    <app-testimonials></app-testimonials>
   </div>
   <section>
     <app-platforms></app-platforms>
   </section>
 
+  <section>
 
+    <app-contact-form></app-contact-form>
+    <!-- </div> -->
+  </section>
+
+  <app-footer></app-footer>
 </main>
 
 <router-outlet />

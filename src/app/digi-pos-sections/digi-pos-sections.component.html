@@ -7,18 +7,18 @@
     <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 pl-2 pr-4 md:px-4 h-full">
         <div *ngFor="let card of cards; let i = index" (click)="setActiveCard(i)"
             class="cursor-pointer transition-transform duration-300 flex items-center w-full md:w-auto mb-4 md:mb-0" [ngClass]="{
-             'bg-[#002999] text-white rounded-full md:scale-105 shadow-xl h-full': selectedIndex === i,
-             'bg-transparent text-white rounded-xl h-full': selectedIndex !== i
+             'bg-[#002999] text-white rounded-full md:scale-105 shadow-xl h-3/4': selectedIndex === i,
+             'bg-transparent text-white rounded-xl h-3/4': selectedIndex !== i
            }">
             <div class="flex flex-col items-center p-4 md:p-6 h-full py-12 md:py-24 w-full md:w-64 rounded-full">
                 <div class="">
                     <div class="text-4xl md:text-5xl mb-3 md:mb-4 flex justify-center items-center">
-                        <!-- Use Material Icon if available, otherwise fall back to image -->
-                        <span *ngIf="card.materialIcon" class="material-icons m-0 p-0"
-                            [ngStyle]="{'font-size': '5rem', '@media (min-width: 768px)': {'font-size': '8rem'}}"
+                        <!-- Use SVG instead of Material Icon -->
+                        <div *ngIf="card.svgPath" class="w-20 h-20 md:w-24 md:h-24"
                             [ngClass]="{'text-orange-500': selectedIndex === i, 'text-white': selectedIndex !== i}">
-                            {{ card.materialIcon }}
-                        </span>
+                            <img [src]="card.svgPath" alt="{{ card.title }} icon" class="w-full h-full"
+                                [ngClass]="{'filter-white': selectedIndex !== i, 'filter-orange text-orange-500': selectedIndex === i}">
+                        </div>
                     </div>
                     <h3 class="font-bold text-center text-xl md:text-2xl">{{ card.title }}</h3>
                     <p class="text-[16px] md:text-[20px] font-light mt-1 text-center">

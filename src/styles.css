@@ -17,3 +17,18 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+/* SVG Filter Styles  */
+
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+
+.filter-orange {
+  filter: invert(65%) sepia(60%) saturate(1800%) hue-rotate(1deg) brightness(83%) contrast(120%);
+}
+
+/* For the specified OKLCH color 
+.filter-orange {
+  filter: invert(73%) sepia(56%) saturate(1523%) hue-rotate(15deg) brightness(93%) contrast(96%);
+} */

@@ -11,37 +11,37 @@ export class TestimonialsComponent {
     {
       text: 'Foodics restaurant RMS - cloud POS system is just perfect. It comes with more features than any other system. It looks beautiful, easy-to-use, with great customer support.',
       name: 'Homoud Al Homoudi',
-      logo: 'assets/logos/7ribs.png',
+      logo: 'https://imgs.search.brave.com/A_XAm5DjMh9uu6c_4m_wJroYgJa_M3lHxXDiZcLd5O4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZmY1OTZlMmZmMWUy/Y2IwNTgyNzM2MDEv/NWZmNTk2ZTJmZjFl/MmM4MmRhMjczNzg4/X2Nyb3AlMjBpbWFn/ZS5wbmc',
       company: '7Ribs',
     },
     {
       text: 'We have tried many systems before but they did not fully meet our needs. Since adopting Foodics, we have found solutions for cost, inventory, and analytics.',
       name: 'Hussein Al Mousawi',
-      logo: 'assets/logos/koobs.png',
+      logo: 'https://imgs.search.brave.com/A_XAm5DjMh9uu6c_4m_wJroYgJa_M3lHxXDiZcLd5O4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZmY1OTZlMmZmMWUy/Y2IwNTgyNzM2MDEv/NWZmNTk2ZTJmZjFl/MmM4MmRhMjczNzg4/X2Nyb3AlMjBpbWFn/ZS5wbmc',
       company: 'Koobs Cafe',
     },
     {
       text: "Very easy to use! It connects all activity centers/branches in one platform. We appreciate the efforts of the Foodics technical support's quick to respond.",
       name: 'Ahmad Omran',
-      logo: 'assets/logos/mazaj.png',
+      logo: 'https://imgs.search.brave.com/A_XAm5DjMh9uu6c_4m_wJroYgJa_M3lHxXDiZcLd5O4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZmY1OTZlMmZmMWUy/Y2IwNTgyNzM2MDEv/NWZmNTk2ZTJmZjFl/MmM4MmRhMjczNzg4/X2Nyb3AlMjBpbWFn/ZS5wbmc',
       company: 'Mazaj Maghrebi',
     },
     {
       text: 'We extend our warmest gratitude to the Foodics company for their sincerity, professionalism, and technical support.',
       name: 'Youssef AlMokhtar AlJabri',
-      logo: 'assets/logos/chefs.png',
+      logo: 'https://imgs.search.brave.com/A_XAm5DjMh9uu6c_4m_wJroYgJa_M3lHxXDiZcLd5O4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZmY1OTZlMmZmMWUy/Y2IwNTgyNzM2MDEv/NWZmNTk2ZTJmZjFl/MmM4MmRhMjczNzg4/X2Nyb3AlMjBpbWFn/ZS5wbmc',
       company: "Chef's Restaurant",
     },
     {
       text: 'Foodics cloud POS has everything we need. A good user interface and friendly navigation make it easy for people to course through it.',
       name: 'Anas Galmouss',
-      logo: 'assets/logos/foodgate.png',
+      logo: 'https://imgs.search.brave.com/A_XAm5DjMh9uu6c_4m_wJroYgJa_M3lHxXDiZcLd5O4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZmY1OTZlMmZmMWUy/Y2IwNTgyNzM2MDEv/NWZmNTk2ZTJmZjFl/MmM4MmRhMjczNzg4/X2Nyb3AlMjBpbWFn/ZS5wbmc',
       company: 'Food Gate Co.',
     },
     {
       text: 'Foodics is excellent! It allows us to monitor and manage our branches efficiently. The after-sales service is fast and the team is responsive.',
       name: 'Muhammad Abu Shawarib',
-      logo: 'assets/logos/shams.png',
+      logo: 'https://imgs.search.brave.com/A_XAm5DjMh9uu6c_4m_wJroYgJa_M3lHxXDiZcLd5O4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS81/ZmY1OTZlMmZmMWUy/Y2IwNTgyNzM2MDEv/NWZmNTk2ZTJmZjFl/MmM4MmRhMjczNzg4/X2Nyb3AlMjBpbWFn/ZS5wbmc',
       company: 'Shams',
     },
   ];

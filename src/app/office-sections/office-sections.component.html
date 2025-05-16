@@ -22,10 +22,10 @@
       <li
       *ngFor="let product of activeProducts; let i = index"
       (click)="selectProduct(i)"
-      class="cursor-pointer text-lg sm:text-2xl p-2 rounded transition-colors duration-200"
+      class="cursor-pointer text-sm sm:text-2xl p-2 rounded transition-colors duration-200"
       [ngClass]="{
-        'text-orange-600 font-semibold': activeProductIndex === i,
-        'hover:bg-gray-100 text-gray-700': activeProductIndex !== i
+        'text-orange-600 text-sm font-semibold': activeProductIndex === i,
+        'hover:bg-gray-100 text-sm text-gray-700': activeProductIndex !== i
       }"
       >
       • {{ product.name }}

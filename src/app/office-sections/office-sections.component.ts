@@ -17,8 +17,18 @@ export class OfficeSectionsComponent {
   data: Record<string, { name: string; description: string; image: string }[]> = {
     'Front Office': [
       {
-        name: 'Cloud Point of Sales',
-        description: `DigiPOS Cloud POS is a smart, cloud-based system that helps businesses manage sales, inventory, and customers in real time. It's easy to use, secure, and works across multiple locations.`,
+        name: 'Cloud Restaurant POS',
+        description: `Complete restaurant management solution tailored for food service businesses.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'Online Ordering System',
+        description: `Enable customers to place orders directly through your website or app.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'KIOSK - Self Ordering',
+        description: `Self-service kiosks for customers to browse menu and place orders independently.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
@@ -27,32 +37,56 @@ export class OfficeSectionsComponent {
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
+        name: 'Customer Display',
+        description: `Digital screens showing order details and prices to enhance customer transparency.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
         name: 'DigiKDS - Kitchen Display System',
         description: `Real-time kitchen order updates for faster fulfillment and less confusion.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
-      // Add more...
+      {
+        name: 'QR Ordering - Table Ordering',
+        description: `Allow customers to scan QR codes and order directly from their tables.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'Restaurant Queue Management',
+        description: `Digital system to manage waiting lists and optimize seating efficiency.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
     ],
     'Back Office': [
       {
         name: 'Inventory Management',
-        description: `Track stock levels, automate reorders, and reduce wastage.`,
+        description: `Create and manage purchase orders from multiple vendors.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
-        name: 'Purchasing Module',
-        description: `Create and manage purchase orders from multiple vendors.`,
+        name: 'Product & Menu Management',
+        description: `Create and manage your product catalog and menu items with pricing and options.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'Recipe Management',
+        description: `Define and track ingredient quantities for recipes to monitor costs and inventory.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'Purchase & Supply Chain Management',
+        description: `Streamline your purchasing process and manage vendor relationships efficiently.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
     ],
     'Retail': [
       {
-        name: 'Retail POS',
+        name: 'Cloud Point of Sales',
         description: `Powerful POS built for chain stores, with barcode scanning and offers.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
-        name: 'Loyalty Engine',
+        name: 'Barcode Management',
         description: `Reward repeat customers and improve retention with loyalty points.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },

@@ -7,7 +7,7 @@ interface Card {
   subtext: string;
   description: string;
   icon: string;
-  materialIcon?: string; // Added material icon property
+  svgPath?: string; // Changed from materialIcon to svgPath
 }
 
 @Component({
@@ -53,32 +53,33 @@ export class DigiPosSectionsComponent implements OnInit {
   
   cards: Card[] = [
     {
-      title: 'POS System',
-      subtext: 'Streamline your sales process',
+      title: 'Fine Dining',
+      subtext: 'Elevating Experiences',
       description: 'Our advanced POS system helps you manage transactions efficiently with an intuitive interface.',
       icon: 'assets/icons/pos.png',
-      materialIcon: 'point_of_sale'
+      svgPath: '/dining-table-icon.svg'
     },
     {
-      title: 'Inventory',
-      subtext: 'Track stock in real-time',
+      title: 'Quick Service',
+      subtext: 'Speed and Efficiency',
       description: 'Keep track of your inventory levels with automated alerts and easy stock management.',
       icon: 'assets/icons/inventory.png',
-      materialIcon: 'inventory_2'
+      // svgPath: '/leaflet-icon.svg'
+      svgPath: '/quick-icon.svg'
     },
     {
-      title: 'Analytics',
-      subtext: 'Data-driven insights',
-      description: 'Make informed business decisions with comprehensive reports and analytics dashboards.',
-      icon: 'assets/icons/analytics.png',
-      materialIcon: 'analytics'
+      title: 'Food Trucks',
+      subtext: 'On-the-Go Success',
+      description: 'Efficiently manage tables, orders, and kitchen operations for your dining establishment.',
+      icon: 'assets/icons/dining.png',
+      svgPath: '/food-truck-icon.svg'
     },
     {
-      title: 'Customer Management',
-      subtext: 'Build customer loyalty',
-      description: 'Manage customer relationships and boost retention with integrated CRM features.',
-      icon: 'assets/icons/customers.png',
-      materialIcon: 'people'
+      title: 'Café & Bakery',
+      subtext: 'Tech-Infused Convenience',
+      description: 'Track and manage your delivery services with real-time updates and route optimization.',
+      icon: 'assets/icons/delivery.png',
+      svgPath: '/leaflet-icon.svg'
     }
   ];
 

@@ -35,7 +35,7 @@
   </div>
 
   <section
-    class="my-10 relative bg-no-repeat bg-cover w-screen h-[80svh] bg-image">
+    class="my-10 relative bg-no-repeat bg-cover w-screen h-auto md:h-[80svh] bg-image">
     <div class="absolute inset-0 bg-black/40 bg-opacity-40"></div>
     <div class="relative z-10  h-full flex items-center justify-center">
       <app-digi-pos-sections></app-digi-pos-sections>
@@ -45,11 +45,17 @@
   </section>
 
   <div class="section pb-20">
-    <h2 class="text-center text-[#002999] mt-24 mb-8 font-bold tracking-tight text-5xl">Connect. Control. Grow.</h2>
-    <p class="text-center text-gray-600 text-2xl tracking-wider">DigiPOS provides an integrated retail solution with
+    <h2 class="text-center text-[#002999] mt-16 md:mt-24 mb-8 font-bold tracking-tight text-3xl md:text-5xl">Connect. Control. Grow.</h2>
+    <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">DigiPOS provides an integrated retail solution with
       efficient front office <br>
       sales tools, powerful back office management, and reliable retail <br>
       hardware and software - designed to streamline operations and <br>
+
+      enhance the customer experience.</p>
+    <p class="mx-auto text-center px-4 md:p-0 md:w-2/5 text-gray-600 text-base md:text-2xl tracking-wider">DigiPOS provides an integrated retail solution with
+      efficient front office
+      sales tools, powerful back office management, and reliable retail
+      hardware and software - designed to streamline operations and 
 
       enhance the customer experience.</p>
     <app-office-sections></app-office-sections>
@@ -57,21 +63,30 @@
 
 
   <div class="section">
-    <h2 class="text-center text-[#002999] my-6 font-bold tracking-tight text-5xl">Powering the Future of <br>
+    <h2 class="text-center text-[#002999] mt-16 md:mt-24 mb-8 font-bold tracking-tight text-3xl md:text-5xl">Powering the Future of <br>
       Restaurant Management</h2>
-    <p class="text-center text-gray-600 text-2xl tracking-wider">From local cafés to global F&B chains, businesses trust
+    <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block">From local cafés to global F&B chains, businesses trust
       on DigiPOS to <br> streamline every aspect of their operations. With our all-in-one <br> cloud-based POS and
       restaurant management system, handling orders, <br> payments, and inventory has never been easier.</p>
+    <p class="text-center text-gray-600 text-lg px-2 tracking-wider block md:hidden ">From local cafés to global F&B chains, businesses trust
+      on DigiPOS to streamline every aspect of their operations. With our all-in-one cloud-based POS and
+      restaurant management system, handling orders, payments, and inventory has never been easier.</p>
     <app-integrations-marquee></app-integrations-marquee>
   </div>
 
   <div class="section">
-    <h2 class="text-center text-[#002999] mt-24 mb-8 font-bold tracking-tight text-5xl">Discover How digiPOS Helps <br>
+    <h2 class="text-center text-[#002999] mt-16 md:mt-24 mb-8 font-bold tracking-tight text-3xl md:text-5xl">Discover How digiPOS Helps <br>
       Their Businesses Thrive</h2>
-    <p class="text-center text-gray-600 text-2xl tracking-wider">We take pride in providing exceptional point-of-sale
+    <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">We take pride in providing exceptional point-of-sale
       solutions that <br>
       empower businesses to grow and streamline their operations. But <br>
       don’t just take our word for it! Here’s what our clients have to say <br>
+
+      about their experience with our system.</p>
+    <p class="text-center block md:hidden text-gray-600 text-lg px-2 tracking-wider">We take pride in providing exceptional point-of-sale
+      solutions that
+      empower businesses to grow and streamline their operations. But 
+      don’t just take our word for it! Here’s what our clients have to say 
 
       about their experience with our system.</p>
     <app-testimonials></app-testimonials>

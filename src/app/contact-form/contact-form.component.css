@@ -6,3 +6,9 @@ input[type="checkbox"].ng-touched.ng-invalid {
   outline: 1px solid #ef4444;
   outline-offset: 2px;
 }
+
+.bg-image {
+  background-image: url('/212 copy.jpg');
+  background-size: cover;
+  background-position: center;
+}

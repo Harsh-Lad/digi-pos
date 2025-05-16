@@ -9,11 +9,13 @@ import { isPlatformBrowser, NgIf, NgStyle } from '@angular/common';
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
-  words = ['Operations', 'Billing', 'Inventory'];
+  words = ['Growth', 'Inventory', 'Sales', 'Success', 'Transactions'];
   images = [
-    'assets/images/man.jpg',
-    'assets/images/man2.jpeg',
-    'assets/images/man3.jpg'
+    'hero/Growth.jpg',
+    'hero/Inventory.jpg',
+    'hero/Sales.jpg',
+    'hero/Success.jpg',
+    'hero/Transactions.jpg',
   ];
 
   currentWord = '';

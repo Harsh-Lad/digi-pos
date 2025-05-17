@@ -17,18 +17,8 @@ export class OfficeSectionsComponent {
   data: Record<string, { name: string; description: string; image: string }[]> = {
     'Front Office': [
       {
-        name: 'Cloud Restaurant POS',
-        description: `Complete restaurant management solution tailored for food service businesses.`,
-        image: 'assets/images/Cloud_Restaurant_POS.png',
-      },
-      {
-        name: 'Online Ordering System',
-        description: `Enable customers to place orders directly through your website or app.`,
-        image: 'assets/images/Cloud_Restaurant_POS.png',
-      },
-      {
-        name: 'KIOSK - Self Ordering',
-        description: `Self-service kiosks for customers to browse menu and place orders independently.`,
+        name: 'Cloud Point of Sales',
+        description: `DigiPOS Cloud POS is a smart, cloud-based system that helps businesses manage sales, inventory, and customers in real time. It's easy to use, secure, and works across multiple locations.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
@@ -37,22 +27,34 @@ export class OfficeSectionsComponent {
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
-        name: 'Customer Display',
-        description: `Digital screens showing order details and prices to enhance customer transparency.`,
-        image: 'assets/images/Cloud_Restaurant_POS.png',
-      },
-      {
         name: 'DigiKDS - Kitchen Display System',
         description: `Real-time kitchen order updates for faster fulfillment and less confusion.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
-        name: 'QR Ordering - Table Ordering',
+        name: 'Customer Display',
+        description: `Digital screens showing order details and prices to enhance customer transparency.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'KIOSK - Self Ordering',
+        description: `Self-service kiosks for customers to browse menu and place orders independently.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+
+
+      {
+        name: 'Online Ordering',
+        description: `Enable customers to place orders directly through your website or app.`,
+        image: 'assets/images/Cloud_Restaurant_POS.png',
+      },
+      {
+        name: 'Table Ordering',
         description: `Allow customers to scan QR codes and order directly from their tables.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },
       {
-        name: 'Restaurant Queue Management',
+        name: 'Queue Management System',
         description: `Digital system to manage waiting lists and optimize seating efficiency.`,
         image: 'assets/images/Cloud_Restaurant_POS.png',
       },

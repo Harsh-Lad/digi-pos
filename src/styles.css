@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
+/* Apply Montserrat font family to all elements */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Material Icons styles */
 .material-icons {
   font-family: 'Material Icons';

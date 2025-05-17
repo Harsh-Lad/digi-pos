@@ -57,7 +57,7 @@ export class DigiPosSectionsComponent implements OnInit {
       subtext: 'Elevating Experiences',
       description: 'Our advanced POS system helps you manage transactions efficiently with an intuitive interface.',
       icon: 'assets/icons/pos.png',
-      svgPath: '/dining-table-icon.svg'
+      svgPath: '/Artboard 3.svg'
     },
     {
       title: 'Quick Service',
@@ -65,21 +65,21 @@ export class DigiPosSectionsComponent implements OnInit {
       description: 'Keep track of your inventory levels with automated alerts and easy stock management.',
       icon: 'assets/icons/inventory.png',
       // svgPath: '/leaflet-icon.svg'
-      svgPath: '/quick-icon.svg'
+      svgPath: '/Artboard 4.svg'
     },
     {
       title: 'Food Trucks',
       subtext: 'On-the-Go Success',
       description: 'Efficiently manage tables, orders, and kitchen operations for your dining establishment.',
       icon: 'assets/icons/dining.png',
-      svgPath: '/food-truck-icon.svg'
+      svgPath: '/Artboard 5.svg'
     },
     {
       title: 'Café & Bakery',
       subtext: 'Tech-Infused Convenience',
       description: 'Track and manage your delivery services with real-time updates and route optimization.',
       icon: 'assets/icons/delivery.png',
-      svgPath: '/leaflet-icon.svg'
+      svgPath: '/Artboard 6.svg'
     }
   ];
 

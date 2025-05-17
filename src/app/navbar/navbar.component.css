@@ -1,9 +1,14 @@
-/* Surfshark-style dropdown spacing and typography */
-header nav div[ngIf] {
-    transition: all 0.3s ease;
-  }
-  
-  header nav a {
-    text-decoration: none;
-  }
-  
+
+svg {
+  pointer-events: none;
+}
+
+
+.absolute {
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+:host ::ng-deep svg {
+  display: inline;
+}

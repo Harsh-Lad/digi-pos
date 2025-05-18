@@ -22,7 +22,7 @@
       <li
       *ngFor="let product of activeProducts; let i = index"
       (click)="selectProduct(i)"
-      class="cursor-pointer text-xl p-1 font-semibold rounded transition-colors duration-200"
+      class="cursor-pointer text-sm md:text-lg p-1 font-semibold rounded transition-colors duration-200"
       [ngClass]="{
         'text-orange-600  ': activeProductIndex === i,
         'hover:bg-gray-100  text-gray-700': activeProductIndex !== i
@@ -41,10 +41,10 @@
       <img
         [src]="currentProduct.image"
         [alt]="currentProduct.name"
-        class="w-full h-[30svh] sm:h-[40svh] rounded-lg object-contain"
+        class="w-[150%] h-[30svh] sm:h-[40svh] rounded-lg  object-contain -ml-20"
       />
-      <div class="hidden sm:block bg-[#002999] h-[70svh] w-[80%] absolute left-1/2 -translate-1/2 z-[-1] rounded-full top-2/3"></div>
-      <div class="absolute -bottom-30 left-1/2 -translate-x-1/2 flex space-x-4">
+      <div class="hidden sm:block bg-[#002999] h-[70svh] w-[85%] absolute left-1/2 -translate-1/2 z-[-1] rounded-full top-2/3"></div>
+      <div class="absolute -bottom-15 md:-bottom-30 left-1/2 -translate-x-1/2 flex space-x-4">
         <button (click)="prev()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-orange-600 text-xl sm:text-3xl text-white rounded-full">‹</button>
         <button (click)="next()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-orange-600 text-xl sm:text-3xl text-white rounded-full">›</button>
       </div>

@@ -1,14 +1,34 @@
-
 svg {
   pointer-events: none;
 }
-
 
 .absolute {
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-
 :host ::ng-deep svg {
   display: inline;
+}
+
+/* New styles to create a continuous hover area */
+.menu-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0; /* Remove margin to eliminate gap */
+}
+
+/* Create invisible bridge element to maintain hover state */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Extend upward to connect with menu button */
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: transparent; /* Invisible bridge */
 }

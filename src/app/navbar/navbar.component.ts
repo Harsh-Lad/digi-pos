@@ -30,11 +30,10 @@ type MegaMenus = {
   styleUrls: ["./navbar.component.css"],
 })
 export class NavbarComponent {
-  activeMenu: MenuKey | null = null// Set 'products' as initially active to match the example
+  activeMenu: MenuKey | null = null;
   mobileMenuOpen: boolean = false; // Add property to track mobile menu state
-  
-  // Define available menu keys to use in the template
   menuKeys: MenuKey[] = ['products', 'hardware', 'business', 'marketplace'];
+  closeTimeout: any = null; // Add this to manage the close timeout
 
   // Mega menu data structure with proper typing
   megaMenus: MegaMenus = {
@@ -364,12 +363,31 @@ export class NavbarComponent {
     },
   }
 
-  toggleMenu(menu: MenuKey): void {
-    this.activeMenu = this.activeMenu === menu ? null : menu;
+  openMenu(menu: MenuKey): void {
+    // Clear any existing timeout to prevent the menu from closing
+    if (this.closeTimeout) {
+      clearTimeout(this.closeTimeout);
+      this.closeTimeout = null;
+    }
+    this.activeMenu = menu;
   }
-  
-  // Add method to toggle the mobile menu
+
+  startCloseMenu(): void {
+    // Set a small delay before actually closing the menu
+    // This gives time to move the cursor to the dropdown
+    this.closeTimeout = setTimeout(() => {
+      this.activeMenu = null;
+      this.closeTimeout = null;
+    }, 150); // 150ms delay gives enough time to move to dropdown
+  }
+
+  // Keep the mobile menu toggle method
   toggleMobileMenu(): void {
     this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
+  // Keep the original toggleMenu for mobile
+  toggleMenu(menu: MenuKey): void {
+    this.activeMenu = this.activeMenu === menu ? null : menu;
   }
 }

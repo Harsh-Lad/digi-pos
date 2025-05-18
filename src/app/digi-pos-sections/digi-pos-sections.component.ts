@@ -19,7 +19,7 @@ interface Card {
   animations: [
     trigger('cardAnimation', [
       state('active', style({
-        transform: 'scale(1.05)',
+        transform: 'scale(1)',
         backgroundColor: '#002999',
         borderRadius: '9999px'
       })),

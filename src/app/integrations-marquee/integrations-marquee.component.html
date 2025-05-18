@@ -1,20 +1,22 @@
-<div class="relative overflow-hidden w-full bg-white py-4">
-    <!-- Edge fade effect -->
-    <div class="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
-    <div class="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+<div class="marquee-container">
+  <!-- Edge fade effects -->
+  <div class="edge-fade-left"></div>
+  <div class="edge-fade-right"></div>
   
-    <!-- Scrolling content -->
-    <div class="animate-marquee whitespace-nowrap flex gap-10 gap-x-4 my-10">
+  <!-- Scrolling marquee -->
+  <div class="marquee">
+    <!-- First copy of images -->
+    <div class="marquee-content">
       <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Marquee Image" class="h-32 w-32  p-2 rounded-xs  object-contain" />
+        <img [src]="image" alt="Client Logo" class="marquee-item" />
       </ng-container>
-      <!-- Repeat images for seamless looping -->
+    </div>
+    
+    <!-- Duplicate copy for seamless looping -->
+    <div class="marquee-content" aria-hidden="true">
       <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Marquee Image" class="h-32 w-32  p-2 rounded-xs  object-contain" />
-      </ng-container>
-      <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Marquee Image" class="h-32 w-32  p-2 rounded-xs  object-contain" />
+        <img [src]="image" alt="Client Logo" class="marquee-item" />
       </ng-container>
     </div>
   </div>
-  
+</div>

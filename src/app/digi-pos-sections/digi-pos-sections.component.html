@@ -1,4 +1,4 @@
-<div class="bg-transparent text-white py-8 md:py-16 relative h-full">
+<div class="bg-transparent text-white py-8 md:py-16 relative  h-full">
     <div class="text-center mb-8 md:mb-12 px-4">
         <h2 class="text-3xl md:text-5xl font-bold">{{ selectedCard.title }} with DigiPOS</h2>
         <p class="text-lg md:text-xl text-gray-200 mt-2">{{ selectedCard.description }}</p>
@@ -21,13 +21,16 @@
                         </div>
                     </div>
                     <h3 class="font-bold text-center text-xl md:text-2xl">{{ card.title }}</h3>
-                    <p class="text-[16px] md:text-[20px] font-light mt-1 text-center">
-                        <ng-container *ngFor="let word of card.subtext.split(' '); let j = index">
-                            {{ word }}
-                            <br *ngIf="j % 3 === 2; else space">
-                            <ng-template #space> </ng-template>
-                        </ng-container>
-                    </p>
+                    <div class="w-2/3 mx-auto">
+
+                        <p class="text-[16px] md:text-[20px] font-light mt-1 text-center  mx-auto">
+                            <ng-container *ngFor="let word of card.subtext.split(' '); let j = index">
+                                {{ word }}
+                                <br *ngIf="j % 3 === 2; else space">
+                                <ng-template #space> </ng-template>
+                            </ng-container>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

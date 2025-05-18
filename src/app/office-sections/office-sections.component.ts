@@ -24,7 +24,7 @@ export class OfficeSectionsComponent {
       {
         name: 'Waiter Tab',
         description: `Empower waiters to take orders tableside using tablets and sync with the main POS.`,
-        image: 'assets/images/Cloud_Restaurant_POS.png',
+        image: 'assets/images/floatingTab.png',
       },
       {
         name: 'DigiKDS - Kitchen Display System',

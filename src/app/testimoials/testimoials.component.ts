@@ -11,7 +11,7 @@ export class TestimonialsComponent {
     {
       text: 'The reporting tools in DigiPOS have been invaluable. We can easily track sales trends, identify peak times, and make data-driven decisions to improve our business',
       name: 'Peroz Agha',
-      logo: 'https://offerengine.theentertainerme.com/peroz-healthy-eatery-x23931041/merchant_primary_logo_%28retina%29_-_merchant202303071434.jpg',
+      logo: '/clients/Peroz Logo.jpg',
       company: 'Founder - Peroz Healthy Eatery',
     },
     {

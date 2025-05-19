@@ -49,9 +49,9 @@
   animation: scroll 30s linear infinite;
 }
 
-.marquee:hover .marquee-content {
+/* .marquee:hover .marquee-content {
   animation-play-state: paused;
-}
+} */
 
 .marquee-item {
   height: 6rem;

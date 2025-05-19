@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component, OnInit, HostListener, AfterViewInit, PLATFORM_ID, Inject, ElementRef, Renderer2 } from '@angular/core';
+import { Component, OnInit, AfterViewInit, PLATFORM_ID, Inject, ElementRef, Renderer2 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -21,7 +21,6 @@ export class IntegrationsMarqueeComponent implements OnInit, AfterViewInit {
   ];
 
   animationDuration = 30; // seconds
-  animationPaused = false;
   
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
@@ -39,29 +38,10 @@ export class IntegrationsMarqueeComponent implements OnInit, AfterViewInit {
     }
   }
   
-  @HostListener('mouseenter')
-  onMouseEnter(): void {
-    this.animationPaused = true;
-    this.updateAnimationState();
-  }
-  
-  @HostListener('mouseleave')
-  onMouseLeave(): void {
-    this.animationPaused = false;
-    this.updateAnimationState();
-  }
-  
-  private updateAnimationState(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      this.setAnimationSpeed();
-    }
-  }
-  
   private setAnimationSpeed(): void {
     const marqueeElement = this.elementRef.nativeElement.querySelector('.marquee-content');
     if (marqueeElement) {
       this.renderer.setStyle(marqueeElement, 'animation-duration', `${this.animationDuration}s`);
-      this.renderer.setStyle(marqueeElement, 'animation-play-state', this.animationPaused ? 'paused' : 'running');
     }
   }
 }

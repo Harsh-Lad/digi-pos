@@ -3,3 +3,10 @@
     background-size: cover;
     background-position: center;
 }
+
+/* Fix for scaling issues */
+@media screen and (min-resolution: 120dpi) {
+    .bg-image {
+        background-attachment: scroll;
+    }
+}

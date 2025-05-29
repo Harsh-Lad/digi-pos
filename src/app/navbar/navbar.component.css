@@ -32,3 +32,18 @@ svg {
   height: 10px;
   background-color: transparent; /* Invisible bridge */
 }
+
+/* Ensure proper alignment of menu items */
+.group {
+  width: 100%;
+  display: flex;
+}
+
+.material-icons {
+  flex-shrink: 0;
+}
+
+/* Fix alignment in menu items */
+.flex.items-center.justify-between {
+  width: 100%;
+}

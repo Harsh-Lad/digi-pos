@@ -94,22 +94,23 @@ megaMenus: MegaMenus = {
     {
       title: "RESTAURANTS",
       items: [
-      { name: "Café & Bakery", link: "/business/cafe-bakery", description: "POS solutions tailored for cafés and bakeries.", icon: "bakery_dining" },
-      { name: "Quick Service", link: "/business/quick-service", description: "Fast and efficient systems for quick service restaurants.", icon: "fastfood" },
-      { name: "Kiosks & Food Trucks", link: "/business/kiosks-food-trucks", description: "Mobile POS solutions for food trucks and kiosks.", icon: "local_shipping" },
-      { name: "Dine-In Service Restaurants", link: "/business/dine-in-service", description: "Complete POS systems for full-service dining establishments.", icon: "restaurant" },
+        { name: "Fine Dine", link: "/business/cafe-bakery", description: "POS solutions tailored for cafés and bakeries.", icon: "bakery_dining" },
+        { name: "Casual Dining", link: "/business/dine-in-service", description: "Complete POS systems for full-service dining establishments.", icon: "restaurant" },
+        { name: "Quick Service", link: "/business/quick-service", description: "Fast and efficient systems for quick service restaurants.", icon: "fastfood" },
+        { name: "Food Trucks", link: "/business/kiosks-food-trucks", description: "Mobile POS solutions for food trucks and kiosks.", icon: "local_shipping" },
+        { name: "Café & Bakery", link: "/business/cafe-bakery", description: "POS solutions tailored for cafés and bakeries.", icon: "bakery_dining" },
+        { name: "Cloud Kitchen", link: "/business/cafe-bakery", description: "POS solutions tailored for cafés and bakeries.", icon: "cloud" },
       ],
     },
     {
       title: "RETAIL",
       items: [
+        { name: "Supermarket", link: "/business/supermarket", description: "Comprehensive POS solutions for grocery and supermarkets.", icon: "local_grocery_store" },
       { name: "Pharmacy", link: "/business/pharmacy", description: "Specialized POS systems for pharmacies and drugstores.", icon: "medication" },
-      { name: "Laundry", link: "/business/laundry", description: "POS solutions for laundry and dry cleaning businesses.", icon: "dry_cleaning" },
-      { name: "Garments", link: "/business/garments", description: "Inventory and sales management for garment retailers.", icon: "checkroom" },
-      { name: "Apparel", link: "/business/apparel", description: "POS systems designed for clothing and apparel stores.", icon: "local_mall" },
+      { name: "Garments & Appreals", link: "/business/garments", description: "Inventory and sales management for garment retailers.", icon: "checkroom" },
+      { name: "Laundry Shop", link: "/business/laundry", description: "POS solutions for laundry and dry cleaning businesses.", icon: "dry_cleaning" },
       { name: "Flower Shop", link: "/business/flower-shop", description: "Specialized solutions for florists and flower shops.", icon: "local_florist" },
-      { name: "Salon", link: "/business/salon", description: "POS and appointment systems for salons and spas.", icon: "spa" },
-      { name: "Supermarket", link: "/business/supermarket", description: "Comprehensive POS solutions for grocery and supermarkets.", icon: "local_grocery_store" },
+      { name: "Salon Shop", link: "/business/salon", description: "POS and appointment systems for salons and spas.", icon: "spa" },
       ],
     },
     ],
@@ -143,22 +144,25 @@ megaMenus: MegaMenus = {
   }
 };
   
-  openMenu(menu: MenuKey): void {
-    // Clear any existing timeout to prevent the menu from closing
-    if (this.closeTimeout) {
-      clearTimeout(this.closeTimeout);
-      this.closeTimeout = null;
-    }
-    this.activeMenu = menu;
+
+
+  // Add a method to calculate the width of the dropdown dynamically based on the number of sections
+  getDropdownWidth(menuKey: MenuKey): string {
+    const sectionCount = this.megaMenus[menuKey].sections.length;
+    const columnWidth = 275; // Fixed width per column in pixels
+    return `${sectionCount * columnWidth}px`;
+  }
+
+  // Update the hover functionality to ensure smooth opening and closing
+  openMenu(menuKey: MenuKey): void {
+    clearTimeout(this.closeTimeout);
+    this.activeMenu = menuKey;
   }
 
   startCloseMenu(): void {
-    // Set a small delay before actually closing the menu
-    // This gives time to move the cursor to the dropdown
     this.closeTimeout = setTimeout(() => {
       this.activeMenu = null;
-      this.closeTimeout = null;
-    }, 150); // 150ms delay gives enough time to move to dropdown
+    }, 200); // Add a slight delay for better UX
   }
 
   // Keep the mobile menu toggle method

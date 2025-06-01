@@ -12,6 +12,11 @@
   padding: 2rem 0;
 }
 
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+
 .edge-fade-left {
   position: absolute;
   left: 0;

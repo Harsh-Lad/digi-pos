@@ -1,11 +1,12 @@
 import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, NgIf, NgStyle } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, RouterLink],
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {

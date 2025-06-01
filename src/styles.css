@@ -37,3 +37,6 @@
 .filter-orange {
   filter: invert(73%) sepia(56%) saturate(1523%) hue-rotate(15deg) brightness(93%) contrast(96%);
 } */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

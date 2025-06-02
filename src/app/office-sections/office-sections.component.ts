@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './office-sections.component.html',
   styleUrls: ['./office-sections.component.css'],
   standalone: true,
-  imports: [NgClass, NgFor, NgStyle],
+  imports: [NgClass, NgFor],
 })
 export class OfficeSectionsComponent {
   activeTab = 'Front Office';

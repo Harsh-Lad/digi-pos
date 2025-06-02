@@ -1,9 +1,195 @@
 <app-navbar></app-navbar>
-<div class="product-page">
+<!-- <div class="product-page">
   <h1>Product Details</h1>
   <p *ngIf="slug">Displaying details for product: {{ slug }}</p>
   <p *ngIf="!slug">No product selected.</p>
-</div>
+</div> -->
+<section class="py-12 px-6 md:px-12 bg-white">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Left Column -->
+    <div class="flex-1 space-y-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Cloud Point of Sales</h2>
+      <p class="text-gray-700 text-base leading-relaxed">
+        DigiPOS is a modern, cloud-based Point of Sale (POS) system made for restaurants and hospitality businesses. 
+        It works both online and offline, so your business can run smoothly at all times. With DigiPOS, you can see live sales reports, 
+        track inventory, check staff performance, and learn about your customers from anywhere. 
+        It helps you stay in control, cut costs, and grow your profits using smart tools and real-time data.
+      </p>
+
+      <!-- Compliance Tag -->
+      <div class="space-y-2">
+        <p class="text-sm font-bold text-orange-500">Compliant with:</p>
+        <div class="flex items-center gap-2">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIyG9CImBv66uEEChinrNgQL_s05hCggeBg&s" alt="ZATCA" class="h-18 -ml-4">
+          <!-- <p class="text-sm text-gray-700">Zakat, Tax and Customs Authority</p> -->
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <button class="bg-orange-500 hover:bg-orange-600 text-[#002999] font-black px-6 py-3 rounded-full shadow-md transition duration-300">
+        Get a Demo
+      </button>
+    </div>
+
+    <!-- Right Column -->
+    <div class="flex-1 grid grid-cols-2 gap-4">
+      <img src="hero/Sales.jpg" alt="POS Interaction" class="rounded-lg w-full h-auto object-cover col-span-2">
+      <img src="hero/Transactions.jpg" alt="POS 1" class="rounded-lg w-full h-auto object-cover">
+      <img src="hero/Success.jpg" alt="POS 2" class="rounded-lg w-full h-auto object-cover">
+    </div>
+  </div>
+</section>
+
+<section class="bg-white py-12 px-6 md:px-12 text-center">
+  <!-- Header -->
+  <h2 class="text-2xl md:text-3xl font-bold text-[#002999]">
+    Run your restaurant smarter with <br />
+    <span class="text-[#002999]">All-In-One features from <span class="text-orange-500 font-black underline underline-2">DigiPOS</span></span>
+  </h2>
+
+  <!-- Features Grid -->
+  <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    
+    <!-- Feature Card -->
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">bolt</span>
+      <h3 class="text-lg font-black text-blue-900">Quick & Easy Setup</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Switch to DigiPOS effortlessly with a quick and hassle-free installation.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">wifi_off</span>
+      <h3 class="text-lg font-black text-blue-900">Online & Offline Functionality</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Ensures full operational continuity even during internet outages.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">query_stats</span>
+      <h3 class="text-lg font-black text-blue-900">Real-Time Data Access</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        View up-to-the-minute reports, sales trends, and inventory levels from any device.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">touch_app</span>
+      <h3 class="text-lg font-black text-blue-900">User-Friendly Interface</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Designed with intuitive workflows for quick onboarding and faster staff adoption.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">devices</span>
+      <h3 class="text-lg font-black text-blue-900">Multi-Device Compatibility</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Works seamlessly across tablets, desktops, and mobile devices.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">insights</span>
+      <h3 class="text-lg font-black text-blue-900">Comprehensive Reporting</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Generate insightful reports on sales transactions, peak hours, and more to support decision-making.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">cloud_done</span>
+      <h3 class="text-lg font-black text-blue-900">Secure Cloud Backup</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        All data is encrypted and automatically backed up, ensuring business continuity and data protection.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">sync_alt</span>
+      <h3 class="text-lg font-black text-blue-900">Integration Capabilities</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Easily integrates with accounting software, payment gateways, and third-party applications.
+      </p>
+    </div>
+
+    <div class="bg-white p-6 shadow-md rounded-lg text-left space-y-2">
+      <span class="material-icons text-orange-500 h-6 w-6 mb-2 align-middle">support_agent</span>
+      <h3 class="text-lg font-black text-blue-900">24/7 Customer Support</h3>
+      <p class="text-gray-400 text-md font-semibold  leading-relaxed">
+        Our dedicated support team is available around the clock to help you with any questions or issues you may have.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="bg-white py-12 px-6 md:px-12">
+  <!-- Section Heading -->
+  <h2 class="text-2xl md:text-3xl font-bold text-center text-[#002999] mb-10">
+    Restaurants are upgrading<br />
+    <span class=" font-bold">Here’s why choosing <span class="text-orange-500 font-black">DigiPOS</span></span>
+  </h2>
+
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+    <!-- Sidebar Menu -->
+    <div class="md:w-1/3">
+      <ul class="space-y-2">
+        <li class="text-orange-500 font-semibold cursor-pointer">Dashboards Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Menu Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Dine-In Table Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Customer Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Outlets Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Coupons & Discounts</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Foods Recipes & Costing</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Stock Item Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Purchase Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Inventory Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Customer Loyalty Program</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">ZATCA E-Invoicing Compliant</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Offline Mode & Utility</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Third Party Integration</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Admin & Users Management</li>
+        <li class="text-gray-800 hover:text-orange-500 cursor-pointer">Reporting Management</li>
+      </ul>
+    </div>
+
+    <!-- Feature Content -->
+    <div class="md:w-2/3 space-y-6 relative">
+      <!-- Background Image -->
+      <img
+        src="hero/Sales.jpg"
+        alt="Dashboard Management"
+        class="rounded-lg w-full h-auto object-cover"
+      />
+
+      <!-- Overlay Image -->
+      <img
+        src="hero/Success.jpg"
+        alt="Overlay"
+        class="absolute bottom-2/5 translate-y-2/3 -right-5 w-48 md:w-80 rounded-lg shadow-lg border border-gray-100"
+      />
+
+      <div class="pt-6">
+        <h3 class="text-xl font-semibold text-blue-900 mb-2">
+          Dashboard Management
+        </h3>
+        <ul class="list-disc pl-6 space-y-1 text-gray-700">
+          <li><strong>Sales:</strong> Track daily, hourly, weekly, and monthly sales performance.</li>
+          <li><strong>Status-wise Sales:</strong> View sales by order status to understand your workflow and identify bottlenecks.</li>
+          <li><strong>Top Products & Category Sales:</strong> Identify best-selling products and categories to optimize inventory and promotions.</li>
+          <li><strong>Customer Trends:</strong> Understand customer preferences and behaviors to improve service and marketing strategies.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 <app-contact-form></app-contact-form>
 <app-footer></app-footer>
 

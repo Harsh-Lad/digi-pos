@@ -66,7 +66,7 @@ export const PRODUCTS_DATA: ProductData[] = [
                 label: 'Dashboards Management',
                 active: true,
                 title: 'Dashboard Management',
-                image: 'hero/Sales.jpg',
+                image: 'products/Features-01.png',
                 bullets: [
                     'With DigiPOS dashboard management, you can easily visualize data in real-time. Performance indicators related to sales transactions and overall business operations.',
                     'Monitor key metrics such as:',
@@ -79,7 +79,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Menu Management',
                 title: 'Menu Management',
-                image: 'hero/Transactions.jpg',
+                 image: 'products/Features-02.png',
                 bullets: [
                     'Manage your menu anytime, anywhere.',
                     'With DigiPOS, you can create, update, and control your menu in real-time from any device, ensuring smooth operations and maximized profits.',
@@ -90,7 +90,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Dine-In Table Management',
                 title: 'Dine-In Table Management',
-                image: 'hero/Success.jpg',
+                 image: 'products/Features-03.png',
                 bullets: [
                     'Using DigiPOS Table Management feature is essential for efficiently managing dine-in orders, assign tables and track orders.',
                     'Real-time updates: The system provides real-time updates, allowing the staff to see which tables are occupied, available, or being prepared for new guests.',
@@ -100,7 +100,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Reporting Management',
                 title: 'Reporting Management',
-                image: 'hero/Sales.jpg',
+                 image: 'products/Features-04.png',
                 bullets: [
                     'Want to uncover hidden trends in your sales data?',
                     'Generate comprehensive reports to analyze your business performance.',
@@ -110,7 +110,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Outlets Management',
                 title: 'Outlets Management',
-                image: 'hero/Transactions.jpg',
+                 image: 'products/Features-05.png',
                 bullets: [
                     'Managing multiple outlets? DigiPOS has the solution.',
                     'If you have multiple outlets, DigiPOS simplifies management across all locations.',
@@ -120,7 +120,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Foods Recipes & Costing',
                 title: 'Foods Recipes & Costing',
-                image: 'hero/Growth.jpg',
+                 image: 'products/Features-06.png',
                 bullets: [
                     'Tired of wondering where your profits are going? Want to take control of your food costs?',
                     'Let’s do it with DigiPOS.',
@@ -130,7 +130,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Inventory Management',
                 title: 'Inventory Management',
-                image: 'hero/Inventory.jpg',
+                 image: 'products/Features-07.png',
                 bullets: [
                     'Inventory management is the process of efficiently overseeing, tracking, and controlling a company\'s inventory of raw materials, and finished products.',
                     '<strong>Stock Opening</strong>',
@@ -143,7 +143,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Purchase Management',
                 title: 'Purchase Management',
-                image: 'hero/Sales.jpg',
+                 image: 'products/Features-08.png',
                 bullets: [
                     'Purchase management is the process of acquiring goods and services efficiently while controlling costs and ensuring quality. Here are the key features of Purchase Management.',
                     'Purchase Requisition (PR)',
@@ -155,7 +155,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Offline Mode & Utility',
                 title: 'Offline Mode & Utility',
-                image: 'hero/Success.jpg',
+                 image: 'products/Features-09.png',
                 bullets: [
                     'DigiPOS is a flexible and reliable Point of Sale solution designed to keep your business running smoothly no matter your internet connectivity.',
                     'With an active internet connection, DigiPOS operates in real-time allowing you to process orders, manage inventory, and access up-to-the-minute sales reports instantly across all devices.',
@@ -165,7 +165,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'ZATCA E-Invoicing Compliant',
                 title: 'ZATCA Integration',
-                image: 'hero/Transactions.jpg',
+                 image: 'products/Features-10.png',
                 bullets: [
                     'DigiPOS is now fully integrated with Saudi Arabia ZATCA requirements, providing businesses with a streamlined and efficient way to manage their sales and inventory while staying fully compliant with the latest tax regulations.',
                     'Our team of experts worked diligently to ensure that DigiPOS seamlessly integrates with ZATCA, providing businesses with a seamless and user-friendly way to comply with the latest tax regulations.',
@@ -173,8 +173,8 @@ export const PRODUCTS_DATA: ProductData[] = [
                 ]
             }
         ],
-        sidebarImage: 'hero/Sales.jpg',
-        overlayImage: 'hero/Success.jpg',
+        sidebarImage: 'products/Features-01.png',
+        overlayImage: 'products/Features-01.png',
         sidebarTitle: 'Dashboard Management',
         sidebarBullets: [
             'With DigiPOS dashboard management, you can easily visualize data in real-time. Performance indicators related to sales transactions and overall business operations.',
@@ -218,7 +218,7 @@ export const PRODUCTS_DATA: ProductData[] = [
                 label: 'Dashboards Management',
                 active: true,
                 title: 'Dashboard Management',
-                image: 'hero/Sales.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'With DigiPOS dashboard management, you can easily visualize data in real-time. Performance indicators related to sales transactions and overall business operations.',
                     'Monitor key metrics such as:',
@@ -231,7 +231,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Menu Management',
                 title: 'Menu Management',
-                image: 'hero/Transactions.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Manage your menu anytime, anywhere.',
                     'With DigiPOS, you can create, update, and control your menu in real-time from any device, ensuring smooth operations and maximized profits.',
@@ -242,7 +242,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Dine-In Table Management',
                 title: 'Dine-In Table Management',
-                image: 'hero/Success.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Using DigiPOS Table Management feature is essential for efficiently managing dine-in orders, assign tables and track orders.',
                     'Real-time updates: The system provides real-time updates, allowing the staff to see which tables are occupied, available, or being prepared for new guests.',
@@ -252,7 +252,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Reporting Management',
                 title: 'Reporting Management',
-                image: 'hero/Reporting.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Want to uncover hidden trends in your sales data?',
                     'Generate comprehensive reports to analyze your business performance.',
@@ -262,7 +262,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Outlets Management',
                 title: 'Outlets Management',
-                image: 'hero/Outlets.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Managing multiple outlets? DigiPOS has the solution.',
                     'If you have multiple outlets, DigiPOS simplifies management across all locations.',
@@ -272,7 +272,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Foods Recipes & Costing',
                 title: 'Foods Recipes & Costing',
-                image: 'hero/Recipes.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Tired of wondering where your profits are going? Want to take control of your food costs?',
                     'Let’s do it with DigiPOS.',
@@ -282,7 +282,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Inventory Management',
                 title: 'Inventory Management',
-                image: 'hero/Inventory.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Inventory management is the process of efficiently overseeing, tracking, and controlling a company\'s inventory of raw materials, and finished products.',
                     '<strong>Stock Opening</strong>',
@@ -295,7 +295,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Purchase Management',
                 title: 'Purchase Management',
-                image: 'hero/Purchase.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'Purchase management is the process of acquiring goods and services efficiently while controlling costs and ensuring quality. Here are the key features of Purchase Management.',
                     'Purchase Requisition (PR)',
@@ -307,7 +307,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'Offline Mode & Utility',
                 title: 'Offline Mode & Utility',
-                image: 'hero/Offline.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'DigiPOS is a flexible and reliable Point of Sale solution designed to keep your business running smoothly no matter your internet connectivity.',
                     'With an active internet connection, DigiPOS operates in real-time allowing you to process orders, manage inventory, and access up-to-the-minute sales reports instantly across all devices.',
@@ -317,7 +317,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             {
                 label: 'ZATCA E-Invoicing Compliant',
                 title: 'ZATCA Integration',
-                image: 'hero/EInvoice.jpg',
+                 image: 'products/Features-01.png',
                 bullets: [
                     'DigiPOS is now fully integrated with Saudi Arabia ZATCA requirements, providing businesses with a streamlined and efficient way to manage their sales and inventory while staying fully compliant with the latest tax regulations.',
                     'Our team of experts worked diligently to ensure that DigiPOS seamlessly integrates with ZATCA, providing businesses with a seamless and user-friendly way to comply with the latest tax regulations.',
@@ -325,8 +325,8 @@ export const PRODUCTS_DATA: ProductData[] = [
                 ]
             }
         ],
-        sidebarImage: 'hero/Sales.jpg',
-        overlayImage: 'hero/Success.jpg',
+        sidebarImage: 'products/Features-01.png',
+        overlayImage: 'products/Features-01.png',
         sidebarTitle: 'Dashboard Management',
         sidebarBullets: [
             'With DigiPOS dashboard management, you can easily visualize data in real-time. Performance indicators related to sales transactions and overall business operations.',

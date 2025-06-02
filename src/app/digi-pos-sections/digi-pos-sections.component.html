@@ -15,9 +15,9 @@
                     <div class="text-4xl md:text-5xl mb-3 md:mb-4 flex justify-center items-center">
                         <!-- Use SVG instead of Material Icon -->
                         <div *ngIf="card.svgPath" class="w-20 h-20 md:w-44 md:h-44"
-                            [ngClass]="{'text-orange-500': selectedIndex === i, 'text-white': selectedIndex !== i}">
+                            [ngClass]="{'text-[#f48021]': selectedIndex === i, 'text-white': selectedIndex !== i}">
                             <img [src]="card.svgPath" alt="{{ card.title }} icon" class="w-full h-full"
-                                [ngClass]="{'filter-white': selectedIndex !== i, 'filter-orange text-orange-500': selectedIndex === i}">
+                                [ngClass]="{'filter-white': selectedIndex !== i, 'filter-orange text-[#f48021]': selectedIndex === i}">
                         </div>
                     </div>
                     <h3 class="font-bold text-center text-xl md:text-2xl">{{ card.title }}</h3>

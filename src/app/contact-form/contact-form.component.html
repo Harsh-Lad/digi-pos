@@ -1,5 +1,4 @@
 <section class="relative w-full bg-no-repeat bg-cover h-auto md:h-[60svh] my-32 md:my-44 bg-center bg-image">
-  <div class="absolute inset-0 bg-[#002999]/90"></div>
 
   <div class="relative z-10 max-w-7xl mx-auto my-auto flex flex-col lg:flex-row justify-between items-center gap-10 px-6 py-16 h-full"> 
     <!-- Left Text -->
@@ -7,17 +6,17 @@
       <div class="my-auto">
       <h2 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">
         Ready to Elevate Your <br />
-        Business with <span class="text-orange-500">DigiPOS?</span>
+        Business with <span class="text-[#f48021]">DigiPOS?</span>
       </h2>
       <p class="text-lg max-w-md">Let's get you set up in minutes – no tech skills needed.</p>
       
       <div class="flex gap-4 mt-8">
         <button
-        class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+        class="bg-[#f48021] hover:bg-[#f48021] text-white font-semibold px-6 py-3 rounded-full transition duration-300">
         Get a Demo
         </button>
         <button
-        class="bg-white hover:bg-gray-200 text-orange-600 font-semibold px-6 py-3 rounded-full transition duration-300">
+        class="bg-white hover:bg-gray-200 text-[#f48021] font-semibold px-6 py-3 rounded-full transition duration-300">
         Let's Talk
         </button>
       </div>
@@ -64,12 +63,12 @@
           <div class="flex flex-col gap-2">
             <div class="relative w-full h-full">
               <!-- Add search filter for countries -->
-              <input type="text" 
+              <!-- <input type="text" 
                      placeholder="Search country" 
                      [(ngModel)]="countrySearchTerm" 
                      [ngModelOptions]="{standalone: true}"
                      class="w-full border rounded-md px-3 py-2 mb-2 focus:outline-none focus:ring focus:ring-orange-300" />
-              
+               -->
               <div class="flex gap-2 h-full">
                 <div class="relative w-1/3 h-full">
                   <select formControlName="phoneCountry" class="border rounded-md px-2 py-3 bg-white w-full h-full text-sm focus:outline-none focus:ring focus:ring-orange-300 appearance-none">
@@ -119,9 +118,9 @@
           <select formControlName="country" class="w-full border rounded-md px-3 py-2 bg-white text-sm"
             [ngClass]="{'border-red-500': submitted && f['country'].errors}">
             <option value="">Please Select</option>
-            <option value="India">India</option>
-            <option value="Bahrain">Bahrain</option>
-            <option value="UAE">UAE</option>
+            <option *ngFor="let country of countries" [value]="country.name">
+              {{ country.name }}
+            </option>
           </select>
           <div *ngIf="submitted && f['country'].errors" class="text-red-500 text-xs mt-1">
             Please select a country
@@ -133,7 +132,7 @@
             <input type="checkbox" formControlName="terms"
               [ngClass]="{'outline-red-500': submitted && f['terms'].errors}" />
             <span>I confirm that I have read, understood and agree to the
-              <a href="#" class="text-orange-600 underline">Terms and Conditions</a>*</span>
+              <a href="#" class="text-[#f48021] underline">Terms and Conditions</a>*</span>
           </label>
           <div *ngIf="submitted && f['terms'].errors" class="text-red-500 text-xs mt-1">
             You must accept the terms and conditions
@@ -143,7 +142,7 @@
             <input type="checkbox" formControlName="privacy"
               [ngClass]="{'outline-red-500': submitted && f['privacy'].errors}" />
             <span>By using this form you agree with our
-              <a href="#" class="text-orange-600 underline">Privacy Policy</a>*</span>
+              <a href="#" class="text-[#f48021] underline">Privacy Policy</a>*</span>
           </label>
           <div *ngIf="submitted && f['privacy'].errors" class="text-red-500 text-xs mt-1">
             You must accept the privacy policy

@@ -2,7 +2,9 @@
 
 <section class="min-h-screen bg-gray-100 px-6 py-12 text-[#002999]">
   <div class="max-w-7xl mx-auto text-center space-y-6">
-    <p class="text-center text-orange-500 font-semibold underline underline-offset-3 text-lg">Contact Sales: +966 55 337 8286</p>
+    <p class="text-center text-[#f48021] font-bold underline underline-offset-3 text-lg">
+      <a href="tell:+966553378286">Contact Sales: +966 55 337 8286</a>
+    </p>
     <h1 class="text-5xl font-black">Tailor your plan to perfectly suit <br> your business.</h1>
     <p class="text-2xl text-gray-700 max-w-2/3 font-semibold my-12 mx-auto">
       Our transparent pricing is built to ensure a healthy ROI and perfectly match your financial and operational frameworks.
@@ -10,10 +12,10 @@
   </div>
 
   <div class="flex justify-center gap-4 flex-wrap text-center mt-10 text-xl font-bold text-gray-700">
-    <span class="text-[#002999]"> <span class="text-orange-400 mr-2 font-bold">✓</span>Installation Support</span>
-    <span class="text-[#002999]"><span class="text-orange-400 mr-2 font-bold">✓</span>Flexible Payment Options</span>
-    <span class="text-[#002999]"><span class="text-orange-400 mr-2 font-bold">✓</span>Offline Mode</span>
-    <span class="text-[#002999]"><span class="text-orange-400 mr-2 font-bold">✓</span>Easy & Quick Setup</span>
+    <span class="text-[#002999]"> <span class="text-[#f48021] mr-2 font-bold">✓</span>Installation Support</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-2 font-bold">✓</span>Flexible Payment Options</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-2 font-bold">✓</span>Offline Mode</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-2 font-bold">✓</span>Easy & Quick Setup</span>
   </div>
 
   <!-- Plan Toggle Switch -->
@@ -24,7 +26,7 @@
       <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#002999]"></div>
     </label>
     <span class="text-lg font-semibold">
-      Yearly <span [ngClass]="{'text-orange-500 font-bold underline': isYearly}" class="text-orange-500 font-bold">(50% Discount)</span>
+      Yearly <span [ngClass]="{'text-[#f48021] font-bold underline': isYearly}" class="text-[#f48021] font-bold">(50% Discount)</span>
     </span>
   </div>
 
@@ -42,11 +44,23 @@
              [class.rounded-tl-3xl]="plan.name === 'Starter'"
              [class.rounded-tr-3xl]="plan.name === 'Advanced'">
           <div class="flex justify-center">
-            <div *ngIf="isYearly" class="text-red-500 line-through text-base mb-1 mr-2 font-bold">﷼ </div>
+            <div *ngIf="isYearly" class="text-red-500 line-through text-base mb-1 mr-2 font-bold">
+             <svg width="26" height="26" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+               <g style="font-size:10px;line-height:0;font-family:Andika;-inkscape-font-specification:Andika;opacity:1;vector-effect:none;fill:#ef4444;stroke-width:.15;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill">
+               <path d="m6.836 8.468 2.595-.55q-.045.454-.236.876l-2.589.55q.04-.46.23-.876Zm2.359-1.325-2.589.55v-1.65l-.808.173v.916q0 .123-.068.224l-.421.623q-.168.242-.45.298l-2.29.489q.045-.455.236-.876l2.184-.466v-1.04l-2.038.433q.045-.455.235-.87l1.803-.388V2.353q.342-.416.809-.68v3.718l.808-.174v-2.46q.343-.415.803-.68v2.971l2.022-.432q-.045.455-.236.876l-1.786.382v.82l2.022-.427q-.045.46-.236.876Z" style="font-size:11.5px;font-family:'Gentium Unicode';-inkscape-font-specification:'Gentium Unicode'" aria-label="⃁"/>
+               </g>
+             </svg>
+            </div>
             <div *ngIf="isYearly" class="text-red-500 line-through text-base mb-1">{{plan.originalPrice}}</div>
           </div>
-            <div class="text-6xl font-bold text-[#002999] mb-1 flex items-center justify-center">
-            <div class="text-[18px]  mr-2 text-orange-500">﷼ </div>
+            <div class="text-6xl font-black text-[#002999] mb-1 flex items-center justify-center">
+            <div class="text-[18px]  mr-0 text-[#f48021]">
+                           <svg width="46" height="46" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+               <g style="font-size:10px;line-height:0;font-family:Andika;-inkscape-font-specification:Andika;opacity:1;vector-effect:none;fill:oklch(70.5% 0.213 47.604);stroke-width:.15;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill">
+               <path d="m6.836 8.468 2.595-.55q-.045.454-.236.876l-2.589.55q.04-.46.23-.876Zm2.359-1.325-2.589.55v-1.65l-.808.173v.916q0 .123-.068.224l-.421.623q-.168.242-.45.298l-2.29.489q.045-.455.236-.876l2.184-.466v-1.04l-2.038.433q.045-.455.235-.87l1.803-.388V2.353q.342-.416.809-.68v3.718l.808-.174v-2.46q.343-.415.803-.68v2.971l2.022-.432q-.045.455-.236.876l-1.786.382v.82l2.022-.427q-.045.46-.236.876Z" style="font-size:11.5px;font-family:'Gentium Unicode';-inkscape-font-specification:'Gentium Unicode'" aria-label="⃁"/>
+               </g>
+             </svg>
+            </div>
             {{getCurrentPrice(plan)}}
             <span class="text-[18px] text-gray-400  self-end">
               /mo
@@ -74,7 +88,7 @@
         <div class="text-center flex items-center justify-center bg-white" [class.rounded-bl-3xl]="i === features.length - 1">
           <ng-container [ngSwitch]="feature.starter">
             <span *ngSwitchCase="'check'" class="text-[#002999] text-xl font-bold">✓</span>
-            <span *ngSwitchCase="'cross'" class="text-red-500 text-xl font-bold">✗</span>
+            <span *ngSwitchCase="'cross'" class="text-red-500 text-xl font-bold">✖</span>
             <span *ngSwitchCase="'addon'" class="text-gray-500 text-sm">Optional Add On</span>
           </ng-container>
         </div>
@@ -82,7 +96,7 @@
         <div class="text-center flex items-center justify-center border-l border-r border-gray-200 bg-white">
           <ng-container [ngSwitch]="feature.standard">
             <span *ngSwitchCase="'check'" class="text-[#002999] text-xl font-bold">✓</span>
-            <span *ngSwitchCase="'cross'" class="text-red-500 text-xl font-bold">✗</span>
+            <span *ngSwitchCase="'cross'" class="text-red-500 text-xl font-bold">✖</span>
             <span *ngSwitchCase="'addon'" class="text-gray-500 text-sm">Optional Add On</span>
           </ng-container>
         </div>
@@ -90,7 +104,7 @@
         <div class="text-center flex items-center justify-center bg-white"  [class.rounded-br-3xl]="i === features.length - 1">
           <ng-container [ngSwitch]="feature.advanced">
             <span *ngSwitchCase="'check'" class="text-[#002999] text-xl font-bold">✓</span>
-            <span *ngSwitchCase="'cross'" class="text-red-500 text-xl font-bold">✗</span>
+            <span *ngSwitchCase="'cross'" class="text-red-500 text-xl font-bold">✖</span>
             <span *ngSwitchCase="'addon'" class="text-gray-500 text-sm">Optional Add On</span>
           </ng-container>
         </div>

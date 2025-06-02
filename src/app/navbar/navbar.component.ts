@@ -60,12 +60,12 @@ megaMenus: MegaMenus = {
       { name: "Recipe Management", link: "/products/recipe-management", description: "Detailed recipe tracking and cost analysis.", icon: "restaurant" },
       { name: "Inventory Management", link: "/products/inventory-management", description: "Real-time inventory tracking and management.", icon: "inventory" },
       { name: "Purchase & Supply Chain Management", link: "/products/purchase-supply-chain-management", description: "Streamlined purchasing and vendor management.", icon: "local_shipping" },
-      ],
-    },
-    {
-      title: "RETAIL",
-      items: [
-      { name: "Cloud Point of Sales", link: "/products/retail-pos", description: "In-depth sales analysis and performance tracking for retail.", icon: "storefront" },
+      // --- Retail Section ---
+      // This is a marker for the Retail heading in the template
+      { name: "__RETAIL_HEADING__", link: "", description: "", icon: "" },
+      { name: "Supermarket", link: "/products/retail-pos", description: "In-depth sales analysis and performance tracking for retail.", icon: "storefront" },
+      { name: "Barcode Management", link: "/products/retail-pos", description: "Efficient barcode generation, printing, and scanning for retail inventory management.", icon: "qr_code" },
+      // --- End Retail Section ---
       ],
     },
     ],

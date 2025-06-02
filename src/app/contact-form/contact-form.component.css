@@ -8,7 +8,7 @@ input[type="checkbox"].ng-touched.ng-invalid {
 }
 
 .bg-image {
-  background-image: url('/212 copy.jpg');
+  background-image: url('/landing-page/Form.jpg');
   background-size: cover;
   background-position: center;
 }

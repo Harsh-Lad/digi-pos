@@ -29,8 +29,9 @@
   filter: brightness(0) invert(1);
 }
 
+/* Filter to approximate #f48021 (orange) */
 .filter-orange {
-  filter: invert(65%) sepia(60%) saturate(1800%) hue-rotate(1deg) brightness(83%) contrast(120%);
+  filter: invert(62%) sepia(94%) saturate(7492%) hue-rotate(2deg) brightness(251%) contrast(70%);
 }
 
 /* For the specified OKLCH color 

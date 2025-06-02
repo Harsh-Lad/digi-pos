@@ -21,10 +21,10 @@ export class ImageMarqueeComponent {
     '/clients/Lolos Kitchen.jpg',
     '/clients/Nice Bun Logo.png',
     '/clients/NYC Logo.jpg',
-    '/clients/Peroz Logo.jpg',
+    '/clients/Peroz Logo.png',
     '/clients/Set Kafa Logo.jpeg',
     '/clients/Taya logo.png',
-    '/clients/The Cuts Logo.jpg',
+    '/clients/The Cuts Logo.png',
     '/clients/Unknown.jpeg',
     '/clients/Unknown.png',
     

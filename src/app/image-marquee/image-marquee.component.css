@@ -54,7 +54,8 @@
 }
 
 .marquee-item {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  /* width: 6rem; */
+  width: auto;
   object-fit: contain;
 }

@@ -6,8 +6,8 @@
     (click)="switchTab(tab)"
     class="font-semibold text-base sm:text-lg whitespace-nowrap"
     [ngClass]="{
-      'text-orange-600 border-b-2 border-orange-600': activeTab === tab,
-      'text-gray-800 hover:text-orange-600': activeTab !== tab
+      'text-[#f48021] border-b-2 border-[#f48021]': activeTab === tab,
+      'text-gray-800 hover:text-[#f48021]': activeTab !== tab
     }"
     >
     {{ tab }}
@@ -24,7 +24,7 @@
       (click)="selectProduct(i)"
       class="cursor-pointer text-sm md:text-lg p-1 font-semibold rounded transition-colors duration-200"
       [ngClass]="{
-        'text-orange-600  ': activeProductIndex === i,
+        'text-[#f48021]  ': activeProductIndex === i,
         'hover:bg-gray-100  text-gray-700': activeProductIndex !== i
       }"
       >
@@ -41,21 +41,25 @@
       <img
         [src]="currentProduct.image"
         [alt]="currentProduct.name"
-        class="w-[100%] md:w-[34rem] h-[30svh] sm:h-[40svh] rounded-lg  object-contain "
+        class="w-[100%] md:w-[34rem] h-[30svh] sm:h-[40svh] rounded-lg object-contain"
+        [ngClass]="{ 
+          '-ml-10': currentProduct.name !== 'Online Ordering' && currentProduct.name !== 'KIOSK - Self Ordering', 
+          'ml-0': currentProduct.name === 'Online Ordering' || currentProduct.name === 'KIOSK - Self Ordering' 
+        }"
       />
       <div class="hidden sm:block bg-[#002999] h-[70svh] w-[85%] absolute left-1/2 -translate-1/2 z-[-1] rounded-full top-2/3"></div>
       <div class="absolute -bottom-15 md:-bottom-30 left-1/2 -translate-x-1/2 flex space-x-4">
-        <button (click)="prev()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-orange-600 text-xl sm:text-3xl text-white rounded-full">‹</button>
-        <button (click)="next()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-orange-600 text-xl sm:text-3xl text-white rounded-full">›</button>
+        <button (click)="prev()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-[#f48021] text-xl sm:text-3xl text-white rounded-full">‹</button>
+        <button (click)="next()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-[#f48021] text-xl sm:text-3xl text-white rounded-full">›</button>
       </div>
       </div>
     </div>
     
     <!-- Right: Content -->
     <div class="w-full md:w-1/2 lg:w-1/2 flex flex-col text-left mt-12 md:mt-10 md:self-center ">
-      <h3 class="text-lg sm:text-2xl font-bold text-orange-600 mb-2">{{ currentProduct.name }}</h3>
+      <h3 class="text-lg sm:text-2xl font-bold text-[#f48021] mb-2">{{ currentProduct.name }}</h3>
       <p class="text-gray-600 mb-3 text-sm sm:text-lg my-4">{{ currentProduct.description }}</p>
-      <a href="#" class="text-orange-600 font-semibold underline">Learn More</a>
+      <a href="#" class="text-[#f48021] font-semibold underline">Learn More</a>
     </div>
     </div>
   </div>

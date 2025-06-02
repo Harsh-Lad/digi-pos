@@ -38,7 +38,7 @@
 }
 
 .marquee {
-  --gap: 2rem;
+  --gap: 1rem;
   display: flex;
   gap: var(--gap);
   user-select: none;

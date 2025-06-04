@@ -11,7 +11,29 @@
 
 <main class="main">
   <app-navbar></app-navbar>
-  <app-hero></app-hero>
+  <section class="relative">
+    <app-hero></app-hero>
+    <button class="absolute z-20 bg-[#f48021] text-[#002999] font-bold 
+                 px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-3 
+                 rounded-full text-xs sm:text-sm md:text-base 
+                 hover:bg-[#e6721e] hover:scale-105 transition-all duration-200 shadow-lg
+                 -bottom-6
+                 left-1/2 transform -translate-x-[calc(100%+0.75rem)] sm:-translate-x-[calc(100%+1rem)] md:-translate-x-[calc(100%+1.5rem)]">
+    Get a Demo
+  </button>
+  
+  <button class="absolute z-20 bg-[#f48021] cursor-pointer text-[#002999] font-bold 
+                 px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-3 
+                 rounded-full text-xs sm:text-sm md:text-base 
+                 hover:bg-[#e6721e] hover:scale-105 transition-all duration-200 shadow-lg
+                 -bottom-6
+                 left-1/2 transform translate-x-[0.75rem] sm:translate-x-[1rem] md:translate-x-[1.5rem]" 
+          routerLink="/pricing">
+    See Pricing
+  </button>
+  </section>
+
+
 
   <section class="my-24">
     <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Built for Modern Businesses.

@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   standalone: true,
-  imports: [NgStyle, RouterLink],
+  imports: [NgStyle],
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {

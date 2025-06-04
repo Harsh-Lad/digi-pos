@@ -15,6 +15,16 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-3.jpg");
 }
 
+/* Hide scrollbar while maintaining scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
 /* Enhanced animations for better performance */
 @media (prefers-reduced-motion: no-preference) {
   .animate-bounce {
@@ -33,20 +43,17 @@
 @media screen and (min-resolution: 1.25dppx) {
   :host {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   section {
     min-height: 130vh !important;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
   }
 }
 
 @media screen and (min-resolution: 1.5dppx) {
   section {
     min-height: 140vh !important;
-    padding-top: 3rem;
-    padding-bottom: 6rem;
   }
 }
 

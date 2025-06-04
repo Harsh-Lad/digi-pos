@@ -4,36 +4,55 @@
 }
 
 .bg-image-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/hero-bg-1.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-1.jpg");
 }
 
 .bg-image-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/hero-bg-2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-2.jpg");
 }
 
 .bg-image-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/hero-bg-3.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-3.jpg");
 }
 
-@keyframes bounce-slow {
-  0%, 100% {
-    transform: translateY(-10%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+/* Enhanced animations for better performance */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-bounce {
+    animation: bounce 3s ease-in-out infinite;
   }
 }
 
-.animate-bounce-slow {
-  animation: bounce-slow 4s infinite;
+/* Ensure smooth scaling at different zoom levels */
+@media (min-resolution: 1.5dppx) {
+  .absolute {
+    transform-origin: center;
+  }
 }
 
-.animate-bounce-slower {
-  animation: bounce-slow 6s infinite;
+/* Handle zoom scaling better */
+@media screen and (min-resolution: 1.25dppx) {
+  :host {
+    overflow-x: hidden;
+  }
+
+  section {
+    min-height: 130vh !important;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
 }
 
-.animate-bounce-slow-delay {
-  animation: bounce-slow 4s infinite 1s;
+@media screen and (min-resolution: 1.5dppx) {
+  section {
+    min-height: 140vh !important;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+}
+
+/* Ensure proper spacing at different scales */
+@media (max-width: 640px) and (min-resolution: 1.25dppx) {
+  section {
+    min-height: 150vh !important;
+  }
 }

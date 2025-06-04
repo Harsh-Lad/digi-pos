@@ -25,9 +25,9 @@
 
     <!-- Right Column: Hero Images -->
     <div class="flex-1 grid grid-cols-2 gap-4">
-      <img *ngIf="selectedProduct.heroImages.length > 0" [src]="selectedProduct.heroImages[0]" alt="POS Interaction" class="rounded-2xl w-full h-auto object-cover col-span-2">
-      <img *ngIf="selectedProduct.heroImages.length > 1" [src]="selectedProduct.heroImages[1]" alt="POS 1" class="rounded-2xl w-full h-auto object-cover">
-      <img *ngIf="selectedProduct.heroImages.length > 2" [src]="selectedProduct.heroImages[2]" alt="POS 2" class="rounded-2xl w-full h-auto object-cover">
+      <img  [src]="selectedProduct.heroImages" alt="POS Interaction" class="rounded-2xl w-full h-auto object-cover col-span-2">
+      <!-- <img *ngIf="selectedProduct.heroImages.length > 1" [src]="selectedProduct.heroImages[1]" alt="POS 1" class="rounded-2xl w-full h-auto object-cover">
+      <img *ngIf="selectedProduct.heroImages.length > 2" [src]="selectedProduct.heroImages[2]" alt="POS 2" class="rounded-2xl w-full h-auto object-cover"> -->
     </div>
   </div>
 </section>

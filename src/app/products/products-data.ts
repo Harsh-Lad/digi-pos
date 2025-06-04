@@ -20,7 +20,7 @@ export interface ProductData {
   catergory: string;
   heroTitle: string;
   heroDescription: string;
-  heroImages: string[];
+  heroImages: string;
   complianceTag?: string;
   complianceImage?: string;
   ctaText?: string;
@@ -42,11 +42,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             It works both online and offline, so your business can run smoothly at all times. With DigiPOS, you can see live sales reports, 
             track inventory, check staff performance, and learn about your customers from anywhere. 
             It helps you stay in control, cut costs, and grow your profits using smart tools and real-time data.`,
-        heroImages: [
-            'hero/Sales.jpg',
-            'hero/Transactions.jpg',
-            'hero/Success.jpg'
-        ],
+        heroImages: 'products/Cloud Point of Sales.png',
         complianceTag: 'Compliant with:',
         complianceImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIyG9CImBv66uEEChinrNgQL_s05hCggeBg&s',
         ctaText: 'Get a Demo',
@@ -194,11 +190,7 @@ export const PRODUCTS_DATA: ProductData[] = [
             It works both online and offline, so your business can run smoothly at all times. With DigiPOS, you can see live sales reports, 
             track inventory, check staff performance, and learn about your customers from anywhere. 
             It helps you stay in control, cut costs, and grow your profits using smart tools and real-time data.`,
-        heroImages: [
-            'hero/Sales.jpg',
-            'hero/Transactions.jpg',
-            'hero/Success.jpg'
-        ],
+        heroImages: "products/Cloud Point of Sales.png",
         complianceTag: 'Compliant with:',
         complianceImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIyG9CImBv66uEEChinrNgQL_s05hCggeBg&s',
         ctaText: 'Get a Demo',

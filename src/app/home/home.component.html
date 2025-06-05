@@ -1,5 +1,25 @@
 <app-navbar></app-navbar>
-<app-hero></app-hero>
+  <section class="relative">
+    <app-hero></app-hero>
+    <button class="absolute z-20 bg-[#f48021] text-[#002999] font-bold 
+                 px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-3 
+                 rounded-full text-xs sm:text-sm md:text-base 
+                 hover:bg-[#e6721e] hover:scale-105 transition-all duration-200 shadow-lg
+                 -bottom-6
+                 left-1/2 transform -translate-x-[calc(100%+0.75rem)] sm:-translate-x-[calc(100%+1rem)] md:-translate-x-[calc(100%+1.5rem)]">
+    Get a Demo
+  </button>
+  
+  <button class="absolute z-20 bg-[#f48021] cursor-pointer text-[#002999] font-bold 
+                 px-4 py-2 sm:px-5 sm:py-2 md:px-6 md:py-3 
+                 rounded-full text-xs sm:text-sm md:text-base 
+                 hover:bg-[#e6721e] hover:scale-105 transition-all duration-200 shadow-lg
+                 -bottom-6
+                 left-1/2 transform translate-x-[0.75rem] sm:translate-x-[1rem] md:translate-x-[1.5rem]" 
+          routerLink="/pricing">
+    See Pricing
+  </button>
+  </section>
 
 <section class="my-24">
   <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Built for Modern Businesses.
@@ -22,11 +42,12 @@
   <app-image-marquee></app-image-marquee>
 </div>
 
-<section class="my-24 relative w-screen h-auto md:h-[85svh]">
+<section class="my-24 relative w-screen h-auto md:min-h-[85vh] flex items-center justify-center">
   <div class="absolute inset-0 w-full h-full overflow-hidden">
     <video autoplay muted loop playsinline class="w-full h-full object-cover">
-      <source src="https://res.cloudinary.com/dymjptips/video/upload/video_geyshy.mp4" type="video/mp4">
-    </video>
+        <source src="https://res.cloudinary.com/dymjptips/video/upload/video_geyshy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
   </div>
   <div class="absolute inset-0 bg-black/40 bg-opacity-40"></div>
   <div class="relative z-10 h-full flex items-center justify-center">
@@ -49,7 +70,7 @@
   <app-office-sections></app-office-sections>
 </div>
 
-<div class="section pt-24 pb-12">
+<div class="section pt-32 pb-12">
   <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Powering the Future of <br>
     Restaurant Management</h2>
   <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block">From local cafés to global F&B chains, businesses trust
@@ -81,7 +102,7 @@
   <app-platforms></app-platforms>
 </section>
 
-<section class="my-24">
+<section class="my-auto min-h-[100vh]  flex items-center ">
   <app-contact-form></app-contact-form>
 </section>
 
@@ -90,5 +111,6 @@
     <img src="https://cdn-icons-png.freepik.com/256/2496/2496112.png?semt=ais_hybrid" alt="WhatsApp" class="w-16 h-16 rounded-full z-100 shadow-lg hover:shadow-xl">
   </a>
 </div>
-
-<app-footer></app-footer>
+<section class="mt-24">
+  <app-footer></app-footer>
+</section>

@@ -15,7 +15,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        window.scrollTo(0, 0); // Scroll to the top of the page
+        if(typeof window !== undefined) {
+          window.scrollTo(0, 0); // Scroll to the top of the page
+        }
       }
     });
   }

@@ -1,0 +1,65 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.bg-image-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-1.jpg");
+}
+
+.bg-image-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-2.jpg");
+}
+
+.bg-image-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/images/hero-bg-3.jpg");
+}
+
+/* Hide scrollbar while maintaining scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Enhanced animations for better performance */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-bounce {
+    animation: bounce 3s ease-in-out infinite;
+  }
+}
+
+/* Ensure smooth scaling at different zoom levels */
+@media (min-resolution: 1.5dppx) {
+  .absolute {
+    transform-origin: center;
+  }
+}
+
+/* Handle zoom scaling better */
+@media screen and (min-resolution: 1.25dppx) {
+  :host {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  section {
+    min-height: 130vh !important;
+  }
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+  section {
+    min-height: 140vh !important;
+  }
+}
+
+/* Ensure proper spacing at different scales */
+@media (max-width: 640px) and (min-resolution: 1.25dppx) {
+  section {
+    min-height: 150vh !important;
+  }
+}

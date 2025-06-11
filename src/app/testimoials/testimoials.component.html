@@ -1,0 +1,19 @@
+<div class="py-16 px-4 md:px-56  ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        *ngFor="let t of testimonials"
+        class="bg-gray-100 rounded-xl shadow-sm p-6 flex flex-col justify-between h-full"
+      >
+        <p class="text-gray-700 text-base mb-4">“{{ t.text }}”</p>
+  
+        <div class="flex items-center gap-3 mt-auto">
+          <img [src]="t.logo" [alt]="t.company" class="h-10 w-10 rounded-full object-contain bg-white" />
+          <div>
+            <p class="font-semibold text-gray-700">{{ t.name }}</p>
+            <p class="text-xs text-gray-500">{{ t.company }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

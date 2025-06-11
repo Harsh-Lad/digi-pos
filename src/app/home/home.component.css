@@ -1,0 +1,42 @@
+/* Existing styles... */
+
+/* Adjust top margin for high DPI displays */
+@media (min-resolution: 144dpi) {
+  .responsive-margin {
+    margin-top: 6rem !important;
+    /* mt-24 (6rem) instead of mt-32 (8rem) */
+  }
+
+  .mar-top {
+    margin-top: 8rem !important;
+    /* mt-24 (6rem) instead of mt-32 (8rem) */
+  }
+  .responsive-integrations {
+    padding-top: 0 !important /* 6rem = 96px */;
+    padding-bottom: 0 !important /* 6rem = 96px */;
+  }
+}
+
+@media (min-resolution: 120dpi) {
+
+  .responsive-integrations {
+    padding-top: 0 !important /* 6rem = 96px */;
+    padding-bottom: 0 !important /* 6rem = 96px */;
+  }
+
+  .mar-top {
+    margin-top: 6rem !important;
+    /* mt-24 (6rem) instead of mt-32 (8rem) */
+  }
+}
+
+
+@media (min-width: 48rem /* 768px */) {
+    .responsive-integrations {
+        padding-top: calc(var(--spacing) * 32) /* 8rem = 128px */;
+    }
+
+    .responsive-integrations {
+       padding-bottom: calc(var(--spacing) * 12) 
+    }
+}

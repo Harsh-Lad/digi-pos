@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* Apply Montserrat font family to all elements */
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Material Icons styles */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* SVG Filter Styles  */
+
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+
+/* Filter to approximate #f48021 (orange) */
+.filter-orange {
+  filter: invert(62%) sepia(94%) saturate(7492%) hue-rotate(2deg) brightness(251%) contrast(70%);
+}
+
+/* For the specified OKLCH color 
+.filter-orange {
+  filter: invert(73%) sepia(56%) saturate(1523%) hue-rotate(15deg) brightness(93%) contrast(96%);
+} */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

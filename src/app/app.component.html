@@ -1,0 +1,106 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<main class="main">
+  <app-navbar></app-navbar>
+
+
+
+  <div class="section mt-24 mb-12">
+    <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Powering the Future of <br>
+      Restaurant Management</h2>
+    <p class="mx-auto text-center px-4 md:p-0 md:w-2/5 text-gray-600 text-base md:text-2xl tracking-wider mb-12">From local cafés to global F&B chains, businesses trust
+      on DigiPOS to  streamline every aspect of their operations. With our all-in-one  cloud-based POS and
+      restaurant management system, handling orders, payments, and inventory has never been easier.</p>
+    <app-image-marquee></app-image-marquee>
+  </div>
+
+  <section class="my-24 relative w-screen h-auto md:h-[85svh]">
+    <div class="absolute inset-0 w-full h-full overflow-hidden">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover">
+        <source src="https://res.cloudinary.com/dymjptips/video/upload/video_geyshy.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="absolute inset-0 bg-black/40 bg-opacity-40"></div>
+    <div class="relative z-10 h-full flex items-center justify-center">
+      <app-digi-pos-sections></app-digi-pos-sections>
+      <!-- Content goes here -->
+    </div>
+  </section>
+
+  <div class="section my-24">
+    <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Connect. Control. Grow.</h2>
+    <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">DigiPOS provides an integrated retail solution with
+      efficient front office <br>
+      sales tools, powerful back office management, and reliable retail <br>
+      hardware and software - designed to streamline operations and <br>
+
+      enhance the customer experience.</p>
+    <p class="mx-auto text-center px-4 md:p-0 md:w-2/5 text-gray-600 block md:hidden text-base md:text-2xl tracking-wider">DigiPOS provides an integrated retail solution with
+      efficient front office
+      sales tools, powerful back office management, and reliable retail
+      hardware and software - designed to streamline operations and 
+
+      enhance the customer experience.</p>
+    <app-office-sections></app-office-sections>
+  </div>
+
+
+  <div class="section pt-24 pb-12">
+    <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Powering the Future of <br>
+      Restaurant Management</h2>
+    <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block">From local cafés to global F&B chains, businesses trust
+      on DigiPOS to <br> streamline every aspect of their operations. With our all-in-one <br> cloud-based POS and
+      restaurant management system, handling orders, <br> payments, and inventory has never been easier.</p>
+    <p class="text-center text-gray-600 text-lg px-2 tracking-wider block md:hidden mb-12">From local cafés to global F&B chains, businesses trust
+      on DigiPOS to streamline every aspect of their operations. With our all-in-one cloud-based POS and
+      restaurant management system, handling orders, payments, and inventory has never been easier.</p>
+    <app-integrations-marquee></app-integrations-marquee>
+  </div>
+
+  <div class="section mb-24">
+    <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-3xl md:text-5xl">Discover How digiPOS Helps <br>
+      Their Businesses Thrive</h2>
+    <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">We take pride in providing exceptional point-of-sale
+      solutions that <br>
+      empower businesses to grow and streamline their operations. But <br>
+      don't just take our word for it! Here's what our clients have to say <br>
+
+      about their experience with our system.</p>
+    <p class="text-center block md:hidden text-gray-600 text-lg px-2 tracking-wider">We take pride in providing exceptional point-of-sale
+      solutions that
+      empower businesses to grow and streamline their operations. But 
+      don't just take our word for it! Here's what our clients have to say 
+
+      about their experience with our system.</p>
+    <app-testimonials></app-testimonials>
+  </div>
+
+  <section class="my-24 mb-52">
+    <app-platforms></app-platforms>
+  </section>
+
+  <section class="my-24 min-h-[90svh] bg-amber-500">
+    <app-contact-form></app-contact-form>
+    <!-- </div> -->
+  </section>
+
+  <div class="fixed bottom-5 right-5">
+    <a href="https://api.whatsapp.com/send?phone=+966553378286&text=Hello%20DigiPOS%20Team" target="_blank">
+      <img src="https://cdn-icons-png.freepik.com/256/2496/2496112.png?semt=ais_hybrid" alt="WhatsApp" class="w-16 h-16 rounded-full z-100 shadow-lg hover:shadow-xl">
+    </a>
+  </div>
+
+  <app-footer></app-footer>
+</main>
+
+<router-outlet />

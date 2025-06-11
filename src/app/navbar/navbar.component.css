@@ -1,0 +1,162 @@
+/* Base styles */
+:host {
+  display: block;
+}
+
+/* Fix SVG display */
+svg {
+  pointer-events: none;
+  display: inline;
+}
+
+/* Material icons styling */
+.material-icons {
+  flex-shrink: 0;
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Menu container positioning */
+.menu-container {
+  position: relative;
+}
+
+/* Transition for dropdown menus */
+.dropdown-menu {
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+/* Create invisible bridge element to maintain hover state */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -0.625rem; /* 10px in rem for better scaling */
+  left: 0;
+  width: 100%;
+  height: 0.625rem;
+  background-color: transparent; /* Invisible bridge */
+}
+
+/* Text truncation */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Ensure proper alignment of menu items */
+.group {
+  width: 100%;
+  display: flex;
+}
+
+/* Fix alignment in menu items */
+.flex.items-center.justify-between {
+  width: 100%;
+}
+
+/* Container with proper max-width for different screen sizes */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Prevent text from becoming too small at larger zoom levels */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  button, a {
+    font-size: max(0.75rem, 12px);
+  }
+  
+  .text-xs {
+    font-size: max(0.65rem, 10px);
+  }
+}
+
+/* Prevent content clipping at different scales */
+@media (min-resolution: 120dpi) {
+  .dropdown-menu {
+    max-height: 80vh !important;
+  }
+}
+
+/* Fix menu width on small and medium screens */
+@media screen and (max-width: 1023px) {
+  .dropdown-menu {
+    width: 100vw;
+    left: 0;
+    max-height: 60vh !important;
+  }
+}
+
+/* Remove vertical padding at higher zoom levels */
+@media (min-resolution: 120dpi) {
+
+  
+  .dropdown-menu {
+    max-height: 80vh !important;
+  }
+}
+
+/* Additional adjustments for even higher zoom levels */
+@media (min-resolution: 144dpi) {
+  .navbar-responsive-padding {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  /* Reduce heights at higher zoom levels */
+  .height-responsive {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  
+  /* Reduce logo size further at higher zoom levels */
+  .logo-responsive {
+    height: auto !important;
+    max-height: 3.25rem !important;
+  }
+}

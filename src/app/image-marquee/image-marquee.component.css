@@ -1,0 +1,64 @@
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  padding: 2rem 0;
+}
+
+.edge-fade-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 33%;
+  background: linear-gradient(to right, white, transparent);
+  z-index: 10;
+  pointer-events: none; /* Allow hover events to pass through */
+}
+
+.edge-fade-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 33%;
+  background: linear-gradient(to left, white, transparent);
+  z-index: 10;
+  pointer-events: none; /* Allow hover events to pass through */
+}
+
+.marquee {
+  --gap: 5rem;
+  display: flex;
+  gap: var(--gap);
+  user-select: none;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  gap: var(--gap);
+  justify-content: space-around;
+  align-items: center;
+  animation: scroll 30s linear infinite;
+}
+
+/* Change from .marquee:hover to .marquee-container:hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  height: 5rem;
+  /* width: 6rem; */
+  width: auto;
+  object-fit: contain;
+}

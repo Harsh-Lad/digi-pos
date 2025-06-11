@@ -1,0 +1,22 @@
+<div class="marquee-container">
+  <!-- Edge fade effects -->
+  <div class="edge-fade-left"></div>
+  <div class="edge-fade-right"></div>
+  
+  <!-- Scrolling marquee -->
+  <div class="marquee">
+    <!-- First copy of images -->
+    <div class="marquee-content">
+      <ng-container *ngFor="let image of images">
+        <img [src]="image" alt="Client Logo" class="marquee-item" />
+      </ng-container>
+    </div>
+    
+    <!-- Duplicate copy for seamless looping -->
+    <div class="marquee-content" aria-hidden="true">
+      <ng-container *ngFor="let image of images">
+        <img [src]="image" alt="Client Logo" class="marquee-item" />
+      </ng-container>
+    </div>
+  </div>
+</div>

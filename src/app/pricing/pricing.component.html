@@ -1,0 +1,208 @@
+<app-navbar></app-navbar>
+
+<section class="mt-32 responsive-margin min-h-screen bg-gray-100 px-4 sm:px-6 py-8 sm:py-12 text-[#002999]">
+  <div class="max-w-7xl mx-auto text-center space-y-4 sm:space-y-6">
+    <p class="text-center text-[#f48021] font-bold underline underline-offset-3 text-base sm:text-lg">
+      <a href="tell:+966553378286">Contact Sales: +966 55 337 8286</a>
+    </p>
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-black">
+      Tailor your plan to perfectly suit <br class="hidden sm:block"> your business.
+    </h1>
+    <p class="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-2xl font-semibold my-6 sm:my-12 mx-auto">
+      Our transparent pricing is built to ensure a healthy ROI and perfectly match your financial and operational frameworks.
+    </p>
+  </div>
+
+  <div class="flex justify-center gap-2 sm:gap-4 flex-wrap text-center mt-6 sm:mt-10 text-base sm:text-lg md:text-xl font-bold text-gray-700">
+    <span class="text-[#002999]"> <span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Installation Support</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Flexible Payment Options</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Offline Mode</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Easy & Quick Setup</span>
+  </div>
+
+  <!-- Plan Toggle Switch -->
+  <div class="flex justify-center items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
+    <span class="text-base sm:text-lg font-semibold text-gray-700">Monthly</span>
+    <label class="relative inline-flex items-center cursor-pointer">
+      <input type="checkbox" [(ngModel)]="isYearly" class="sr-only peer">
+      <div class="w-10 sm:w-11 h-5 sm:h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 sm:after:h-5 after:w-4 sm:after:w-5 after:transition-all peer-checked:bg-[#002999]"></div>
+    </label>
+    <span class="text-base sm:text-lg font-semibold">
+      Yearly <span [ngClass]="{'text-[#f48021] font-bold underline': isYearly}" class="text-[#f48021] font-bold">(50% Discount)</span>
+    </span>
+  </div>
+
+  <!-- Desktop Pricing Table (hidden on mobile) -->
+  <div class="hidden md:block max-w-6xl mx-auto mt-8 sm:mt-12">
+    <!-- Pricing Plan Headers -->
+    <div class="grid grid-cols-4 mb-0">
+      <div class="col-span-1"></div>
+      <div *ngFor="let plan of pricingPlans" class="text-center relative">
+        <div class="{{plan.color}} text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold text-sm sm:text-md absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2">
+          {{plan.name}}
+        </div>
+        
+        <div class="bg-white py-4 sm:py-6 px-2 sm:px-4 border-l border-r border-gray-200 pt-8 sm:pt-10"
+             [class.rounded-tl-3xl]="plan.name === 'Starter'"
+             [class.rounded-tr-3xl]="plan.name === 'Advanced'">
+          <div class="flex justify-center">
+            <div *ngIf="isYearly" class="text-red-500 line-through text-sm sm:text-base mb-1 mr-2 font-bold">
+             <svg width="22" height="22" sm:width="26" sm:height="26" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+               <g style="font-size:10px;line-height:0;font-family:Andika;-inkscape-font-specification:Andika;opacity:1;vector-effect:none;fill:#ef4444;stroke-width:.15;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill">
+               <path d="m6.836 8.468 2.595-.55q-.045.454-.236.876l-2.589.55q.04-.46.23-.876Zm2.359-1.325-2.589.55v-1.65l-.808.173v.916q0 .123-.068.224l-.421.623q-.168.242-.45.298l-2.29.489q.045-.455.236-.876l2.184-.466v-1.04l-2.038.433q.045-.455.235-.87l1.803-.388V2.353q.342-.416.809-.68v3.718l.808-.174v-2.46q.343-.415.803-.68v2.971l2.022-.432q-.045.455-.236.876l-1.786.382v.82l2.022-.427q-.045.46-.236.876Z" style="font-size:11.5px;font-family:'Gentium Unicode';-inkscape-font-specification:'Gentium Unicode'" aria-label="⃁"/>
+               </g>
+             </svg>
+            </div>
+            <div *ngIf="isYearly" class="text-red-500 line-through text-sm sm:text-base mb-1">{{plan.originalPrice}}</div>
+          </div>
+          <div class="text-4xl sm:text-5xl md:text-6xl font-black text-[#002999] mb-1 flex items-center justify-center">
+            <div class="text-[14px] sm:text-[16px] md:text-[18px] mr-0 text-[#f48021]">
+              <svg width="36" height="36" sm:width="40" sm:height="40" md:width="46" md:height="46" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <g style="font-size:10px;line-height:0;font-family:Andika;-inkscape-font-specification:Andika;opacity:1;vector-effect:none;fill:oklch(70.5% 0.213 47.604);stroke-width:.15;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill">
+                <path d="m6.836 8.468 2.595-.55q-.045.454-.236.876l-2.589.55q.04-.46.23-.876Zm2.359-1.325-2.589.55v-1.65l-.808.173v.916q0 .123-.068.224l-.421.623q-.168.242-.45.298l-2.29.489q.045-.455.236-.876l2.184-.466v-1.04l-2.038.433q.045-.455.235-.87l1.803-.388V2.353q.342-.416.809-.68v3.718l.808-.174v-2.46q.343-.415.803-.68v2.971l2.022-.432q-.045.455-.236.876l-1.786.382v.82l2.022-.427q-.045.46-.236.876Z" style="font-size:11.5px;font-family:'Gentium Unicode';-inkscape-font-specification:'Gentium Unicode'" aria-label="⃁"/>
+                </g>
+              </svg>
+            </div>
+            {{getCurrentPrice(plan)}}
+            <span class="text-[14px] sm:text-[16px] md:text-[18px] text-gray-400 self-end">
+              /mo
+            </span>
+          </div>
+          <div *ngIf="!isYearly" class="text-gray-600 text-xs sm:text-sm">SAR per month</div>
+          <div *ngIf="isYearly" class="text-gray-600 text-xs sm:text-sm">Paid Annually <br>
+            Not Inc. VAT</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Table -->
+    <div class="bg-transparent rounded-b-lg">
+      <div *ngFor="let feature of features; let i = index" 
+           class="grid grid-cols-4 border-b border-gray-100 hover:bg-gray-50"
+           [class.border-b-0]="i === features.length - 1">
+        
+        <div class="col-span-1 flex items-center px-2 py-3">
+          <span class="mr-2 sm:mr-3 text-gray-400">●</span>
+          <span class="text-gray-700 font-medium text-sm sm:text-base">{{feature.name}}</span>
+        </div>
+        
+        <div class="text-center flex items-center justify-center bg-white" [class.rounded-bl-3xl]="i === features.length - 1">
+          <ng-container [ngSwitch]="feature.starter">
+            <span *ngSwitchCase="'check'" class="text-[#002999] text-lg sm:text-xl font-bold">✓</span>
+            <span *ngSwitchCase="'cross'" class="text-red-500 text-lg sm:text-xl font-bold">✖</span>
+            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">Optional Add On</span>
+          </ng-container>
+        </div>
+        
+        <div class="text-center flex items-center justify-center border-l border-r border-gray-200 bg-white">
+          <ng-container [ngSwitch]="feature.standard">
+            <span *ngSwitchCase="'check'" class="text-[#002999] text-lg sm:text-xl font-bold">✓</span>
+            <span *ngSwitchCase="'cross'" class="text-red-500 text-lg sm:text-xl font-bold">✖</span>
+            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">Optional Add On</span>
+          </ng-container>
+        </div>
+        
+        <div class="text-center flex items-center justify-center bg-white" [class.rounded-br-3xl]="i === features.length - 1">
+          <ng-container [ngSwitch]="feature.advanced">
+            <span *ngSwitchCase="'check'" class="text-[#002999] text-lg sm:text-xl font-bold">✓</span>
+            <span *ngSwitchCase="'cross'" class="text-red-500 text-lg sm:text-xl font-bold">✖</span>
+            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">Optional Add On</span>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Pricing Cards (visible only on mobile) -->
+  <div class="md:hidden mt-8">
+    <div class="grid grid-cols-1 gap-6">
+      <!-- Mobile Plan Cards -->
+      <div *ngFor="let plan of pricingPlans" class="bg-white rounded-3xl shadow-md overflow-hidden">
+        <!-- Plan Header -->
+        <div class="{{plan.color}} text-white py-2 px-4 text-center font-bold">
+          {{plan.name}}
+        </div>
+        
+        <!-- Price -->
+        <div class="p-4 text-center">
+          <div class="flex justify-center">
+            <div *ngIf="isYearly" class="text-red-500 line-through text-sm mb-1 mr-2 font-bold">
+              <svg width="20" height="20" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <g style="font-size:10px;line-height:0;font-family:Andika;-inkscape-font-specification:Andika;opacity:1;vector-effect:none;fill:#ef4444;stroke-width:.15;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill">
+                <path d="m6.836 8.468 2.595-.55q-.045.454-.236.876l-2.589.55q.04-.46.23-.876Zm2.359-1.325-2.589.55v-1.65l-.808.173v.916q0 .123-.068.224l-.421.623q-.168.242-.45.298l-2.29.489q.045-.455.236-.876l2.184-.466v-1.04l-2.038.433q.045-.455.235-.87l1.803-.388V2.353q.342-.416.809-.68v3.718l.808-.174v-2.46q.343-.415.803-.68v2.971l2.022-.432q-.045.455-.236.876l-1.786.382v.82l2.022-.427q-.045.46-.236.876Z" style="font-size:11.5px;font-family:'Gentium Unicode';-inkscape-font-specification:'Gentium Unicode'" aria-label="⃁"/>
+                </g>
+              </svg>
+            </div>
+            <div *ngIf="isYearly" class="text-red-500 line-through text-sm mb-1">{{plan.originalPrice}}</div>
+          </div>
+          <div class="text-4xl font-black text-[#002999] mb-1 flex items-center justify-center">
+            <div class="text-[14px] mr-0 text-[#f48021]">
+              <svg width="32" height="32" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                <g style="font-size:10px;line-height:0;font-family:Andika;-inkscape-font-specification:Andika;opacity:1;vector-effect:none;fill:oklch(70.5% 0.213 47.604);stroke-width:.15;stroke-linecap:square;stroke-linejoin:bevel;paint-order:markers stroke fill">
+                <path d="m6.836 8.468 2.595-.55q-.045.454-.236.876l-2.589.55q.04-.46.23-.876Zm2.359-1.325-2.589.55v-1.65l-.808.173v.916q0 .123-.068.224l-.421.623q-.168.242-.45.298l-2.29.489q.045-.455.236-.876l2.184-.466v-1.04l-2.038.433q.045-.455.235-.87l1.803-.388V2.353q.342-.416.809-.68v3.718l.808-.174v-2.46q.343-.415.803-.68v2.971l2.022-.432q-.045.455-.236.876l-1.786.382v.82l2.022-.427q-.045.46-.236.876Z" style="font-size:11.5px;font-family:'Gentium Unicode';-inkscape-font-specification:'Gentium Unicode'" aria-label="⃁"/>
+                </g>
+              </svg>
+            </div>
+            {{getCurrentPrice(plan)}}
+            <span class="text-[14px] text-gray-400 self-end">
+              /mo
+            </span>
+          </div>
+          <div *ngIf="!isYearly" class="text-gray-600 text-xs">SAR per month</div>
+          <div *ngIf="isYearly" class="text-gray-600 text-xs">Paid Annually <br>
+            Not Inc. VAT</div>
+        </div>
+        
+        <!-- Features Dropdown -->
+        <div class="border-t border-gray-200">
+          <button 
+            (click)="toggleFeatures(plan.name)" 
+            class="w-full flex justify-between items-center p-4 text-left font-medium focus:outline-none"
+          >
+            <span>Features</span>
+            <svg 
+              [class.transform]="openFeatures === plan.name" 
+              [class.rotate-180]="openFeatures === plan.name" 
+              class="w-5 h-5 transition-transform duration-200" 
+              fill="none" 
+              viewBox="0 0 24 24" 
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          
+          <!-- Collapsible Features List -->
+          <div 
+            *ngIf="openFeatures === plan.name" 
+            class="px-4 pb-4 space-y-2"
+          >
+            <div *ngFor="let feature of features" class="flex items-start">
+              <ng-container [ngSwitch]="getPlanFeatureValue(plan.name, feature)">
+                <span *ngSwitchCase="'check'" class="text-[#002999] text-lg font-bold mr-2 mt-0.5">✓</span>
+                <span *ngSwitchCase="'cross'" class="text-red-500 text-lg font-bold mr-2 mt-0.5">✖</span>
+                <span *ngSwitchCase="'addon'" class="text-amber-400 font-bold text-xs mr-2 mt-1.5 flex items-center">
+                  <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+              </ng-container>
+              <span class="text-gray-700 text-sm">{{feature.name}}</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- CTA Button -->
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-auto md:min-h-[100vh]  flex items-center ">
+  <app-contact-form></app-contact-form>
+</section>
+<section class=" md:mt-24">
+  <app-footer></app-footer>
+</section>
+

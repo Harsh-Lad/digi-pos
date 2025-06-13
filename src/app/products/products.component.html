@@ -20,9 +20,9 @@
       </div>
 
       <!-- CTA Button -->
-      <button *ngIf="selectedProduct.ctaText" class="bg-[#f48021] hover:bg-[#f48021] text-[#002999] font-black px-6 py-3 rounded-full shadow-md transition duration-300">
+      <a href="/demo" *ngIf="selectedProduct.ctaText" class="bg-[#f48021] hover:bg-[#f48021] text-[#002999] font-black px-6 py-3 rounded-full shadow-md transition duration-300">
         {{ selectedProduct.ctaText }}
-      </button>
+      </a>
     </div>
 
     <!-- Right Column: Hero Images -->

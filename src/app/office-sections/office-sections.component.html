@@ -42,12 +42,9 @@
         [src]="currentProduct.image"
         [alt]="currentProduct.name"
         class="w-[110%] md:w-[37.4rem] h-[33svh] sm:h-[44svh] rounded-lg object-contain"
-        [ngClass]="{ 
-          '-ml-10': currentProduct.name !== 'Online Ordering' && currentProduct.name !== 'KIOSK - Self Ordering', 
-          'ml-0': currentProduct.name === 'Online Ordering' || currentProduct.name === 'KIOSK - Self Ordering' 
-        }"
+       
       />
-      <div class="hidden sm:block bg-[#002999] h-[70svh] w-[85%] absolute left-1/2 -translate-1/2 z-[-1] rounded-full top-2/3"></div>
+      <div class="hidden sm:block bg-[#002999] h-[65svh] w-[85%] absolute left-1/2 -translate-1/2 z-[-1] rounded-full top-2/3"></div>
       <div class="absolute -bottom-15 md:-bottom-30 left-1/2 -translate-x-1/2 flex space-x-4">
         <button (click)="prev()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-[#f48021] text-xl sm:text-3xl text-white rounded-full">‹</button>
         <button (click)="next()" class="p-2 w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center pb-2 sm:pb-3 bg-[#f48021] text-xl sm:text-3xl text-white rounded-full">›</button>

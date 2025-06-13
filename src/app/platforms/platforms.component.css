@@ -1,0 +1,15 @@
+@media (resolution: 120dpi) {
+  .platform-container.md\:px-36 {
+    width: 85% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (resolution: 144dpi) {
+  .platform-container.md\:px-36 {
+    width: 85% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

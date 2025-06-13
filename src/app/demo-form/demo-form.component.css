@@ -1,0 +1,126 @@
+.ng-touched.ng-invalid {
+  border-color: #ef4444;
+}
+
+input[type="checkbox"].ng-touched.ng-invalid {
+  outline: 1px solid #ef4444;
+  outline-offset: 2px;
+}
+
+.bg-image {
+  background-image: url("/landing-page/Form.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Scale-specific adjustments */
+@media screen and (min-resolution: 1.25dppx) {
+  section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  form {
+    font-size: 0.9375rem;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 0.9375rem;
+  }
+
+  label {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  form {
+    font-size: 1rem;
+  }
+
+  input,
+  select,
+  button {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+    font-size: 1rem;
+  }
+
+  label {
+    font-size: 0.9375rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .space-y-4 > * + * {
+    margin-top: 1.25rem;
+  }
+}
+
+/* Fix form positioning at different scales */
+@media screen and (min-width: 1024px) and (min-resolution: 1.25dppx) {
+  .lg\:absolute {
+    width: 50%;
+    max-width: 36rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-resolution: 1.5dppx) {
+  .lg\:absolute {
+    width: 50%;
+    max-width: 40rem;
+    right: 2rem !important;
+  }
+}
+
+/* Ensure proper spacing at different scales */
+@media (max-width: 640px) and (min-resolution: 1.25dppx) {
+  section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  form {
+    padding: 1.25rem;
+  }
+}
+
+/* Improve form readability on small screens with high zoom */
+@media (max-width: 640px) and (min-resolution: 1.5dppx) {
+  .space-y-3 > * + * {
+    margin-top: 1rem;
+  }
+
+  input,
+  select {
+    height: 2.75rem;
+  }
+
+  button[type="submit"] {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+
+/* Fix checkbox alignment */
+input[type="checkbox"] {
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+@media screen and (min-resolution: 1.5dppx) {
+  input[type="checkbox"] {
+    min-width: 1.25rem;
+    min-height: 1.25rem;
+  }
+}

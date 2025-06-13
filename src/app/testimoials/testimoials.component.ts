@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-testimonials',
   templateUrl: './testimoials.component.html',
+  styleUrls: ['./testimoials.component.css'],
   imports: [NgFor],
 })
 export class TestimonialsComponent {
@@ -27,22 +28,40 @@ export class TestimonialsComponent {
       company: 'MD - Brasa de Brazil',
     },
     {
-      text: 'The customer-facing features, such as the ability to take orders and process payments at the table, have enhanced the dining experience for our guests',
+      text: 'The customer-facing features, such as the ability to take orders and process payments at the table, have enhanced the dining experience for our guests.',
       name: 'Shamsher Khan',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1aVFZUJN1_3pkOYPBkNQSwHSGzjnAdqA9w&s',
       company: "BM - Taya Restaurant",
     },
     {
-      text: "We've used other POS systems, but DigiPOS stands out. The table and kitchen management features have streamlined our service, and support is always responsive.",
-      name: 'Carlos R',
-      logo: 'https://images.deliveryhero.io/image/hungerstation/restaurant/logo/dec3b5ed065dcf2c8f1c397ffc4717f8.jpg',
-      company: 'Juice Eleven',
+      text: "I wanted to express my sincere gratitude for your continued partnership and support. We've achieved some fantastic results together, and I truly appreciate your collaboration and commitment. Specifically, your fast response for our requirement has been invaluable to our success.",
+      name: 'Shameer Palangat',
+      logo: 'https://images.deliveryhero.io/image/hungerstation/restaurant/logo/bf92e8810bb54de2c0ce3454a6ab9153.jpg',
+      company: 'IT - Shwaiat Al Khalij',
     },
     {
-      text: 'DigiPOS has made our daily operations smooth and stress-free. Orders go straight to the kitchen, billing is quick, and the interface is easy for staff to learn.',
-      name: 'Anita M.',
+      text: "I would like to inform you that we are impressed by your DigiPOS, in terms of performance.We highly recommend to our partners and friends as it's highly cost effective and easy to use. Thanks for your support.",
+      name: 'Enayath',
+      logo: 'https://scoopempire.com/wp-content/uploads/2018/06/WhatsApp-Image-2018-06-13-at-3.04.46-PM.jpeg',
+      company: 'IT Manager - SADF',
+    },
+    {
+      text: 'We have found the DigiPOS system to be efficient, effective, and user-friendly. It is easy for staff to access and operate, which helps streamline daily tasks. The system provides clear and comprehensive reports that support both operational and financial decision-making. In terms of customer support, the Digi POS team is highly responsive and helpful. They are quick to resolve any issues that arise, ensuring minimal disruption to our business. Overall, we highly recommend Digi POS for small to medium-sized restaurants. The system offers great value for its competitive cost.',
+      name: 'Mr. Elias',
       logo: 'https://images.deliveryhero.io/image/hungerstation/restaurant/logo/3651fb804c3932f1f75fa601dec9833c.jpeg',
-      company: 'OWNER - Nice Bun',
+      company: 'Operations Manager - Nice Bun',
+    },
+    {
+      text: "I started using the Digi POS system about a month ago, and honestly, it's excellent. It's cloud-based, seamless, and easy to use, especially when adding items and distributing them to printers. Performance is very fast, thank God. The reports are clear and detailed, and the support team was very responsive to my needs. When I requested a custom report, they prepared it in less than a week. Special thanks to Abu Osama and Imran for their wonderful efforts",
+      name: 'Mubark',
+      logo: '/clients/Avindar Logo.jpg',
+      company: 'IT Manager - Avindar ',
+    },
+    {
+      text: 'Peace be upon you. We are a grape and fig restaurant in the Al Hokair Group. We would like to inform you that we use Digipos for accounting in our restaurants. We have three accounts with them, and it is one of the best accounts we have used in terms of ease of operation, good reports that assist accounting, and the ease of adding items. In addition to all of this, I prefer it over other accounting programs. We thank and appreciate your cooperation.',
+      name: 'Bakhos Al Daouk',
+      logo: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR74gYoJ3eLH-f1gtp4U-rphHYwtCA65TePsBm7-tNJ2FZWW4BP',
+      company: 'Operation Manager - Baan Holding',
     },
   ];
 }

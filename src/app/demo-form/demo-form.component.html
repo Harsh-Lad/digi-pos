@@ -1,0 +1,171 @@
+<section class=" w-screen bg-no-repeat bg-cover bg-center bg-image
+            py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24
+             md:h-[65svh]
+            flex items-center"> <!-- Added flex and items-center -->
+
+  <div class="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center 
+              gap-6 sm:gap-8 md:gap-10 
+              px-4 sm:px-6 md:px-8 
+              h-full">
+    <!-- Left Text -->
+              <div class="lg:w-1/2 text-white relative flex items-center h-full demo-form-left">
+                <div class="my-auto">
+                  <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6">
+                   Discover DigiPOS <br class="hidden sm:block" />
+                   <span class="text-[#f48021]">– Free Demo</span>
+                  </h2>
+                  <div class="space-y-4 text-sm sm:text-base max-w-md">
+                    <div class="flex items-start space-x-2">
+                      <span class="text-[#f48021] flex-shrink-0 font-bold text-2xl">✓</span>
+                      <span>Complete the form, and our expert will contact you within 24 hours to arrange your free demo.</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                      <span class="text-[#f48021] flex-shrink-0 font-bold text-2xl">✓</span>
+                      <span>Your session will feature a tailored walkthrough of DigiPOS, designed around your restaurant's specific requirements.</span>
+                    </div>
+                    <div class="flex items-start space-x-2">
+                      <span class="text-[#f48021] flex-shrink-0 font-bold text-2xl">✓</span>
+                      <span>After the demo, we'll provide a customized quote based on the hardware and software setup that best suits your business.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Form -->
+              <div class="lg:w-1/2 bg-white border-2 border-gray-200 text-gray-800 
+                          rounded-xl sm:rounded-2xl 
+                          p-2 sm:p-6 md:p-8 
+                          shadow-xl w-full 
+                          max-w-full sm:max-w-lg md:max-w-xl">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-3 sm:space-y-4">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+                    <div>
+                      <label class="block text-xs sm:text-sm font-medium mb-1">First name*</label>
+                      <input type="text" formControlName="firstName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
+                              focus:outline-none focus:ring focus:ring-orange-300"
+                        [ngClass]="{'border-red-500': submitted && f['firstName'].errors}" />
+                      <div *ngIf="submitted && f['firstName'].errors" class="text-red-500 text-xs mt-1">
+                        First name is required
+                      </div>
+                    </div>
+                    <div>
+                      <label class="block text-xs sm:text-sm font-medium mb-1">Last name*</label>
+                      <input type="text" formControlName="lastName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
+                              focus:outline-none focus:ring focus:ring-orange-300"
+                        [ngClass]="{'border-red-500': submitted && f['lastName'].errors}" />
+                      <div *ngIf="submitted && f['lastName'].errors" class="text-red-500 text-xs mt-1">
+                        Last name is required
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">Email*</label>
+                    <input type="email" formControlName="email" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
+                            focus:outline-none focus:ring focus:ring-orange-300"
+                      [ngClass]="{'border-red-500': submitted && f['email'].errors}" />
+                    <div *ngIf="submitted && f['email'].errors" class="text-red-500 text-xs mt-1">
+                      <span *ngIf="f['email'].errors['required']">Email is required</span>
+                      <span *ngIf="f['email'].errors['email']">Please enter a valid email</span>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">Phone number*</label>
+                    <div class="flex flex-col gap-2">
+                      <div class="relative w-full h-full">
+                        <div class="flex gap-2 h-full">
+                          <div class="relative w-1/3 h-full">
+                            <select formControlName="phoneCountry" class="border rounded-md px-1 sm:px-2 py-1.5 sm:py-2.5 bg-white w-full h-full 
+                                          text-xs sm:text-sm
+                                          focus:outline-none focus:ring focus:ring-orange-300 appearance-none">
+                              <option *ngFor="let country of filteredCountries()" [value]="country.code">
+                                {{ country.name }} (+{{ country.code }})
+                              </option>
+                            </select>
+                            <div class="absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 sm:h-4 sm:w-4 text-gray-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </div>
+                          </div>
+                          <input type="text" formControlName="phoneNumber" class="w-2/3 border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
+                                  focus:outline-none focus:ring focus:ring-orange-300"
+                            [ngClass]="{'border-red-500': submitted && f['phoneNumber'].errors}" />
+                        </div>
+                      </div>
+                    </div>
+                    <div *ngIf="submitted && f['phoneNumber'].errors" class="text-red-500 text-xs mt-1">
+                      Phone number is required
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">Business name</label>
+                    <input type="text" formControlName="businessName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
+                            focus:outline-none focus:ring focus:ring-orange-300" />
+                  </div>
+
+                  <div>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">Number of branches*</label>
+                    <select formControlName="branches" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
+                                  focus:outline-none focus:ring focus:ring-orange-300"
+                      [ngClass]="{'border-red-500': submitted && f['branches'].errors}">
+                      <option value="">Please Select</option>
+                      <option value="1-5">1-5</option>
+                      <option value="6-10">6-10</option>
+                      <option value="11+">11+</option>
+                    </select>
+                    <div *ngIf="submitted && f['branches'].errors" class="text-red-500 text-xs mt-1">
+                      Please select number of branches
+                    </div>
+                  </div>
+
+                  <div>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">Country Name*</label>
+                    <select formControlName="country" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
+                                  focus:outline-none focus:ring focus:ring-orange-300"
+                      [ngClass]="{'border-red-500': submitted && f['country'].errors}">
+                      <option value="">Please Select</option>
+                      <option *ngFor="let country of countries" [value]="country.name">
+                        {{ country.name }}
+                      </option>
+                    </select>
+                    <div *ngIf="submitted && f['country'].errors" class="text-red-500 text-xs mt-1">
+                      Please select a country
+                    </div>
+                  </div>
+
+                  <div class="space-y-2 text-xs sm:text-sm">
+                    <label class="flex gap-2 items-start">
+                      <input type="checkbox" formControlName="terms" class="mt-0.5"
+                        [ngClass]="{'outline-red-500': submitted && f['terms'].errors}" />
+                      <span>I confirm that I have read, understood and agree to the
+                        <a href="#" class="text-[#f48021] underline">Terms and Conditions</a>*</span>
+                    </label>
+                    <div *ngIf="submitted && f['terms'].errors" class="text-red-500 text-xs mt-1">
+                      You must accept the terms and conditions
+                    </div>
+
+                    <label class="flex gap-2 items-start">
+                      <input type="checkbox" formControlName="privacy" class="mt-0.5"
+                        [ngClass]="{'outline-red-500': submitted && f['privacy'].errors}" />
+                      <span>By using this form you agree with our
+                        <a href="#" class="text-[#f48021] underline">Privacy Policy</a>*</span>
+                    </label>
+                    <div *ngIf="submitted && f['privacy'].errors" class="text-red-500 text-xs mt-1">
+                      You must accept the privacy policy
+                    </div>
+                  </div>
+
+                  <button type="submit" class="w-full bg-black hover:bg-gray-900 text-white font-semibold 
+                          py-2 sm:py-2.5 md:py-3 
+                          text-sm sm:text-base
+                          rounded-md mt-3 sm:mt-4 transition duration-300 shadow-md">
+                    Submit
+                  </button>
+                </form>
+              </div>
+  </div>
+</section>

@@ -47,19 +47,6 @@
   }
 
   section {
-    min-height: 130vh !important;
-  }
-}
-
-@media screen and (min-resolution: 1.5dppx) {
-  section {
-    min-height: 140vh !important;
-  }
-}
-
-/* Ensure proper spacing at different scales */
-@media (max-width: 640px) and (min-resolution: 1.25dppx) {
-  section {
-    min-height: 150vh !important;
+    min-height: 85vh !important;
   }
 }

@@ -30,6 +30,10 @@ svg {
 /* Transition for dropdown menus */
 .dropdown-menu {
   transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+  min-width: 300px;
+  max-width: none; /* Remove maximum width to allow for multi-column layout */
+  width: max-content;
+  transform-origin: top center;
 }
 
 /* Create invisible bridge element to maintain hover state */
@@ -41,6 +45,39 @@ svg {
   width: 100%;
   height: 0.625rem;
   background-color: transparent; /* Invisible bridge */
+}
+
+/* Fix dropdown positioning to be centered under nav item by default */
+.menu-container .dropdown-menu {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Adjust column widths for consistent sizing */
+.dropdown-menu .grid-cols-1 > div {
+  min-width: 240px;
+}
+
+.dropdown-menu .grid-cols-2 > div {
+  min-width: 220px;
+}
+
+.dropdown-menu .grid-cols-3 > div,
+.dropdown-menu .grid-cols-4 > div {
+  min-width: 200px;
+}
+
+/* Prevent dropdowns from going off-screen on the right */
+.menu-container:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+/* Prevent dropdowns from going off-screen on the left */
+.menu-container:first-child .dropdown-menu {
+  left: 0;
+  transform: none;
 }
 
 /* Text truncation */
@@ -129,6 +166,12 @@ svg {
     width: 100vw;
     left: 0;
     max-height: 60vh !important;
+    transform: none !important;
+  }
+  
+  /* Force single column on mobile */
+  .dropdown-menu .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
   }
 }
 

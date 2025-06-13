@@ -177,17 +177,20 @@
             *ngIf="openFeatures === plan.name" 
             class="px-4 pb-4 space-y-2"
           >
-            <div *ngFor="let feature of features" class="flex items-start">
+            <div *ngFor="let feature of features" class="flex items-end">
               <ng-container [ngSwitch]="getPlanFeatureValue(plan.name, feature)">
                 <span *ngSwitchCase="'check'" class="text-[#002999] text-lg font-bold mr-2 mt-0.5">✓</span>
                 <span *ngSwitchCase="'cross'" class="text-red-500 text-lg font-bold mr-2 mt-0.5">✖</span>
                 <span *ngSwitchCase="'addon'" class="text-amber-400 font-bold text-xs mr-2 mt-1.5 flex items-center">
-                  <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
                   </svg>
                 </span>
+                <span class="text-gray-700 text-sm">{{feature.name}}</span>
+                <!-- <span *ngSwitchCase="'addon'" class="text-amber-400 font-bold text-xs ml-2 mt-1.5 flex items-center">
+                  Add on
+                </span> -->
               </ng-container>
-              <span class="text-gray-700 text-sm">{{feature.name}}</span>
             </div>
           </div>
         </div>

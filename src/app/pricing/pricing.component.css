@@ -90,17 +90,17 @@
 }
 
 /* Fix table layout at different scales */
-@media screen and (min-width: 768px) and (min-resolution: 1.25dppx) {
+/* @media screen and (min-width: 768px) and (min-resolution: 1.25dppx) {
   .grid-cols-4 > div {
     padding: 0.75rem 0.5rem;
   }
-}
+} */
 
-@media screen and (min-width: 768px) and (min-resolution: 1.5dppx) {
+/* @media screen and (min-width: 768px) and (min-resolution: 1.5dppx) {
   .grid-cols-4 > div {
     padding: 1rem 0.75rem;
   }
-}
+} */
 
 /* Mobile optimizations */
 @media (max-width: 767px) {

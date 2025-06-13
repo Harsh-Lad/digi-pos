@@ -1,6 +1,7 @@
 @media (resolution: 120dpi) {
   .py-16.px-4.md\:px-56 {
-    padding-left: 4.5rem !important; /* px-18 equivalent */
+    padding-left: 4.5rem !important;
+    /* px-18 equivalent */
     padding-right: 4.5rem !important;
     width: 85% !important;
     margin-left: auto !important;
@@ -10,7 +11,8 @@
 
 @media (resolution: 144dpi) {
   .py-16.px-4.md\:px-56 {
-    padding-left: 4.5rem !important; /* px-18 equivalent */
+    padding-left: 4.5rem !important;
+    /* px-18 equivalent */
     padding-right: 4.5rem !important;
     width: 85% !important;
     margin-left: auto !important;

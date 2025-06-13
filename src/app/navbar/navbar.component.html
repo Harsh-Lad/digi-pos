@@ -1,5 +1,6 @@
 <!-- remove py-4 on scales of 150% -->
-<nav #navbarElement class="bg-white border-b border-gray-100 fixed top-0 w-full left-0 py-4 z-50 shadow-sm navbar-responsive-padding">
+<nav #navbarElement
+  class="bg-white border-b border-gray-100 fixed top-0 w-full left-0 py-4 z-50 shadow-sm navbar-responsive-padding">
   <div class="container mx-auto px-2 sm:px-4 lg:px-6 xl:px-8">
     <div class="flex justify-between items-center h-16 sm:h-20 lg:h-24 height-responsive">
       <!-- Left side - Logo and Menu -->
@@ -13,38 +14,35 @@
         <div class="hidden lg:flex items-center space-x-1 xl:space-x-2 2xl:space-x-4">
           <!-- Menu Items -->
           <div class="relative menu-container" *ngFor="let menuKey of menuKeys">
-            <button 
+            <button
               class="flex items-center px-2 py-1.5 xl:px-3 xl:py-2 text-sm xl:text-base font-medium transition-colors rounded-md hover:bg-gray-50"
-              [class.text-indigo-700]="activeMenu === menuKey" 
-              [class.bg-indigo-50]="activeMenu === menuKey"
-              [class.text-gray-700]="activeMenu !== menuKey"
-              [class.hover:text-indigo-700]="activeMenu !== menuKey"
-              (mouseenter)="openMenu(menuKey)"
-              (mouseleave)="startCloseMenu()">
+              [class.text-indigo-700]="activeMenu === menuKey" [class.bg-indigo-50]="activeMenu === menuKey"
+              [class.text-gray-700]="activeMenu !== menuKey" [class.hover:text-indigo-700]="activeMenu !== menuKey"
+              (mouseenter)="openMenu(menuKey)" (mouseleave)="startCloseMenu()">
               <span class="truncate">{{ megaMenus[menuKey].title }}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="ml-1 h-3 w-3 xl:h-4 xl:w-4 transition-transform"
-                [class.rotate-180]="activeMenu === menuKey">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="ml-1 h-3 w-3 xl:h-4 xl:w-4 transition-transform" [class.rotate-180]="activeMenu === menuKey">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
             </button>
-            
+
             <!-- Individual Dropdown Menu -->
             <div *ngIf="activeMenu === menuKey"
               class="absolute mt-1 bg-white border border-gray-200 shadow-xl z-50 dropdown-menu rounded-lg overflow-hidden overflow-y-auto"
-              [ngStyle]="{'max-height': 'calc(100vh - 100px)'}"
-              (mouseenter)="openMenu(menuKey)"
+              [ngStyle]="{'max-height': 'calc(100vh - 100px)'}" (mouseenter)="openMenu(menuKey)"
               (mouseleave)="startCloseMenu()">
               <div class="px-3 py-4">
                 <!-- Special layout for Products menu -->
                 <div *ngIf="activeMenu === 'products'" class="grid grid-cols-2 gap-6">
                   <!-- Column 1: Front Office -->
                   <div class="px-2">
-                    <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{ megaMenus[activeMenu].sections[0].title }}</h3>
+                    <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{
+                      megaMenus[activeMenu].sections[0].title }}</h3>
                     <ul class="space-y-2 mt-3">
                       <li *ngFor="let item of megaMenus[activeMenu].sections[0].items">
-                        <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors" [routerLink]="item.link">
+                        <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                          [routerLink]="item.link">
                           <div class="flex-shrink-0 mt-0.5">
                             <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
                               {{ item.icon }}
@@ -52,12 +50,13 @@
                           </div>
                           <div class="ml-3 min-w-0 flex-1">
                             <div class="flex items-center">
-                              <p class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
+                              <p
+                                class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
                                 {{ item.name }}
                               </p>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                             </div>
@@ -67,15 +66,17 @@
                       </li>
                     </ul>
                   </div>
-                  
+
                   <!-- Column 2: Back Office and Retail (stacked) -->
                   <div class="px-2">
                     <!-- Back Office Section -->
                     <div class="mb-6">
-                      <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{ megaMenus[activeMenu].sections[1].title }}</h3>
+                      <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{
+                        megaMenus[activeMenu].sections[1].title }}</h3>
                       <ul class="space-y-2 mt-3">
                         <li *ngFor="let item of megaMenus[activeMenu].sections[1].items">
-                          <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors" [routerLink]="item.link">
+                          <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                            [routerLink]="item.link">
                             <div class="flex-shrink-0 mt-0.5">
                               <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
                                 {{ item.icon }}
@@ -83,12 +84,13 @@
                             </div>
                             <div class="ml-3 min-w-0 flex-1">
                               <div class="flex items-center">
-                                <p class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
+                                <p
+                                  class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
                                   {{ item.name }}
                                 </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
                                   <path d="m6 9 6 6 6-6"></path>
                                 </svg>
                               </div>
@@ -98,13 +100,15 @@
                         </li>
                       </ul>
                     </div>
-                    
+
                     <!-- Retail Section -->
                     <div>
-                      <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{ megaMenus[activeMenu].sections[2].title }}</h3>
+                      <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{
+                        megaMenus[activeMenu].sections[2].title }}</h3>
                       <ul class="space-y-2 mt-3">
                         <li *ngFor="let item of megaMenus[activeMenu].sections[2].items">
-                          <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors" [routerLink]="item.link">
+                          <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                            [routerLink]="item.link">
                             <div class="flex-shrink-0 mt-0.5">
                               <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
                                 {{ item.icon }}
@@ -112,12 +116,13 @@
                             </div>
                             <div class="ml-3 min-w-0 flex-1">
                               <div class="flex items-center">
-                                <p class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
+                                <p
+                                  class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
                                   {{ item.name }}
                                 </p>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                  stroke-linejoin="round" class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                  class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
                                   <path d="m6 9 6 6 6-6"></path>
                                 </svg>
                               </div>
@@ -129,14 +134,16 @@
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Default layout for other menus -->
-                <div *ngIf="activeMenu !== 'products'" class="grid gap-6" [ngClass]="getGridClass(megaMenus[activeMenu].sections.length)">
+                <div *ngIf="activeMenu !== 'products'" class="grid gap-6"
+                  [ngClass]="getGridClass(megaMenus[activeMenu].sections.length)">
                   <div *ngFor="let section of megaMenus[activeMenu].sections" class="px-2">
                     <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{ section.title }}</h3>
                     <ul class="space-y-2 mt-3">
                       <li *ngFor="let item of section.items">
-                        <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors" [routerLink]="item.link">
+                        <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                          [routerLink]="item.link">
                           <div class="flex-shrink-0 mt-0.5">
                             <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
                               {{ item.icon }}
@@ -144,12 +151,13 @@
                           </div>
                           <div class="ml-3 min-w-0 flex-1">
                             <div class="flex items-center">
-                              <p class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
+                              <p
+                                class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
                                 {{ item.name }}
                               </p>
-                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="ml-1 h-3 w-3 text-gray-500 rotate-[-90deg] flex-shrink-0">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                             </div>
@@ -181,7 +189,8 @@
         </a>
 
         <!-- Language Selector -->
-        <a href="#" class="hidden sm:flex items-center text-xs lg:text-sm font-medium hover:text-indigo-700 transition-colors">
+        <a href="#"
+          class="hidden sm:flex items-center text-xs lg:text-sm font-medium hover:text-indigo-700 transition-colors">
           <span class="mr-1">العربية</span>
           <img src="https://flagcdn.com/w40/sa.png" alt="SA Flag" class="w-4 h-3 lg:w-5 lg:h-4">
         </a>
@@ -191,14 +200,14 @@
           class="lg:hidden flex items-center justify-center p-1.5 sm:p-2 rounded-md text-gray-700 hover:text-indigo-700 hover:bg-gray-50 focus:outline-none transition-colors"
           (click)="toggleMobileMenu()">
           <svg *ngIf="!mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="h-5 w-5 sm:h-6 sm:w-6">
             <line x1="3" y1="12" x2="21" y2="12"></line>
             <line x1="3" y1="6" x2="21" y2="6"></line>
             <line x1="3" y1="18" x2="21" y2="18"></line>
           </svg>
           <svg *ngIf="mobileMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="h-5 w-5 sm:h-6 sm:w-6">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -214,18 +223,13 @@
           <div *ngFor="let menuKey of menuKeys">
             <button
               class="w-full flex items-center justify-between px-4 py-2 text-sm font-medium transition-colors border-l-4"
-              [class.border-indigo-700]="activeMenu === menuKey" 
-              [class.border-transparent]="activeMenu !== menuKey"
-              [class.text-indigo-700]="activeMenu === menuKey" 
-              [class.bg-indigo-50]="activeMenu === menuKey"
-              [class.text-gray-700]="activeMenu !== menuKey"
-              [class.hover:text-indigo-700]="activeMenu !== menuKey"
-              [class.hover:bg-gray-50]="activeMenu !== menuKey"
-              (click)="toggleMenu(menuKey)">
+              [class.border-indigo-700]="activeMenu === menuKey" [class.border-transparent]="activeMenu !== menuKey"
+              [class.text-indigo-700]="activeMenu === menuKey" [class.bg-indigo-50]="activeMenu === menuKey"
+              [class.text-gray-700]="activeMenu !== menuKey" [class.hover:text-indigo-700]="activeMenu !== menuKey"
+              [class.hover:bg-gray-50]="activeMenu !== menuKey" (click)="toggleMenu(menuKey)">
               <span>{{ megaMenus[menuKey].title }}</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="h-4 w-4 transition-transform"
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform"
                 [class.rotate-180]="activeMenu === menuKey">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
@@ -238,14 +242,16 @@
                   <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">{{ section.title }}</h3>
                   <ul class="space-y-2">
                     <li *ngFor="let item of section.items">
-                      <a class="group flex items-start py-1.5 rounded-md px-2 hover:bg-white transition-colors" [routerLink]="item.link">
+                      <a class="group flex items-start py-1.5 rounded-md px-2 hover:bg-white transition-colors"
+                        [routerLink]="item.link">
                         <div class="flex-shrink-0 w-6">
                           <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
                             {{ item.icon }}
                           </span>
                         </div>
                         <div class="min-w-0 flex-1 ml-2">
-                          <p class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
+                          <p
+                            class="text-sm font-medium text-gray-900 group-hover:text-indigo-700 transition-colors truncate">
                             {{ item.name }}
                           </p>
                           <p class="text-xs text-gray-500 mt-0.5 line-clamp-2">{{ item.description }}</p>

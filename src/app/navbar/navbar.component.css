@@ -31,39 +31,38 @@ svg {
 .dropdown-menu {
   transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
   min-width: 300px;
-  max-width: none; /* Remove maximum width to allow for multi-column layout */
+  max-width: none;
+  /* Remove maximum width to allow for multi-column layout */
   width: max-content;
-  transform-origin: top center;
 }
 
 /* Create invisible bridge element to maintain hover state */
 .dropdown-menu::before {
   content: '';
   position: absolute;
-  top: -0.625rem; /* 10px in rem for better scaling */
+  top: -0.625rem;
+  /* 10px in rem for better scaling */
   left: 0;
   width: 100%;
   height: 0.625rem;
-  background-color: transparent; /* Invisible bridge */
+  background-color: transparent;
+  /* Invisible bridge */
 }
 
 /* Fix dropdown positioning to be centered under nav item by default */
-.menu-container .dropdown-menu {
-  left: 50%;
-  transform: translateX(-50%);
-}
+.menu-container .dropdown-menu {}
 
 /* Adjust column widths for consistent sizing */
-.dropdown-menu .grid-cols-1 > div {
+.dropdown-menu .grid-cols-1>div {
   min-width: 240px;
 }
 
-.dropdown-menu .grid-cols-2 > div {
+.dropdown-menu .grid-cols-2>div {
   min-width: 220px;
 }
 
-.dropdown-menu .grid-cols-3 > div,
-.dropdown-menu .grid-cols-4 > div {
+.dropdown-menu .grid-cols-3>div,
+.dropdown-menu .grid-cols-4>div {
   min-width: 200px;
 }
 
@@ -144,10 +143,12 @@ svg {
 
 /* Prevent text from becoming too small at larger zoom levels */
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
-  button, a {
+
+  button,
+  a {
     font-size: max(0.75rem, 12px);
   }
-  
+
   .text-xs {
     font-size: max(0.65rem, 10px);
   }
@@ -168,7 +169,7 @@ svg {
     max-height: 60vh !important;
     transform: none !important;
   }
-  
+
   /* Force single column on mobile */
   .dropdown-menu .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
@@ -178,7 +179,7 @@ svg {
 /* Remove vertical padding at higher zoom levels */
 @media (min-resolution: 120dpi) {
 
-  
+
   .dropdown-menu {
     max-height: 80vh !important;
   }
@@ -190,13 +191,13 @@ svg {
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
   }
-  
+
   /* Reduce heights at higher zoom levels */
   .height-responsive {
     height: auto !important;
     min-height: 0 !important;
   }
-  
+
   /* Reduce logo size further at higher zoom levels */
   .logo-responsive {
     height: auto !important;

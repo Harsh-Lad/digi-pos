@@ -1,11 +1,11 @@
-import { NgFor } from '@angular/common';
+import { NgClass, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-testimonials',
   templateUrl: './testimoials.component.html',
   styleUrls: ['./testimoials.component.css'],
-  imports: [NgFor],
+  imports: [NgFor, NgClass],
 })
 export class TestimonialsComponent {
   testimonials = [
@@ -22,7 +22,7 @@ export class TestimonialsComponent {
       company: 'OM - New York Coffee',
     },
     {
-      text: "The reporting capabilities are excellent. We’re able to track sales trends, identify peak times, and analyze our menu performance with ease.",
+      text: 'The reporting capabilities are excellent. We’re able to track sales trends, identify peak times, and analyze our menu performance with ease.',
       name: 'Islamuddin Shaikh',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqV1rvTlVafApBTDbi1d_7COTa5DWBPjUtjw&s',
       company: 'MD - Brasa de Brazil',
@@ -31,7 +31,7 @@ export class TestimonialsComponent {
       text: 'The customer-facing features, such as the ability to take orders and process payments at the table, have enhanced the dining experience for our guests.',
       name: 'Shamsher Khan',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1aVFZUJN1_3pkOYPBkNQSwHSGzjnAdqA9w&s',
-      company: "BM - Taya Restaurant",
+      company: 'BM - Taya Restaurant',
     },
     {
       text: "I wanted to express my sincere gratitude for your continued partnership and support. We've achieved some fantastic results together, and I truly appreciate your collaboration and commitment. Specifically, your fast response for our requirement has been invaluable to our success.",
@@ -64,4 +64,40 @@ export class TestimonialsComponent {
       company: 'Operation Manager - Baan Holding',
     },
   ];
+
+  page = 1;
+  pageSize = 6;
+
+  get totalPages() {
+    return Math.ceil(this.testimonials.length / this.pageSize);
+  }
+
+  get pagedTestimonials() {
+    const pages = [];
+    for (let i = 0; i < this.totalPages; i++) {
+      pages.push(
+        this.testimonials.slice(i * this.pageSize, (i + 1) * this.pageSize)
+      );
+    }
+    return pages;
+  }
+
+  onScroll(event: Event) {
+    const container = event.target as HTMLElement;
+    const scrollLeft = container.scrollLeft;
+    const width = container.offsetWidth;
+    const newPage = Math.round(scrollLeft / width) + 1;
+    if (this.page !== newPage) {
+      this.page = newPage;
+    }
+  }
+
+  scrollToPage(page: number, container: HTMLElement) {
+    this.page = page;
+    const width = container.offsetWidth;
+    container.scrollTo({
+      left: width * (page - 1),
+      behavior: 'smooth',
+    });
+  }
 }

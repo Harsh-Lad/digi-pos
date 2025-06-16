@@ -41,10 +41,16 @@
                           p-2 sm:p-6 md:p-8 
                           shadow-xl w-full 
                           max-w-full sm:max-w-lg md:max-w-xl">
-                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-3 sm:space-y-4">
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" #formRef="ngForm" class="space-y-3 sm:space-y-4">
                   <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+
+                    <input type="hidden" name="_subject" value="New Contact Us Submission!">
+
+<input type="hidden" name="_template" value="table">
+
+
                     <div>
-                      <label class="block text-xs sm:text-sm font-medium mb-1">First name*</label>
+                      <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">First name*</label>
                       <input type="text" formControlName="firstName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                               focus:outline-none focus:ring focus:ring-orange-300"
                         [ngClass]="{'border-red-500': submitted && f['firstName'].errors}" />
@@ -53,7 +59,7 @@
                       </div>
                     </div>
                     <div>
-                      <label class="block text-xs sm:text-sm font-medium mb-1">Last name*</label>
+                      <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Last name*</label>
                       <input type="text" formControlName="lastName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                               focus:outline-none focus:ring focus:ring-orange-300"
                         [ngClass]="{'border-red-500': submitted && f['lastName'].errors}" />
@@ -64,7 +70,7 @@
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Email*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Email*</label>
                     <input type="email" formControlName="email" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                             focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['email'].errors}" />
@@ -75,14 +81,14 @@
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Phone number*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Phone number*</label>
                     <div class="flex flex-col gap-2">
                       <div class="relative w-full h-full">
                         <div class="flex gap-2 h-full">
                           <div class="relative w-1/3 h-full">
                             <select formControlName="phoneCountry" class="border rounded-md px-1 sm:px-2 py-1.5 sm:py-2.5 bg-white w-full h-full 
-                                          text-xs sm:text-sm
-                                          focus:outline-none focus:ring focus:ring-orange-300 appearance-none">
+                                text-xs sm:text-sm
+                                focus:outline-none focus:ring focus:ring-orange-300 appearance-none">
                               <option *ngFor="let country of filteredCountries()" [value]="country.code">
                                 {{ country.name }} (+{{ country.code }})
                               </option>
@@ -95,7 +101,7 @@
                             </div>
                           </div>
                           <input type="text" formControlName="phoneNumber" class="w-2/3 border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
-                                  focus:outline-none focus:ring focus:ring-orange-300"
+                    focus:outline-none focus:ring focus:ring-orange-300"
                             [ngClass]="{'border-red-500': submitted && f['phoneNumber'].errors}" />
                         </div>
                       </div>
@@ -106,20 +112,20 @@
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Business name</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Business name</label>
                     <input type="text" formControlName="businessName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                             focus:outline-none focus:ring focus:ring-orange-300" />
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Number of branches*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Number of branches*</label>
                     <select formControlName="branches" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
-                                  focus:outline-none focus:ring focus:ring-orange-300"
+                    focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['branches'].errors}">
                       <option value="">Please Select</option>
                       <option value="1-5">1-5</option>
-                      <option value="6-10">6-10</option>
-                      <option value="11+">11+</option>
+                      <option value="6-15">6-15</option>
+                      <option value="15+">15+</option>
                     </select>
                     <div *ngIf="submitted && f['branches'].errors" class="text-red-500 text-xs mt-1">
                       Please select number of branches
@@ -127,9 +133,9 @@
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Country Name*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Country Name*</label>
                     <select formControlName="country" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
-                                  focus:outline-none focus:ring focus:ring-orange-300"
+                    focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['country'].errors}">
                       <option value="">Please Select</option>
                       <option *ngFor="let country of countries" [value]="country.name">
@@ -164,12 +170,16 @@
                   </div>
 
                   <button type="submit" class="w-full bg-black hover:bg-gray-900 text-white font-semibold 
-                          py-2 sm:py-2.5 md:py-3 
-                          text-sm sm:text-base
-                          rounded-md mt-3 sm:mt-4 transition duration-300 shadow-md">
+            py-2 sm:py-2.5 md:py-3 
+            text-sm sm:text-base
+            rounded-md mt-3 sm:mt-4 transition duration-300 shadow-md">
                     Submit
                   </button>
                 </form>
               </div>
   </div>
 </section>
+
+<div class="custom-toast" [class.show]="showToastFlag">
+  {{ toastMessage }}
+</div>

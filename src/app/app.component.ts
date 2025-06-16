@@ -22,4 +22,8 @@ export class AppComponent implements OnInit {
       }
     });
   }
+
+  someMethod(event: any) {
+    // ...existing code...
+  }
 }

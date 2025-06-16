@@ -1,20 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import axios from 'axios';
+
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.css'],
-  imports: [CommonModule, ReactiveFormsModule, FormsModule]
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule]
 })
 
 export class ContactFormComponent implements OnInit {
-  contactForm: FormGroup;
+  contactForm!: FormGroup;
   submitted = false;
-  
+  showToastFlag = false;
+  toastMessage = '';
   countrySearchTerm: string = '';
-  countries = [
+  countries: any[] = [
     { name: 'Afghanistan', code: '93' },
     { name: 'Albania', code: '355' },
     { name: 'Algeria', code: '213' },
@@ -247,41 +250,28 @@ export class ContactFormComponent implements OnInit {
     { name: 'Zimbabwe', code: '263' }
   ];
 
-  constructor(private fb: FormBuilder) {
+  @ViewChild('formRef') formRef!: ElementRef<HTMLFormElement>;
+
+  constructor(private fb: FormBuilder) {}
+
+  ngOnInit() {
     this.contactForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phoneCountry: ['965'], // Set Kuwait (965) as default
+      phoneCountry: ['', Validators.required],
       phoneNumber: ['', Validators.required],
       businessName: [''],
       branches: ['', Validators.required],
       country: ['', Validators.required],
       terms: [false, Validators.requiredTrue],
-      privacy: [false, Validators.requiredTrue],
+      privacy: [false, Validators.requiredTrue]
     });
   }
 
-  ngOnInit() {
-    // Any additional initialization logic can go here
-  }
-
+  // Convenience getter for easy access to form fields
   get f() {
     return this.contactForm.controls;
-  }
-
-  onSubmit() {
-    this.submitted = true;
-    
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-      // Here you would typically call a service to send the form data
-      alert('Form submitted successfully!');
-      this.contactForm.reset();
-      this.submitted = false;
-    } else {
-      this.contactForm.markAllAsTouched();
-    }
   }
 
   filteredCountries() {
@@ -295,4 +285,54 @@ export class ContactFormComponent implements OnInit {
       country.code.toString().includes(searchTerm)
     );
   }
+
+  async onSubmit() {
+    this.submitted = true;
+    if (this.contactForm.invalid) {
+      return;
+    }
+    // Prepare form data
+    const formData = {
+      firstName: this.contactForm.value.firstName,
+      lastName: this.contactForm.value.lastName,
+      email: this.contactForm.value.email,
+      phoneCountry: this.contactForm.value.phoneCountry,
+      phoneNumber: this.contactForm.value.phoneNumber,
+      businessName: this.contactForm.value.businessName,
+      branches: this.contactForm.value.branches,
+      country: this.contactForm.value.country,
+      terms: this.contactForm.value.terms,
+      privacy: this.contactForm.value.privacy,
+      _subject: 'New Contact Us Submission!',
+      _template: 'table'
+    };
+
+    try {
+      axios.defaults.headers.post['Content-Type'] = 'application/json';
+      const response = await axios.post(
+        'https://formsubmit.co/ajax/sales@digipos.io',
+        formData
+      );
+      if (response.data.success === 'true') {
+        this.showToast('✔ Thank you for submitting the form!');
+        this.contactForm.reset();
+        this.submitted = false;
+      } else {
+        this.showToast('Submission failed. Please try again.');
+      }
+    } catch (error) {
+      this.showToast('Submission failed. Please try again.');
+    }
+  }
+
+  showToast(message: string) {
+    this.toastMessage = message;
+    this.showToastFlag = true;
+    setTimeout(() => {
+      this.showToastFlag = false;
+    }, 3000);
+  }
 }
+
+
+

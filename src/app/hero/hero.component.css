@@ -25,6 +25,9 @@
   display: none; /* Safari and Chrome */
 }
 
+.testimonial-slider-chevron{
+  display: none !important;
+}
 /* Enhanced animations for better performance */
 @media (prefers-reduced-motion: no-preference) {
   .animate-bounce {
@@ -49,4 +52,5 @@
   section {
     min-height: 85vh !important;
   }
+
 }

@@ -19,3 +19,24 @@
     margin-right: auto !important;
   }
 }
+
+/* Chevron button styling for testimonials */
+.chevron-btn {
+  background-color: #002999; /* Brand blue */
+  border: none;
+  border-radius: 9999px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}
+.chevron-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.chevron-btn:hover:not(:disabled) {
+  background-color: #1741b6;
+}
+

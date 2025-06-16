@@ -1,16 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import axios from 'axios';
+
 @Component({
   selector: 'app-demo-form',
   templateUrl: './demo-form.component.html',
   styleUrls: ['./demo-form.component.css'],
-  imports: [CommonModule, ReactiveFormsModule, FormsModule]
+  standalone: true,
+  imports: [CommonModule, ReactiveFormsModule]
 })
-
 export class DemoFormComponent implements OnInit {
-  contactForm: FormGroup;
+  demoForm: FormGroup;
   submitted = false;
   
   countrySearchTerm: string = '';
@@ -247,41 +248,28 @@ export class DemoFormComponent implements OnInit {
     { name: 'Zimbabwe', code: '263' }
   ];
 
+  toastMessage: string = '';
+  showToastFlag: boolean = false;
+
+  @ViewChild('formRef') formRef: any;
+
   constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
+    this.demoForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      phoneCountry: ['965'], // Set Kuwait (965) as default
+      phoneCountry: ['', Validators.required],
       phoneNumber: ['', Validators.required],
       businessName: [''],
       branches: ['', Validators.required],
       country: ['', Validators.required],
       terms: [false, Validators.requiredTrue],
-      privacy: [false, Validators.requiredTrue],
+      privacy: [false, Validators.requiredTrue]
     });
   }
 
   ngOnInit() {
     // Any additional initialization logic can go here
-  }
-
-  get f() {
-    return this.contactForm.controls;
-  }
-
-  onSubmit() {
-    this.submitted = true;
-    
-    if (this.contactForm.valid) {
-      console.log(this.contactForm.value);
-      // Here you would typically call a service to send the form data
-      alert('Form submitted successfully!');
-      this.contactForm.reset();
-      this.submitted = false;
-    } else {
-      this.contactForm.markAllAsTouched();
-    }
   }
 
   filteredCountries() {
@@ -294,5 +282,61 @@ export class DemoFormComponent implements OnInit {
       country.name.toLowerCase().includes(searchTerm) || 
       country.code.toString().includes(searchTerm)
     );
+  }
+
+  async submitForm(event: Event) {
+    event.preventDefault();
+
+    const form = this.formRef.nativeElement;
+    const formData: any = {};
+    Array.from(form.elements).forEach((el: any) => {
+      if (el.name && ((el.type !== 'checkbox' && el.type !== 'radio') || el.checked)) {
+        formData[el.name] = el.value;
+      }
+    });
+
+    delete formData._honey;
+
+    try {
+      axios.defaults.headers.post['Content-Type'] = 'application/json';
+      const response = await axios.post(
+        'https://formsubmit.co/ajax/sales@digipos.io',
+        formData
+      );
+      if (response.data.success === 'true') {
+        this.showToast('✔ Thank you for submitting the form!');
+        form.reset();
+      } else {
+        this.showToast('Submission failed. Please try again.');
+      }
+    } catch (error) {
+      this.showToast('Submission failed. Please try again.');
+    }
+  }
+
+  get f() {
+    return this.demoForm.controls;
+  }
+
+  onSubmit() {
+    this.submitted = true;
+    
+    if (this.demoForm.valid) {
+      console.log(this.demoForm.value);
+      // Here you would typically call a service to send the form data
+      alert('Form submitted successfully!');
+      this.demoForm.reset();
+      this.submitted = false;
+    } else {
+      this.demoForm.markAllAsTouched();
+    }
+  }
+
+  showToast(message: string) {
+    this.toastMessage = message;
+    this.showToastFlag = true;
+    setTimeout(() => {
+      this.showToastFlag = false;
+    }, 3000);
   }
 }

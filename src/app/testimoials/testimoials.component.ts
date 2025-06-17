@@ -93,7 +93,7 @@ export class TestimonialsComponent {
   }
 
   scrollToPage(page: number, container: HTMLElement) {
-    this.page = page;
+    page = Math.max(1, Math.min(page, this.totalPages));
     const width = container.offsetWidth;
     container.scrollTo({
       left: width * (page - 1),

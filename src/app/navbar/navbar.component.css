@@ -198,9 +198,4 @@ svg {
     min-height: 0 !important;
   }
 
-  /* Reduce logo size further at higher zoom levels */
-  .logo-responsive {
-    height: auto !important;
-    max-height: 3.25rem !important;
-  }
 }

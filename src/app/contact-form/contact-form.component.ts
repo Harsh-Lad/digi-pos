@@ -1,6 +1,11 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import {
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import axios from 'axios';
 
 @Component({
@@ -8,9 +13,8 @@ import axios from 'axios';
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.css'],
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule]
+  imports: [CommonModule, ReactiveFormsModule],
 })
-
 export class ContactFormComponent implements OnInit {
   contactForm!: FormGroup;
   submitted = false;
@@ -65,7 +69,7 @@ export class ContactFormComponent implements OnInit {
     { name: 'Congo', code: '242' },
     { name: 'Cook Islands', code: '682' },
     { name: 'Costa Rica', code: '506' },
-    { name: 'Côte d\'Ivoire', code: '225' },
+    { name: "Côte d'Ivoire", code: '225' },
     { name: 'Croatia', code: '385' },
     { name: 'Cuba', code: '53' },
     { name: 'Curaçao', code: '599' },
@@ -247,7 +251,7 @@ export class ContactFormComponent implements OnInit {
     { name: 'Western Sahara', code: '212' },
     { name: 'Yemen', code: '967' },
     { name: 'Zambia', code: '260' },
-    { name: 'Zimbabwe', code: '263' }
+    { name: 'Zimbabwe', code: '263' },
   ];
 
   @ViewChild('formRef') formRef!: ElementRef<HTMLFormElement>;
@@ -265,7 +269,7 @@ export class ContactFormComponent implements OnInit {
       branches: ['', Validators.required],
       country: ['', Validators.required],
       terms: [false, Validators.requiredTrue],
-      privacy: [false, Validators.requiredTrue]
+      privacy: [false, Validators.requiredTrue],
     });
   }
 
@@ -278,11 +282,12 @@ export class ContactFormComponent implements OnInit {
     if (!this.countrySearchTerm) {
       return this.countries;
     }
-    
+
     const searchTerm = this.countrySearchTerm.toLowerCase();
-    return this.countries.filter(country => 
-      country.name.toLowerCase().includes(searchTerm) || 
-      country.code.toString().includes(searchTerm)
+    return this.countries.filter(
+      (country) =>
+        country.name.toLowerCase().includes(searchTerm) ||
+        country.code.toString().includes(searchTerm)
     );
   }
 
@@ -304,7 +309,7 @@ export class ContactFormComponent implements OnInit {
       terms: this.contactForm.value.terms,
       privacy: this.contactForm.value.privacy,
       _subject: 'New Contact Us Submission!',
-      _template: 'table'
+      _template: 'table',
     };
 
     try {
@@ -333,6 +338,3 @@ export class ContactFormComponent implements OnInit {
     }, 3000);
   }
 }
-
-
-

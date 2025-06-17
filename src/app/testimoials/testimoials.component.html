@@ -1,18 +1,7 @@
 <div class="testimonial-section py-16 px-4 md:px-56">
-  <div class="flex overflow-x-auto snap-x snap-mandatory gap-6" style="scrollbar-width: none; -ms-overflow-style: none;"
-    (scroll)="onScroll($event)" #scrollContainer>
-    <!-- Left Chevron -->
-    <button
-      class="testimonial-slider-chevron absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-brand-blue rounded-full shadow p-2 flex items-center justify-center transition hover:bg-blue-600 disabled:opacity-50"
-      style="transform: translateY(-50%);"
-      (click)="scrollToPage(page - 1, scrollContainer)"
-      [disabled]="page === 1"
-      aria-label="Previous testimonials"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-      </svg>
-    </button>
+  <div class="flex overflow-x-auto snap-x snap-mandatory gap-6"
+    style="scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: smooth;" (scroll)="onScroll($event)"
+    #scrollContainer>
     <div *ngFor="let pageTestimonials of pagedTestimonials; let pageIndex = index"
       class="min-w-full flex-shrink-0 snap-start" style="width: 100%;">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -29,28 +18,13 @@
         </div>
       </div>
     </div>
-    <!-- Right Chevron -->
-    <button
-      class="testimonial-slider-chevron absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-brand-blue rounded-full shadow p-2 flex items-center justify-center transition hover:bg-blue-600 disabled:opacity-50"
-      style="transform: translateY(-50%);"
-      (click)="scrollToPage(page + 1, scrollContainer)"
-      [disabled]="page === totalPages"
-      aria-label="Next testimonials"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
   </div>
   <div class="flex justify-center items-center mt-8 gap-2">
     <!-- Left Chevron -->
-    <button
-      class="testimonial-slider-chevron chevron-btn mr-2"
-      (click)="scrollToPage(page - 1, scrollContainer)"
-      [disabled]="page === 1"
-      aria-label="Previous testimonials"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+    <button class="testimonial-slider-chevron chevron-btn mr-2" (click)="scrollToPage(page - 1, scrollContainer)"
+      [disabled]="page === 1" aria-label="Previous testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        class="h-6 w-6 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
       </svg>
     </button>
@@ -62,15 +36,13 @@
         }" style="display: inline-block;" (click)="scrollToPage(i + 1, scrollContainer)"></span>
     </ng-container>
     <!-- Right Chevron -->
-    <button
-      class="testimonial-slider-chevron chevron-btn ml-2"
-      (click)="scrollToPage(page + 1, scrollContainer)"
-      [disabled]="page === totalPages"
-      aria-label="Next testimonials"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+    <button class="testimonial-slider-chevron chevron-btn ml-2" (click)="scrollToPage(page + 1, scrollContainer)"
+      [disabled]="page === totalPages" aria-label="Next testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        class="h-6 w-6 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
       </svg>
     </button>
   </div>
+
 </div>

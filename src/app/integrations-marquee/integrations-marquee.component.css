@@ -59,8 +59,9 @@
 }
 
 .marquee-item {
-  height: 8rem;
-  width: 8rem;
+  height: 7rem;
+  width: auto;
+  aspect-ratio: 4/3;
   object-fit: contain;
 }
 

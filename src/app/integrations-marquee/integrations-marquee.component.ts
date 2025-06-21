@@ -18,6 +18,7 @@ export class IntegrationsMarqueeComponent implements OnInit, AfterViewInit {
     'integrations/5.png',
     'integrations/6.png',
     'integrations/7.png',
+    'integrations/8.png',
   ];
 
   animationDuration = 30; // seconds

@@ -221,7 +221,7 @@ export const PRODUCTS_DATA: ProductData[] = [
                         keeping customers happy.`,
         heroImages: "products/kds.jpg",
         complianceTag: 'Operating System',
-        complianceImage: '/products/iosandorid.png',
+        complianceImage: '/products/iosandorid.png.png',
         ctaText: 'Get it Now',
         featuresHeaderText: '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">Transform Your Kitchen with<span class="text-[#f48021] underline underline-offset-2"> DigiKDS </span> Paperless, Zero Mistakes and Quick Service.</h2>',
         features: [

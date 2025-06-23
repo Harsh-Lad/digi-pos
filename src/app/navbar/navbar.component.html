@@ -6,7 +6,7 @@
       <!-- Left side - Logo and Menu -->
       <div class="flex items-center flex-1">
         <!-- Logo -->
-        <a routerLink="/" class="flex-shrink-0 mr-2 sm:mr-4 lg:mr-6">
+        <a  (click)="closeMobileMenu()" routerLink="/" class="flex-shrink-0 mr-2 sm:mr-4 lg:mr-6">
           <img src="logo.png" alt="Company Logo" class="h-12 sm:h-16 lg:h-20 xl:h-24 w-auto logo-responsive">
         </a>
 
@@ -41,7 +41,7 @@
                       megaMenus[activeMenu].sections[0].title }}</h3>
                     <ul class="space-y-2 mt-3">
                       <li *ngFor="let item of megaMenus[activeMenu].sections[0].items">
-                        <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                        <a  (click)="closeMobileMenu()" class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
                           [routerLink]="item.link">
                           <div class="flex-shrink-0 mt-0.5">
                             <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
@@ -75,7 +75,7 @@
                         megaMenus[activeMenu].sections[1].title }}</h3>
                       <ul class="space-y-2 mt-3">
                         <li *ngFor="let item of megaMenus[activeMenu].sections[1].items">
-                          <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                          <a  (click)="closeMobileMenu()" class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
                             [routerLink]="item.link">
                             <div class="flex-shrink-0 mt-0.5">
                               <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
@@ -107,7 +107,7 @@
                         megaMenus[activeMenu].sections[2].title }}</h3>
                       <ul class="space-y-2 mt-3">
                         <li *ngFor="let item of megaMenus[activeMenu].sections[2].items">
-                          <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                          <a  (click)="closeMobileMenu()" class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
                             [routerLink]="item.link">
                             <div class="flex-shrink-0 mt-0.5">
                               <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
@@ -142,7 +142,7 @@
                     <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider">{{ section.title }}</h3>
                     <ul class="space-y-2 mt-3">
                       <li *ngFor="let item of section.items">
-                        <a class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
+                        <a  (click)="closeMobileMenu()" class="group flex items-start p-2 rounded-lg hover:bg-gray-50 transition-colors"
                           [routerLink]="item.link">
                           <div class="flex-shrink-0 mt-0.5">
                             <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
@@ -173,9 +173,9 @@
           </div>
 
           <!-- Static Links -->
-          <a class="hidden xl:block px-3 py-2 text-sm xl:text-base font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 rounded-md transition-colors whitespace-nowrap"
+          <a  (click)="closeMobileMenu()" class="hidden xl:block px-3 py-2 text-sm xl:text-base font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 rounded-md transition-colors whitespace-nowrap"
             routerLink="/partner">Become a Partner</a>
-          <a class="hidden xl:block px-3 py-2 text-sm xl:text-base font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 rounded-md transition-colors"
+          <a  (click)="closeMobileMenu()" class="hidden xl:block px-3 py-2 text-sm xl:text-base font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 rounded-md transition-colors"
             routerLink="/pricing">Pricing</a>
         </div>
       </div>
@@ -183,13 +183,15 @@
       <!-- Right side - CTA, Language, Mobile Menu -->
       <div class="flex items-center gap-2 sm:gap-3 lg:gap-4">
         <!-- Get Demo Button -->
-        <a href="/demo"
+        <a  (click)="closeMobileMenu()" href="/demo"
           class="bg-blue-900 text-orange-400 text-xs sm:text-sm lg:text-base font-semibold py-1 sm:py-1.5 lg:py-2 px-2 sm:px-3 lg:px-4 rounded-full hover:bg-blue-800 transition-colors whitespace-nowrap">
           Get a Demo
         </a>
 
+        
+
         <!-- Language Selector -->
-        <a href="#"
+        <a  (click)="closeMobileMenu()" href="#"
           class="hidden sm:flex items-center text-xs lg:text-sm font-medium hover:text-indigo-700 transition-colors">
           <span class="mr-1">العربية</span>
           <img src="https://flagcdn.com/w40/sa.png" alt="SA Flag" class="w-4 h-3 lg:w-5 lg:h-4">
@@ -242,7 +244,7 @@
                   <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2">{{ section.title }}</h3>
                   <ul class="space-y-2">
                     <li *ngFor="let item of section.items">
-                      <a class="group flex items-start py-1.5 rounded-md px-2 hover:bg-white transition-colors"
+                      <a  (click)="closeMobileMenu()" class="group flex items-start py-1.5 rounded-md px-2 hover:bg-white transition-colors"
                         [routerLink]="item.link">
                         <div class="flex-shrink-0 w-6">
                           <span class="material-icons text-orange-500" style="font-size: 1rem; line-height: 1;">
@@ -265,13 +267,13 @@
           </div>
 
           <!-- Mobile Static Links -->
-          <a class="block px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 border-l-4 border-transparent transition-colors"
+          <a  (click)="closeMobileMenu()" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 border-l-4 border-transparent transition-colors"
             routerLink="/partner">Become a Partner</a>
-          <a class="block px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 border-l-4 border-transparent transition-colors"
+          <a  (click)="closeMobileMenu()" class="block px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 border-l-4 border-transparent transition-colors"
             routerLink="/pricing">Pricing</a>
 
           <!-- Mobile Language Selector -->
-          <a href="#"
+          <a  (click)="closeMobileMenu()" href="#"
             class="flex items-center px-4 py-2 text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-gray-50 border-l-4 border-transparent transition-colors sm:hidden">
             <span class="mr-2">العربية</span>
             <img src="https://flagcdn.com/w40/sa.png" alt="SA Flag" class="w-5 h-4">

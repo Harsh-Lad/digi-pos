@@ -27,6 +27,22 @@
     padding-top: 0 !important /* 6rem = 96px */;
     padding-bottom: 0 !important /* 6rem = 96px */;
   }
+
+  .extraWaiterTab{ 
+    /* padding:2.75rem 0; */
+    margin-bottom: 6rem;
+  }
+
+  .extraWaiterTab>div>div>h2{
+    font-size: xx-large;
+  }
+  .extraWaiterTab>div>div>p{
+    font-size: large;
+  }
+
+  .featureHeaderText>h2{
+   font-size: 7px !important;
+  }
 }
 
 @media (min-resolution: 120dpi) {

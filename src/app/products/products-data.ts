@@ -32,6 +32,7 @@ export interface ProductData {
     overlayImage?: string;
     sidebarTitle?: string;
     sidebarBullets?: string[];
+    horizontalBar?: string;
 }
 
 export const PRODUCTS_DATA: ProductData[] = [
@@ -48,7 +49,7 @@ export const PRODUCTS_DATA: ProductData[] = [
         complianceTag: 'Compliant with:',
         complianceImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIyG9CImBv66uEEChinrNgQL_s05hCggeBg&s',
         ctaText: 'Get a Demo',
-        featuresHeaderText: '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[38%]"> Run your restaurant smarter with  <span class="text-[#002999]">All-In-One features from <span class="text-[#f48021] font-black underline underline-2">DigiPOS</span></span> </h2>',
+        featuresHeaderText: '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]"> Run your restaurant smarter with  <span class="text-[#002999]">All-In-One features from <span class="text-[#f48021] font-black underline underline-2">DigiPOS</span></span> </h2>',
         features: [
             { icon: 'bolt', title: 'Quick & Easy Setup', description: 'Switch to DigiPOS effortlessly with a quick and hassle-free installation.' },
             { icon: 'wifi_off', title: 'Online & Offline Functionality', description: 'Ensures full operational continuity even during internet outages.' },
@@ -186,10 +187,32 @@ export const PRODUCTS_DATA: ProductData[] = [
         ]
     },
     {
+        slug: 'waiter-tab',
+        name: 'Waiter Tab',
+        catergory: 'Front Office',
+        heroTitle: '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Waiter Tab</h2>',
+        heroDescription: `The DigiPOS Waiter Tablet is designed to revolutionize restaurant operations by enhancing efficiency for both staff and customers! With servers taking orders and processing payments directly at the table, it cuts down on the time spent walking back and forth to a terminal, making the entire dining experience feel seamless and faster.`,
+        heroImages: 'products/Waiter Tab.png',
+        ctaText: 'Get Now',
+        featuresHeaderText: '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]"> Empower Your Team with Effortless Table Service Anywhere </h2>',
+        features: [
+            { icon: 'restaurant', title: 'Order Taking at the Table', description: 'Waiter can take customer orders directly at the table using the DigiPOS tablet, delivering a smooth and efficient dining experience' },
+            { icon: 'fact_check', title: 'Quick & Accurate Ordering', description: 'Reducing errors that may occur when writing orders by hand.' },
+            { icon: 'tune', title: 'Customizable Orders', description: 'Allows customization of orders (e.g., special dietary requirements, extra toppings) on the spot.' },
+            { icon: 'send', title: 'Instant Order-to-Kitchen Sync', description: 'No more lost tickets or delays; orders fire in real time.' },
+            { icon: 'directions_bus', title: 'Food Trucks & Pop-ups', description: 'Process orders anywhere with cloud sync.' },
+            { icon: 'call_split', title: 'Split & Merge Orders', description: 'Quickly process merged or split bills with ease.' },
+            { icon: 'dashboard_customize', title: 'User-Friendly Interface', description: 'Designed with intuitive workflows for quick onboarding and faster staff adoption.' },
+            { icon: 'devices_other', title: 'Multi-Device Compatibility', description: 'Works seamlessly across tablets, mobile devices, iOS, and Android.' },
+            { icon: 'cloud_upload', title: 'Secure Cloud Backup', description: 'All data is encrypted and automatically backed up, ensuring business continuity and data protection.' }
+        ],
+        isSideBarVisible: false,
+    },
+    {
         slug: 'digikds',
         name: 'Kitchen Display System (DigiKDS)',
         catergory: 'Front Office',
-        heroTitle: '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Kitchen Display System <span class="text-[#f48021]"> (DigiKDS) </span></h2>',
+        heroTitle: '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Kitchen Display System <span class="text-[#f48021] underline underline-offset-2"> DigiKDS </span></h2>',
         heroDescription: `Digi KDS (Kitchen Display System) is a digital screen
                         system for restaurant kitchens that replaces paper
                         tickets. It shows orders instantly, organises them by
@@ -198,9 +221,9 @@ export const PRODUCTS_DATA: ProductData[] = [
                         keeping customers happy.`,
         heroImages: "products/kds.jpg",
         complianceTag: 'Operating System',
-        complianceImage: '/products/iosandorid.PNG',
-        ctaText: 'Get a Demo',
-        featuresHeaderText: '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[38%]">Transform Your Kitchen with DigiKDS paperless, Zero Mistakes and Quick Service.</h2>',
+        complianceImage: '/products/iosandorid.png',
+        ctaText: 'Get it Now',
+        featuresHeaderText: '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">Transform Your Kitchen with<span class="text-[#f48021] underline underline-offset-2"> DigiKDS </span> Paperless, Zero Mistakes and Quick Service.</h2>',
         features: [
             { icon: 'monitor', title: 'Real-Time Order Display', description: 'Orders appear instantly on the digital screen, eliminating delays and ensuring timely kitchen responses.' },
             { icon: 'receipt_long', title: 'No More Paper Ticket', description: 'Say goodbye to lost, messy, or hard-to-read paper receipts. Everything is displayed clearly and digitally.' },
@@ -213,6 +236,25 @@ export const PRODUCTS_DATA: ProductData[] = [
             { icon: 'cloud_sync', title: 'Real-Time Updates', description: 'Orders and changes are synced in real-time cloud, so the kitchen always works with the most up-to-date information.' }
         ],
         isSideBarVisible: false,
-
+        horizontalBar: `
+            <section class="w-screen bg-[#f48021] md:flex mt-12 extraWaiterTab">
+                <div class="left md:w-1/2 flex items-center justify-center md:pl-8 ">
+                <div class=" md:w-[85%] p-4 md:p-0 ">
+                    <h2 class="text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight "> Empower Your Team with Effortless Table
+                    Service Anywhere </h2>
+                    <p class="text-white text-lg md:text-2xl leading-relaxed mt-4">
+                    Upgrade your restaurant's efficiency by ditching
+                    traditional paper slips. Our solution eliminates the need
+                    for physical exchanges, promoting a cleaner, more
+                    sanitary environment. Plus, with reliable and clean input
+                    tools, you can wave goodbye to smudged, greasy screens
+                    that are a constant battle in busy kitchens.
+                    </p>
+                </div>
+                </div>
+                <div class="right md:w-1/2 flex items-center justify-center">
+                <img src="/front-office/KDS.png" class="m-auto h-[70%] w-auto pb-4 md:pb-0" />
+                </div>
+            </section>`
     },
 ];

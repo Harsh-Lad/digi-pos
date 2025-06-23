@@ -1,4 +1,4 @@
-import { Component, type OnInit, type OnDestroy, PLATFORM_ID, Inject, ElementRef, ViewChild } from "@angular/core"
+import { Component, type OnInit, type OnDestroy, PLATFORM_ID, Inject, ElementRef, ViewChild, HostListener } from "@angular/core"
 import { CommonModule, isPlatformBrowser } from "@angular/common"
 import { RouterModule } from "@angular/router"
 
@@ -42,6 +42,19 @@ export class NavbarComponent implements OnInit, OnDestroy {
   constructor(@Inject(PLATFORM_ID) platformId: Object) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
+
+
+  closeMobileMenu() {
+    this.mobileMenuOpen = false;
+    this.activeMenu = null;
+  }
+
+
+
+  // @HostListener('document:click', ['$event'])
+  // handleClickOutside(event: Event) {
+  //   this.closeMenuOnOutsideClick(event);
+  // }
 
   // Mega menu data structure with proper typing
   megaMenus: MegaMenus = {

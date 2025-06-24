@@ -92,12 +92,54 @@ export class TestimonialsComponent {
     }
   }
 
+  smoothScroll(container: HTMLElement, target: number) {
+    const start = container.scrollLeft;
+    const change = target - start;
+    const duration = 400;
+    let currentTime = 0;
+    const increment = 20;
+
+    function animateScroll() {
+      currentTime += increment;
+      const val = easeInOutQuad(currentTime, start, change, duration);
+      container.scrollLeft = val;
+      if (currentTime < duration) {
+        requestAnimationFrame(animateScroll);
+      }
+    }
+
+    function easeInOutQuad(t: number, b: number, c: number, d: number) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t + b;
+      t--;
+      return (-c / 2) * (t * (t - 2) - 1) + b;
+    }
+
+    animateScroll();
+  }
+
   scrollToPage(page: number, container: HTMLElement) {
     page = Math.max(1, Math.min(page, this.totalPages));
     const width = container.offsetWidth;
-    container.scrollTo({
-      left: width * (page - 1),
-      behavior: 'smooth',
-    });
+    const target = width * (page - 1);
+
+    // Remove scroll-snap-type temporarily for smooth scroll compatibility
+    const prevSnapType = container.style.scrollSnapType;
+    container.style.scrollSnapType = 'none';
+
+    // Try native smooth scroll
+    try {
+      container.scrollTo({
+        left: target,
+        behavior: 'smooth',
+      });
+    } catch {
+      this.smoothScroll(container, target);
+    }
+
+    // Restore snap after scroll finishes (~500ms)
+    setTimeout(() => {
+      container.style.scrollSnapType = prevSnapType || '';
+    }, 500);
   }
 }

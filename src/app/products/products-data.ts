@@ -397,4 +397,182 @@ export const PRODUCTS_DATA: ProductData[] = [
                 </div>
             </section>`,
   },
+  {
+    slug: 'customer-display',
+    name: 'Customer Display',
+    catergory: 'Front Office',
+    heroTitle:
+      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Customer Display</h2>',
+    heroDescription: `DigiPOS Customer Display is a dynamic screen
+                      designed to elevate the customer experience at the
+                      point of sale. It provides real-time visibility into each
+                      transaction by clearly displaying itemized order lists,
+                      individual prices, total amounts, and personalized
+                      promotions for every customer. it’s a powerful
+                      engagement tool. Use the screen to showcase
+                      promotional offers, display branded messages,
+                      highlight seasonal deals turning every transaction
+                      into an opportunity to connect, inform, and promote
+                      your brand.`,
+    heroImages: 'products/customerDisplay.PNG',
+    ctaText: 'Get Now!',
+    featuresHeaderText:
+      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">The smart way to elevate transparency and trust at checkout!</h2>',
+    features: [
+      {
+        icon: 'monitor',
+        title: 'Real-Time Order Display',
+        description:
+          'Orders appear instantly on the digital screen, eliminating delays and ensuring timely kitchen responses.',
+      },
+      {
+        icon: 'visibility',
+        title: 'Transparent Transactions',
+        description:
+          'Enhances customer confidence by providing complete order visibility during checkout.',
+      },
+      {
+        icon: 'local_offer',
+        title: 'Personalized Promotions',
+        description:
+          "Display targeted promotions and upsell suggestions based on the customer profile or items purchased.",
+      },
+      {
+        icon: 'branding_watermark',
+        title: 'Custom Branding Support',
+        description:
+          'Allows your business logo, themes, and marketing visuals to appear on the screen.',
+      },
+      {
+        icon: 'autorenew',
+        title: 'Dynamic Content Rotation',
+        description:
+          'Showcase seasonal deals, loyalty programs, or marketing messages when not in active transaction',
+      },
+      {
+        icon: 'language',
+        title: 'Multilingual Interface',
+        description:
+          'Supports multiple languages for diverse customer bases.',
+      },
+      {
+        icon: 'fit_screen',
+        title: 'Compact, Modern Design',
+        description:
+          'Sleek, space-saving hardware that fits easily into any POS station.',
+      },
+      {
+        icon: 'devices',
+        title: 'Multi-Device Compatibility',
+        description:
+          'DigiPOS Customer Display is designed to work seamlessly across Android, iOS, and Web Browsers screen.',
+      },
+      {
+        icon: 'dashboard_customize',
+        title: 'Customizable Layouts',
+        description:
+          'Set customizable layouts of the screen, including promotional banners, branded messages, and seasonal campaigns.',
+      },
+    ],
+    isSideBarVisible: false,
+    horizontalBar: `
+            <section class="w-screen bg-[#f48021] md:flex mt-12 extraWaiterTab">
+                <div class="left md:w-1/2 flex items-center justify-center md:pl-8 ">
+                <div class=" md:w-[85%] p-4 md:p-0 ">
+                    <h2 class="text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight "> Designed to enhance the customer experience </h2>
+                    <p class="text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4">
+                      Beyond simply showing prices and itemized lists, more
+                      advanced DigiPOS customer displays can integrate with
+                      advertising and marketing efforts, displaying
+                      promotions, or even upcoming deals to engage
+                      customers while they wait.
+                    </p>
+                </div>
+                </div>
+                <div class="right md:w-1/2 flex items-center justify-center">
+                <img src="/products/customerDisplayBar.PNG" class="m-auto h-[70%] w-auto pb-4 md:pb-0"  />
+                </div>
+            </section>
+            
+            `,
+  },
+  {
+    slug: 'table-ordering',
+    name: 'Table Ordering',
+    catergory: 'Front Office',
+    heroTitle:
+      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Table Ordering</h2>',
+    heroDescription: `DigiPOS Table Ordering simplifies the dining
+    experience by allowing customers order and pay
+    directly from their table with just a QR scan menu
+    and a tap on a tablet. Customers can view the digital
+    menu place their order, and pay without needing to
+    wait for a server. This self-service option helps reduce
+    wait times, improving order accuracy, and enhancing
+    customers satisfaction. Table Orders go straight to
+    the kitchen, and payments sync instantly with digital
+    menu, making service faster and more efficient for
+    both diners and staff.`,
+    heroImages: 'products/Table Ordering.PNG',
+    ctaText: 'Get Now!',
+    featuresHeaderText:
+      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">Tap Order Smart, Fast and Effortless. Make every guest feel special with easy, smooth dining.</h2>',
+    features: [
+      {
+        icon: 'qr_code_scanner',
+        title: 'QR Code Menu Access',
+        description:
+          'Customers can scan a QR code to instantly access the digital menu on their smartphones, no app download needed.',
+      },
+      {
+        icon: 'tune',
+        title: 'Order Customization',
+        description:
+          'Customers can modify orders menu items (add sides and remove ingredients) based on their preferences.',
+      },
+      {
+        icon: 'update',
+        title: 'Real Time Menu Updates',
+        description:
+          "Always display current items, prices and promotions.",
+      },
+      {
+        icon: 'touch_app',
+        title: 'User Friendly Interface',
+        description:
+          'Easy for all customers to navigate and place orders quickly',
+      },
+      {
+        icon: 'speed',
+        title: 'Speeds Up Service',
+        description:
+          'Cuts down wait times and keeps queues moving smoothly.',
+      },
+      {
+        icon: 'kitchen',
+        title: 'Direct Kitchen Integration (KDS)',
+        description:
+          'Orders are instantly sent to the kitchen display system, reducing delays and errors.',
+      },
+      {
+        icon: 'palette',
+        title: 'Custom Branding',
+        description:
+          'Customize menus, buttons, and fonts to match your restaurant’s brand for a consistent digital experience.',
+      },
+      {
+        icon: 'payment',
+        title: 'Integrated Payments',
+        description:
+          'Pay directly from the phone or tablet, fast and secure.',
+      },
+      {
+        icon: 'translate',
+        title: 'Multi-Language Support',
+        description:
+          'Menus can be displayed in English and Arabic languages to serve a diverse customer base.',
+      },
+    ],
+    isSideBarVisible: false,
+  },
 ];

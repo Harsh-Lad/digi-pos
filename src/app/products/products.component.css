@@ -13,58 +13,103 @@
   color: #555;
 }
 
+.filter-orange {
+  filter: invert(62%) sepia(94%) saturate(7492%) hue-rotate(2deg) brightness(251%) contrast(70%);
+}
+
+
+@media (min-resolution: 120dpi) {
+
+  .responsive-integrations {
+    padding-top: 0 !important
+      /* 6rem = 96px */
+    ;
+    padding-bottom: 0 !important
+      /* 6rem = 96px */
+    ;
+  }
+
+  .mar-top {
+    margin-top: 6rem !important;
+    /* mt-24 (6rem) instead of mt-32 (8rem) */
+  }
+
+  .kiosk-image {
+    padding-left: 8rem !important;
+  }
+}
+
 @media (min-resolution: 144dpi) {
   .responsive-margin {
     margin-top: 6rem !important;
     /* mt-24 (6rem) instead of mt-32 (8rem) */
   }
 
+  .enable-font{
+    padding-left: 4rem !important;
+
+  }
+  .kiosk-image {
+    padding-left: 4rem !important;
+  }
+
+
   .mar-top {
     margin-top: 8rem !important;
     /* mt-24 (6rem) instead of mt-32 (8rem) */
   }
+
   .responsive-integrations {
-    padding-top: 0 !important /* 6rem = 96px */;
-    padding-bottom: 0 !important /* 6rem = 96px */;
+    padding-top: 0 !important
+      /* 6rem = 96px */
+    ;
+    padding-bottom: 0 !important
+      /* 6rem = 96px */
+    ;
   }
 
-  .extraWaiterTab{ 
+  .extraWaiterTab {
     /* padding:2.75rem 0; */
     margin-bottom: 6rem;
   }
 
-  .extraWaiterTab>div>div>h2{
+  .extraWaiterTab>div>div>h2 {
     font-size: xx-large;
   }
-  .extraWaiterTab>div>div>p{
+
+  .extraWaiterTab>div>div>p {
     font-size: large;
   }
 
-  .featureHeaderText>h2{
-   font-size: 7px !important;
+  .featureHeaderText>h2 {
+    font-size: 7px !important;
   }
 }
 
-@media (min-resolution: 120dpi) {
+
+
+
+@media (min-width: 48rem
+  /* 768px */
+) {
+  .responsive-integrations {
+    padding-top: calc(var(--spacing) * 32)
+      /* 8rem = 128px */
+    ;
+  }
 
   .responsive-integrations {
-    padding-top: 0 !important /* 6rem = 96px */;
-    padding-bottom: 0 !important /* 6rem = 96px */;
-  }
-
-  .mar-top {
-    margin-top: 6rem !important;
-    /* mt-24 (6rem) instead of mt-32 (8rem) */
+    padding-bottom: calc(var(--spacing) * 12)
   }
 }
 
+/* Center last row with 2 cards for 8 features */
+@media (min-width: 1024px) {
+  .grid-cols-3>.lg\:col-start-2 {
+    grid-column-start: 2;
+  }
 
-@media (min-width: 48rem /* 768px */) {
-    .responsive-integrations {
-        padding-top: calc(var(--spacing) * 32) /* 8rem = 128px */;
-    }
-
-    .responsive-integrations {
-       padding-bottom: calc(var(--spacing) * 12) 
-    }
+  .grid-cols-3>.lg\:col-start-3 {
+    grid-column-start: 3;
+  }
 }

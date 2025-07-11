@@ -33,6 +33,7 @@ export interface ProductData {
   sidebarTitle?: string;
   sidebarBullets?: string[];
   horizontalBar?: string;
+  isKiosk?: boolean;
 }
 
 export const PRODUCTS_DATA: ProductData[] = [
@@ -233,6 +234,8 @@ export const PRODUCTS_DATA: ProductData[] = [
       'Top Products & Category Sales: Identify best-selling products and categories to optimize inventory and promotions.',
       'Customer Trends: Understand customer preferences and behaviors to improve service and marketing strategies.',
     ],
+    isKiosk:false
+
   },
   {
     slug: 'waiter-tab',
@@ -300,6 +303,7 @@ export const PRODUCTS_DATA: ProductData[] = [
       },
     ],
     isSideBarVisible: false,
+    isKiosk:false
   },
   {
     slug: 'digikds',
@@ -396,6 +400,8 @@ export const PRODUCTS_DATA: ProductData[] = [
                 <img src="/front-office/KDS.png" class="m-auto h-[70%] w-auto pb-4 md:pb-0" />
                 </div>
             </section>`,
+    isKiosk:false
+    
   },
   {
     slug: 'customer-display',
@@ -495,6 +501,8 @@ export const PRODUCTS_DATA: ProductData[] = [
             </section>
             
             `,
+    isKiosk:false
+    
   },
   {
     slug: 'table-ordering',
@@ -574,5 +582,79 @@ export const PRODUCTS_DATA: ProductData[] = [
       },
     ],
     isSideBarVisible: false,
+    isKiosk:false
+
+  },
+  {
+    slug: 'kiosk',
+    name: 'KIOSK - Self Ordering',
+    catergory: 'Front Office',
+    heroTitle:
+      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">KIOSK - Self Ordering</h2>',
+    heroDescription: `The DigiPOS Self-Ordering Kiosk makes ordering fast
+    and easy for customers. It’s simple to use, fully
+    customizable, and allows guests to order just the way
+    they like. From taking payments to saving
+    preferences, it handles everything smoothly. By
+    speeding up service, reducing wait times, and
+    keeping lines moving, the kiosk helps improve
+    efficiency and keeps customers happy, all with just a
+    single touch.`,
+    heroImages: 'products/kiosk.PNG',
+    ctaText: 'Get Now!',
+    featuresHeaderText:
+      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">One Touch and Order Faster </h2>',
+    features: [
+      {
+        icon: 'touch_app',
+        title: 'User-Friendly Interface',
+        description:
+          'Easy for all customers to navigate and place orders quickly.',
+      },
+      {
+        icon: 'tune',
+        title: 'Fully Customizable',
+        description:
+         'Adapt menus, branding, and options to fit your business needs.',
+      },
+      {
+        icon: 'speed',
+        title: 'Speeds Up Service',
+        description:
+          "Cuts down wait times and keeps queues moving smoothly.",
+      },
+      {
+        icon: 'lock',
+        title: 'Fast & Secure Payments',
+        description:
+          'Reduces mistakes by letting customers enter their own orders.',
+      },
+      {
+        icon: 'sync',
+        title: 'Real-Time Menu Updates',
+        description:
+          'Syncs instantly with your POS for accurate inventory and pricing.',
+      },
+      {
+        icon: 'devices_other',
+        title: 'Compact and Modern Design',
+        description:
+          'Sleek, space-saving hardware that fits easily into any POS station.',
+      },
+      {
+        icon: 'translate',
+        title: 'Multi-Language Support',
+        description:
+          'Serves customers in their preferred language for better accessibility',
+      },
+      {
+        icon: 'phonelink',
+        title: 'Multi-Device Compatibility',
+        description:
+          'DigiPOS Kiosk is designed to work seamlessly across Android and iOS.',
+      }
+    ],
+    isSideBarVisible: false,
+    isKiosk:true
   },
 ];

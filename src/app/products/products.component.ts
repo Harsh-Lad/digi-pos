@@ -1,17 +1,16 @@
-
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { PRODUCTS_DATA, ProductData } from './products-data';
 import { FooterComponent } from '../footer/footer.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-import { PRODUCTS_DATA, ProductData } from './products-data';
-import { NgIf, NgFor, NgClass } from '@angular/common';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { NgClass, NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
-  imports: [NgIf, NgFor, NgClass, NavbarComponent, FooterComponent, ContactFormComponent]
+  imports: [FooterComponent, ContactFormComponent, NavbarComponent, NgClass, NgIf, NgFor],
 })
 export class ProductsComponent implements OnInit {
   slug: string | null = null;
@@ -31,4 +30,5 @@ export class ProductsComponent implements OnInit {
   onSidebarMenuClick(index: number) {
     this.selectedSidebarIndex = index;
   }
+
 }

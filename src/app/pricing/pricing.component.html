@@ -68,7 +68,7 @@
               {{ 'pricing.perMonth' | translate }}
             </span>
           </div>
-          <div *ngIf="!isYearly" class="text-gray-600 text-xs sm:text-sm">per month</div>
+          <div *ngIf="!isYearly" class="text-gray-600 text-xs sm:text-sm">{{ 'pricing.perMonth' | translate }}</div>
           <div *ngIf="isYearly" class="text-gray-600 text-xs sm:text-sm">{{ 'pricing.paidAnnually' | translate }}</div>
           <div class="text-gray-600 text-xs sm:text-sm">
             {{ 'pricing.notIncVat' | translate }}</div>
@@ -149,7 +149,7 @@
               {{ 'pricing.perMonth' | translate }}
             </span>
           </div>
-          <div *ngIf="!isYearly" class="text-gray-600 text-xs">per month</div>
+          <div *ngIf="!isYearly" class="text-gray-600 text-xs">{{ 'pricing.perMonth' | translate }}</div>
           <div *ngIf="isYearly" class="text-gray-600 text-xs">{{ 'pricing.paidAnnually' | translate }}</div>
           <div  class="text-gray-600 text-xs">
             {{ 'pricing.notIncVat' | translate }}</div>

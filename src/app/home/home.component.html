@@ -62,8 +62,8 @@
 
 <div class="responsive-integrations md:pt-32 md:pb-12">
   <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl" [innerHTML]="'home.poweringFutureTitle' | translate"></h2>
-  <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block">{{ 'home.poweringFutureDesc' | translate }}</p>
-  <p class="text-center text-gray-600 text-md px-2 tracking-wider block md:hidden mb-12">{{ 'home.poweringFutureDesc' | translate }}</p>
+  <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block" [innerHTML]="'home.poweringFutureDesc' | translate"></p>
+  <p class="text-center text-gray-600 text-md px-2 tracking-wider block md:hidden mb-12" [innerHTML]="'home.poweringFutureDesc' | translate"></p>
     <section class="-mt-10 mb-24 md:mt-0 md:mb-0 ">
       <app-integrations-marquee></app-integrations-marquee>
     </section>
@@ -72,8 +72,8 @@
 
 <div class="section mb-24 mar-top">
   <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl" [innerHTML]="'home.discoverHelpsTitle' | translate"></h2>
-  <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">{{ 'home.discoverHelpsDesc' | translate }}</p>
-  <p class="text-center block md:hidden text-gray-600 text-md px-2 tracking-wider">{{ 'home.discoverHelpsDesc' | translate }}</p>
+  <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider" [innerHTML]="'home.discoverHelpsDesc' | translate"></p>
+  <p class="text-center block md:hidden text-gray-600 text-md px-2 tracking-wider" [innerHTML]="'home.discoverHelpsDesc' | translate"></p>
   <app-testimonials></app-testimonials>
 </div>
 

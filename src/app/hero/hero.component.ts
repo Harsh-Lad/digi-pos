@@ -1,16 +1,18 @@
 import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser, NgIf, NgStyle } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, TranslateModule],
   styleUrls: ['./hero.component.css']
 })
 export class HeroComponent implements OnInit {
   words = ['Growth', 'Inventory', 'Sales', 'Success', 'Transactions'];
+  arabicWords = ['النمو', 'الجرد', 'المبيعات', 'النجاح', 'المعاملات'];
   images = [
     'hero/Growth.jpg',
     'hero/Inventory.jpg',
@@ -27,7 +29,10 @@ export class HeroComponent implements OnInit {
   isBrowser = false;
   bgImage = ''; // Add this property
 
-  constructor(@Inject(PLATFORM_ID) private platformId: any) {
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: any,
+    private translate: TranslateService
+  ) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
@@ -36,6 +41,15 @@ export class HeroComponent implements OnInit {
       this.currentImage = this.images[0];
       this.updateBgImage(); // Add this method call
       this.typeEffect();
+      
+      // Listen to language changes
+      this.translate.onLangChange.subscribe(() => {
+        // Reset the animation with new language
+        this.currentWord = '';
+        this.currentIndex = 0;
+        this.isDeleting = false;
+        this.typeEffect();
+      });
     }
   }
 
@@ -45,7 +59,9 @@ export class HeroComponent implements OnInit {
   }
 
   typeEffect(): void {
-    const fullText = this.words[this.currentIndex];
+    const currentLang = this.translate.currentLang || 'en';
+    const currentWords = currentLang === 'ar' ? this.arabicWords : this.words;
+    const fullText = currentWords[this.currentIndex];
 
     if (this.isDeleting) {
       this.currentWord = fullText.substring(0, this.currentWord.length - 1);

@@ -1,11 +1,12 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-image-marquee',
   templateUrl: './image-marquee.component.html',
   styleUrls: ['./image-marquee.component.css'],
-  imports: [NgFor]
+  imports: [NgFor, TranslateModule]
 })
 export class ImageMarqueeComponent {
   images = [

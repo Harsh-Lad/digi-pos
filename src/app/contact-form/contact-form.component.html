@@ -10,11 +10,9 @@
     <!-- Left Text -->
               <div class="lg:w-1/2 text-white relative flex items-center h-full">
                 <div class="my-auto">
-                  <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6">
-                    Ready to Elevate Your <br class="hidden sm:block" />
-                    Business with <span class="text-[#f48021]">DigiPOS?</span>
+                  <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6" [innerHTML]="'contactForm.title' | translate">
                   </h2>
-                  <p class="text-base sm:text-lg max-w-md">Let's get you set up in minutes – no tech skills needed.</p>
+                  <p class="text-base sm:text-lg max-w-md">{{ 'contactForm.subtitle' | translate }}</p>
 
                   <div class="flex flex-wrap gap-3 sm:gap-4 mt-6 sm:mt-8">
                     <a href="/demo" class="bg-[#f48021] hover:bg-[#e67315] text-white font-semibold 
@@ -22,14 +20,14 @@
                             py-2 sm:py-2.5 md:py-3 
                             text-sm sm:text-base
                             rounded-full transition duration-300 shadow-lg">
-                      Get a Demo
+                      {{ 'contactForm.getDemo' | translate }}
                     </a>
                     <button class="bg-white hover:bg-gray-200 text-[#f48021] font-semibold 
                             px-4 sm:px-5 md:px-6 
                             py-2 sm:py-2.5 md:py-3 
                             text-sm sm:text-base
                             rounded-full transition duration-300 shadow-lg">
-                      Let's Talk
+                      {{ 'contactForm.letsTalk' | translate }}
                     </button>
                   </div>
                 </div>
@@ -50,38 +48,38 @@
 
 
                     <div>
-                      <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">First name*</label>
+                      <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.firstName' | translate }}*</label>
                       <input type="text" formControlName="firstName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                               focus:outline-none focus:ring focus:ring-orange-300"
                         [ngClass]="{'border-red-500': submitted && f['firstName'].errors}" />
                       <div *ngIf="submitted && f['firstName'].errors" class="text-red-500 text-xs mt-1">
-                        First name is required
+                        {{ 'contactForm.errors.firstNameRequired' | translate }}
                       </div>
                     </div>
                     <div>
-                      <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Last name*</label>
+                      <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.lastName' | translate }}*</label>
                       <input type="text" formControlName="lastName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                               focus:outline-none focus:ring focus:ring-orange-300"
                         [ngClass]="{'border-red-500': submitted && f['lastName'].errors}" />
                       <div *ngIf="submitted && f['lastName'].errors" class="text-red-500 text-xs mt-1">
-                        Last name is required
+                        {{ 'contactForm.errors.lastNameRequired' | translate }}
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Email*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.email' | translate }}*</label>
                     <input type="email" formControlName="email" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                             focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['email'].errors}" />
                     <div *ngIf="submitted && f['email'].errors" class="text-red-500 text-xs mt-1">
-                      <span *ngIf="f['email'].errors['required']">Email is required</span>
-                      <span *ngIf="f['email'].errors['email']">Please enter a valid email</span>
+                      <span *ngIf="f['email'].errors['required']">{{ 'contactForm.errors.emailRequired' | translate }}</span>
+                      <span *ngIf="f['email'].errors['email']">{{ 'contactForm.errors.validEmail' | translate }}</span>
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Phone number*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.phoneNumber' | translate }}*</label>
                     <div class="flex flex-col gap-2">
                       <div class="relative w-full h-full">
                         <div class="flex gap-2 h-full">
@@ -107,43 +105,43 @@
                       </div>
                     </div>
                     <div *ngIf="submitted && f['phoneNumber'].errors" class="text-red-500 text-xs mt-1">
-                      Phone number is required
+                      {{ 'contactForm.errors.phoneRequired' | translate }}
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Business name</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.businessName' | translate }}</label>
                     <input type="text" formControlName="businessName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                             focus:outline-none focus:ring focus:ring-orange-300" />
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Number of branches*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.branches' | translate }}*</label>
                     <select formControlName="branches" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
                     focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['branches'].errors}">
-                      <option value="">Please Select</option>
-                      <option value="1-5">1-5</option>
-                      <option value="6-15">6-15</option>
-                      <option value="15+">15+</option>
+                      <option value="">{{ 'contactForm.pleaseSelect' | translate }}</option>
+                      <option value="1-5">{{ 'contactForm.branches1to5' | translate }}</option>
+                      <option value="6-15">{{ 'contactForm.branches6to15' | translate }}</option>
+                      <option value="15+">{{ 'contactForm.branches15plus' | translate }}</option>
                     </select>
                     <div *ngIf="submitted && f['branches'].errors" class="text-red-500 text-xs mt-1">
-                      Please select number of branches
+                      {{ 'contactForm.errors.branchesRequired' | translate }}
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">Country Name*</label>
+                    <label class="block text-xs sm:text-[0.95rem] font-medium mb-1">{{ 'contactForm.country' | translate }}*</label>
                     <select formControlName="country" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
                     focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['country'].errors}">
-                      <option value="">Please Select</option>
+                      <option value="">{{ 'contactForm.pleaseSelect' | translate }}</option>
                       <option *ngFor="let country of countries" [value]="country.name">
                         {{ country.name }}
                       </option>
                     </select>
                     <div *ngIf="submitted && f['country'].errors" class="text-red-500 text-xs mt-1">
-                      Please select a country
+                      {{ 'contactForm.errors.countryRequired' | translate }}
                     </div>
                   </div>
 
@@ -151,21 +149,21 @@
                     <label class="flex gap-2 items-start">
                       <input type="checkbox" formControlName="terms" class="mt-0.5"
                         [ngClass]="{'outline-red-500': submitted && f['terms'].errors}" />
-                      <span>I confirm that I have read, understood and agree to the
-                        <a href="#" class="text-[#f48021] underline">Terms and Conditions</a>*</span>
+                      <span>{{ 'contactForm.termsText' | translate }}
+                        <a href="#" class="text-[#f48021] underline">{{ 'contactForm.termsLink' | translate }}</a>*</span>
                     </label>
                     <div *ngIf="submitted && f['terms'].errors" class="text-red-500 text-xs mt-1">
-                      You must accept the terms and conditions
+                      {{ 'contactForm.errors.termsRequired' | translate }}
                     </div>
 
                     <label class="flex gap-2 items-start">
                       <input type="checkbox" formControlName="privacy" class="mt-0.5"
                         [ngClass]="{'outline-red-500': submitted && f['privacy'].errors}" />
-                      <span>By using this form you agree with our
-                        <a href="#" class="text-[#f48021] underline">Privacy Policy</a>*</span>
+                      <span>{{ 'contactForm.privacyText' | translate }}
+                        <a href="#" class="text-[#f48021] underline">{{ 'contactForm.privacyLink' | translate }}</a>*</span>
                     </label>
                     <div *ngIf="submitted && f['privacy'].errors" class="text-red-500 text-xs mt-1">
-                      You must accept the privacy policy
+                      {{ 'contactForm.errors.privacyRequired' | translate }}
                     </div>
                   </div>
 
@@ -173,7 +171,7 @@
             py-2 sm:py-2.5 md:py-3 
             text-sm sm:text-base
             rounded-md mt-3 sm:mt-4 transition duration-300 shadow-md">
-                    Submit
+                    {{ 'contactForm.submit' | translate }}
                   </button>
                 </form>
               </div>

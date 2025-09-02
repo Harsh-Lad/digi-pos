@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
       <!-- Logo + Socials -->
       <div class="flex flex-col justify-start items-start md:flex-1">
-        <img src="/logo.png" alt="DigiPOS Logo" class="-mt-10 h-32 w-auto object-contain" />
+        <img src="/logo.png" alt="{{ 'footer.altTexts.logo' | translate }}" class="-mt-10 h-32 w-auto object-contain" />
         <div class="flex ml-4 -mt-4 gap-4 items-center">
           <a target="_blank" href="https://www.linkedin.com/company/digiposio" class="text-gray-500 hover:text-gray-700"><img class="w-6 h-6 object-cover" src="/footer/linkedin.png"/></a>
           <a target="_blank" href="https://x.com/digiposio" class="text-gray-500 hover:text-gray-700"><img class="w-5 h-5 object-cover" src="/footer/twitter.png"/></a>
@@ -14,86 +14,86 @@
 
       <!-- DigiPOS - 25% smaller -->
       <div class="md:flex-none md:w-[15%]">
-        <h4 class="font-semibold text-gray-800 mb-3">DigiPOS</h4>
+        <h4 class="font-semibold text-gray-800 mb-3">{{ 'footer.sections.digipos' | translate }}</h4>
         <ul class="space-y-1">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Partners</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="#">{{ 'footer.digipos.aboutUs' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.digipos.partners' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.digipos.careers' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.digipos.contactUs' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.digipos.support' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.digipos.caseStudies' | translate }}</a></li>
+          <li><a href="/pricing">{{ 'footer.digipos.pricing' | translate }}</a></li>
         </ul>
       </div>
 
       <!-- Products - 25% larger -->
       <div class="md:flex-none md:w-[25%] overflow-auto">
-        <h4 class="font-semibold text-gray-800 mb-2">Products</h4>
+        <h4 class="font-semibold text-gray-800 mb-2">{{ 'footer.sections.products' | translate }}</h4>
         <div>
-          <p class="font-medium text-sm text-gray-800 mt-2">Front Office</p>
+          <p class="font-medium text-sm text-gray-800 mt-2">{{ 'footer.products.frontOffice' | translate }}</p>
           <ul class="space-y-1">
-            <li><a href="/products/cloud-pos">Cloud Point of Sales</a></li>
-            <li><a href="products/waiter-tab">Waiter Tab</a></li>
-            <li><a href="/products/digikds">DigiKDS - Kitchen Display System</a></li>
-            <li><a href="/products/customer-display">Customer Display</a></li>
-            <li><a href="/products/kiosk">KOISK</a></li>
-            <li><a href="/products/table-ordering">Table Ordering</a></li>
-            <li><a href="#">Online Ordering</a></li>
-            <li><a href="#">Queue Management System</a></li>
+            <li><a href="/products/cloud-pos">{{ 'footer.products.cloudPOS' | translate }}</a></li>
+            <li><a href="products/waiter-tab">{{ 'footer.products.waiterTab' | translate }}</a></li>
+            <li><a href="/products/digikds">{{ 'footer.products.digiKDS' | translate }}</a></li>
+            <li><a href="/products/customer-display">{{ 'footer.products.customerDisplay' | translate }}</a></li>
+            <li><a href="/products/kiosk">{{ 'footer.products.kiosk' | translate }}</a></li>
+            <li><a href="/products/table-ordering">{{ 'footer.products.tableOrdering' | translate }}</a></li>
+            <li><a href="#">{{ 'footer.products.onlineOrdering' | translate }}</a></li>
+            <li><a href="#">{{ 'footer.products.queueManagement' | translate }}</a></li>
           </ul>
-          <p class="font-medium text-sm text-gray-800 mt-4">Back Office</p>
+          <p class="font-medium text-sm text-gray-800 mt-4">{{ 'footer.products.backOffice' | translate }}</p>
           <ul class="space-y-1">
-            <li><a href="#">Product & Menu Management</a></li>
-            <li><a href="#">Recipe Management</a></li>
-            <li><a href="#">Inventory Management</a></li>
-            <li><a href="#">Purchase & Supply Chain Management</a></li>
+            <li><a href="#">{{ 'footer.products.productMenuManagement' | translate }}</a></li>
+            <li><a href="#">{{ 'footer.products.recipeManagement' | translate }}</a></li>
+            <li><a href="#">{{ 'footer.products.inventoryManagement' | translate }}</a></li>
+            <li><a href="#">{{ 'footer.products.purchaseSupplyChain' | translate }}</a></li>
           </ul>
-          <p class="font-medium text-sm text-gray-800 mt-4">Retail</p>
+          <p class="font-medium text-sm text-gray-800 mt-4">{{ 'footer.products.retail' | translate }}</p>
           <ul class="space-y-1">
-            <li><a href="/products/cloud-pos">Cloud Point of Sales</a></li>
-            <li><a href="#">Barcode Management</a></li>
+            <li><a href="/products/cloud-pos">{{ 'footer.products.cloudPOS' | translate }}</a></li>
+            <li><a href="#">{{ 'footer.products.barcodeManagement' | translate }}</a></li>
           </ul>
         </div>
       </div>
 
       <!-- Business Types -->
       <div class="md:flex-1 overflow-auto">
-        <h4 class="font-semibold text-gray-800 mb-2">Business Types</h4>
-        <p class="font-medium text-sm text-gray-800 mt-2">Restaurants</p>
+        <h4 class="font-semibold text-gray-800 mb-2">{{ 'footer.sections.businessTypes' | translate }}</h4>
+        <p class="font-medium text-sm text-gray-800 mt-2">{{ 'footer.businessTypes.restaurants' | translate }}</p>
         <ul class="space-y-1">
-          <li><a href="#">Fine Dine</a></li>
-          <li><a href="#">Casual Dining</a></li>
-          <li><a href="#">Quick Service</a></li>
-          <li><a href="#">Food Trucks</a></li>
-          <li><a href="#">Cafe & Bakery</a></li>
-          <li><a href="#">Cloud Kitchen</a></li>
+          <li><a href="#">{{ 'navbar.megaMenu.businessModels.fineDining.title' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.casualDining' | translate }}</a></li>
+          <li><a href="#">{{ 'navbar.megaMenu.businessModels.quickService.title' | translate }}</a></li>
+          <li><a href="#">{{ 'navbar.megaMenu.businessModels.foodTrucks.title' | translate }}</a></li>
+          <li><a href="#">{{ 'navbar.megaMenu.businessModels.cafeBakery.title' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.cloudKitchen' | translate }}</a></li>
         </ul>
-        <p class="font-medium text-sm text-gray-800 mt-4">Retail</p>
+        <p class="font-medium text-sm text-gray-800 mt-4">{{ 'footer.businessTypes.retail' | translate }}</p>
         <ul class="space-y-1">
-          <li><a href="#">Supermarket</a></li>
-          <li><a href="#">Pharmacy</a></li>
-          <li><a href="#">Garments & Apparel</a></li>
-          <li><a href="#">Laundry Shop</a></li>
-          <li><a href="#">Flower Shop</a></li>
-          <li><a href="#">Salon Shop</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.supermarket' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.pharmacy' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.garments' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.laundryShop' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.flowerShop' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.businessTypes.salonShop' | translate }}</a></li>
         </ul>
       </div>
 
       <!-- Legal + Apps -->
       <div class="md:flex-1">
-        <h4 class="font-semibold text-gray-800 mb-2">Legal</h4>
+        <h4 class="font-semibold text-gray-800 mb-2">{{ 'footer.sections.legal' | translate }}</h4>
         <ul class="space-y-1 mb-4">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Services</a></li>
-          <li><a href="#">Consumer Protection</a></li>
+          <li><a href="#">{{ 'footer.legal.privacyPolicy' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.legal.termsOfService' | translate }}</a></li>
+          <li><a href="#">{{ 'footer.legal.consumerProtection' | translate }}</a></li>
         </ul>
-        <p class="text-sm font-medium text-[#f48021] mb-2">Download the app now!</p>
+        <p class="text-sm font-medium text-[#f48021] mb-2">{{ 'footer.downloadApp' | translate }}</p>
         <div class="flex flex-col gap-2 mt-4">
           <a href="https://apps.apple.com/sa/app/kaem-digipos/id6587566032" target="_blank">
-            <img src="/footer/app-store.png" alt="App Store" class="w-36" />
+            <img src="/footer/app-store.png" alt="{{ 'footer.altTexts.appStore' | translate }}" class="w-36" />
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.digiposmobileapp" target="_blank">
-            <img src="/footer/playstore.png" alt="Google Play" class="w-36" />
+            <img src="/footer/playstore.png" alt="{{ 'footer.altTexts.googlePlay' | translate }}" class="w-36" />
           </a>
         </div>
       </div>
@@ -101,6 +101,6 @@
   
     <!-- Bottom -->
     <div class="text-center text-xs text-gray-400 mt-10 border-t pt-4">
-      © 2025 DigiPOS. All rights reserved. <a href="#" class="underline">Disclaimer</a> <a href="#" class="underline ml-2">Privacy Policy</a>
+      {{ 'footer.copyright' | translate }} <a href="#" class="underline">{{ 'footer.disclaimer' | translate }}</a> <a href="#" class="underline ml-2">{{ 'footer.privacyPolicy' | translate }}</a>
     </div>
   </footer>

@@ -6,6 +6,7 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import axios from 'axios';
 
 @Component({
@@ -13,7 +14,7 @@ import axios from 'axios';
   templateUrl: './contact-form.component.html',
   styleUrls: ['./contact-form.component.css'],
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule],
 })
 export class ContactFormComponent implements OnInit {
   contactForm!: FormGroup;

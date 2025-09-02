@@ -3,32 +3,32 @@
 <section class="mt-32 responsive-margin min-h-screen bg-gray-100 px-4 sm:px-6 py-8 sm:py-12 text-[#002999]">
   <div class="max-w-7xl mx-auto text-center space-y-4 sm:space-y-6">
     <p class="text-center text-[#f48021] font-bold underline underline-offset-3 text-base sm:text-lg">
-      <a href="tell:+966553378286">Contact Sales: +966 55 337 8286</a>
+      <a href="tell:+966553378286">{{ 'pricing.contactSales' | translate }}</a>
     </p>
     <h1 class="text-3xl sm:text-4xl md:text-5xl font-black">
-      Tailor your plan to perfectly suit <br class="hidden sm:block"> your business.
+      {{ 'pricing.title' | translate }}
     </h1>
     <p class="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-2xl font-semibold my-6 sm:my-12 mx-auto">
-      Our transparent pricing is built to ensure a healthy ROI and perfectly match your financial and operational frameworks.
+      {{ 'pricing.subtitle' | translate }}
     </p>
   </div>
 
   <div class="flex justify-center gap-2 sm:gap-4 flex-wrap text-center mt-6 sm:mt-10 text-base sm:text-lg md:text-xl font-bold text-gray-700">
-    <span class="text-[#002999]"> <span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Installation Support</span>
-    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Flexible Payment Options</span>
-    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Offline Mode</span>
-    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>Easy & Quick Setup</span>
+    <span class="text-[#002999]"> <span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>{{ 'pricing.installationSupport' | translate }}</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>{{ 'pricing.flexiblePayment' | translate }}</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>{{ 'pricing.offlineMode' | translate }}</span>
+    <span class="text-[#002999]"><span class="text-[#f48021] mr-1 sm:mr-2 font-bold">✓</span>{{ 'pricing.quickSetup' | translate }}</span>
   </div>
 
   <!-- Plan Toggle Switch -->
   <div class="flex justify-center items-center gap-3 sm:gap-4 mt-6 sm:mt-8">
-    <span class="text-base sm:text-lg font-semibold text-gray-700">Monthly</span>
+    <span class="text-base sm:text-lg font-semibold text-gray-700">{{ 'pricing.monthly' | translate }}</span>
     <label class="relative inline-flex items-center cursor-pointer">
       <input type="checkbox" [(ngModel)]="isYearly" class="sr-only peer">
       <div class="w-10 sm:w-11 h-5 sm:h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 sm:after:h-5 after:w-4 sm:after:w-5 after:transition-all peer-checked:bg-[#002999]"></div>
     </label>
     <span class="text-base sm:text-lg font-semibold">
-      Yearly <span [ngClass]="{'text-[#f48021] font-bold underline': isYearly}" class="text-[#f48021] font-bold">(50% Discount)</span>
+      {{ 'pricing.yearly' | translate }} <span [ngClass]="{'text-[#f48021] font-bold underline': isYearly}" class="text-[#f48021] font-bold">{{ 'pricing.discount50' | translate }}</span>
     </span>
   </div>
 
@@ -39,7 +39,7 @@
       <div class="col-span-1"></div>
       <div *ngFor="let plan of pricingPlans" class="text-center relative">
         <div class="{{plan.color}} text-white py-2 sm:py-3 px-4 sm:px-6 rounded-full font-bold text-sm sm:text-md absolute -top-5 sm:-top-6 left-1/2 -translate-x-1/2">
-          {{plan.name}}
+            {{ 'pricing.packages.' + plan.name.toLowerCase() | translate }}
         </div>
         
         <div class="bg-white py-4 sm:py-6 px-2 sm:px-4 border-l border-r border-gray-200 pt-8 sm:pt-10"
@@ -65,13 +65,13 @@
             </div>
             {{getCurrentPrice(plan)}}
             <span class="text-[14px] sm:text-[16px] md:text-[18px] text-gray-400 self-end">
-              /mo
+              {{ 'pricing.perMonth' | translate }}
             </span>
           </div>
           <div *ngIf="!isYearly" class="text-gray-600 text-xs sm:text-sm">per month</div>
-          <div *ngIf="isYearly" class="text-gray-600 text-xs sm:text-sm">Paid Annually</div>
+          <div *ngIf="isYearly" class="text-gray-600 text-xs sm:text-sm">{{ 'pricing.paidAnnually' | translate }}</div>
           <div class="text-gray-600 text-xs sm:text-sm">
-            Not Inc. VAT</div>
+            {{ 'pricing.notIncVat' | translate }}</div>
         </div>
       </div>
     </div>
@@ -83,15 +83,15 @@
            [class.border-b-0]="i === features.length - 1">
         
         <div class="col-span-1 flex items-center px-2 py-3">
-          <span class="mr-2 sm:mr-3 text-gray-400">●</span>
-          <span class="text-gray-700 font-medium text-sm sm:text-base">{{feature.name}}</span>
+            <span class="mr-2 sm:mr-3 text-gray-400">●</span>
+            <span class="text-gray-700 font-medium text-sm sm:text-base">{{ 'pricing.features.' + feature.translationKey | translate }}</span>
         </div>
         
         <div class="text-center flex items-center justify-center bg-white" [class.rounded-bl-3xl]="i === features.length - 1">
           <ng-container [ngSwitch]="feature.starter">
             <span *ngSwitchCase="'check'" class="text-[#002999] text-lg sm:text-xl font-bold">✓</span>
             <span *ngSwitchCase="'cross'" class="text-red-500 text-lg sm:text-xl font-bold">✖</span>
-            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">Optional Add On</span>
+            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">{{ 'pricing.optionalAddOn' | translate }}</span>
           </ng-container>
         </div>
         
@@ -99,7 +99,7 @@
           <ng-container [ngSwitch]="feature.standard">
             <span *ngSwitchCase="'check'" class="text-[#002999] text-lg sm:text-xl font-bold">✓</span>
             <span *ngSwitchCase="'cross'" class="text-red-500 text-lg sm:text-xl font-bold">✖</span>
-            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">Optional Add On</span>
+            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">{{ 'pricing.optionalAddOn' | translate }}</span>
           </ng-container>
         </div>
         
@@ -107,7 +107,7 @@
           <ng-container [ngSwitch]="feature.advanced">
             <span *ngSwitchCase="'check'" class="text-[#002999] text-lg sm:text-xl font-bold">✓</span>
             <span *ngSwitchCase="'cross'" class="text-red-500 text-lg sm:text-xl font-bold">✖</span>
-            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">Optional Add On</span>
+            <span *ngSwitchCase="'addon'" class="text-gray-500 text-xs sm:text-sm">{{ 'pricing.optionalAddOn' | translate }}</span>
           </ng-container>
         </div>
       </div>
@@ -146,13 +146,13 @@
             </div>
             {{getCurrentPrice(plan)}}
             <span class="text-[14px] text-gray-400 self-end">
-              /mo
+              {{ 'pricing.perMonth' | translate }}
             </span>
           </div>
           <div *ngIf="!isYearly" class="text-gray-600 text-xs">per month</div>
-          <div *ngIf="isYearly" class="text-gray-600 text-xs">Paid Annually</div>
+          <div *ngIf="isYearly" class="text-gray-600 text-xs">{{ 'pricing.paidAnnually' | translate }}</div>
           <div  class="text-gray-600 text-xs">
-            Not Inc. VAT</div>
+            {{ 'pricing.notIncVat' | translate }}</div>
         </div>
         
         <!-- Features Dropdown -->
@@ -161,7 +161,7 @@
             (click)="toggleFeatures(plan.name)" 
             class="w-full flex justify-between items-center p-4 text-left font-medium focus:outline-none"
           >
-            <span>Features</span>
+            <span>{{ 'pricing.features' | translate }}</span>
             <svg 
               [class.transform]="openFeatures === plan.name" 
               [class.rotate-180]="openFeatures === plan.name" 
@@ -180,19 +180,16 @@
             class="px-4 pb-4 space-y-2"
           >
             <div *ngFor="let feature of features" class="flex items-end">
-              <ng-container [ngSwitch]="getPlanFeatureValue(plan.name, feature)">
-                <span *ngSwitchCase="'check'" class="text-[#002999] text-lg font-bold mr-2 mt-0.5">✓</span>
-                <span *ngSwitchCase="'cross'" class="text-red-500 text-lg font-bold mr-2 mt-0.5">✖</span>
-                <span *ngSwitchCase="'addon'" class="text-amber-400 font-bold text-xs mr-2 mt-1.5 flex items-center">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
-                  </svg>
-                </span>
-                <span class="text-gray-700 text-sm">{{feature.name}}</span>
-                <!-- <span *ngSwitchCase="'addon'" class="text-amber-400 font-bold text-xs ml-2 mt-1.5 flex items-center">
-                  Add on
-                </span> -->
-              </ng-container>
+                <ng-container [ngSwitch]="getPlanFeatureValue(plan.name, feature)">
+                  <span *ngSwitchCase="'check'" class="text-[#002999] text-lg font-bold mr-2 mt-0.5">✓</span>
+                  <span *ngSwitchCase="'cross'" class="text-red-500 text-lg font-bold mr-2 mt-0.5">✖</span>
+                  <span *ngSwitchCase="'addon'" class="text-amber-400 font-bold text-xs mr-2 mt-1.5 flex items-center">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  <span class="text-gray-700 text-sm">{{ 'pricing.features.' + feature.translationKey | translate }}</span>
+                </ng-container>
             </div>
           </div>
         </div>

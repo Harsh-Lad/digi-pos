@@ -1,97 +1,42 @@
 import { NgClass, NgFor, NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-office-sections',
   templateUrl: './office-sections.component.html',
   styleUrls: ['./office-sections.component.css'],
   standalone: true,
-  imports: [NgClass, NgFor],
+  imports: [NgClass, NgFor, TranslateModule],
 })
-export class OfficeSectionsComponent {
+export class OfficeSectionsComponent implements OnInit {
   activeTab = 'Front Office';
   activeProductIndex = 0;
 
   tabs = ['Front Office', 'Back Office', 'Retail'];
 
-  data: Record<string, { name: string; description: string; image: string }[]> = {
+  constructor(public translate: TranslateService) {}
+
+  data: Record<string, { key: string; image: string }[]> = {
     'Front Office': [
-      {
-        name: 'Cloud Point of Sales',
-        description: `DigiPOS Cloud POS is a smart, cloud-based system that helps businesses manage sales, inventory, and customers in real time. It's easy to use, secure, and works across multiple locations.`,
-        image: 'front-office/Cloud POS.png',
-      },
-      {
-        name: 'Waiter Tab',
-        description: `Empower waiters to take orders tableside using tablets and sync with the main POS.`,
-        image: 'front-office/Waiter Tab.png',
-      },
-      {
-        name: 'DigiKDS - Kitchen Display System',
-        description: `Real-time kitchen order updates for faster fulfillment and less confusion.`,
-        image: 'front-office/KDS.png',
-      },
-      {
-        name: 'Customer Display',
-        description: `Digital screens showing order details and prices to enhance customer transparency.`,
-        image: 'front-office/Customer Display.png',
-      },
-      {
-        name: 'KIOSK - Self Ordering',
-        description: `Self-service kiosks for customers to browse menu and place orders independently.`,
-        image: 'front-office/Self Ordering Kiosk.png',
-      },
-
-
-      {
-        name: 'Online Ordering',
-        description: `Enable customers to place orders directly through your website or app.`,
-        image: 'front-office/Online Order.png',
-      },
-      {
-        name: 'Table Ordering',
-        description: `Allow customers to scan QR codes and order directly from their tables.`,
-        image: 'front-office/Table Ordering.png',
-      },
-      {
-        name: 'Queue Management System',
-        description: `Digital system to manage waiting lists and optimize seating efficiency.`,
-        image: 'front-office/Queue.png',
-      },
+      { key: 'cloudPos', image: 'front-office/Cloud POS.png' },
+      { key: 'waiterTab', image: 'front-office/Waiter Tab.png' },
+      { key: 'digiKDS', image: 'front-office/KDS.png' },
+      { key: 'customerDisplay', image: 'front-office/Customer Display.png' },
+      { key: 'kiosk', image: 'front-office/Self Ordering Kiosk.png' },
+      { key: 'onlineOrdering', image: 'front-office/Online Order.png' },
+      { key: 'tableOrdering', image: 'front-office/Table Ordering.png' },
+      { key: 'queueManagement', image: 'front-office/Queue.png' },
     ],
     'Back Office': [
-      {
-        name: 'Inventory Management',
-        description: `Create and manage purchase orders from multiple vendors.`,
-        image: 'back-office/Inventory.png',
-      },
-      {
-        name: 'Product & Menu Management',
-        description: `Create and manage your product catalog and menu items with pricing and options.`,
-        image: 'back-office/Porduct & Menu.png',
-      },
-      {
-        name: 'Recipe Management',
-        description: `Define and track ingredient quantities for recipes to monitor costs and inventory.`,
-        image: 'back-office/Recipe.png',
-      },
-      {
-        name: 'Purchase & Supply Chain Management',
-        description: `Streamline your purchasing process and manage vendor relationships efficiently.`,
-        image: 'back-office/Purchase.png',
-      },
+      { key: 'inventoryManagement', image: 'back-office/Inventory.png' },
+      { key: 'productMenuManagement', image: 'back-office/Porduct & Menu.png' },
+      { key: 'recipeManagement', image: 'back-office/Recipe.png' },
+      { key: 'purchaseSupplyChain', image: 'back-office/Purchase.png' },
     ],
     'Retail': [
-      {
-        name: 'Cloud Point of Sales',
-        description: `Powerful POS built for chain stores, with barcode scanning and offers.`,
-        image: 'front-office/Cloud POS.png',
-      },
-      {
-        name: 'Barcode Management',
-        description: `Reward repeat customers and improve retention with loyalty points.`,
-        image: 'front-office/Cloud POS.png',
-      },
+      { key: 'retailCloudPOS', image: 'front-office/Cloud POS.png' },
+      { key: 'barcodeManagement', image: 'front-office/Cloud POS.png' },
     ],
   };
 
@@ -101,6 +46,68 @@ export class OfficeSectionsComponent {
 
   get currentProduct() {
     return this.activeProducts[this.activeProductIndex];
+  }
+
+  ngOnInit() {
+    // Listen to language changes to update translations
+    this.translate.onLangChange.subscribe(() => {
+      // Component will automatically update due to translation methods
+    });
+  }
+
+  getTabTranslation(tab: string): string {
+    switch (tab) {
+      case 'Front Office':
+        return this.translate.instant('products.frontOffice.title');
+      case 'Back Office':
+        return this.translate.instant('products.backOffice.title');
+      case 'Retail':
+        return this.translate.instant('products.retail.title');
+      default:
+        return tab;
+    }
+  }
+
+  getProductNameTranslation(key: string): string {
+    let tabKey = '';
+    if (this.activeTab === 'Front Office') tabKey = 'frontOffice';
+    else if (this.activeTab === 'Back Office') tabKey = 'backOffice';
+    else if (this.activeTab === 'Retail') tabKey = 'retail';
+
+    // Try nested .title key for activeTab
+    let result = this.translate.instant(`products.${tabKey}.${key}.title`);
+    if (!result || result === `products.${tabKey}.${key}.title`) {
+      // Fallbacks for other tabs
+      result = this.translate.instant(`products.frontOffice.${key}.title`);
+      if (!result || result === `products.frontOffice.${key}.title`) {
+        result = this.translate.instant(`products.backOffice.${key}.title`);
+        if (!result || result === `products.backOffice.${key}.title`) {
+          result = this.translate.instant(`products.retail.${key}.title`);
+        }
+      }
+    }
+    return result;
+  }
+
+  getProductDescriptionTranslation(key: string): string {
+    let tabKey = '';
+    if (this.activeTab === 'Front Office') tabKey = 'frontOffice';
+    else if (this.activeTab === 'Back Office') tabKey = 'backOffice';
+    else if (this.activeTab === 'Retail') tabKey = 'retail';
+
+    // Try nested .description key for activeTab
+    let result = this.translate.instant(`products.${tabKey}.${key}.description`);
+    if (!result || result === `products.${tabKey}.${key}.description`) {
+      // Fallbacks for other tabs
+      result = this.translate.instant(`products.frontOffice.${key}.description`);
+      if (!result || result === `products.frontOffice.${key}.description`) {
+        result = this.translate.instant(`products.backOffice.${key}.description`);
+        if (!result || result === `products.backOffice.${key}.description`) {
+          result = this.translate.instant(`products.retail.${key}.description`);
+        }
+      }
+    }
+    return result;
   }
 
   switchTab(tab: string) {

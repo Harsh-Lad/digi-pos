@@ -11,21 +11,20 @@
               <div class="lg:w-1/2 text-white relative flex items-center h-full demo-form-left">
                 <div class="my-auto">
                   <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 sm:mb-6">
-                   Discover DigiPOS <br class="hidden sm:block" />
-                   <span class="text-[#f48021]">– Free Demo</span>
+                   {{ 'demoForm.title' | translate }}
                   </h2>
                   <div class="space-y-4 text-sm sm:text-base max-w-md">
                     <div class="flex items-start space-x-2">
                       <span class="text-[#f48021] flex-shrink-0 font-bold text-2xl">✓</span>
-                      <span>Complete the form, and our expert will contact you within 24 hours to arrange your free demo.</span>
+                      <span>{{ 'demoForm.subtitle1' | translate }}</span>
                     </div>
                     <div class="flex items-start space-x-2">
                       <span class="text-[#f48021] flex-shrink-0 font-bold text-2xl">✓</span>
-                      <span>Your session will feature a tailored walkthrough of DigiPOS, designed around your restaurant's specific requirements.</span>
+                      <span>{{ 'demoForm.subtitle2' | translate }}</span>
                     </div>
                     <div class="flex items-start space-x-2">
                       <span class="text-[#f48021] flex-shrink-0 font-bold text-2xl">✓</span>
-                      <span>After the demo, we'll provide a customized quote based on the hardware and software setup that best suits your business.</span>
+                      <span>{{ 'demoForm.subtitle3' | translate }}</span>
                     </div>
                   </div>
                 </div>
@@ -44,38 +43,38 @@
 
 
                     <div>
-                      <label class="block text-xs sm:text-sm font-medium mb-1">First name*</label>
+                      <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.firstName' | translate }}<span class="text-red-500">{{ 'demoForm.required' | translate }}</span></label>
                       <input type="text" formControlName="firstName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                               focus:outline-none focus:ring focus:ring-orange-300"
                         [ngClass]="{'border-red-500': submitted && f['firstName'].errors}" />
                       <div *ngIf="submitted && f['firstName'].errors" class="text-red-500 text-xs mt-1">
-                        First name is required
+                        {{ 'demoForm.errors.firstNameRequired' | translate }}
                       </div>
                     </div>
                     <div>
-                      <label class="block text-xs sm:text-sm font-medium mb-1">Last name*</label>
+                      <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.lastName' | translate }}<span class="text-red-500">{{ 'demoForm.required' | translate }}</span></label>
                       <input type="text" formControlName="lastName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                               focus:outline-none focus:ring focus:ring-orange-300"
                         [ngClass]="{'border-red-500': submitted && f['lastName'].errors}" />
                       <div *ngIf="submitted && f['lastName'].errors" class="text-red-500 text-xs mt-1">
-                        Last name is required
+                        {{ 'demoForm.errors.lastNameRequired' | translate }}
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Email*</label>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.email' | translate }}<span class="text-red-500">{{ 'demoForm.required' | translate }}</span></label>
                     <input type="email" formControlName="email" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                             focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['email'].errors}" />
                     <div *ngIf="submitted && f['email'].errors" class="text-red-500 text-xs mt-1">
-                      <span *ngIf="f['email'].errors['required']">Email is required</span>
-                      <span *ngIf="f['email'].errors['email']">Please enter a valid email</span>
+                      <span *ngIf="f['email'].errors['required']">{{ 'demoForm.errors.emailRequired' | translate }}</span>
+                      <span *ngIf="f['email'].errors['email']">{{ 'demoForm.errors.validEmail' | translate }}</span>
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Phone number*</label>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.phoneNumber' | translate }}<span class="text-red-500">{{ 'demoForm.required' | translate }}</span></label>
                     <div class="flex flex-col gap-2">
                       <div class="relative w-full h-full">
                         <div class="flex gap-2 h-full">
@@ -101,43 +100,43 @@
                       </div>
                     </div>
                     <div *ngIf="submitted && f['phoneNumber'].errors" class="text-red-500 text-xs mt-1">
-                      Phone number is required
+                      {{ 'demoForm.errors.phoneRequired' | translate }}
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Business name</label>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.businessName' | translate }}</label>
                     <input type="text" formControlName="businessName" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 text-sm sm:text-base
                             focus:outline-none focus:ring focus:ring-orange-300" />
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Number of branches*</label>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.branches' | translate }}<span class="text-red-500">{{ 'demoForm.required' | translate }}</span></label>
                     <select formControlName="branches" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
                                   focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['branches'].errors}">
-                      <option value="">Please Select</option>
-                      <option value="1-5">1-5</option>
-                      <option value="6-15">6-15</option>
-                      <option value="15+">15+</option>
+                      <option value="">{{ 'demoForm.pleaseSelect' | translate }}</option>
+                      <option value="1-5">{{ 'demoForm.branches1to5' | translate }}</option>
+                      <option value="6-15">{{ 'demoForm.branches6to15' | translate }}</option>
+                      <option value="15+">{{ 'demoForm.branches15plus' | translate }}</option>
                     </select>
                     <div *ngIf="submitted && f['branches'].errors" class="text-red-500 text-xs mt-1">
-                      Please select number of branches
+                      {{ 'demoForm.errors.branchesRequired' | translate }}
                     </div>
                   </div>
 
                   <div>
-                    <label class="block text-xs sm:text-sm font-medium mb-1">Country Name*</label>
+                    <label class="block text-xs sm:text-sm font-medium mb-1">{{ 'demoForm.country' | translate }}<span class="text-red-500">{{ 'demoForm.required' | translate }}</span></label>
                     <select formControlName="country" class="w-full border rounded-md px-2 sm:px-3 py-1.5 sm:py-2 bg-white text-xs sm:text-sm
                                   focus:outline-none focus:ring focus:ring-orange-300"
                       [ngClass]="{'border-red-500': submitted && f['country'].errors}">
-                      <option value="">Please Select</option>
+                      <option value="">{{ 'demoForm.pleaseSelect' | translate }}</option>
                       <option *ngFor="let country of countries" [value]="country.name">
                         {{ country.name }}
                       </option>
                     </select>
                     <div *ngIf="submitted && f['country'].errors" class="text-red-500 text-xs mt-1">
-                      Please select a country
+                      {{ 'demoForm.errors.countryRequired' | translate }}
                     </div>
                   </div>
 
@@ -145,21 +144,21 @@
                     <label class="flex gap-2 items-start">
                       <input type="checkbox" formControlName="terms" class="mt-0.5"
                         [ngClass]="{'outline-red-500': submitted && f['terms'].errors}" />
-                      <span>I confirm that I have read, understood and agree to the
-                        <a href="#" class="text-[#f48021] underline">Terms and Conditions</a>*</span>
+                      <span>{{ 'demoForm.termsText' | translate }}
+                        <a href="#" class="text-[#f48021] underline">{{ 'demoForm.termsLink' | translate }}</a><span class="text-red-500">{{ 'demoForm.required' | translate }}</span></span>
                     </label>
                     <div *ngIf="submitted && f['terms'].errors" class="text-red-500 text-xs mt-1">
-                      You must accept the terms and conditions
+                      {{ 'demoForm.errors.termsRequired' | translate }}
                     </div>
 
                     <label class="flex gap-2 items-start">
                       <input type="checkbox" formControlName="privacy" class="mt-0.5"
                         [ngClass]="{'outline-red-500': submitted && f['privacy'].errors}" />
-                      <span>By using this form you agree with our
-                        <a href="#" class="text-[#f48021] underline">Privacy Policy</a>*</span>
+                      <span>{{ 'demoForm.privacyText' | translate }}
+                        <a href="#" class="text-[#f48021] underline">{{ 'demoForm.privacyLink' | translate }}</a><span class="text-red-500">{{ 'demoForm.required' | translate }}</span></span>
                     </label>
                     <div *ngIf="submitted && f['privacy'].errors" class="text-red-500 text-xs mt-1">
-                      You must accept the privacy policy
+                      {{ 'demoForm.errors.privacyRequired' | translate }}
                     </div>
                   </div>
 
@@ -167,7 +166,7 @@
                           py-2 sm:py-2.5 md:py-3 
                           text-sm sm:text-base
                           rounded-md mt-3 sm:mt-4 transition duration-300 shadow-md">
-                    Submit
+                    {{ 'demoForm.submit' | translate }}
                   </button>
                 </form>
                 <div class="custom-toast" [class.show]="showToastFlag">

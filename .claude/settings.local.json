@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Read(C:\\Users\\ASIT\\Downloads/**)",
+      "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic/**)",
+      "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic/**)",
+      "Bash(dir:*)",
+      "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic/**)",
+      "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic\\/**)",
+      "Read(C:\\Users\\ASIT\\Downloads/**)"
     ],
     "deny": [],
     "ask": []

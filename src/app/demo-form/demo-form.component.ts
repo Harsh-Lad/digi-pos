@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 import axios from 'axios';
 
 @Component({
@@ -8,7 +9,7 @@ import axios from 'axios';
   templateUrl: './demo-form.component.html',
   styleUrls: ['./demo-form.component.css'],
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule]
+  imports: [CommonModule, ReactiveFormsModule, TranslateModule]
 })
 export class DemoFormComponent implements OnInit {
   demoForm: FormGroup;

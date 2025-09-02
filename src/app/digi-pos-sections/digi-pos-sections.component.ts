@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule, NgFor, NgClass } from '@angular/common';
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 interface Card {
-  title: string;
-  subtext: string;
-  description: string;
+  headingKey: string;
+  titleKey: string;
+  subtextKey: string;
+  descriptionKey: string;
   icon: string;
-  svgPath?: string; // Changed from materialIcon to svgPath
+  svgPath?: string;
 }
 
 @Component({
@@ -15,7 +17,7 @@ interface Card {
   templateUrl: './digi-pos-sections.component.html',
   styleUrls: ['./digi-pos-sections.component.css'],
   standalone: true,
-  imports: [CommonModule, NgFor, NgClass],
+  imports: [CommonModule, NgFor, NgClass, TranslateModule],
   animations: [
     trigger('cardAnimation', [
       state('active', style({
@@ -53,31 +55,34 @@ export class DigiPosSectionsComponent implements OnInit {
   
   cards: Card[] = [
     {
-      title: 'Fine Dining',
-      subtext: 'Elevating Experiences',
-      description: 'Our advanced POS system helps you manage transactions efficiently with an intuitive interface.',
+      headingKey: 'products.businessModels.fineDining.heading',
+      titleKey: 'products.businessModels.fineDining.title',
+      subtextKey: 'products.businessModels.fineDining.subtitle',
+      descriptionKey: 'products.businessModels.fineDining.description',
       icon: 'assets/icons/pos.png',
       svgPath: '/Artboard 3.svg'
     },
     {
-      title: 'Quick Service',
-      subtext: 'Speed and Efficiency',
-      description: 'Keep track of your inventory levels with automated alerts and easy stock management.',
+      headingKey: 'products.businessModels.quickService.heading',
+      titleKey: 'products.businessModels.quickService.title',
+      subtextKey: 'products.businessModels.quickService.subtitle',
+      descriptionKey: 'products.businessModels.quickService.description',
       icon: 'assets/icons/inventory.png',
-      // svgPath: '/leaflet-icon.svg'
       svgPath: '/Artboard 4.svg'
     },
     {
-      title: 'Food Trucks',
-      subtext: 'On-the-Go Success',
-      description: 'Efficiently manage tables, orders, and kitchen operations for your dining establishment.',
+      headingKey: 'products.businessModels.foodTrucks.heading',
+      titleKey: 'products.businessModels.foodTrucks.title',
+      subtextKey: 'products.businessModels.foodTrucks.subtitle',
+      descriptionKey: 'products.businessModels.foodTrucks.description',
       icon: 'assets/icons/dining.png',
       svgPath: '/Artboard 5.svg'
     },
     {
-      title: 'Café & Bakery',
-      subtext: 'Tech-Infused Convenience',
-      description: 'Track and manage your delivery services with real-time updates and route optimization.',
+      headingKey: 'products.businessModels.cafeBakery.heading',
+      titleKey: 'products.businessModels.cafeBakery.title',
+      subtextKey: 'products.businessModels.cafeBakery.subtitle',
+      descriptionKey: 'products.businessModels.cafeBakery.description',
       icon: 'assets/icons/delivery.png',
       svgPath: '/Artboard 6.svg'
     }
@@ -87,7 +92,7 @@ export class DigiPosSectionsComponent implements OnInit {
     return this.cards[this.selectedIndex];
   }
 
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit(): void {
   }

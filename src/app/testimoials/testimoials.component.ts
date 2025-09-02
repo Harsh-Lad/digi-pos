@@ -1,67 +1,68 @@
 import { NgClass, NgFor } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-testimonials',
   templateUrl: './testimoials.component.html',
   styleUrls: ['./testimoials.component.css'],
-  imports: [NgFor, NgClass],
+  imports: [NgFor, NgClass, TranslateModule],
 })
 export class TestimonialsComponent {
   testimonials = [
     {
-      text: 'The reporting tools in DigiPOS have been invaluable. We can easily track sales trends, identify peak times, and make data-driven decisions to improve our business',
-      name: 'Peroz Agha',
+      textKey: 'testimonials.items.perozAgha.text',
+      nameKey: 'testimonials.items.perozAgha.name',
+      companyKey: 'testimonials.items.perozAgha.company',
       logo: '/clients/Peroz Logo.png',
-      company: 'Founder - Peroz Healthy Eatery',
     },
     {
-      text: 'The integration with our accounting software has simplified our bookkeeping process. It’s saved us time and money.',
-      name: 'Julie Castillo',
+      textKey: 'testimonials.items.julieCastillo.text',
+      nameKey: 'testimonials.items.julieCastillo.name',
+      companyKey: 'testimonials.items.julieCastillo.company',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS514_lI1jAFIay7BpTuwPsWfgqcnwGVo-keg&s',
-      company: 'OM - New York Coffee',
     },
     {
-      text: 'The reporting capabilities are excellent. We’re able to track sales trends, identify peak times, and analyze our menu performance with ease.',
-      name: 'Islamuddin Shaikh',
+      textKey: 'testimonials.items.islamuddinShaikh.text',
+      nameKey: 'testimonials.items.islamuddinShaikh.name',
+      companyKey: 'testimonials.items.islamuddinShaikh.company',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqV1rvTlVafApBTDbi1d_7COTa5DWBPjUtjw&s',
-      company: 'MD - Brasa de Brazil',
     },
     {
-      text: 'The customer-facing features, such as the ability to take orders and process payments at the table, have enhanced the dining experience for our guests.',
-      name: 'Shamsher Khan',
+      textKey: 'testimonials.items.shamsherKhan.text',
+      nameKey: 'testimonials.items.shamsherKhan.name',
+      companyKey: 'testimonials.items.shamsherKhan.company',
       logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1aVFZUJN1_3pkOYPBkNQSwHSGzjnAdqA9w&s',
-      company: 'BM - Taya Restaurant',
     },
     {
-      text: "I wanted to express my sincere gratitude for your continued partnership and support. We've achieved some fantastic results together, and I truly appreciate your collaboration and commitment. Specifically, your fast response for our requirement has been invaluable to our success.",
-      name: 'Shameer Palangat',
+      textKey: 'testimonials.items.shameerPalangat.text',
+      nameKey: 'testimonials.items.shameerPalangat.name',
+      companyKey: 'testimonials.items.shameerPalangat.company',
       logo: 'https://images.deliveryhero.io/image/hungerstation/restaurant/logo/bf92e8810bb54de2c0ce3454a6ab9153.jpg',
-      company: 'IT - Shwaiat Al Khalij',
     },
     {
-      text: "I would like to inform you that we are impressed by your DigiPOS, in terms of performance.We highly recommend to our partners and friends as it's highly cost effective and easy to use. Thanks for your support.",
-      name: 'Enayath',
+      textKey: 'testimonials.items.enayath.text',
+      nameKey: 'testimonials.items.enayath.name',
+      companyKey: 'testimonials.items.enayath.company',
       logo: 'https://scoopempire.com/wp-content/uploads/2018/06/WhatsApp-Image-2018-06-13-at-3.04.46-PM.jpeg',
-      company: 'IT Manager - SADF',
     },
     {
-      text: 'We have found the DigiPOS system to be efficient, effective, and user-friendly. It is easy for staff to access and operate, which helps streamline daily tasks. The system provides clear and comprehensive reports that support both operational and financial decision-making. In terms of customer support, the Digi POS team is highly responsive and helpful. They are quick to resolve any issues that arise, ensuring minimal disruption to our business. Overall, we highly recommend Digi POS for small to medium-sized restaurants. The system offers great value for its competitive cost.',
-      name: 'Mr. Elias',
+      textKey: 'testimonials.items.mrElias.text',
+      nameKey: 'testimonials.items.mrElias.name',
+      companyKey: 'testimonials.items.mrElias.company',
       logo: 'https://images.deliveryhero.io/image/hungerstation/restaurant/logo/3651fb804c3932f1f75fa601dec9833c.jpeg',
-      company: 'Operations Manager - Nice Bun',
     },
     {
-      text: "I started using the Digi POS system about a month ago, and honestly, it's excellent. It's cloud-based, seamless, and easy to use, especially when adding items and distributing them to printers. Performance is very fast, thank God. The reports are clear and detailed, and the support team was very responsive to my needs. When I requested a custom report, they prepared it in less than a week. Special thanks to Abu Osama and Imran for their wonderful efforts",
-      name: 'Mubark',
+      textKey: 'testimonials.items.mubark.text',
+      nameKey: 'testimonials.items.mubark.name',
+      companyKey: 'testimonials.items.mubark.company',
       logo: '/clients/Avindar Logo.jpg',
-      company: 'IT Manager - Avindar ',
     },
     {
-      text: 'Peace be upon you. We are a grape and fig restaurant in the Al Hokair Group. We would like to inform you that we use Digipos for accounting in our restaurants. We have three accounts with them, and it is one of the best accounts we have used in terms of ease of operation, good reports that assist accounting, and the ease of adding items. In addition to all of this, I prefer it over other accounting programs. We thank and appreciate your cooperation.',
-      name: 'Bakhos Al Daouk',
+      textKey: 'testimonials.items.bakhosAlDaouk.text',
+      nameKey: 'testimonials.items.bakhosAlDaouk.name',
+      companyKey: 'testimonials.items.bakhosAlDaouk.company',
       logo: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR74gYoJ3eLH-f1gtp4U-rphHYwtCA65TePsBm7-tNJ2FZWW4BP',
-      company: 'Operation Manager - Baan Holding',
     },
   ];
 

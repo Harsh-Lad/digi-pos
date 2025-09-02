@@ -9,7 +9,7 @@
                  hover:bg-[#e6721e] hover:scale-105 transition-all duration-200 shadow-lg
                  -bottom-4 md:-bottom-6
                  left-1/2 transform -translate-x-[calc(100%+0.75rem)] sm:-translate-x-[calc(100%+1rem)] md:-translate-x-[calc(100%+1.5rem)]">
-    Get a Demo
+  {{ 'home.getDemo' | translate }}
   </a>
   
   <a href="/pricing" class="absolute z-20 bg-[#f48021] cursor-pointer text-[#002999] font-bold 
@@ -20,18 +20,14 @@
 
                  left-1/2 transform translate-x-[0.75rem] sm:translate-x-[1rem] md:translate-x-[1.5rem]" 
           routerLink="/pricing">
-    See Pricing
+  {{ 'home.seePricing' | translate }}
   </a>
   </section>
 
 <section class="my-24">
-  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl mx-auto">Built for Modern Businesses. <br>
- Trusted by Growing Ones.
-  </h2>
-  <p class="text-center text-gray-600 text-md md:text-2xl tracking-wider md:w-2/5 mx-auto">DigiPOS is a next-generation Point of Sale system 
-    tailored for restaurants retail, food service, and service based businesses.</p>
-  <p class="text-center font-bold text-[#f48021] underline underline-offset-2 cursor-pointer mt-5 text-base md:text-xl ">Learn
-    More</p>
+  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl mx-auto" [innerHTML]="'home.builtForModernBusinesses' | translate"></h2>
+  <p class="text-center text-gray-600 text-md md:text-2xl tracking-wider md:w-2/5 mx-auto">{{ 'home.builtForModernBusinessesDesc' | translate }}</p>
+  <p class="text-center font-bold text-[#f48021] underline underline-offset-2 cursor-pointer mt-5 text-base md:text-xl ">{{ 'home.learnMore' | translate }}</p>
   <img src="/02 Tablet Screen Mockup copy.png" alt="Hero Image" class="w-screen md:w-[95svw] mt-6 md:mt-0 h-auto object-cover mx-auto">
   <section class="mt-8 md:mt-0">
     <app-marquee></app-marquee>
@@ -39,11 +35,8 @@
 </section>
 
 <div class="section mt-24 mb-12">
-  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl">Powering the Future of <br>
-    Restaurant Management</h2>
-  <p class="mx-auto text-center px-4 md:p-0 md:w-2/4 text-gray-600 text-md md:text-2xl tracking-wider mb-12">From local cafés to global F&B chains, businesses trust
-    on DigiPOS to  streamline every aspect of their operations. With our all-in-one  cloud-based POS and
-    restaurant management system, handling orders, payments, and inventory has never been easier.</p>
+  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl" [innerHTML]="'home.poweringFutureTitle' | translate"></h2>
+  <p class="mx-auto text-center px-4 md:p-0 md:w-2/4 text-gray-600 text-md md:text-2xl tracking-wider mb-12">{{ 'home.poweringFutureDesc' | translate }}</p>
   <app-image-marquee></app-image-marquee>
 </div>
 
@@ -51,7 +44,7 @@
   <div class="absolute inset-0 w-full h-full overflow-hidden">
     <video autoplay muted loop playsinline class="w-full h-full object-cover">
         <source src="https://res.cloudinary.com/dymjptips/video/upload/video_geyshy.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        {{ 'home.browserNotSupported' | translate }}
       </video>
   </div>
   <div class="absolute inset-0 bg-black/40 bg-opacity-40"></div>
@@ -61,29 +54,16 @@
 </section>
 
 <div class="section my-24">
-  <h2 class="text-center text-[#002999] mb-4 md:mb-8 font-bold tracking-tight text-2xl md:text-5xl ">Connect. Control. Grow.</h2>
-  <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider mx-auto w-3/5">DigiPOS provides an integrated retail solution with
-    efficient front office
-    sales tools, powerful back office management, and reliable retail 
-    hardware and software - designed to streamline operations and 
-    enhance the customer experience.</p>
-  <p class="mx-auto text-center px-4 md:p-0 md:w-5/5 text-gray-600 block md:hidden text-md md:text-2xl tracking-wider">DigiPOS provides an integrated retail solution with
-    efficient front office
-    sales tools, powerful back office management, and reliable retail
-    hardware and software - designed to streamline operations and 
-    enhance the customer experience.</p>
+  <h2 class="text-center text-[#002999] mb-4 md:mb-8 font-bold tracking-tight text-2xl md:text-5xl ">{{ 'home.connectControlGrowTitle' | translate }}</h2>
+  <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider mx-auto w-3/5">{{ 'home.connectControlGrowDesc' | translate }}</p>
+  <p class="mx-auto text-center px-4 md:p-0 md:w-5/5 text-gray-600 block md:hidden text-md md:text-2xl tracking-wider">{{ 'home.connectControlGrowDesc' | translate }}</p>
   <app-office-sections></app-office-sections>
 </div>
 
 <div class="responsive-integrations md:pt-32 md:pb-12">
-  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl">Powering the Future of <br>
-    Restaurant Management</h2>
-  <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block">From local cafés to global F&B chains, businesses trust
-    on DigiPOS to <br> streamline every aspect of their operations. With our all-in-one <br> cloud-based POS and
-    restaurant management system, handling orders, <br> payments, and inventory has never been easier.</p>
-  <p class="text-center text-gray-600 text-md px-2 tracking-wider block md:hidden mb-12">From local cafés to global F&B chains, businesses trust
-    on DigiPOS to streamline every aspect of their operations. With our all-in-one cloud-based POS and
-    restaurant management system, handling orders, payments, and inventory has never been easier.</p>
+  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl" [innerHTML]="'home.poweringFutureTitle' | translate"></h2>
+  <p class="text-center text-gray-600 text-2xl tracking-wider hidden md:block">{{ 'home.poweringFutureDesc' | translate }}</p>
+  <p class="text-center text-gray-600 text-md px-2 tracking-wider block md:hidden mb-12">{{ 'home.poweringFutureDesc' | translate }}</p>
     <section class="-mt-10 mb-24 md:mt-0 md:mb-0 ">
       <app-integrations-marquee></app-integrations-marquee>
     </section>
@@ -91,18 +71,9 @@
 </div>
 
 <div class="section mb-24 mar-top">
-  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl">Discover How digiPOS Helps <br>
-    Their Businesses Thrive</h2>
-  <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">We take pride in providing exceptional point-of-sale
-    solutions that <br>
-    empower businesses to grow and streamline their operations. But <br>
-    don't just take our word for it! Here's what our clients have to say <br>
-    about their experience with our system.</p>
-  <p class="text-center block md:hidden text-gray-600 text-md px-2 tracking-wider">We take pride in providing exceptional point-of-sale
-    solutions that
-    empower businesses to grow and streamline their operations. But 
-    don't just take our word for it! Here's what our clients have to say 
-    about their experience with our system.</p>
+  <h2 class="text-center text-[#002999] mb-8 font-bold tracking-tight text-2xl md:text-5xl" [innerHTML]="'home.discoverHelpsTitle' | translate"></h2>
+  <p class="text-center hidden md:block text-gray-600 text-2xl tracking-wider">{{ 'home.discoverHelpsDesc' | translate }}</p>
+  <p class="text-center block md:hidden text-gray-600 text-md px-2 tracking-wider">{{ 'home.discoverHelpsDesc' | translate }}</p>
   <app-testimonials></app-testimonials>
 </div>
 
@@ -116,7 +87,7 @@
 
 <div class="fixed bottom-5 right-5 z-50 bg-white rounded-full">
   <a href="https://api.whatsapp.com/send?phone=+966553378286&text=Hello%20DigiPOS%20Team" target="_blank">
-    <img src="https://cdn-icons-png.freepik.com/256/2496/2496112.png?semt=ais_hybrid" alt="WhatsApp" class="w-12 md:w-16 h-12 md:h-16 rounded-full z-100 shadow-lg hover:shadow-xl">
+    <img src="https://cdn-icons-png.freepik.com/256/2496/2496112.png?semt=ais_hybrid" alt="{{ 'home.whatsappAlt' | translate }}" class="w-12 md:w-16 h-12 md:h-16 rounded-full z-100 shadow-lg hover:shadow-xl">
   </a>
 </div>
 </section>

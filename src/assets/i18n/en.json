@@ -1,5 +1,6 @@
 {
   "navbar": {
+    "business": "Business",
     "products": "Products",
     "hardware": "Hardware",
     "businessTypes": "Business Types",
@@ -58,33 +59,31 @@
         "barcodeScanners": "Bar Code Scanners",
         "barcodeScannersDesc": "Fast and accurate product scanning devices."
       },
-      "business": {
-        "restaurants": "RESTAURANTS",
-        "retail": "RETAIL",
-        "fineDine": "Fine Dine",
-        "fineDineDesc": "POS solutions tailored for cafés and bakeries.",
-        "casualDining": "Casual Dining",
-        "casualDiningDesc": "Complete POS systems for full-service dining establishments.",
-        "quickService": "Quick Service",
-        "quickServiceDesc": "Fast and efficient systems for quick service restaurants.",
-        "foodTrucks": "Food Trucks",
-        "foodTrucksDesc": "Mobile POS solutions for food trucks and kiosks.",
-        "cafeBakery": "Café & Bakery",
-        "cafeBakeryDesc": "POS solutions tailored for cafés and bakeries.",
-        "cloudKitchen": "Cloud Kitchen",
-        "cloudKitchenDesc": "POS solutions for delivery-only restaurants.",
-        "supermarket": "Supermarket",
-        "supermarketDesc": "Comprehensive POS solutions for grocery and supermarkets.",
-        "pharmacy": "Pharmacy",
-        "pharmacyDesc": "Specialized POS systems for pharmacies and drugstores.",
-        "garments": "Garments & Apparels",
-        "garmentsDesc": "Inventory and sales management for garment retailers.",
-        "laundry": "Laundry Shop",
-        "laundryDesc": "POS solutions for laundry and dry cleaning businesses.",
-        "flowerShop": "Flower Shop",
-        "flowerShopDesc": "Specialized solutions for florists and flower shops.",
-        "salon": "Salon",
-        "salonDesc": "POS and appointment systems for salons and spas."
+      "businessModels": {
+        "fineDining": {
+          "title": "Fine Dining",
+          "subtitle": "Elevating Experiences",
+          "heading": "Fine Dining with DigiPOS",
+          "description": "Our advanced POS system helps you manage transactions efficiently with an intuitive interface."
+        },
+        "quickService": {
+          "title": "Quick Service",
+          "subtitle": "Speed and Efficiency",
+          "heading": "Quick Service with DigiPOS",
+          "description": "Keep track of your inventory levels with automated alerts and easy stock management."
+        },
+        "foodTrucks": {
+          "title": "Food Trucks",
+          "subtitle": "On-the-Go Success",
+          "heading": "Food Trucks with DigiPOS",
+          "description": "Efficiently manage tables, orders, and kitchen operations for your dining establishment."
+        },
+        "cafeBakery": {
+          "title": "Café & Bakery",
+          "subtitle": "Tech-infused Convenience",
+          "heading": "Café & Bakery with DigiPOS",
+          "description": "Track and manage your delivery services with real-time updates and route optimization."
+        }
       },
       "marketplace": {
         "paymentIntegrations": "PAYMENT INTEGRATIONS",
@@ -115,5 +114,385 @@
         "erpnextDesc": "Open source ERP system integration."
       }
     }
+  },
+  "home": {
+    "getDemo": "Get a Demo",
+    "seePricing": "See Pricing",
+    "builtForModernBusinesses": "Built for Modern Businesses. <br> Trusted by Growing Ones.",
+    "builtForModernBusinessesDesc": "DigiPOS is a next-generation Point of Sale system tailored for restaurants retail, food service, and service based businesses.",
+    "learnMore": "Learn More",
+    "poweringFutureTitle": "Powering the Future of <br> Restaurant Management",
+    "poweringFutureDesc": "From local cafés to global F&B chains, businesses trust on DigiPOS to streamline every aspect of their operations. With our all-in-one cloud-based POS and restaurant management system, handling orders, payments, and inventory has never been easier.",
+    "connectControlGrowTitle": "Connect. Control. Grow.",
+    "connectControlGrowDesc": "DigiPOS provides an integrated retail solution with efficient front office sales tools, powerful back office management, and reliable retail hardware and software - designed to streamline operations and enhance the customer experience.",
+    "discoverHelpsTitle": "Discover How digiPOS Helps <br> Their Businesses Thrive",
+    "discoverHelpsDesc": "We take pride in providing exceptional point-of-sale solutions that empower businesses to grow and streamline their operations. But don't just take our word for it! Here's what our clients have to say about their experience with our system.",
+    "platformsTitle": "Platforms",
+    "contactTitle": "Contact Us",
+    "whatsappAlt": "WhatsApp",
+    "footerTitle": "Footer",
+    "browserNotSupported": "Your browser does not support the video tag."
+  },
+  "hero": {
+    "cloudBasedPos": "Cloud-based POS",
+    "cloudBased": "Cloud-based",
+    "pos": "POS",
+    "focusOnWhatYou": "Focus on What",
+    "you": "you",
+    "loveMost": "love most.",
+    "poweringTomorrows": "Powering Tomorrow's"
+  },
+  "contactForm": {
+    "title": "Ready to Transform <br> Your Business?",
+    "subtitle": "Get in touch with our team and discover how DigiPOS can streamline your operations.",
+    "getDemo": "Get a Demo",
+    "letsTalk": "Let's Talk",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phoneNumber": "Phone Number",
+    "businessName": "Business Name",
+    "branches": "Number of Branches",
+    "country": "Country",
+    "pleaseSelect": "Please Select",
+    "branches1to5": "1-5 branches",
+    "branches6to15": "6-15 branches",
+    "branches15plus": "15+ branches",
+    "termsText": "I agree to the ",
+    "termsLink": "Terms and Conditions",
+    "privacyText": "I agree to the ",
+    "privacyLink": "Privacy Policy",
+    "submit": "Submit",
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "validEmail": "Please enter a valid email",
+      "phoneRequired": "Phone number is required",
+      "branchesRequired": "Number of branches is required",
+      "countryRequired": "Country is required",
+      "termsRequired": "You must agree to the terms and conditions",
+      "privacyRequired": "You must agree to the privacy policy"
+    }
+  },
+  "demoForm": {
+    "title": "Discover DigiPOS – Free Demo",
+    "subtitle1": "Complete the form, and our expert will contact you within 24 hours to arrange your free demo.",
+    "subtitle2": "Your session will feature a tailored walkthrough of DigiPOS, designed around your restaurant's specific requirements.",
+    "subtitle3": "After the demo, we'll provide a customized quote based on the hardware and software setup that best suits your business.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phoneNumber": "Phone number",
+    "businessName": "Business name",
+    "branches": "Number of branches",
+    "country": "Country Name",
+    "required": "*",
+    "pleaseSelect": "Please Select",
+    "branches1to5": "1-5",
+    "branches6to15": "6-15",
+    "branches15plus": "15+",
+    "termsText": "I confirm that I have read, understood and agree to the",
+    "termsLink": "Terms and Conditions",
+    "privacyText": "By using this form you agree with our",
+    "privacyLink": "Privacy Policy",
+    "submit": "Submit",
+    "errors": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "validEmail": "Please enter a valid email",
+      "phoneRequired": "Phone number is required",
+      "branchesRequired": "Please select number of branches",
+      "countryRequired": "Please select a country",
+      "termsRequired": "You must accept the terms and conditions",
+      "privacyRequired": "You must accept the privacy policy"
+    }
+  },
+  "demo": {
+    "title": "Explore DigiPOS Risk-Free.",
+    "subtitle": "Let us walk you through a hands-on demo tailored to your needs, showcasing DigiPOS features built for your success."
+  },
+  "pricing": {
+    "contactSales": "Contact Sales: +966 55 337 8286",
+    "title": "Tailor your plan to perfectly suit your business.",
+    "subtitle": "Our transparent pricing is built to ensure a healthy ROI and perfectly match your financial and operational frameworks.",
+    "installationSupport": "Installation Support",
+    "flexiblePayment": "Flexible Payment Options",
+    "offlineMode": "Offline Mode",
+    "quickSetup": "Easy & Quick Setup",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "discount50": "(50% Discount)",
+    "perMonth": "/mo",
+    "paidAnnually": "Paid Annually",
+    "notIncVat": "Not Inc. VAT",
+    "featuresLabel": "Features",
+    "optionalAddOn": "Optional Add On",
+    "moduleInformation": "Module Information",
+    "originalPrice": "Original Price",
+    "discountedPrice": "Discounted Price",
+    "packages": {
+      "starter": "Starter",
+      "basic": "Standard",
+      "advanced": "Advanced"
+    },
+    "features": {
+      "cloudBasedPOS": "Cloud based POS Systems",
+      "dashboardsManagement": "Dashboards Management",
+      "menuManagement": "Menu Management",
+      "customerManagement": "Customer Management",
+      "orderHistoryManagement": "Order History Management",
+      "dineInTableManagement": "Dine-In Table Management",
+      "couponsDiscounts": "Coupons & Discounts",
+      "reportingManagement": "Reporting Management",
+      "adminUsersManagement": "Admin & Users Management",
+      "staffTipsManagement": "Staff Tips Management",
+      "zatcaEInvoicing": "ZATCA E-Invoicing Integrations",
+      "inventoryManagement": "Inventory Management",
+      "vendorPurchaseManagement": "Vendor & Purchase Management",
+      "foodsRecipesCosting": "Foods Recipes & Costing",
+      "customerLoyaltyProgram": "Customer Loyalty Program",
+      "offlineModeUtility": "Offline Mode & Utility",
+      "machinePaymentIntegration": "Machine Payment Integration (Mada, Geidea, NamiPay, Neoleap)",
+      "customerDisplay": "Customer Display",
+      "waiterTabPOS": "Waiter Tab - POS",
+      "digiDinerOrderOnline": "DigiDiner Order Online Web",
+      "kitchenDisplaySystem": "Kitchen Display System (KDS)",
+      "queueManagementSystems": "Queue Management Systems (QMS)",
+      "deliveryAggregators": "Delivery Aggregators",
+      "kioskSelfOrdering": "KIOSK - Self Ordering",
+      "qlubIntegration": "Qlub Integration with DigiPOS",
+      "erpIntegration": "ERP Integration with DigiPOS"
+    }
+  },
+  "products": {
+    "title": "Restaurants are upgrading",
+    "subtitle": "Here's why choosing",
+    "brand": "DigiPOS",
+    "learnMore": "Learn More",
+    "frontOffice": {
+      "title": "Front Office",
+      "cloudPos": {
+        "title": "Cloud Point of Sales",
+        "description": "DigiPOS Cloud POS is a smart, cloud-based system that helps businesses manage sales, inventory, and customers in real time. It's easy to use, secure, and works across multiple locations."
+      },
+      "waiterTab": {
+        "title": "Waiter Tab",
+        "description": "Empower waiters to take orders tableside using tablets and sync with the main POS."
+      },
+      "digiKDS": {
+        "title": "DigiKDS - Kitchen Display System",
+        "description": "Real-time kitchen order updates for faster fulfillment and less confusion."
+      },
+      "customerDisplay": {
+        "title": "Customer Display",
+        "description": "Digital screens showing order details and prices to enhance customer transparency."
+      },
+      "kiosk": {
+        "title": "KIOSK - Self Ordering",
+        "description": "Self-service kiosks for customers to browse menu and place orders independently."
+      },
+      "onlineOrdering": {
+        "title": "Online Ordering",
+        "description": "Enable customers to place orders directly through your website or app."
+      },
+      "tableOrdering": {
+        "title": "Table Ordering",
+        "description": "Allow customers to scan QR codes and order directly from their tables."
+      },
+      "queueManagement": {
+        "title": "Queue Management System",
+        "description": "Digital system to manage waiting lists and optimize seating efficiency."
+      }
+    },
+    "backOffice": {
+      "title": "Back Office",
+      "inventoryManagement": {
+        "title": "Inventory Management",
+        "description": "Create and manage purchase orders from multiple vendors."
+      },
+      "productMenuManagement": {
+        "title": "Product & Menu Management",
+        "description": "Create and manage your product catalog and menu items with pricing and options."
+      },
+      "recipeManagement": {
+        "title": "Recipe Management",
+        "description": "Define and track ingredient quantities for recipes to monitor costs and inventory."
+      },
+      "purchaseSupplyChain": {
+        "title": "Purchase & Supply Chain Management",
+        "description": "Streamline your purchasing process and manage vendor relationships efficiently."
+      }
+    },
+    "retail": {
+      "title": "Retail",
+      "retailCloudPOS": {
+        "title": "Cloud Point of Sales",
+        "description": "Powerful POS built for chain stores, with barcode scanning and offers."
+      },
+      "barcodeManagement": {
+        "title": "Barcode Management",
+        "description": "Reward repeat customers and improve retention with loyalty points."
+      }
+    },
+    "platformsMessage": "DigiPOS is always at your fingertips, <br> wherever you are.",
+    "platformsDesc": "You can access your business management tools from any device, <br> whether it's a Windows POS terminal, an iPad, or an Android tablet.",
+    "businessModels": {
+      "fineDining": {
+        "title": "Fine Dining",
+        "subtitle": "Elevating Experiences",
+        "heading": "Fine Dining with DigiPOS",
+        "description": "Our advanced POS system helps you manage transactions efficiently with an intuitive interface."
+      },
+      "quickService": {
+        "title": "Quick Service",
+        "subtitle": "Speed and Efficiency",
+        "heading": "Quick Service with DigiPOS",
+        "description": "Keep track of your inventory levels with automated alerts and easy stock management."
+      },
+      "foodTrucks": {
+        "title": "Food Trucks",
+        "subtitle": "On-the-Go Success",
+        "heading": "Food Trucks with DigiPOS",
+        "description": "Efficiently manage tables, orders, and kitchen operations for your dining establishment."
+      },
+      "cafeBakery": {
+        "title": "Café & Bakery",
+        "subtitle": "Tech-infused Convenience",
+        "heading": "Café & Bakery with DigiPOS",
+        "description": "Track and manage your delivery services with real-time updates and route optimization."
+      }
+    }
+  },
+  "footer": {
+    "sections": {
+      "digipos": "DigiPOS",
+      "products": "Products",
+      "businessTypes": "Business Types",
+      "legal": "Legal"
+    },
+    "digipos": {
+      "aboutUs": "About Us",
+      "partners": "Partners",
+      "careers": "Careers",
+      "contactUs": "Contact Us",
+      "support": "Support",
+      "caseStudies": "Case Studies",
+      "pricing": "Pricing"
+    },
+    "products": {
+      "frontOffice": "Front Office",
+      "backOffice": "Back Office",
+      "retail": "Retail",
+      "cloudPOS": "Cloud Point of Sales",
+      "waiterTab": "Waiter Tab",
+      "digiKDS": "DigiKDS - Kitchen Display System",
+      "customerDisplay": "Customer Display",
+      "kiosk": "KIOSK",
+      "tableOrdering": "Table Ordering",
+      "onlineOrdering": "Online Ordering",
+      "queueManagement": "Queue Management System",
+      "productMenuManagement": "Product & Menu Management",
+      "recipeManagement": "Recipe Management",
+      "inventoryManagement": "Inventory Management",
+      "purchaseSupplyChain": "Purchase & Supply Chain Management",
+      "barcodeManagement": "Barcode Management"
+    },
+    "businessTypes": {
+      "restaurants": "Restaurants",
+      "casualDining": "Casual Dining",
+      "cloudKitchen": "Cloud Kitchen",
+      "retail": "Retail",
+      "supermarket": "Supermarket",
+      "pharmacy": "Pharmacy",
+      "garments": "Garments & Apparel",
+      "laundryShop": "Laundry Shop",
+      "flowerShop": "Flower Shop",
+      "salonShop": "Salon Shop"
+    },
+    "legal": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Services",
+      "consumerProtection": "Consumer Protection"
+    },
+    "downloadApp": "Download the app now!",
+    "copyright": "© 2025 DigiPOS. All rights reserved.",
+    "disclaimer": "Disclaimer",
+    "privacyPolicy": "Privacy Policy",
+    "altTexts": {
+      "logo": "DigiPOS Logo",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "clientLogo": "Client Logo"
+    }
+  },
+  "testimonials": {
+    "previousTestimonials": "Previous testimonials",
+    "nextTestimonials": "Next testimonials",
+    "items": {
+      "perozAgha": {
+        "text": "The reporting tools in DigiPOS have been invaluable. We can easily track sales trends, identify peak times, and make data-driven decisions to improve our business",
+        "name": "Peroz Agha",
+        "company": "Founder - Peroz Healthy Eatery"
+      },
+      "julieCastillo": {
+        "text": "The integration with our accounting software has simplified our bookkeeping process. It's saved us time and money.",
+        "name": "Julie Castillo",
+        "company": "OM - New York Coffee"
+      },
+      "islamuddinShaikh": {
+        "text": "The reporting capabilities are excellent. We're able to track sales trends, identify peak times, and analyze our menu performance with ease.",
+        "name": "Islamuddin Shaikh",
+        "company": "MD - Brasa de Brazil"
+      },
+      "shamsherKhan": {
+        "text": "The customer-facing features, such as the ability to take orders and process payments at the table, have enhanced the dining experience for our guests.",
+        "name": "Shamsher Khan",
+        "company": "BM - Taya Restaurant"
+      },
+      "shameerPalangat": {
+        "text": "I wanted to express my sincere gratitude for your continued partnership and support. We've achieved some fantastic results together, and I truly appreciate your collaboration and commitment. Specifically, your fast response for our requirement has been invaluable to our success.",
+        "name": "Shameer Palangat",
+        "company": "IT - Shwaiat Al Khalij"
+      },
+      "enayath": {
+        "text": "I would like to inform you that we are impressed by your DigiPOS, in terms of performance.We highly recommend to our partners and friends as it's highly cost effective and easy to use. Thanks for your support.",
+        "name": "Enayath",
+        "company": "IT Manager - SADF"
+      },
+      "mrElias": {
+        "text": "We have found the DigiPOS system to be efficient, effective, and user-friendly. It is easy for staff to access and operate, which helps streamline daily tasks. The system provides clear and comprehensive reports that support both operational and financial decision-making. In terms of customer support, the Digi POS team is highly responsive and helpful. They are quick to resolve any issues that arise, ensuring minimal disruption to our business. Overall, we highly recommend Digi POS for small to medium-sized restaurants. The system offers great value for its competitive cost.",
+        "name": "Mr. Elias",
+        "company": "Operations Manager - Nice Bun"
+      },
+      "mubark": {
+        "text": "I started using the Digi POS system about a month ago, and honestly, it's excellent. It's cloud-based, seamless, and easy to use, especially when adding items and distributing them to printers. Performance is very fast, thank God. The reports are clear and detailed, and the support team was very responsive to my needs. When I requested a custom report, they prepared it in less than a week. Special thanks to Abu Osama and Imran for their wonderful efforts",
+        "name": "Mubark",
+        "company": "IT Manager - Avindar"
+      },
+      "bakhosAlDaouk": {
+        "text": "Peace be upon you. We are a grape and fig restaurant in the Al Hokair Group. We would like to inform you that we use Digipos for accounting in our restaurants. We have three accounts with them, and it is one of the best accounts we have used in terms of ease of operation, good reports that assist accounting, and the ease of adding items. In addition to all of this, I prefer it over other accounting programs. We thank and appreciate your cooperation.",
+        "name": "Bakhos Al Daouk",
+        "company": "Operation Manager - Baan Holding"
+      }
+    }
+  },
+  "marquee": {
+    "cloudBasedSolution": "Cloud-Based Solution",
+    "onlineOfflineFunctionality": "Online & Offline Functionality",
+    "realTimeDashboard": "Real-time Dashboard",
+    "inventoryManagement": "Inventory Management",
+    "orderSync": "Order Sync",
+    "customerInsights": "Customer Insights"
+  },
+  "common": {
+    "getDemo": "Get a Demo",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "submit": "Submit",
+    "required": "Required",
+    "optional": "Optional"
   }
 }

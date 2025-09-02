@@ -7,12 +7,12 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div *ngFor="let t of pageTestimonials"
           class="bg-gray-100 rounded-xl shadow-sm p-6 flex flex-col justify-between h-full">
-          <p class="text-gray-700 text-base mb-4">“{{ t.text }}”</p>
+          <p class="text-gray-700 text-base mb-4">"{{ t.textKey | translate }}"</p>
           <div class="flex items-center gap-3 mt-auto">
-            <img [src]="t.logo" [alt]="t.company" class="h-10 w-10 rounded-full object-contain bg-white" />
+            <img [src]="t.logo" [alt]="'footer.altTexts.clientLogo' | translate" class="h-10 w-10 rounded-full object-contain bg-white" />
             <div>
-              <p class="font-semibold text-gray-700">{{ t.name }}</p>
-              <p class="text-xs text-gray-500">{{ t.company }}</p>
+              <p class="font-semibold text-gray-700">{{ t.nameKey | translate }}</p>
+              <p class="text-xs text-gray-500">{{ t.companyKey | translate }}</p>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@
   <div class="flex justify-center items-center mt-8 gap-2">
     <!-- Left Chevron -->
     <button class="testimonial-slider-chevron chevron-btn mr-2" (click)="scrollToPage(page - 1, scrollContainer)"
-      [disabled]="page === 1" aria-label="Previous testimonials">
+      [disabled]="page === 1" [attr.aria-label]="'testimonials.previousTestimonials' | translate">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         class="h-6 w-6 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
@@ -37,7 +37,7 @@
     </ng-container>
     <!-- Right Chevron -->
     <button class="testimonial-slider-chevron chevron-btn ml-2" (click)="scrollToPage(page + 1, scrollContainer)"
-      [disabled]="page === totalPages" aria-label="Next testimonials">
+      [disabled]="page === totalPages" [attr.aria-label]="'testimonials.nextTestimonials' | translate">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
         class="h-6 w-6 text-white">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />

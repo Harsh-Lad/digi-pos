@@ -42,10 +42,10 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.translate.use(this.currentLanguage);
     
     // Update document direction for RTL support
-    if (this.isBrowser) {
-      document.documentElement.dir = this.currentLanguage === 'ar' ? 'rtl' : 'ltr';
-      document.documentElement.lang = this.currentLanguage;
-    }
+    // if (this.isBrowser) {
+    //   document.documentElement.dir = this.currentLanguage === 'ar' ? 'rtl' : 'ltr';
+    //   document.documentElement.lang = this.currentLanguage;
+    // }
   }
 
   getCurrentFlag(): string {

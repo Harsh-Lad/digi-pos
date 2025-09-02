@@ -8,14 +8,14 @@
     <!-- First copy of images -->
     <div class="marquee-content">
       <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Client Logo" class="marquee-item" />
+        <img [src]="image" [alt]="'footer.altTexts.clientLogo' | translate" class="marquee-item" />
       </ng-container>
     </div>
     
     <!-- Duplicate copy for seamless looping -->
     <div class="marquee-content" aria-hidden="true">
       <ng-container *ngFor="let image of images">
-        <img [src]="image" alt="Client Logo" class="marquee-item" />
+        <img [src]="image" [alt]="'footer.altTexts.clientLogo' | translate" class="marquee-item" />
       </ng-container>
     </div>
   </div>

@@ -11,6 +11,7 @@ import { PlatformsComponent } from "../platforms/platforms.component";
 import { FooterComponent } from "../footer/footer.component";
 import { ContactFormComponent } from '../contact-form/contact-form.component';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -27,7 +28,8 @@ import { CommonModule } from '@angular/common';
     IntegrationsMarqueeComponent, 
     TestimonialsComponent, 
     PlatformsComponent, 
-    FooterComponent
+    FooterComponent,
+    TranslateModule
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']

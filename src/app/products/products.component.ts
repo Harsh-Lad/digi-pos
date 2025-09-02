@@ -5,12 +5,13 @@ import { FooterComponent } from '../footer/footer.component';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
 import { NavbarComponent } from '../navbar/navbar.component';
 import { NgClass, NgFor, NgIf } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css'],
-  imports: [FooterComponent, ContactFormComponent, NavbarComponent, NgClass, NgIf, NgFor],
+  imports: [FooterComponent, ContactFormComponent, NavbarComponent, NgClass, NgIf, NgFor, TranslateModule],
 })
 export class ProductsComponent implements OnInit {
   slug: string | null = null;

@@ -1,6 +1,7 @@
 import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,16 @@ import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'digi-pos';
 
-  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    private router: Router, 
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private translate: TranslateService
+  ) {
+    // Initialize translation service
+    this.translate.addLangs(['en', 'ar']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
 
   ngOnInit(): void {
     this.router.events.subscribe(event => {

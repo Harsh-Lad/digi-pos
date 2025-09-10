@@ -8,7 +8,8 @@
       "Bash(dir:*)",
       "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic/**)",
       "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic\\/**)",
-      "Read(C:\\Users\\ASIT\\Downloads/**)"
+      "Read(C:\\Users\\ASIT\\Downloads/**)",
+      "Bash(ng build:*)"
     ],
     "deny": [],
     "ask": []

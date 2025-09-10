@@ -2,659 +2,465 @@
 
 export interface ProductFeature {
   icon: string;
-  title: string;
-  description: string;
+  titleKey: string;
+  descriptionKey: string;
 }
 
 export interface ProductSidebarItem {
-  label: string;
+  labelKey: string;
   active?: boolean;
-  title?: string;
+  titleKey?: string;
   image?: string;
-  bullets?: string[];
+  bulletsKey?: string;
 }
 
 export interface ProductData {
   slug: string;
-  name: string;
-  catergory: string;
-  heroTitle: string;
-  heroDescription: string;
+  nameKey: string;
+  categoryKey: string;
+  heroTitleKey: string;
+  heroDescriptionKey: string;
   heroImages: string;
-  complianceTag?: string;
+  complianceTagKey?: string;
   complianceImage?: string;
-  ctaText?: string;
+  ctaTextKey?: string;
   features: ProductFeature[];
-  featuresHeaderText: string;
+  featuresHeaderTextKey: string;
   isSideBarVisible: boolean;
   sidebarMenu?: ProductSidebarItem[];
   sidebarImage?: string;
   overlayImage?: string;
-  sidebarTitle?: string;
-  sidebarBullets?: string[];
-  horizontalBar?: string;
+  sidebarTitleKey?: string;
+  sidebarBulletsKey?: string;
+  horizontalBarKey?: string;
+  growthTitleKey?: string;
   isKiosk?: boolean;
 }
 
 export const PRODUCTS_DATA: ProductData[] = [
   {
     slug: 'cloud-pos',
-    name: 'Cloud Point of Sales',
-    catergory: 'Front Office',
-    heroTitle:
-      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Cloud Point of Sales</h2>',
-    heroDescription: `DigiPOS is a modern, cloud-based Point of Sale (POS) system made for restaurants and hospitality businesses. 
-            It works both online and offline, so your business can run smoothly at all times. With DigiPOS, you can see live sales reports, 
-            track inventory, check staff performance, and learn about your customers from anywhere. 
-            It helps you stay in control, cut costs, and grow your profits using smart tools and real-time data.`,
+    nameKey: 'productsData.cloudPos.name',
+    categoryKey: 'productsData.cloudPos.category',
+    heroTitleKey: 'productsData.cloudPos.heroTitle',
+    heroDescriptionKey: 'productsData.cloudPos.heroDescription',
     heroImages: 'products/Cloud Point of Sales.png',
-    complianceTag: 'Compliant with:',
+    complianceTagKey: 'productsData.cloudPos.complianceTag',
     complianceImage:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIyG9CImBv66uEEChinrNgQL_s05hCggeBg&s',
-    ctaText: 'Get a Demo',
-    featuresHeaderText:
-      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]"> Run your restaurant smarter with  <span class="text-[#002999]">All-In-One features from <span class="text-[#f48021] font-black underline underline-2">DigiPOS</span></span> </h2>',
+    ctaTextKey: 'productsData.cloudPos.ctaText',
+    featuresHeaderTextKey: 'productsData.cloudPos.featuresHeaderText',
     features: [
       {
         icon: 'bolt',
-        title: 'Quick & Easy Setup',
-        description:
-          'Switch to DigiPOS effortlessly with a quick and hassle-free installation.',
+        titleKey: 'productsData.cloudPos.features.quickSetup.title',
+        descriptionKey: 'productsData.cloudPos.features.quickSetup.description',
       },
       {
         icon: 'wifi_off',
-        title: 'Online & Offline Functionality',
-        description:
-          'Ensures full operational continuity even during internet outages.',
+        titleKey: 'productsData.cloudPos.features.offlineFunctionality.title',
+        descriptionKey: 'productsData.cloudPos.features.offlineFunctionality.description',
       },
       {
         icon: 'query_stats',
-        title: 'Real-Time Data Access',
-        description:
-          'View up-to-the-minute reports, sales trends, and inventory levels from any device.',
+        titleKey: 'productsData.cloudPos.features.realTimeData.title',
+        descriptionKey: 'productsData.cloudPos.features.realTimeData.description',
       },
       {
         icon: 'touch_app',
-        title: 'User-Friendly Interface',
-        description:
-          'Designed with intuitive workflows for quick onboarding and faster staff adoption.',
+        titleKey: 'productsData.cloudPos.features.userFriendly.title',
+        descriptionKey: 'productsData.cloudPos.features.userFriendly.description',
       },
       {
         icon: 'devices',
-        title: 'Multi-Device Compatibility',
-        description:
-          'Works seamlessly across tablets, desktops, and mobile devices.',
+        titleKey: 'productsData.cloudPos.features.multiDevice.title',
+        descriptionKey: 'productsData.cloudPos.features.multiDevice.description',
       },
       {
         icon: 'insights',
-        title: 'Comprehensive Reporting',
-        description:
-          'Generate insightful reports on sales transactions, peak hours, and more to support decision-making.',
+        titleKey: 'productsData.cloudPos.features.reporting.title',
+        descriptionKey: 'productsData.cloudPos.features.reporting.description',
       },
       {
         icon: 'cloud_done',
-        title: 'Secure Cloud Backup',
-        description:
-          'All data is encrypted and automatically backed up, ensuring business continuity and data protection.',
+        titleKey: 'productsData.cloudPos.features.cloudBackup.title',
+        descriptionKey: 'productsData.cloudPos.features.cloudBackup.description',
       },
       {
         icon: 'sync_alt',
-        title: 'Integration Capabilities',
-        description:
-          'Easily integrates with accounting software, payment gateways, and third-party applications.',
+        titleKey: 'productsData.cloudPos.features.integration.title',
+        descriptionKey: 'productsData.cloudPos.features.integration.description',
       },
       {
         icon: 'support_agent',
-        title: '24/7 Customer Support',
-        description:
-          'Our dedicated support team is available around the clock to help you with any questions or issues you may have.',
+        titleKey: 'productsData.cloudPos.features.support.title',
+        descriptionKey: 'productsData.cloudPos.features.support.description',
       },
     ],
     isSideBarVisible: true,
     sidebarMenu: [
       {
-        label: 'Dashboards Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.dashboards.label',
         active: true,
-        title: 'Dashboard Management',
+        titleKey: 'productsData.cloudPos.sidebarMenu.dashboards.title',
         image: 'products/Features-01.png',
-        bullets: [
-          'With DigiPOS dashboard management, you can easily visualize data in real-time. Performance indicators related to sales transactions and overall business operations.',
-          'Monitor key metrics such as:',
-          'Sales: Track daily, hourly, weekly, and monthly sales performance.',
-          'Status-wise Sales: View sales by order status to understand your workflow and identify bottlenecks.',
-          'Top Products & Category Sales: Identify best-selling products and categories to optimize inventory and promotions.',
-          'Customer Trends: Understand customer preferences and behaviors to improve service and marketing strategies.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.dashboards.bullets',
       },
       {
-        label: 'Menu Management',
-        title: 'Menu Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.menu.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.menu.title',
         image: 'products/Features-02.png',
-        bullets: [
-          'Manage your menu anytime, anywhere.',
-          'With DigiPOS, you can create, update, and control your menu in real-time from any device, ensuring smooth operations and maximized profits.',
-          'Real-time menu control for real-world speed.',
-          'DigiPOS empowers your team to make immediate changes, manage item availability, and keep the front and back of house in sync.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.menu.bullets',
       },
       {
-        label: 'Dine-In Table Management',
-        title: 'Dine-In Table Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.tableManagement.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.tableManagement.title',
         image: 'products/Features-03.png',
-        bullets: [
-          'Using DigiPOS Table Management feature is essential for efficiently managing dine-in orders, assign tables and track orders.',
-          'Real-time updates: The system provides real-time updates, allowing the staff to see which tables are occupied, available, or being prepared for new guests.',
-          'Customer count: Track the number of customers at each table to adjust the order size and customize the dining experience.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.tableManagement.bullets',
       },
       {
-        label: 'Reporting Management',
-        title: 'Reporting Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.reporting.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.reporting.title',
         image: 'products/Features-04.png',
-        bullets: [
-          'Want to uncover hidden trends in your sales data?',
-          'Generate comprehensive reports to analyze your business performance.',
-          'Track sales trends, identify peak hours, and gain valuable insights to optimize your operations.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.reporting.bullets',
       },
       {
-        label: 'Outlets Management',
-        title: 'Outlets Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.outlets.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.outlets.title',
         image: 'products/Features-05.png',
-        bullets: [
-          'Managing multiple outlets? DigiPOS has the solution.',
-          'If you have multiple outlets, DigiPOS simplifies management across all locations.',
-          'Synchronize inventory, track sales, and maintain consistent operations, regardless of where your customers are.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.outlets.bullets',
       },
       {
-        label: 'Foods Recipes & Costing',
-        title: 'Foods Recipes & Costing',
+        labelKey: 'productsData.cloudPos.sidebarMenu.recipes.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.recipes.title',
         image: 'products/Features-06.png',
-        bullets: [
-          'Tired of wondering where your profits are going? Want to take control of your food costs?',
-          'Let’s do it with DigiPOS.',
-          'Create detailed recipes, track ingredient usage, and optimize your menu pricing to maximize profitability.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.recipes.bullets',
       },
       {
-        label: 'Inventory Management',
-        title: 'Inventory Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.inventory.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.inventory.title',
         image: 'products/Features-07.png',
-        bullets: [
-          "Inventory management is the process of efficiently overseeing, tracking, and controlling a company's inventory of raw materials, and finished products.",
-          'Stock Opening',
-          'Stock Transfers Note (Stock Out)',
-          'Stock Receiving Note (Stock In)',
-          'Stock Damage (Wastage)',
-          'Inventory Physical Counts',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.inventory.bullets',
       },
       {
-        label: 'Purchase Management',
-        title: 'Purchase Management',
+        labelKey: 'productsData.cloudPos.sidebarMenu.purchase.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.purchase.title',
         image: 'products/Features-08.png',
-        bullets: [
-          'Purchase management is the process of acquiring goods and services efficiently while controlling costs and ensuring quality. Here are the key features of Purchase Management.',
-          'Purchase Requisition (PR)',
-          'Purchase Order (PO)',
-          'Goods Received Note (GRN)',
-          'Purchase Return',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.purchase.bullets',
       },
       {
-        label: 'Offline Mode & Utility',
-        title: 'Offline Mode & Utility',
+        labelKey: 'productsData.cloudPos.sidebarMenu.offline.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.offline.title',
         image: 'products/Features-09.png',
-        bullets: [
-          'DigiPOS is a flexible and reliable Point of Sale solution designed to keep your business running smoothly no matter your internet connectivity.',
-          'With an active internet connection, DigiPOS operates in real-time allowing you to process orders, manage inventory, and access up-to-the-minute sales reports instantly across all devices.',
-          'While offline, DigiPOS securely stores all transaction data locally on the device. Once the connection is restored, all data is automatically synced to the cloud, keeping your system fully updated.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.offline.bullets',
       },
       {
-        label: 'ZATCA E-Invoicing Compliant',
-        title: 'ZATCA Integration',
+        labelKey: 'productsData.cloudPos.sidebarMenu.zatca.label',
+        titleKey: 'productsData.cloudPos.sidebarMenu.zatca.title',
         image: 'products/Features-10.png',
-        bullets: [
-          'DigiPOS is now fully integrated with Saudi Arabia ZATCA requirements, providing businesses with a streamlined and efficient way to manage their sales and inventory while staying fully compliant with the latest tax regulations.',
-          'Our team of experts worked diligently to ensure that DigiPOS seamlessly integrates with ZATCA, providing businesses with a seamless and user-friendly way to comply with the latest tax regulations.',
-          'The integration allows businesses in Saudi Arabia to easily comply with the latest tax regulations, without having to worry about the complexities of tax compliance.',
-        ],
+        bulletsKey: 'productsData.cloudPos.sidebarMenu.zatca.bullets',
       },
     ],
     sidebarImage: 'products/Features-01.png',
     overlayImage: 'products/Features-01.png',
-    sidebarTitle: 'Dashboard Management',
-    sidebarBullets: [
-      'With DigiPOS dashboard management, you can easily visualize data in real-time. Performance indicators related to sales transactions and overall business operations.',
-      'Monitor key metrics such as:',
-      'Sales: Track daily, hourly, weekly, and monthly sales performance.',
-      'Status-wise Sales: View sales by order status to understand your workflow and identify bottlenecks.',
-      'Top Products & Category Sales: Identify best-selling products and categories to optimize inventory and promotions.',
-      'Customer Trends: Understand customer preferences and behaviors to improve service and marketing strategies.',
-    ],
-    isKiosk:false
-
+    sidebarTitleKey: 'productsData.cloudPos.sidebarTitle',
+    sidebarBulletsKey: 'productsData.cloudPos.sidebarBullets',
+    isKiosk: false
   },
   {
     slug: 'waiter-tab',
-    name: 'Waiter Tab',
-    catergory: 'Front Office',
-    heroTitle:
-      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Waiter Tab</h2>',
-    heroDescription: `The DigiPOS Waiter Tablet is designed to revolutionize restaurant operations by enhancing efficiency for both staff and customers! With servers taking orders and processing payments directly at the table, it cuts down on the time spent walking back and forth to a terminal, making the entire dining experience feel seamless and faster.`,
+    nameKey: 'productsData.waiterTab.name',
+    categoryKey: 'productsData.waiterTab.category',
+    heroTitleKey: 'productsData.waiterTab.heroTitle',
+    heroDescriptionKey: 'productsData.waiterTab.heroDescription',
     heroImages: 'products/Waiter Tab.png',
-    ctaText: 'Get Now',
-    featuresHeaderText:
-      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]"> Empower Your Team with Effortless Table Service Anywhere </h2>',
+    ctaTextKey: 'productsData.waiterTab.ctaText',
+    featuresHeaderTextKey: 'productsData.waiterTab.featuresHeaderText',
     features: [
       {
         icon: 'restaurant',
-        title: 'Order Taking at the Table',
-        description:
-          'Waiter can take customer orders directly at the table using the DigiPOS tablet, delivering a smooth and efficient dining experience',
+        titleKey: 'productsData.waiterTab.features.orderTaking.title',
+        descriptionKey: 'productsData.waiterTab.features.orderTaking.description',
       },
       {
         icon: 'fact_check',
-        title: 'Quick & Accurate Ordering',
-        description:
-          'Reducing errors that may occur when writing orders by hand.',
+        titleKey: 'productsData.waiterTab.features.accurateOrdering.title',
+        descriptionKey: 'productsData.waiterTab.features.accurateOrdering.description',
       },
       {
         icon: 'tune',
-        title: 'Customizable Orders',
-        description:
-          'Allows customization of orders (e.g., special dietary requirements, extra toppings) on the spot.',
+        titleKey: 'productsData.waiterTab.features.customizable.title',
+        descriptionKey: 'productsData.waiterTab.features.customizable.description',
       },
       {
         icon: 'send',
-        title: 'Instant Order-to-Kitchen Sync',
-        description:
-          'No more lost tickets or delays; orders fire in real time.',
+        titleKey: 'productsData.waiterTab.features.instantSync.title',
+        descriptionKey: 'productsData.waiterTab.features.instantSync.description',
       },
       {
         icon: 'directions_bus',
-        title: 'Food Trucks & Pop-ups',
-        description: 'Process orders anywhere with cloud sync.',
+        titleKey: 'productsData.waiterTab.features.foodTrucks.title',
+        descriptionKey: 'productsData.waiterTab.features.foodTrucks.description',
       },
       {
         icon: 'call_split',
-        title: 'Split & Merge Orders',
-        description: 'Quickly process merged or split bills with ease.',
+        titleKey: 'productsData.waiterTab.features.splitMerge.title',
+        descriptionKey: 'productsData.waiterTab.features.splitMerge.description',
       },
       {
         icon: 'dashboard_customize',
-        title: 'User-Friendly Interface',
-        description:
-          'Designed with intuitive workflows for quick onboarding and faster staff adoption.',
+        titleKey: 'productsData.waiterTab.features.userFriendly.title',
+        descriptionKey: 'productsData.waiterTab.features.userFriendly.description',
       },
       {
         icon: 'devices_other',
-        title: 'Multi-Device Compatibility',
-        description:
-          'Works seamlessly across tablets, mobile devices, iOS, and Android.',
+        titleKey: 'productsData.waiterTab.features.multiDevice.title',
+        descriptionKey: 'productsData.waiterTab.features.multiDevice.description',
       },
       {
         icon: 'cloud_upload',
-        title: 'Secure Cloud Backup',
-        description:
-          'All data is encrypted and automatically backed up, ensuring business continuity and data protection.',
+        titleKey: 'productsData.waiterTab.features.cloudBackup.title',
+        descriptionKey: 'productsData.waiterTab.features.cloudBackup.description',
       },
     ],
     isSideBarVisible: false,
-    isKiosk:false
+    isKiosk: false
   },
   {
     slug: 'digikds',
-    name: 'Kitchen Display System (DigiKDS)',
-    catergory: 'Front Office',
-    heroTitle:
-      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Kitchen Display System <span class="text-[#f48021] underline underline-offset-2"> DigiKDS </span></h2>',
-    heroDescription: `Digi KDS (Kitchen Display System) is a digital screen
-                        system for restaurant kitchens that replaces paper
-                        tickets. It shows orders instantly, organises them by
-                        cooking station, and helps kitchens cook faster with
-                        fewer mistakes. Perfect for speeding up service and
-                        keeping customers happy.`,
+    nameKey: 'productsData.digiKds.name',
+    categoryKey: 'productsData.digiKds.category',
+    heroTitleKey: 'productsData.digiKds.heroTitle',
+    heroDescriptionKey: 'productsData.digiKds.heroDescription',
     heroImages: 'products/kds.jpg',
-    complianceTag: 'Operating System',
+    complianceTagKey: 'productsData.digiKds.complianceTag',
     complianceImage: '/products/iosandorid.png.png',
-    ctaText: 'Get it Now',
-    featuresHeaderText:
-      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">Transform Your Kitchen with<span class="text-[#f48021] underline underline-offset-2"> DigiKDS </span> Paperless, Zero Mistakes and Quick Service.</h2>',
+    ctaTextKey: 'productsData.digiKds.ctaText',
+    featuresHeaderTextKey: 'productsData.digiKds.featuresHeaderText',
     features: [
       {
         icon: 'monitor',
-        title: 'Real-Time Order Display',
-        description:
-          'Orders appear instantly on the digital screen, eliminating delays and ensuring timely kitchen responses.',
+        titleKey: 'productsData.digiKds.features.realTimeDisplay.title',
+        descriptionKey: 'productsData.digiKds.features.realTimeDisplay.description',
       },
       {
         icon: 'receipt_long',
-        title: 'No More Paper Ticket',
-        description:
-          'Say goodbye to lost, messy, or hard-to-read paper receipts. Everything is displayed clearly and digitally.',
+        titleKey: 'productsData.digiKds.features.paperless.title',
+        descriptionKey: 'productsData.digiKds.features.paperless.description',
       },
       {
         icon: 'sort',
-        title: 'Order Prioritization',
-        description:
-          "Orders are automatically organized by priority (e.g. appetizers, entrees), so the kitchen stays focused on what's next.",
+        titleKey: 'productsData.digiKds.features.prioritization.title',
+        descriptionKey: 'productsData.digiKds.features.prioritization.description',
       },
       {
         icon: 'track_changes',
-        title: 'Easy Order Tracking',
-        description:
-          'Track, update, and manage orders seamlessly, ensuring all modifications or special requests are handled with accuracy.',
+        titleKey: 'productsData.digiKds.features.tracking.title',
+        descriptionKey: 'productsData.digiKds.features.tracking.description',
       },
       {
         icon: 'history',
-        title: 'Bump Order Recall',
-        description:
-          'Quickly recall previous or missed orders, preventing confusion and ensuring nothing is overlooked.',
+        titleKey: 'productsData.digiKds.features.recall.title',
+        descriptionKey: 'productsData.digiKds.features.recall.description',
       },
       {
         icon: 'speed',
-        title: 'Faster Service',
-        description:
-          'With streamlined processes and real-time order tracking, the kitchen delivers food faster, improving overall service times.',
+        titleKey: 'productsData.digiKds.features.fasterService.title',
+        descriptionKey: 'productsData.digiKds.features.fasterService.description',
       },
       {
         icon: 'eco',
-        title: 'Reduced Food Waste',
-        description:
-          'Better tracking and real-time updates reduce food waste and improve portion accuracy.',
+        titleKey: 'productsData.digiKds.features.reducedWaste.title',
+        descriptionKey: 'productsData.digiKds.features.reducedWaste.description',
       },
       {
         icon: 'devices_other',
-        title: 'Multi-Device Compatibility',
-        description:
-          'DigiKDS offers ultimate flexibility for restaurant operations, working seamlessly across Android, iOS, and Web Browsers.',
+        titleKey: 'productsData.digiKds.features.multiDevice.title',
+        descriptionKey: 'productsData.digiKds.features.multiDevice.description',
       },
       {
         icon: 'cloud_sync',
-        title: 'Real-Time Updates',
-        description:
-          'Orders and changes are synced in real-time cloud, so the kitchen always works with the most up-to-date information.',
+        titleKey: 'productsData.digiKds.features.realTimeUpdates.title',
+        descriptionKey: 'productsData.digiKds.features.realTimeUpdates.description',
       },
     ],
     isSideBarVisible: false,
-    horizontalBar: `
-            <section class="w-screen bg-[#f48021] md:flex mt-12 extraWaiterTab">
-                <div class="left md:w-1/2 flex items-center justify-center md:pl-8 ">
-                <div class=" md:w-[85%] p-4 md:p-0 ">
-                    <h2 class="text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight "> Empower Your Team with Effortless Table
-                    Service Anywhere </h2>
-                    <p class="text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4">
-                    Upgrade your restaurant's efficiency by ditching
-                    traditional paper slips. Our solution eliminates the need
-                    for physical exchanges, promoting a cleaner, more
-                    sanitary environment. Plus, with reliable and clean input
-                    tools, you can wave goodbye to smudged, greasy screens
-                    that are a constant battle in busy kitchens.
-                    </p>
-                </div>
-                </div>
-                <div class="right md:w-1/2 flex items-center justify-center">
-                <img src="/front-office/KDS.png" class="m-auto h-[70%] w-auto pb-4 md:pb-0" />
-                </div>
-            </section>`,
-    isKiosk:false
-    
+    horizontalBarKey: 'productsData.digiKds.horizontalBar',
+    isKiosk: false
   },
   {
     slug: 'customer-display',
-    name: 'Customer Display',
-    catergory: 'Front Office',
-    heroTitle:
-      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Customer Display</h2>',
-    heroDescription: `DigiPOS Customer Display is a dynamic screen
-                      designed to elevate the customer experience at the
-                      point of sale. It provides real-time visibility into each
-                      transaction by clearly displaying itemized order lists,
-                      individual prices, total amounts, and personalized
-                      promotions for every customer. it’s a powerful
-                      engagement tool. Use the screen to showcase
-                      promotional offers, display branded messages,
-                      highlight seasonal deals turning every transaction
-                      into an opportunity to connect, inform, and promote
-                      your brand.`,
+    nameKey: 'productsData.customerDisplay.name',
+    categoryKey: 'productsData.customerDisplay.category',
+    heroTitleKey: 'productsData.customerDisplay.heroTitle',
+    heroDescriptionKey: 'productsData.customerDisplay.heroDescription',
     heroImages: 'products/customerDisplay.PNG',
-    ctaText: 'Get Now!',
-    featuresHeaderText:
-      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">The smart way to elevate transparency and trust at checkout!</h2>',
+    ctaTextKey: 'productsData.customerDisplay.ctaText',
+    featuresHeaderTextKey: 'productsData.customerDisplay.featuresHeaderText',
     features: [
       {
         icon: 'monitor',
-        title: 'Real-Time Order Display',
-        description:
-          'Orders appear instantly on the digital screen, eliminating delays and ensuring timely kitchen responses.',
+        titleKey: 'productsData.customerDisplay.features.realTimeDisplay.title',
+        descriptionKey: 'productsData.customerDisplay.features.realTimeDisplay.description',
       },
       {
         icon: 'visibility',
-        title: 'Transparent Transactions',
-        description:
-          'Enhances customer confidence by providing complete order visibility during checkout.',
+        titleKey: 'productsData.customerDisplay.features.transparent.title',
+        descriptionKey: 'productsData.customerDisplay.features.transparent.description',
       },
       {
         icon: 'local_offer',
-        title: 'Personalized Promotions',
-        description:
-          "Display targeted promotions and upsell suggestions based on the customer profile or items purchased.",
+        titleKey: 'productsData.customerDisplay.features.personalized.title',
+        descriptionKey: 'productsData.customerDisplay.features.personalized.description',
       },
       {
         icon: 'branding_watermark',
-        title: 'Custom Branding Support',
-        description:
-          'Allows your business logo, themes, and marketing visuals to appear on the screen.',
+        titleKey: 'productsData.customerDisplay.features.branding.title',
+        descriptionKey: 'productsData.customerDisplay.features.branding.description',
       },
       {
         icon: 'autorenew',
-        title: 'Dynamic Content Rotation',
-        description:
-          'Showcase seasonal deals, loyalty programs, or marketing messages when not in active transaction',
+        titleKey: 'productsData.customerDisplay.features.dynamicContent.title',
+        descriptionKey: 'productsData.customerDisplay.features.dynamicContent.description',
       },
       {
         icon: 'language',
-        title: 'Multilingual Interface',
-        description:
-          'Supports multiple languages for diverse customer bases.',
+        titleKey: 'productsData.customerDisplay.features.multilingual.title',
+        descriptionKey: 'productsData.customerDisplay.features.multilingual.description',
       },
       {
         icon: 'fit_screen',
-        title: 'Compact, Modern Design',
-        description:
-          'Sleek, space-saving hardware that fits easily into any POS station.',
+        titleKey: 'productsData.customerDisplay.features.compactDesign.title',
+        descriptionKey: 'productsData.customerDisplay.features.compactDesign.description',
       },
       {
         icon: 'devices',
-        title: 'Multi-Device Compatibility',
-        description:
-          'DigiPOS Customer Display is designed to work seamlessly across Android, iOS, and Web Browsers screen.',
+        titleKey: 'productsData.customerDisplay.features.multiDevice.title',
+        descriptionKey: 'productsData.customerDisplay.features.multiDevice.description',
       },
       {
         icon: 'dashboard_customize',
-        title: 'Customizable Layouts',
-        description:
-          'Set customizable layouts of the screen, including promotional banners, branded messages, and seasonal campaigns.',
+        titleKey: 'productsData.customerDisplay.features.customizable.title',
+        descriptionKey: 'productsData.customerDisplay.features.customizable.description',
       },
     ],
     isSideBarVisible: false,
-    horizontalBar: `
-            <section class="w-screen bg-[#f48021] md:flex mt-12 extraWaiterTab">
-                <div class="left md:w-1/2 flex items-center justify-center md:pl-8 ">
-                <div class=" md:w-[85%] p-4 md:p-0 ">
-                    <h2 class="text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight "> Designed to enhance the customer experience </h2>
-                    <p class="text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4">
-                      Beyond simply showing prices and itemized lists, more
-                      advanced DigiPOS customer displays can integrate with
-                      advertising and marketing efforts, displaying
-                      promotions, or even upcoming deals to engage
-                      customers while they wait.
-                    </p>
-                </div>
-                </div>
-                <div class="right md:w-1/2 flex items-center justify-center">
-                <img src="/products/customerDisplayBar.PNG" class="m-auto h-[70%] w-auto pb-4 md:pb-0"  />
-                </div>
-            </section>
-            
-            `,
-    isKiosk:false
+    horizontalBarKey: 'productsData.customerDisplay.horizontalBar',
+    isKiosk: false
     
   },
   {
     slug: 'table-ordering',
-    name: 'Table Ordering',
-    catergory: 'Front Office',
-    heroTitle:
-      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">Table Ordering</h2>',
-    heroDescription: `DigiPOS Table Ordering simplifies the dining
-    experience by allowing customers order and pay
-    directly from their table with just a QR scan menu
-    and a tap on a tablet. Customers can view the digital
-    menu place their order, and pay without needing to
-    wait for a server. This self-service option helps reduce
-    wait times, improving order accuracy, and enhancing
-    customers satisfaction. Table Orders go straight to
-    the kitchen, and payments sync instantly with digital
-    menu, making service faster and more efficient for
-    both diners and staff.`,
+    nameKey: 'productsData.tableOrdering.name',
+    categoryKey: 'productsData.tableOrdering.category',
+    heroTitleKey: 'productsData.tableOrdering.heroTitle',
+    heroDescriptionKey: 'productsData.tableOrdering.heroDescription',
     heroImages: 'products/Table Ordering.PNG',
-    ctaText: 'Get Now!',
-    featuresHeaderText:
-      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">Tap Order Smart, Fast and Effortless. Make every guest feel special with easy, smooth dining.</h2>',
+    ctaTextKey: 'productsData.tableOrdering.ctaText',
+    featuresHeaderTextKey: 'productsData.tableOrdering.featuresHeaderText',
     features: [
       {
         icon: 'qr_code_scanner',
-        title: 'QR Code Menu Access',
-        description:
-          'Customers can scan a QR code to instantly access the digital menu on their smartphones, no app download needed.',
+        titleKey: 'productsData.tableOrdering.features.qrAccess.title',
+        descriptionKey: 'productsData.tableOrdering.features.qrAccess.description',
       },
       {
         icon: 'tune',
-        title: 'Order Customization',
-        description:
-          'Customers can modify orders menu items (add sides and remove ingredients) based on their preferences.',
+        titleKey: 'productsData.tableOrdering.features.customization.title',
+        descriptionKey: 'productsData.tableOrdering.features.customization.description',
       },
       {
         icon: 'update',
-        title: 'Real Time Menu Updates',
-        description:
-          "Always display current items, prices and promotions.",
+        titleKey: 'productsData.tableOrdering.features.realTimeUpdates.title',
+        descriptionKey: 'productsData.tableOrdering.features.realTimeUpdates.description',
       },
       {
         icon: 'touch_app',
-        title: 'User Friendly Interface',
-        description:
-          'Easy for all customers to navigate and place orders quickly',
+        titleKey: 'productsData.tableOrdering.features.userFriendly.title',
+        descriptionKey: 'productsData.tableOrdering.features.userFriendly.description',
       },
       {
         icon: 'speed',
-        title: 'Speeds Up Service',
-        description:
-          'Cuts down wait times and keeps queues moving smoothly.',
+        titleKey: 'productsData.tableOrdering.features.speedsUp.title',
+        descriptionKey: 'productsData.tableOrdering.features.speedsUp.description',
       },
       {
         icon: 'kitchen',
-        title: 'Direct Kitchen Integration (KDS)',
-        description:
-          'Orders are instantly sent to the kitchen display system, reducing delays and errors.',
+        titleKey: 'productsData.tableOrdering.features.kitchenIntegration.title',
+        descriptionKey: 'productsData.tableOrdering.features.kitchenIntegration.description',
       },
       {
         icon: 'palette',
-        title: 'Custom Branding',
-        description:
-          'Customize menus, buttons, and fonts to match your restaurant’s brand for a consistent digital experience.',
+        titleKey: 'productsData.tableOrdering.features.customBranding.title',
+        descriptionKey: 'productsData.tableOrdering.features.customBranding.description',
       },
       {
         icon: 'payment',
-        title: 'Integrated Payments',
-        description:
-          'Pay directly from the phone or tablet, fast and secure.',
+        titleKey: 'productsData.tableOrdering.features.integratedPayments.title',
+        descriptionKey: 'productsData.tableOrdering.features.integratedPayments.description',
       },
       {
         icon: 'translate',
-        title: 'Multi-Language Support',
-        description:
-          'Menus can be displayed in English and Arabic languages to serve a diverse customer base.',
+        titleKey: 'productsData.tableOrdering.features.multiLanguage.title',
+        descriptionKey: 'productsData.tableOrdering.features.multiLanguage.description',
       },
     ],
     isSideBarVisible: false,
-    isKiosk:false
-
+    isKiosk: false
   },
   {
     slug: 'kiosk',
-    name: 'KIOSK - Self Ordering',
-    catergory: 'Front Office',
-    heroTitle:
-      '<h2 class="text-3xl md:text-5xl font-bold text-blue-900">KIOSK - Self Ordering</h2>',
-    heroDescription: `The DigiPOS Self-Ordering Kiosk makes ordering fast
-    and easy for customers. It’s simple to use, fully
-    customizable, and allows guests to order just the way
-    they like. From taking payments to saving
-    preferences, it handles everything smoothly. By
-    speeding up service, reducing wait times, and
-    keeping lines moving, the kiosk helps improve
-    efficiency and keeps customers happy, all with just a
-    single touch.`,
+    nameKey: 'productsData.kiosk.name',
+    categoryKey: 'productsData.kiosk.category',
+    heroTitleKey: 'productsData.kiosk.heroTitle',
+    heroDescriptionKey: 'productsData.kiosk.heroDescription',
     heroImages: 'products/kiosk.PNG',
-    ctaText: 'Get Now!',
-    featuresHeaderText:
-      '  <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%]">One Touch and Order Faster </h2>',
+    ctaTextKey: 'productsData.kiosk.ctaText',
+    featuresHeaderTextKey: 'productsData.kiosk.featuresHeaderText',
+    growthTitleKey: 'productsData.kiosk.growthTitle',
     features: [
       {
         icon: 'touch_app',
-        title: 'User-Friendly Interface',
-        description:
-          'Easy for all customers to navigate and place orders quickly.',
+        titleKey: 'productsData.kiosk.features.userFriendly.title',
+        descriptionKey: 'productsData.kiosk.features.userFriendly.description',
       },
       {
         icon: 'tune',
-        title: 'Fully Customizable',
-        description:
-         'Adapt menus, branding, and options to fit your business needs.',
+        titleKey: 'productsData.kiosk.features.fullyCustomizable.title',
+        descriptionKey: 'productsData.kiosk.features.fullyCustomizable.description',
       },
       {
         icon: 'speed',
-        title: 'Speeds Up Service',
-        description:
-          "Cuts down wait times and keeps queues moving smoothly.",
+        titleKey: 'productsData.kiosk.features.speedsUp.title',
+        descriptionKey: 'productsData.kiosk.features.speedsUp.description',
       },
       {
         icon: 'lock',
-        title: 'Fast & Secure Payments',
-        description:
-          'Reduces mistakes by letting customers enter their own orders.',
+        titleKey: 'productsData.kiosk.features.fastSecure.title',
+        descriptionKey: 'productsData.kiosk.features.fastSecure.description',
       },
       {
         icon: 'sync',
-        title: 'Real-Time Menu Updates',
-        description:
-          'Syncs instantly with your POS for accurate inventory and pricing.',
+        titleKey: 'productsData.kiosk.features.realTimeUpdates.title',
+        descriptionKey: 'productsData.kiosk.features.realTimeUpdates.description',
       },
       {
         icon: 'devices_other',
-        title: 'Compact and Modern Design',
-        description:
-          'Sleek, space-saving hardware that fits easily into any POS station.',
+        titleKey: 'productsData.kiosk.features.compactDesign.title',
+        descriptionKey: 'productsData.kiosk.features.compactDesign.description',
       },
       {
         icon: 'translate',
-        title: 'Multi-Language Support',
-        description:
-          'Serves customers in their preferred language for better accessibility',
+        titleKey: 'productsData.kiosk.features.multiLanguage.title',
+        descriptionKey: 'productsData.kiosk.features.multiLanguage.description',
       },
       {
         icon: 'phonelink',
-        title: 'Multi-Device Compatibility',
-        description:
-          'DigiPOS Kiosk is designed to work seamlessly across Android and iOS.',
+        titleKey: 'productsData.kiosk.features.multiDevice.title',
+        descriptionKey: 'productsData.kiosk.features.multiDevice.description',
       }
     ],
     isSideBarVisible: false,
-    isKiosk:true
+    isKiosk: true
   },
 ];

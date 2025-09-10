@@ -49,11 +49,11 @@ export class NavbarComponent implements OnInit, OnDestroy {
   }
 
   getCurrentFlag(): string {
-    return this.currentLanguage === 'en' ? 'https://flagcdn.com/w40/us.png' : 'https://flagcdn.com/w40/sa.png';
+    return this.currentLanguage === 'en' ? 'https://flagcdn.com/w40/sa.png' : 'https://flagcdn.com/w40/us.png';
   }
 
   getCurrentFlagAlt(): string {
-    return this.currentLanguage === 'en' ? 'US Flag' : 'SA Flag';
+    return this.currentLanguage === 'en' ? 'SA Flag' : 'US Flag';
   }
 
 

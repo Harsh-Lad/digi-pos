@@ -3,6 +3,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from './services/language.service';
+import { TitleService } from './services/title.service';
 
 @Component({
   selector: 'app-root',
@@ -17,13 +18,15 @@ export class AppComponent implements OnInit {
     private router: Router, 
     @Inject(PLATFORM_ID) private platformId: Object,
     private translate: TranslateService,
-    private languageService: LanguageService
+    private languageService: LanguageService,
+    private titleService: TitleService
   ) {
     // Initialize translation service
     this.translate.addLangs(['en', 'ar']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
     // Language service will automatically initialize and handle RTL/font switching
+    // Title service will automatically handle title updates on route and language changes
   }
 
   ngOnInit(): void {

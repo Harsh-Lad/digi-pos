@@ -1,16 +1,51 @@
-  <configuration>
-    <system.webServer>
-      <rewrite>
-        <rules>
-          <rule name="Angular Routes" stopProcessing="true">
-            <match url=".*" />
-            <conditions logicalGrouping="MatchAll">
-              <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-              <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-            </conditions>
-            <action type="Rewrite" url="/" />
-          </rule>
-        </rules>
-      </rewrite>
-    </system.webServer>
-  </configuration>
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.webServer>
+
+    <!-- Serve JSON correctly -->
+    <staticContent>
+      <remove fileExtension=".json" />
+      <mimeMap fileExtension=".json" mimeType="application/json" />
+    </staticContent>
+
+    <!-- Let Angular handle its own errors (avoid IIS replacing responses) -->
+    <httpErrors existingResponse="PassThrough" />
+
+    <!-- Make sure index.html is treated as the default -->
+    <defaultDocument>
+      <files>
+        <add value="index.html" />
+      </files>
+    </defaultDocument>
+
+    <rewrite>
+      <rules>
+
+        <!-- Do NOT rewrite real static files (incl. i18n JSON) -->
+        <rule name="Static files" stopProcessing="true">
+          <match url="^(assets/.*|.*\.(css|js|png|jpg|jpeg|gif|svg|ico|webp|woff|woff2|ttf|map|json))$" />
+          <action type="None" />
+        </rule>
+
+        <!-- (Optional) If you have a backend under /api, don't rewrite those -->
+        <rule name="Skip API" stopProcessing="true">
+          <match url="^api/.*" />
+          <action type="None" />
+        </rule>
+
+        <!-- Your original rule, enhanced: SPA fallback to index.html + keep query string -->
+        <rule name="Angular Routes" stopProcessing="true">
+          <match url=".*" />
+          <conditions logicalGrouping="MatchAll">
+            <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+            <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          </conditions>
+          <!-- If your app is at site root, keep the leading slash. -->
+          <action type="Rewrite" url="/index.html" appendQueryString="true" />
+        </rule>
+
+      </rules>
+    </rewrite>
+
+  </system.webServer>
+</configuration>

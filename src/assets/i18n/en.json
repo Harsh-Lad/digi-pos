@@ -953,6 +953,62 @@
           "description": "DigiPOS Kiosk is designed to work seamlessly across Android and iOS."
         }
       }
+    },
+    "onlineOrdering": {
+      "name": "Online Ordering",
+      "category": "Front Office",
+      "heroTitle": "Online Ordering System",
+      "heroDescription": "A cloud-based POS system with online ordering helps restaurants to serve customers faster, boost sales, and manage orders more efficiently. With branded digital channels, real-time POS syncing, and flexible payment options, restaurants can grow while keeping operations smooth and customer friendly.",
+      "ctaText": "Get Now!",
+      "featuresHeaderText": "Boost sales and serve customers faster with a cloud-based POS and online ordering system.",
+      "growthTitle": "Empower Your Business with Direct Online Sales",
+      "features": {
+        "onlineOrderingSystem": {
+          "icon": "mdi:web",
+          "title": "Online Ordering System",
+          "description": "A digital platform that allows customers to order food directly from a restaurant via web or mobile app."
+        },
+        "cloudPosIntegration": {
+          "icon": "mdi:cloud-sync",
+          "title": "Cloud POS Integration",
+          "description": "Automatic syncing of online orders with the restaurant’s POS system for smooth operations."
+        },
+        "restaurantWebsiteOrdering": {
+          "icon": "mdi:domain",
+          "title": "Restaurant Website Ordering",
+          "description": "A feature that enables customers to order directly from a restaurant’s own website without third parties."
+        },
+        "mobileAppOrdering": {
+          "icon": "mdi:cellphone",
+          "title": "Mobile App Ordering",
+          "description": "A convenient way for customers to place food orders through the restaurant’s branded mobile app."
+        },
+        "realTimeOrderTracking": {
+          "icon": "mdi:clock-fast",
+          "title": "Real-Time Order Tracking",
+          "description": "Instant updates on every order as they move from placement to preparation and delivery."
+        },
+        "multiplePaymentOptions": {
+          "icon": "mdi:credit-card-multiple",
+          "title": "Multiple Payment Options",
+          "description": "The ability to pay online using local gateways or choose cash on delivery."
+        },
+        "localPaymentGateways": {
+          "icon": "mdi:bank",
+          "title": "Local Payment Gateways",
+          "description": "Secure local payment methods tailored for Saudi Arabia’s online ordering needs."
+        },
+        "errorFreeKitchenOperations": {
+          "icon": "mdi:chef-hat",
+          "title": "Error-Free Kitchen Operations",
+          "description": "Streamlined kitchen workflow with reduced mistakes from automated order synchronization."
+        },
+        "customerConvenience": {
+          "icon": "mdi:account-heart",
+          "title": "Customer Convenience",
+          "description": "A smooth and flexible ordering and payment experience that increases satisfaction and loyalty."
+        }
+      }
     }
   }
 }

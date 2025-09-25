@@ -463,4 +463,59 @@ export const PRODUCTS_DATA: ProductData[] = [
     isSideBarVisible: false,
     isKiosk: true
   },
+    {
+    slug: 'online-ordering',
+    nameKey: 'productsData.onlineOrdering.name',
+    categoryKey: 'productsData.onlineOrdering.category',
+    heroTitleKey: 'productsData.onlineOrdering.heroTitle',
+    heroDescriptionKey: 'productsData.onlineOrdering.heroDescription',
+    heroImages: 'products/online-ordering.PNG',
+    ctaTextKey: 'productsData.onlineOrdering.ctaText',
+    featuresHeaderTextKey: 'productsData.onlineOrdering.featuresHeaderText',
+    growthTitleKey: 'productsData.onlineOrdering.growthTitle',
+    features: [
+      {
+        icon: 'touch_app',
+        titleKey: 'productsData.onlineOrdering.features.userFriendly.title',
+        descriptionKey: 'productsData.onlineOrdering.features.userFriendly.description',
+      },
+      {
+        icon: 'tune',
+        titleKey: 'productsData.onlineOrdering.features.fullyCustomizable.title',
+        descriptionKey: 'productsData.onlineOrdering.features.fullyCustomizable.description',
+      },
+      {
+        icon: 'speed',
+        titleKey: 'productsData.onlineOrdering.features.speedsUp.title',
+        descriptionKey: 'productsData.onlineOrdering.features.speedsUp.description',
+      },
+      {
+        icon: 'lock',
+        titleKey: 'productsData.onlineOrdering.features.fastSecure.title',
+        descriptionKey: 'productsData.onlineOrdering.features.fastSecure.description',
+      },
+      {
+        icon: 'sync',
+        titleKey: 'productsData.onlineOrdering.features.realTimeUpdates.title',
+        descriptionKey: 'productsData.onlineOrdering.features.realTimeUpdates.description',
+      },
+      {
+        icon: 'devices_other',
+        titleKey: 'productsData.kiosk.features.compactDesign.title',
+        descriptionKey: 'productsData.kiosk.features.compactDesign.description',
+      },
+      {
+        icon: 'translate',
+        titleKey: 'productsData.kiosk.features.multiLanguage.title',
+        descriptionKey: 'productsData.kiosk.features.multiLanguage.description',
+      },
+      {
+        icon: 'phonelink',
+        titleKey: 'productsData.kiosk.features.multiDevice.title',
+        descriptionKey: 'productsData.kiosk.features.multiDevice.description',
+      }
+    ],
+    isSideBarVisible: false,
+    isKiosk: false
+  },
 ];

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAPI Widget</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: transparent;
+            overflow: hidden;
+        }
+
+        .vapi-widget-container {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        .vapi-widget-button {
+            background: #2662ff;
+            border: none;
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .vapi-widget-button:hover {
+            background: #1e4dd4;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .vapi-widget-expanded {
+            background: #000000;
+            border-radius: 12px;
+            width: 320px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .vapi-widget-header {
+            background: #2662ff;
+            color: white;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .vapi-widget-header h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-btn:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .vapi-widget-body {
+            flex: 1;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .mic-icon {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 16px;
+            color: #2662ff;
+        }
+
+        .mic-icon.active {
+            color: #ef4444;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .status-text h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .status-text p {
+            font-size: 14px;
+            color: #cccccc;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .action-btn {
+            background: #2662ff;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .action-btn:hover {
+            background: #1e4dd4;
+        }
+
+        .action-btn.end-call {
+            background: #ef4444;
+        }
+
+        .action-btn.end-call:hover {
+            background: #dc2626;
+        }
+
+        .consent-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+        }
+
+        .consent-content {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 400px;
+            margin: 16px;
+        }
+
+        .consent-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #000;
+        }
+
+        .consent-content p {
+            color: #666;
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .consent-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+
+        .consent-btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .consent-btn.cancel {
+            background: none;
+            color: #666;
+        }
+
+        .consent-btn.cancel:hover {
+            color: #333;
+        }
+
+        .consent-btn.agree {
+            background: #2662ff;
+            color: white;
+        }
+
+        .consent-btn.agree:hover {
+            background: #1e4dd4;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="vapi-widget-container">
+        <!-- Collapsed Widget Button -->
+        <button id="widgetButton" class="vapi-widget-button" title="CHAT WITH DigiPOS AI">
+            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+            </svg>
+        </button>
+
+        <!-- Expanded Widget -->
+        <div id="widgetExpanded" class="vapi-widget-expanded hidden">
+            <div class="vapi-widget-header">
+                <h3>CHAT WITH DigiPOS AI</h3>
+                <button id="closeBtn" class="close-btn">×</button>
+            </div>
+
+            <div class="vapi-widget-body">
+                <!-- Idle State -->
+                <div id="idleState">
+                    <div class="mic-icon">
+                        <svg width="64" height="64" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+                        </svg>
+                    </div>
+                    <div class="status-text">
+                        <h4>Start Voice Call</h4>
+                        <p>Click to start talking with DigiPOS AI assistant</p>
+                    </div>
+                    <button id="startBtn" class="action-btn">Start</button>
+                </div>
+
+                <!-- Active State -->
+                <div id="activeState" class="hidden">
+                    <div class="mic-icon active">
+                        <svg width="64" height="64" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+                        </svg>
+                    </div>
+                    <div class="status-text">
+                        <h4>Call Active</h4>
+                        <p>Speak now...</p>
+                    </div>
+                    <button id="endBtn" class="action-btn end-call">End Call</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consent Modal -->
+    <div id="consentModal" class="consent-modal hidden">
+        <div class="consent-content">
+            <h3>Terms and conditions</h3>
+            <p>By clicking "Agree," and each time I interact with this AI agent, I consent to the recording, and sharing of my communications with the service providers.</p>
+            <div class="consent-actions">
+                <button id="cancelConsent" class="consent-btn cancel">Cancel</button>
+                <button id="agreeConsent" class="consent-btn agree">Agree</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@vapi-ai/web@latest/dist/index.js"></script>
+    <script>
+        class VapiWidget {
+            constructor() {
+                this.isExpanded = false;
+                this.isCallActive = false;
+                this.vapi = null;
+                this.consentAccepted = this.getStoredConsent();
+
+                this.initializeVapi();
+                this.bindEvents();
+                this.notifyParentOfSize();
+            }
+
+            initializeVapi() {
+                try {
+                    this.vapi = new window.Vapi('e060fff4-11b7-4835-9d6d-bc7c1cc7157f');
+
+                    this.vapi.on('call-start', () => {
+                        console.log('Call started');
+                        this.isCallActive = true;
+                        this.updateUI();
+                        this.notifyParentOfSize();
+                    });
+
+                    this.vapi.on('call-end', () => {
+                        console.log('Call ended');
+                        this.isCallActive = false;
+                        this.updateUI();
+                    });
+
+                    this.vapi.on('message', (message) => {
+                        console.log('Message:', message);
+                    });
+
+                    this.vapi.on('error', (error) => {
+                        console.error('VAPI Error:', error);
+                    });
+                } catch (error) {
+                    console.error('Failed to initialize VAPI:', error);
+                }
+            }
+
+            bindEvents() {
+                document.getElementById('widgetButton').addEventListener('click', () => this.toggleWidget());
+                document.getElementById('closeBtn').addEventListener('click', () => this.toggleWidget());
+                document.getElementById('startBtn').addEventListener('click', () => this.startCall());
+                document.getElementById('endBtn').addEventListener('click', () => this.endCall());
+                document.getElementById('cancelConsent').addEventListener('click', () => this.hideConsent());
+                document.getElementById('agreeConsent').addEventListener('click', () => this.acceptConsent());
+            }
+
+            toggleWidget() {
+                this.isExpanded = !this.isExpanded;
+                this.updateUI();
+                this.notifyParentOfSize();
+            }
+
+            startCall() {
+                if (!this.consentAccepted) {
+                    this.showConsent();
+                    return;
+                }
+
+                if (this.vapi && !this.isCallActive) {
+                    try {
+                        this.vapi.start('04cb622e-d23d-4c2f-beab-fdb73a8bf376');
+                    } catch (error) {
+                        console.error('Failed to start call:', error);
+                    }
+                }
+            }
+
+            endCall() {
+                if (this.vapi && this.isCallActive) {
+                    try {
+                        this.vapi.stop();
+                    } catch (error) {
+                        console.error('Failed to end call:', error);
+                    }
+                }
+            }
+
+            showConsent() {
+                document.getElementById('consentModal').classList.remove('hidden');
+            }
+
+            hideConsent() {
+                document.getElementById('consentModal').classList.add('hidden');
+            }
+
+            acceptConsent() {
+                this.consentAccepted = true;
+                this.storeConsent();
+                this.hideConsent();
+                this.startCall();
+            }
+
+            getStoredConsent() {
+                try {
+                    return localStorage.getItem('vapi_widget_consent') === 'true';
+                } catch {
+                    return false;
+                }
+            }
+
+            storeConsent() {
+                try {
+                    localStorage.setItem('vapi_widget_consent', 'true');
+                } catch {
+                    // Handle localStorage errors
+                }
+            }
+
+            updateUI() {
+                const button = document.getElementById('widgetButton');
+                const expanded = document.getElementById('widgetExpanded');
+                const idleState = document.getElementById('idleState');
+                const activeState = document.getElementById('activeState');
+
+                if (this.isExpanded) {
+                    button.classList.add('hidden');
+                    expanded.classList.remove('hidden');
+                } else {
+                    button.classList.remove('hidden');
+                    expanded.classList.add('hidden');
+                }
+
+                if (this.isCallActive) {
+                    idleState.classList.add('hidden');
+                    activeState.classList.remove('hidden');
+                } else {
+                    idleState.classList.remove('hidden');
+                    activeState.classList.add('hidden');
+                }
+            }
+
+            notifyParentOfSize() {
+                const size = this.isExpanded ? { width: 320, height: 400 } : { width: 64, height: 64 };
+                if (window.parent && window.parent !== window) {
+                    window.parent.postMessage({ type: 'vapi-widget-resize', size }, '*');
+                }
+            }
+        }
+
+        // Initialize widget when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => new VapiWidget());
+        } else {
+            new VapiWidget();
+        }
+    </script>
+</body>
+</html>

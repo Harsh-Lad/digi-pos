@@ -1008,7 +1008,243 @@
           "title": "Customer Convenience",
           "description": "A smooth and flexible ordering and payment experience that increases satisfaction and loyalty."
         }
-      }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-[100rem] mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Seamless Website<br>and App Ordering</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Allow customers to place orders directly through your branded website or mobile app without relying on third-party platforms. This gives restaurants full control over customer experience while avoiding high commission fees.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Real-Time<br>POS Integration</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">All online orders are automatically synced with the POS system in real time. This reduces mistakes, improves kitchen coordination, and ensures every order is tracked seamlessly from confirmation to delivery.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Multiple Payment<br>Options</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Support secure online payments through payment gateways, credit/debit cards, digital wallets, and cash on delivery. Flexible payment methods increase convenience and strengthen customer loyalty.</p></article></div></div></section>"
+    },
+    "queueManagement": {
+      "name": "Queue Management System",
+      "category": "Front Office",
+      "heroTitle": "Digital Queue Management",
+      "heroDescription": "Long waiting times can frustrate guests and hurt sales. A cloud-based POS system with digital queue management helps restaurants streamline waiting lists, notify customers instantly, and assign tables efficiently. The result: faster service, less stress, and a smoother dining experience that keeps customers coming back.",
+      "ctaText": "Get Now!",
+      "featuresHeaderText": "Enhance Customer Experience with Digital Queue Management in Cloud POS",
+      "features": {
+        "realTimeQueueUpdates": {
+          "title": "Real-time queue updates",
+          "description": "Instant notifications that show waiting list status for staff and customers."
+        },
+        "customerNotificationSystem": {
+          "title": "Customer notification system",
+          "description": "Automated alerts to inform guests when their table is ready."
+        },
+        "tableAllocationAutomation": {
+          "title": "Table allocation automation",
+          "description": "Smart software that assigns tables based on group size and estimated wait time."
+        },
+        "queueAnalyticsReporting": {
+          "title": "Queue analytics and reporting",
+          "description": "Data insights that measure waiting times, service flow, and staff performance."
+        },
+        "mobileQueueManagement": {
+          "title": "Mobile queue management",
+          "description": "Tools to manage waiting lists on smartphones or tablets."
+        },
+        "contactlessQueueSystem": {
+          "title": "Contactless queue system",
+          "description": "Digital check-in that reduces physical lines and crowding at the entrance."
+        },
+        "multiChannelQueueIntegration": {
+          "title": "Multi-channel queue integration",
+          "description": "Queue syncing from various booking, ordering, or reservation platforms."
+        },
+        "waitTimePrediction": {
+          "title": "Wait time prediction",
+          "description": "Estimates of how long customers will wait before seating."
+        },
+        "queueOptimization": {
+          "title": "Queue optimization",
+          "description": "Strategies to reduce waiting time and improve overall service flow."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-[100rem] mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Real-Time Waiting<br>List Management</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Track and manage queues instantly with a digital waiting list built into the POS. Guests can be added quickly, receive live updates, and avoid crowding at the entrance, creating a more relaxed and organized dining experience.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Automated Customer<br>Notifications</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">With built-in SMS or app alerts, guests are notified the moment their table is ready. This reduces walkaways, prevents long waiting lines, and keeps communication professional while improving customer satisfaction.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Table Allocation and<br>Performance Insights</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">The system assigns tables automatically based on group size and wait time, keeping turnover efficient. Cloud-based reports highlight peak hours and staff performance, helping managers optimize operations and increase revenue.</p></article></div></div></section>"
+    },
+    "productMenuManagement": {
+      "name": "Product & Menu Management",
+      "category": "Back Office",
+      "heroTitle": "Product and Menu Management",
+      "heroDescription": "Managing your restaurant menu is simpler and smarter with a cloud-based POS system. From adding new dishes to updating prices instantly, everything is organized in one platform saving time, reducing errors, and improving efficiency for both staff and customers.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Comprehensive Product and Menu Management for Restaurants with Cloud POS",
+      "features": {
+        "cloudBasedPosSystem": {
+          "title": "Cloud-based POS System",
+          "description": "A point-of-sale solution hosted online that allows restaurants to manage operations anytime, anywhere."
+        },
+        "restaurantMenuManagement": {
+          "title": "Restaurant Menu Management",
+          "description": "The process of organizing, updating, and customizing food and beverage items within a POS system."
+        },
+        "centralizedProductControl": {
+          "title": "Centralized Product Control",
+          "description": "A single dashboard to add, edit, or remove menu items and maintain accuracy across all platforms."
+        },
+        "dynamicMenuCustomization": {
+          "title": "Dynamic Menu Customization",
+          "description": "The ability to adjust pricing, portions, or ingredients quickly to match customer demand or seasonal trends."
+        },
+        "realTimeMenuUpdates": {
+          "title": "Real-time Menu Updates",
+          "description": "Instant synchronization of menu changes across all connected devices and ordering channels."
+        },
+        "efficientRestaurantOperations": {
+          "title": "Efficient Restaurant Operations",
+          "description": "Streamlined processes that reduce errors, save time, and improve staff productivity."
+        },
+        "onlineAndDineInOrders": {
+          "title": "Online and Dine-in Orders",
+          "description": "Managing both digital and in-person orders seamlessly from one POS system."
+        },
+        "flexiblePricingSpecials": {
+          "title": "Flexible Pricing and Specials",
+          "description": "The option to create discounts, combo deals, and promotional offers tailored to customer preferences."
+        },
+        "improvedCustomerExperience": {
+          "title": "Improved Customer Experience",
+          "description": "Enhancing satisfaction by providing accurate menus, faster service, and consistent order fulfillment."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-[100rem] mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Centralized<br>Product Control</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Easily add, edit, or remove menu items across categories from a single dashboard. This ensures accurate product details, consistent menus, and fewer errors, keeping your menu always up to date.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Dynamic Menu<br>Customization</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Quickly adjust ingredients, portions, or pricing with flexibility. Whether launching seasonal specials, limited-time offers, or combo deals, restaurants can adapt menus to match customer preferences and market trends.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Real-Time Updates<br>Everywhere</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Every change made in the POS is reflected instantly across all connected devices. This ensures accuracy for dine-in, takeout, and online orders, improving order speed, reducing mistakes, and boosting customer satisfaction.</p></article></div></div></section>"
+    },
+    "recipeManagement": {
+      "name": "Recipe Management",
+      "category": "Back Office",
+      "heroTitle": "Recipe Management and Cost Control",
+      "heroDescription": "Smarter recipe tracking and cost analysis give restaurants the tools to manage every ingredient, cut waste, and protect profits. A cloud-based POS system makes it simple to create, monitor, and improve recipes with accuracy ensuring consistent food quality and stronger margins.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Recipe Management and Cost Control for Restaurants with Cloud POS",
+      "features": {
+        "restaurantPosFeatures": {
+          "title": "Restaurant POS Software Features",
+          "description": "Key functionalities of a restaurant POS system that streamline operations and improve service quality."
+        },
+        "cloudBasedManagement": {
+          "title": "Cloud-Based Restaurant Management",
+          "description": "Online platforms that help restaurants manage sales, inventory, and customer data in real time."
+        },
+        "menuProductManagementPos": {
+          "title": "Menu and Product Management POS",
+          "description": "A single dashboard to add, edit, or remove menu items and maintain accuracy across all platforms."
+        },
+        "recipeCostAnalysis": {
+          "title": "Recipe Cost Analysis Software",
+          "description": "POS features that calculate the cost of ingredients to help control food expenses and increase profitability."
+        },
+        "inventoryTrackingRestaurants": {
+          "title": "Inventory Tracking for Restaurants",
+          "description": "Systems that monitor ingredient stock levels to reduce waste and ensure menu availability."
+        },
+        "realTimeMenuUpdatesPos": {
+          "title": "Real-Time Menu Updates POS",
+          "description": "Capability allowing instant menu changes across multiple ordering channels to keep information accurate."
+        },
+        "portionControlPos": {
+          "title": "Portion Control in POS Systems",
+          "description": "Features that help standardize serving sizes to maintain consistency and manage food costs."
+        },
+        "wasteReductionTools": {
+          "title": "Waste Reduction Tools for Restaurants",
+          "description": "POS features designed to minimize food waste through detailed tracking and forecasting."
+        },
+        "restaurantRecipeSystem": {
+          "title": "Restaurant Recipe Management System",
+          "description": "Software that supports detailed recipe creation, tracking, and modification for quality and cost control."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Detailed Recipe<br>Tracking</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Build accurate recipes with step-by-step ingredient lists and quantities. This improves menu consistency, supports quality control, and simplifies staff training across the kitchen.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Ingredient<br>Cost Analysis</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Track ingredient costs and usage in real time to understand the exact cost of every recipe. These insights help restaurants set profitable menu prices, control food costs, and avoid unnecessary revenue loss.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Waste and<br>Portion Control</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Monitor ingredient usage closely to ensure precise portioning and reduce waste. Consistency not only improves profitability but also enhances customer satisfaction with reliable dish quality.</p></article></div></div></section>"
+    },
+    "inventoryManagement": {
+      "name": "Inventory Management",
+      "category": "Back Office",
+      "heroTitle": "Inventory Management",
+      "heroDescription": "Efficient inventory management is essential for restaurants to reduce waste, cut costs, and maintain smooth operations. A cloud-based POS system with smart inventory tools gives managers real-time visibility into stock levels, ingredient usage, and reordering needs, helping kitchens run more profitably and consistently.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Smart Inventory Management for Restaurants with Cloud POS",
+      "features": {
+        "cloudBasedPosSystem": {
+          "title": "Cloud-Based POS System",
+          "description": "A modern point-of-sale solution hosted on the cloud that allows real-time data access and management from anywhere."
+        },
+        "restaurantInventoryManagement": {
+          "title": "Restaurant Inventory Management",
+          "description": "A system feature that tracks ingredient stock levels and usage to reduce waste and ensure timely reordering."
+        },
+        "recipeCostAnalysis": {
+          "title": "Recipe Cost Analysis",
+          "description": "A tool that calculates the exact cost of dishes by tracking ingredient prices and quantities for better pricing decisions."
+        },
+        "menuManagementSoftware": {
+          "title": "Menu Management Software",
+          "description": "Software that helps restaurants organize and update their menu items, prices, and descriptions easily and quickly."
+        },
+        "realTimeStockTracking": {
+          "title": "Real-Time Stock Tracking",
+          "description": "Technology that provides up-to-date visibility of inventory levels to avoid stockouts or excess inventory."
+        },
+        "portionControlRestaurants": {
+          "title": "Portion Control in Restaurants",
+          "description": "A feature that standardizes serving sizes to maintain consistency and control food costs."
+        },
+        "automatedReorderAlerts": {
+          "title": "Automated Reorder Alerts",
+          "description": "System-generated notifications that inform the kitchen when ingredient stocks reach a set low level."
+        },
+        "wasteReductionStrategies": {
+          "title": "Waste Reduction Strategies",
+          "description": "Techniques and tools aimed at minimizing food waste to save cost and improve sustainability."
+        },
+        "menuProfitabilityInsights": {
+          "title": "Menu Profitability Insights",
+          "description": "Analytics that help identify the most and least profitable dishes to optimize the restaurant's menu offerings."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Real-Time<br>Stock Tracking</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Monitor every ingredient and product as it's used with live stock tracking. This prevents shortages, reduces overstocking, and ensures accurate availability so your kitchen is always prepared.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Automated<br>Reorder Alerts</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Set custom thresholds and receive instant reorder alerts when ingredients run low. This proactive system prevents last-minute shortages and keeps supplies balanced without overbuying.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Waste Reduction<br>and Cost Control</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Track ingredient usage closely to identify waste patterns and improve cost management. By reducing spoilage and over-portioning, restaurants maximize profitability while making smarter use of resources.</p></article></div></div></section>"
+    },
+    "purchaseSupplyChain": {
+      "name": "Purchase & Supply Chain Management",
+      "category": "Back Office",
+      "heroTitle": "Purchase and Supply Chain Management",
+      "heroDescription": "Streamlining purchasing and vendor management is critical for smooth restaurant operations. A cloud-based POS system provides clarity and control across the supply chain, helping restaurants order smarter, manage vendors efficiently, and reduce costs.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Purchase and Supply Chain Management for Restaurants with Cloud POS",
+      "features": {
+        "cloudBasedPosSystem": {
+          "title": "Cloud-Based POS System",
+          "description": "A software system hosted online that manages restaurant sales, inventory, and operations from anywhere in real time."
+        },
+        "restaurantInventoryManagement": {
+          "title": "Restaurant Inventory Management",
+          "description": "Tools within a POS system that monitor ingredient stock, usage, and reordering needs to reduce waste and prevent shortages."
+        },
+        "recipeCostAnalysis": {
+          "title": "Recipe Cost Analysis",
+          "description": "Functionality that calculates the cost of each dish by tracking ingredient prices and amounts, helping optimize menu pricing."
+        },
+        "menuManagementSoftware": {
+          "title": "Menu Management Software",
+          "description": "Application features that allow restaurants to easily create, update, and organize their food and drink menus."
+        },
+        "integratedPurchaseManagement": {
+          "title": "Integrated Purchase Management",
+          "description": "A system that links inventory data with purchase orders to streamline buying and supply chain workflows."
+        },
+        "vendorRelationshipManagement": {
+          "title": "Vendor Relationship Management",
+          "description": "Tools that centralize vendor contacts, pricing, and order histories to improve supplier communication and purchasing decisions."
+        },
+        "automatedStockAlerts": {
+          "title": "Automated Stock Alerts",
+          "description": "Notifications triggered when inventory levels reach a preset minimum, helping kitchens reorder supplies proactively."
+        },
+        "portionControlTools": {
+          "title": "Portion Control Tools",
+          "description": "Features that define exact serving sizes to ensure consistent food quality and control food costs."
+        },
+        "salesPurchaseReporting": {
+          "title": "Sales and Purchase Reporting",
+          "description": "Detailed analytics and reports on sales trends, ingredient usage, and purchasing patterns to support informed business decisions."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Integrated Inventory &<br>Purchase Management</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Automatically connect inventory levels with purchase orders to ensure essential ingredients never run out. This integration reduces manual work, prevents ordering errors, and keeps kitchens consistently stocked.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Centralized<br>Vendor Database</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Store all vendor contacts, pricing, and order histories in one platform. Managing multiple suppliers becomes faster, more organized, and easier to oversee from a single dashboard.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Detailed Purchase<br>Reporting</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Access built-in purchase reports that highlight spending trends, vendor performance, and cost breakdowns. These insights support better budgeting, smarter negotiations, and stronger financial control.</p></article></div></div></section>"
     }
   }
 }

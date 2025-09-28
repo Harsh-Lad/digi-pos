@@ -152,6 +152,9 @@
 
   </section>
 
+  <!-- Key Benefits Section - Rendered directly without orange background -->
+  <div *ngIf="selectedProduct?.keyBenefitsSectionKey" [innerHTML]="selectedProduct?.keyBenefitsSectionKey | translate"></div>
+
   <div *ngIf="selectedProduct?.horizontalBarKey" class="w-screen bg-[#f48021] md:flex mt-12">
     <div class="left md:w-1/2 flex items-center justify-center md:pl-8">
       <div class="md:w-[85%] p-4 md:p-0">

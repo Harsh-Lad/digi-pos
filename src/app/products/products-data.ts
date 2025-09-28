@@ -33,6 +33,7 @@ export interface ProductData {
   sidebarTitleKey?: string;
   sidebarBulletsKey?: string;
   horizontalBarKey?: string;
+  keyBenefitsSectionKey?: string;
   growthTitleKey?: string;
   isKiosk?: boolean;
 }
@@ -469,53 +470,359 @@ export const PRODUCTS_DATA: ProductData[] = [
     categoryKey: 'productsData.onlineOrdering.category',
     heroTitleKey: 'productsData.onlineOrdering.heroTitle',
     heroDescriptionKey: 'productsData.onlineOrdering.heroDescription',
-    heroImages: 'products/online-ordering.PNG',
+    heroImages: 'products/Online Ordering System.png',
     ctaTextKey: 'productsData.onlineOrdering.ctaText',
     featuresHeaderTextKey: 'productsData.onlineOrdering.featuresHeaderText',
     growthTitleKey: 'productsData.onlineOrdering.growthTitle',
     features: [
       {
-        icon: 'touch_app',
-        titleKey: 'productsData.onlineOrdering.features.userFriendly.title',
-        descriptionKey: 'productsData.onlineOrdering.features.userFriendly.description',
+        icon: 'web',
+        titleKey: 'productsData.onlineOrdering.features.onlineOrderingSystem.title',
+        descriptionKey: 'productsData.onlineOrdering.features.onlineOrderingSystem.description',
       },
       {
-        icon: 'tune',
-        titleKey: 'productsData.onlineOrdering.features.fullyCustomizable.title',
-        descriptionKey: 'productsData.onlineOrdering.features.fullyCustomizable.description',
+        icon: 'cloud_sync',
+        titleKey: 'productsData.onlineOrdering.features.cloudPosIntegration.title',
+        descriptionKey: 'productsData.onlineOrdering.features.cloudPosIntegration.description',
       },
       {
-        icon: 'speed',
-        titleKey: 'productsData.onlineOrdering.features.speedsUp.title',
-        descriptionKey: 'productsData.onlineOrdering.features.speedsUp.description',
+        icon: 'domain',
+        titleKey: 'productsData.onlineOrdering.features.restaurantWebsiteOrdering.title',
+        descriptionKey: 'productsData.onlineOrdering.features.restaurantWebsiteOrdering.description',
       },
       {
-        icon: 'lock',
-        titleKey: 'productsData.onlineOrdering.features.fastSecure.title',
-        descriptionKey: 'productsData.onlineOrdering.features.fastSecure.description',
+        icon: 'phone_android',
+        titleKey: 'productsData.onlineOrdering.features.mobileAppOrdering.title',
+        descriptionKey: 'productsData.onlineOrdering.features.mobileAppOrdering.description',
       },
       {
-        icon: 'sync',
-        titleKey: 'productsData.onlineOrdering.features.realTimeUpdates.title',
-        descriptionKey: 'productsData.onlineOrdering.features.realTimeUpdates.description',
+        icon: 'schedule',
+        titleKey: 'productsData.onlineOrdering.features.realTimeOrderTracking.title',
+        descriptionKey: 'productsData.onlineOrdering.features.realTimeOrderTracking.description',
       },
       {
-        icon: 'devices_other',
-        titleKey: 'productsData.kiosk.features.compactDesign.title',
-        descriptionKey: 'productsData.kiosk.features.compactDesign.description',
+        icon: 'credit_card',
+        titleKey: 'productsData.onlineOrdering.features.multiplePaymentOptions.title',
+        descriptionKey: 'productsData.onlineOrdering.features.multiplePaymentOptions.description',
       },
       {
-        icon: 'translate',
-        titleKey: 'productsData.kiosk.features.multiLanguage.title',
-        descriptionKey: 'productsData.kiosk.features.multiLanguage.description',
+        icon: 'account_balance',
+        titleKey: 'productsData.onlineOrdering.features.localPaymentGateways.title',
+        descriptionKey: 'productsData.onlineOrdering.features.localPaymentGateways.description',
       },
       {
-        icon: 'phonelink',
-        titleKey: 'productsData.kiosk.features.multiDevice.title',
-        descriptionKey: 'productsData.kiosk.features.multiDevice.description',
+        icon: 'restaurant',
+        titleKey: 'productsData.onlineOrdering.features.errorFreeKitchenOperations.title',
+        descriptionKey: 'productsData.onlineOrdering.features.errorFreeKitchenOperations.description',
+      },
+      {
+        icon: 'favorite',
+        titleKey: 'productsData.onlineOrdering.features.customerConvenience.title',
+        descriptionKey: 'productsData.onlineOrdering.features.customerConvenience.description',
       }
     ],
     isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.onlineOrdering.keyBenefitsSection',
+    isKiosk: false
+  },
+  {
+    slug: 'queue-management-system',
+    nameKey: 'productsData.queueManagement.name',
+    categoryKey: 'productsData.queueManagement.category',
+    heroTitleKey: 'productsData.queueManagement.heroTitle',
+    heroDescriptionKey: 'productsData.queueManagement.heroDescription',
+    heroImages: 'products/Digital Queue Management.png',
+    ctaTextKey: 'productsData.queueManagement.ctaText',
+    featuresHeaderTextKey: 'productsData.queueManagement.featuresHeaderText',
+    features: [
+      {
+        icon: 'update',
+        titleKey: 'productsData.queueManagement.features.realTimeQueueUpdates.title',
+        descriptionKey: 'productsData.queueManagement.features.realTimeQueueUpdates.description',
+      },
+      {
+        icon: 'notifications_active',
+        titleKey: 'productsData.queueManagement.features.customerNotificationSystem.title',
+        descriptionKey: 'productsData.queueManagement.features.customerNotificationSystem.description',
+      },
+      {
+        icon: 'table_restaurant',
+        titleKey: 'productsData.queueManagement.features.tableAllocationAutomation.title',
+        descriptionKey: 'productsData.queueManagement.features.tableAllocationAutomation.description',
+      },
+      {
+        icon: 'analytics',
+        titleKey: 'productsData.queueManagement.features.queueAnalyticsReporting.title',
+        descriptionKey: 'productsData.queueManagement.features.queueAnalyticsReporting.description',
+      },
+      {
+        icon: 'phone_android',
+        titleKey: 'productsData.queueManagement.features.mobileQueueManagement.title',
+        descriptionKey: 'productsData.queueManagement.features.mobileQueueManagement.description',
+      },
+      {
+        icon: 'contactless',
+        titleKey: 'productsData.queueManagement.features.contactlessQueueSystem.title',
+        descriptionKey: 'productsData.queueManagement.features.contactlessQueueSystem.description',
+      },
+      {
+        icon: 'sync',
+        titleKey: 'productsData.queueManagement.features.multiChannelQueueIntegration.title',
+        descriptionKey: 'productsData.queueManagement.features.multiChannelQueueIntegration.description',
+      },
+      {
+        icon: 'schedule',
+        titleKey: 'productsData.queueManagement.features.waitTimePrediction.title',
+        descriptionKey: 'productsData.queueManagement.features.waitTimePrediction.description',
+      },
+      {
+        icon: 'tune',
+        titleKey: 'productsData.queueManagement.features.queueOptimization.title',
+        descriptionKey: 'productsData.queueManagement.features.queueOptimization.description',
+      }
+    ],
+    isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.queueManagement.keyBenefitsSection',
+    isKiosk: false
+  },
+  {
+    slug: 'product-menu-management',
+    nameKey: 'productsData.productMenuManagement.name',
+    categoryKey: 'productsData.productMenuManagement.category',
+    heroTitleKey: 'productsData.productMenuManagement.heroTitle',
+    heroDescriptionKey: 'productsData.productMenuManagement.heroDescription',
+    heroImages: 'products/Product and Menu Management.png',
+    ctaTextKey: 'productsData.productMenuManagement.ctaText',
+    featuresHeaderTextKey: 'productsData.productMenuManagement.featuresHeaderText',
+    features: [
+      {
+        icon: 'cloud',
+        titleKey: 'productsData.productMenuManagement.features.cloudBasedPosSystem.title',
+        descriptionKey: 'productsData.productMenuManagement.features.cloudBasedPosSystem.description',
+      },
+      {
+        icon: 'restaurant_menu',
+        titleKey: 'productsData.productMenuManagement.features.restaurantMenuManagement.title',
+        descriptionKey: 'productsData.productMenuManagement.features.restaurantMenuManagement.description',
+      },
+      {
+        icon: 'dashboard',
+        titleKey: 'productsData.productMenuManagement.features.centralizedProductControl.title',
+        descriptionKey: 'productsData.productMenuManagement.features.centralizedProductControl.description',
+      },
+      {
+        icon: 'tune',
+        titleKey: 'productsData.productMenuManagement.features.dynamicMenuCustomization.title',
+        descriptionKey: 'productsData.productMenuManagement.features.dynamicMenuCustomization.description',
+      },
+      {
+        icon: 'update',
+        titleKey: 'productsData.productMenuManagement.features.realTimeMenuUpdates.title',
+        descriptionKey: 'productsData.productMenuManagement.features.realTimeMenuUpdates.description',
+      },
+      {
+        icon: 'speed',
+        titleKey: 'productsData.productMenuManagement.features.efficientRestaurantOperations.title',
+        descriptionKey: 'productsData.productMenuManagement.features.efficientRestaurantOperations.description',
+      },
+      {
+        icon: 'dining',
+        titleKey: 'productsData.productMenuManagement.features.onlineAndDineInOrders.title',
+        descriptionKey: 'productsData.productMenuManagement.features.onlineAndDineInOrders.description',
+      },
+      {
+        icon: 'local_offer',
+        titleKey: 'productsData.productMenuManagement.features.flexiblePricingSpecials.title',
+        descriptionKey: 'productsData.productMenuManagement.features.flexiblePricingSpecials.description',
+      },
+      {
+        icon: 'star',
+        titleKey: 'productsData.productMenuManagement.features.improvedCustomerExperience.title',
+        descriptionKey: 'productsData.productMenuManagement.features.improvedCustomerExperience.description',
+      }
+    ],
+    isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.productMenuManagement.keyBenefitsSection',
+    isKiosk: false
+  },
+  {
+    slug: 'recipe-management',
+    nameKey: 'productsData.recipeManagement.name',
+    categoryKey: 'productsData.recipeManagement.category',
+    heroTitleKey: 'productsData.recipeManagement.heroTitle',
+    heroDescriptionKey: 'productsData.recipeManagement.heroDescription',
+    heroImages: 'products/Recipe Management.png',
+    ctaTextKey: 'productsData.recipeManagement.ctaText',
+    featuresHeaderTextKey: 'productsData.recipeManagement.featuresHeaderText',
+    features: [
+      {
+        icon: 'restaurant',
+        titleKey: 'productsData.recipeManagement.features.restaurantPosFeatures.title',
+        descriptionKey: 'productsData.recipeManagement.features.restaurantPosFeatures.description',
+      },
+      {
+        icon: 'cloud',
+        titleKey: 'productsData.recipeManagement.features.cloudBasedManagement.title',
+        descriptionKey: 'productsData.recipeManagement.features.cloudBasedManagement.description',
+      },
+      {
+        icon: 'dashboard',
+        titleKey: 'productsData.recipeManagement.features.menuProductManagementPos.title',
+        descriptionKey: 'productsData.recipeManagement.features.menuProductManagementPos.description',
+      },
+      {
+        icon: 'calculate',
+        titleKey: 'productsData.recipeManagement.features.recipeCostAnalysis.title',
+        descriptionKey: 'productsData.recipeManagement.features.recipeCostAnalysis.description',
+      },
+      {
+        icon: 'inventory',
+        titleKey: 'productsData.recipeManagement.features.inventoryTrackingRestaurants.title',
+        descriptionKey: 'productsData.recipeManagement.features.inventoryTrackingRestaurants.description',
+      },
+      {
+        icon: 'update',
+        titleKey: 'productsData.recipeManagement.features.realTimeMenuUpdatesPos.title',
+        descriptionKey: 'productsData.recipeManagement.features.realTimeMenuUpdatesPos.description',
+      },
+      {
+        icon: 'scale',
+        titleKey: 'productsData.recipeManagement.features.portionControlPos.title',
+        descriptionKey: 'productsData.recipeManagement.features.portionControlPos.description',
+      },
+      {
+        icon: 'recycling',
+        titleKey: 'productsData.recipeManagement.features.wasteReductionTools.title',
+        descriptionKey: 'productsData.recipeManagement.features.wasteReductionTools.description',
+      },
+      {
+        icon: 'book',
+        titleKey: 'productsData.recipeManagement.features.restaurantRecipeSystem.title',
+        descriptionKey: 'productsData.recipeManagement.features.restaurantRecipeSystem.description',
+      }
+    ],
+    isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.recipeManagement.keyBenefitsSection',
+    isKiosk: false
+  },
+  {
+    slug: 'inventory-management',
+    nameKey: 'productsData.inventoryManagement.name',
+    categoryKey: 'productsData.inventoryManagement.category',
+    heroTitleKey: 'productsData.inventoryManagement.heroTitle',
+    heroDescriptionKey: 'productsData.inventoryManagement.heroDescription',
+    heroImages: 'products/Inventory Management.png',
+    ctaTextKey: 'productsData.inventoryManagement.ctaText',
+    featuresHeaderTextKey: 'productsData.inventoryManagement.featuresHeaderText',
+    features: [
+      {
+        icon: 'cloud',
+        titleKey: 'productsData.inventoryManagement.features.cloudBasedPosSystem.title',
+        descriptionKey: 'productsData.inventoryManagement.features.cloudBasedPosSystem.description',
+      },
+      {
+        icon: 'inventory_2',
+        titleKey: 'productsData.inventoryManagement.features.restaurantInventoryManagement.title',
+        descriptionKey: 'productsData.inventoryManagement.features.restaurantInventoryManagement.description',
+      },
+      {
+        icon: 'calculate',
+        titleKey: 'productsData.inventoryManagement.features.recipeCostAnalysis.title',
+        descriptionKey: 'productsData.inventoryManagement.features.recipeCostAnalysis.description',
+      },
+      {
+        icon: 'restaurant_menu',
+        titleKey: 'productsData.inventoryManagement.features.menuManagementSoftware.title',
+        descriptionKey: 'productsData.inventoryManagement.features.menuManagementSoftware.description',
+      },
+      {
+        icon: 'visibility',
+        titleKey: 'productsData.inventoryManagement.features.realTimeStockTracking.title',
+        descriptionKey: 'productsData.inventoryManagement.features.realTimeStockTracking.description',
+      },
+      {
+        icon: 'scale',
+        titleKey: 'productsData.inventoryManagement.features.portionControlRestaurants.title',
+        descriptionKey: 'productsData.inventoryManagement.features.portionControlRestaurants.description',
+      },
+      {
+        icon: 'notification_important',
+        titleKey: 'productsData.inventoryManagement.features.automatedReorderAlerts.title',
+        descriptionKey: 'productsData.inventoryManagement.features.automatedReorderAlerts.description',
+      },
+      {
+        icon: 'eco',
+        titleKey: 'productsData.inventoryManagement.features.wasteReductionStrategies.title',
+        descriptionKey: 'productsData.inventoryManagement.features.wasteReductionStrategies.description',
+      },
+      {
+        icon: 'insights',
+        titleKey: 'productsData.inventoryManagement.features.menuProfitabilityInsights.title',
+        descriptionKey: 'productsData.inventoryManagement.features.menuProfitabilityInsights.description',
+      }
+    ],
+    isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.inventoryManagement.keyBenefitsSection',
+    isKiosk: false
+  },
+  {
+    slug: 'purchase-supply-chain-management',
+    nameKey: 'productsData.purchaseSupplyChain.name',
+    categoryKey: 'productsData.purchaseSupplyChain.category',
+    heroTitleKey: 'productsData.purchaseSupplyChain.heroTitle',
+    heroDescriptionKey: 'productsData.purchaseSupplyChain.heroDescription',
+    heroImages: 'products/Inventory Management.png',
+    ctaTextKey: 'productsData.purchaseSupplyChain.ctaText',
+    featuresHeaderTextKey: 'productsData.purchaseSupplyChain.featuresHeaderText',
+    features: [
+      {
+        icon: 'cloud',
+        titleKey: 'productsData.purchaseSupplyChain.features.cloudBasedPosSystem.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.cloudBasedPosSystem.description',
+      },
+      {
+        icon: 'inventory_2',
+        titleKey: 'productsData.purchaseSupplyChain.features.restaurantInventoryManagement.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.restaurantInventoryManagement.description',
+      },
+      {
+        icon: 'calculate',
+        titleKey: 'productsData.purchaseSupplyChain.features.recipeCostAnalysis.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.recipeCostAnalysis.description',
+      },
+      {
+        icon: 'restaurant_menu',
+        titleKey: 'productsData.purchaseSupplyChain.features.menuManagementSoftware.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.menuManagementSoftware.description',
+      },
+      {
+        icon: 'link',
+        titleKey: 'productsData.purchaseSupplyChain.features.integratedPurchaseManagement.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.integratedPurchaseManagement.description',
+      },
+      {
+        icon: 'groups',
+        titleKey: 'productsData.purchaseSupplyChain.features.vendorRelationshipManagement.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.vendorRelationshipManagement.description',
+      },
+      {
+        icon: 'notification_important',
+        titleKey: 'productsData.purchaseSupplyChain.features.automatedStockAlerts.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.automatedStockAlerts.description',
+      },
+      {
+        icon: 'scale',
+        titleKey: 'productsData.purchaseSupplyChain.features.portionControlTools.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.portionControlTools.description',
+      },
+      {
+        icon: 'analytics',
+        titleKey: 'productsData.purchaseSupplyChain.features.salesPurchaseReporting.title',
+        descriptionKey: 'productsData.purchaseSupplyChain.features.salesPurchaseReporting.description',
+      }
+    ],
+    isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.purchaseSupplyChain.keyBenefitsSection',
     isKiosk: false
   },
 ];

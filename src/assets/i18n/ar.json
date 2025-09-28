@@ -967,6 +967,586 @@
           "description": "كشك DigiPOS مصمم للعمل بسلاسة عبر Android وiOS."
         }
       }
+    },
+    "onlineOrdering": {
+      "name": "الطلب عبر الإنترنت",
+      "category": "الواجهة الأمامية",
+      "heroTitle": "نظام الطلب عبر الإنترنت",
+      "heroDescription": "نظام نقاط البيع السحابي مع الطلب عبر الإنترنت يساعد المطاعم على خدمة العملاء بشكل أسرع، وزيادة المبيعات، وإدارة الطلبات بكفاءة أكبر. مع القنوات الرقمية ذات العلامة التجارية، والمزامنة مع نقاط البيع في الوقت الفعلي، وخيارات الدفع المرنة، يمكن للمطاعم النمو مع الحفاظ على العمليات سلسة وودودة للعملاء.",
+      "ctaText": "احصل عليه الآن!",
+      "featuresHeaderText": "عزز المبيعات واخدم العملاء بشكل أسرع مع نقاط البيع السحابية ونظام الطلب عبر الإنترنت.",
+      "growthTitle": "قوّي عملك بالمبيعات المباشرة عبر الإنترنت",
+      "features": {
+        "onlineOrderingSystem": {
+          "icon": "mdi:web",
+          "title": "نظام الطلب عبر الإنترنت",
+          "description": "منصة رقمية تتيح للعملاء طلب الطعام مباشرة من المطعم عبر الويب أو تطبيق الهاتف المحمول."
+        },
+        "cloudPosIntegration": {
+          "icon": "mdi:cloud-sync",
+          "title": "تكامل نقاط البيع السحابية",
+          "description": "مزامنة تلقائية للطلبات عبر الإنترنت مع نظام نقاط البيع في المطعم للحصول على عمليات سلسة."
+        },
+        "restaurantWebsiteOrdering": {
+          "icon": "mdi:domain",
+          "title": "طلب موقع المطعم",
+          "description": "ميزة تمكن العملاء من الطلب مباشرة من موقع المطعم الخاص دون أطراف ثالثة."
+        },
+        "mobileAppOrdering": {
+          "icon": "mdi:cellphone",
+          "title": "طلب تطبيق الهاتف المحمول",
+          "description": "طريقة مريحة للعملاء لوضع طلبات الطعام من خلال تطبيق المطعم ذو العلامة التجارية."
+        },
+        "realTimeOrderTracking": {
+          "icon": "mdi:clock-fast",
+          "title": "تتبع الطلبات في الوقت الفعلي",
+          "description": "تحديثات فورية لكل طلب أثناء انتقاله من الوضع إلى التحضير والتوصيل."
+        },
+        "multiplePaymentOptions": {
+          "icon": "mdi:credit-card-multiple",
+          "title": "خيارات دفع متعددة",
+          "description": "القدرة على الدفع عبر الإنترنت باستخدام البوابات المحلية أو اختيار الدفع عند التسليم."
+        },
+        "localPaymentGateways": {
+          "icon": "mdi:bank",
+          "title": "بوابات الدفع المحلية",
+          "description": "طرق دفع محلية آمنة مصممة خصيصاً لاحتياجات الطلب عبر الإنترنت في المملكة العربية السعودية."
+        },
+        "errorFreeKitchenOperations": {
+          "icon": "mdi:chef-hat",
+          "title": "عمليات مطبخ خالية من الأخطاء",
+          "description": "سير عمل مطبخ مبسط مع تقليل الأخطاء من المزامنة التلقائية للطلبات."
+        },
+        "customerConvenience": {
+          "icon": "mdi:account-heart",
+          "title": "راحة العملاء",
+          "description": "تجربة طلب ودفع سلسة ومرنة تزيد الرضا والولاء."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-[100rem] mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">طلب سلس عبر الموقع<br>والتطبيق</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">السماح للعملاء بوضع الطلبات مباشرة من خلال موقعك ذو العلامة التجارية أو تطبيق الهاتف المحمول دون الاعتماد على منصات الطرف الثالث. هذا يمنح المطاعم السيطرة الكاملة على تجربة العملاء مع تجنب رسوم العمولة العالية.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">تكامل نقاط البيع<br>في الوقت الفعلي</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">يتم مزامنة جميع الطلبات عبر الإنترنت تلقائياً مع نظام نقاط البيع في الوقت الفعلي. هذا يقلل الأخطاء، ويحسن تنسيق المطبخ، ويضمن تتبع كل طلب بسلاسة من التأكيد إلى التسليم.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">خيارات دفع<br>متعددة</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">دعم المدفوعات الآمنة عبر الإنترنت من خلال بوابات الدفع وبطاقات الائتمان/الخصم والمحافظ الرقمية والدفع عند التسليم. طرق الدفع المرنة تزيد الراحة وتقوي ولاء العملاء.</p></article></div></div></section>"
+    },
+    "queueManagement": {
+      "name": "نظام إدارة الطوابير",
+      "category": "الواجهة الأمامية",
+      "heroTitle": "إدارة الطوابير الرقمية",
+      "heroDescription": "أوقات الانتظار الطويلة يمكن أن تحبط الضيوف وتضر بالمبيعات. نظام نقاط البيع السحابي مع إدارة الطوابير الرقمية يساعد المطاعم على تبسيط قوائم الانتظار، وإشعار العملاء فوراً، وتخصيص الطاولات بكفاءة. النتيجة: خدمة أسرع، ضغط أقل، وتجربة طعام أكثر سلاسة تجعل العملاء يعودون.",
+      "ctaText": "احصل عليه الآن!",
+      "featuresHeaderText": "عزز تجربة العملاء مع إدارة الطوابير الرقمية في نقاط البيع السحابية",
+      "features": {
+        "realTimeQueueUpdates": {
+          "title": "تحديثات الطابور في الوقت الفعلي",
+          "description": "إشعارات فورية تُظهر حالة قائمة الانتظار للموظفين والعملاء."
+        },
+        "customerNotificationSystem": {
+          "title": "نظام إشعار العملاء",
+          "description": "تنبيهات تلقائية لإعلام الضيوف عند جاهزية طاولتهم."
+        },
+        "tableAllocationAutomation": {
+          "title": "أتمتة تخصيص الطاولات",
+          "description": "برنامج ذكي يخصص الطاولات بناءً على حجم المجموعة ووقت الانتظار المقدر."
+        },
+        "queueAnalyticsReporting": {
+          "title": "تحليلات وتقارير الطوابير",
+          "description": "رؤى بيانات تقيس أوقات الانتظار وتدفق الخدمة وأداء الموظفين."
+        },
+        "mobileQueueManagement": {
+          "title": "إدارة الطوابير المحمولة",
+          "description": "أدوات لإدارة قوائم الانتظار على الهواتف الذكية أو الأجهزة اللوحية."
+        },
+        "contactlessQueueSystem": {
+          "title": "نظام طوابير بدون تلامس",
+          "description": "تسجيل وصول رقمي يقلل الطوابير الفيزيائية والازدحام عند المدخل."
+        },
+        "multiChannelQueueIntegration": {
+          "title": "تكامل طوابير متعدد القنوات",
+          "description": "مزامنة الطوابير من منصات الحجز والطلب والحجوزات المختلفة."
+        },
+        "waitTimePrediction": {
+          "title": "توقع وقت الانتظار",
+          "description": "تقديرات لمدة انتظار العملاء قبل الجلوس."
+        },
+        "queueOptimization": {
+          "title": "تحسين الطوابير",
+          "description": "استراتيجيات لتقليل وقت الانتظار وتحسين تدفق الخدمة الإجمالي."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-[100rem] mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">إدارة قائمة الانتظار<br>في الوقت الفعلي</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">تتبع وإدارة الطوابير فوراً بقائمة انتظار رقمية مدمجة في نقاط البيع. يمكن إضافة الضيوف بسرعة، وتلقي التحديثات المباشرة، وتجنب الازدحام عند المدخل، مما يخلق تجربة طعام أكثر استرخاءً وتنظيماً.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">إشعارات العملاء<br>التلقائية</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">مع تنبيهات الرسائل النصية أو التطبيق المدمجة، يتم إشعار الضيوف في اللحظة التي تصبح فيها طاولتهم جاهزة. هذا يقلل المغادرة، ويمنع طوابير الانتظار الطويلة، ويحافظ على التواصل المهني مع تحسين رضا العملاء.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تخصيص الطاولات<br>ورؤى الأداء</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">يخصص النظام الطاولات تلقائياً بناءً على حجم المجموعة ووقت الانتظار، مما يحافظ على دوران فعال. التقارير السحابية تسلط الضوء على ساعات الذروة وأداء الموظفين، مما يساعد المديرين على تحسين العمليات وزيادة الإيرادات.</p></article></div></div></section>"
+    },
+    "productMenuManagement": {
+      "name": "إدارة المنتجات والقوائم",
+      "category": "المكتب الخلفي",
+      "heroTitle": "إدارة المنتجات والقوائم",
+      "heroDescription": "إدارة قائمة مطعمك أبسط وأذكى مع نظام نقاط البيع السحابي. من إضافة أطباق جديدة إلى تحديث الأسعار فوراً، كل شيء منظم في منصة واحدة توفر الوقت، وتقلل الأخطاء، وتحسن الكفاءة لكل من الموظفين والعملاء.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "إدارة شاملة للمنتجات والقوائم للمطاعم مع نقاط البيع السحابية",
+      "features": {
+        "cloudBasedPosSystem": {
+          "title": "نظام نقاط البيع السحابي",
+          "description": "حل نقاط بيع مستضاف عبر الإنترنت يتيح للمطاعم إدارة العمليات في أي وقت ومن أي مكان."
+        },
+        "restaurantMenuManagement": {
+          "title": "إدارة قوائم المطاعم",
+          "description": "عملية تنظيم وتحديث وتخصيص عناصر الطعام والشراب ضمن نظام نقاط البيع."
+        },
+        "centralizedProductControl": {
+          "title": "التحكم المركزي في المنتجات",
+          "description": "لوحة واحدة لإضافة أو تعديل أو إزالة عناصر القائمة والحفاظ على الدقة عبر جميع المنصات."
+        },
+        "dynamicMenuCustomization": {
+          "title": "تخصيص القائمة الديناميكي",
+          "description": "القدرة على تعديل التسعير أو الحصص أو المكونات بسرعة لتناسب طلب العملاء أو الاتجاهات الموسمية."
+        },
+        "realTimeMenuUpdates": {
+          "title": "تحديثات القائمة في الوقت الفعلي",
+          "description": "مزامنة فورية لتغييرات القائمة عبر جميع الأجهزة المتصلة وقنوات الطلب."
+        },
+        "efficientRestaurantOperations": {
+          "title": "عمليات مطعم فعالة",
+          "description": "عمليات مبسطة تقلل الأخطاء وتوفر الوقت وتحسن إنتاجية الموظفين."
+        },
+        "onlineAndDineInOrders": {
+          "title": "طلبات عبر الإنترنت وفي المطعم",
+          "description": "إدارة الطلبات الرقمية والشخصية بسلاسة من نظام نقاط بيع واحد."
+        },
+        "flexiblePricingSpecials": {
+          "title": "تسعير مرن وعروض خاصة",
+          "description": "خيار إنشاء خصومات وصفقات كومبو وعروض ترويجية مصممة حسب تفضيلات العملاء."
+        },
+        "improvedCustomerExperience": {
+          "title": "تجربة عملاء محسنة",
+          "description": "تعزيز الرضا من خلال توفير قوائم دقيقة وخدمة أسرع وتنفيذ طلبات متسق."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-[100rem] mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">التحكم المركزي<br>في المنتجات</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">أضف أو عدل أو احذف عناصر القائمة بسهولة عبر الفئات من لوحة واحدة. هذا يضمن تفاصيل منتج دقيقة وقوائم متسقة وأخطاء أقل، مما يحافظ على قائمتك محدثة دائماً.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">تخصيص القائمة<br>الديناميكي</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">عدل المكونات أو الحصص أو التسعير بسرعة مع المرونة. سواء كنت تطلق عروض موسمية أو عروض محدودة الوقت أو صفقات كومبو، يمكن للمطاعم تكييف القوائم لتناسب تفضيلات العملاء واتجاهات السوق.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تحديثات في الوقت الفعلي<br>في كل مكان</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">كل تغيير يتم في نقاط البيع ينعكس فوراً عبر جميع الأجهزة المتصلة. هذا يضمن الدقة لطلبات تناول الطعام في المكان والاستلاف والطلبات عبر الإنترنت، مما يحسن سرعة الطلب ويقلل الأخطاء ويعزز رضا العملاء.</p></article></div></div></section>"
+    },
+    "recipeManagement": {
+      "name": "إدارة الوصفات",
+      "category": "المكتب الخلفي",
+      "heroTitle": "إدارة الوصفات ومراقبة التكلفة",
+      "heroDescription": "تتبع الوصفات الأذكى وتحليل التكلفة يمنح المطاعم الأدوات لإدارة كل مكون، وخفض الهدر، وحماية الأرباح. نظام نقاط البيع السحابي يجعل من السهل إنشاء ومراقبة وتحسين الوصفات بدقة مما يضمن جودة طعام متسقة وهوامش أقوى.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "إدارة الوصفات ومراقبة التكلفة للمطاعم مع نقاط البيع السحابية",
+      "features": {
+        "restaurantPosFeatures": {
+          "title": "ميزات برنامج نقاط البيع للمطاعم",
+          "description": "الوظائف الأساسية لنظام نقاط البيع للمطاعم التي تبسط العمليات وتحسن جودة الخدمة."
+        },
+        "cloudBasedManagement": {
+          "title": "إدارة المطاعم السحابية",
+          "description": "منصات عبر الإنترنت تساعد المطاعم على إدارة المبيعات والمخزون وبيانات العملاء في الوقت الفعلي."
+        },
+        "menuProductManagementPos": {
+          "title": "إدارة القائمة والمنتجات في نقاط البيع",
+          "description": "لوحة واحدة لإضافة أو تعديل أو إزالة عناصر القائمة والحفاظ على الدقة عبر جميع المنصات."
+        },
+        "recipeCostAnalysis": {
+          "title": "برنامج تحليل تكلفة الوصفات",
+          "description": "ميزات نقاط البيع التي تحسب تكلفة المكونات للمساعدة في التحكم في نفقات الطعام وزيادة الربحية."
+        },
+        "inventoryTrackingRestaurants": {
+          "title": "تتبع المخزون للمطاعم",
+          "description": "أنظمة تراقب مستويات مخزون المكونات لتقليل الهدر وضمان توفر القائمة."
+        },
+        "realTimeMenuUpdatesPos": {
+          "title": "تحديثات القائمة في الوقت الفعلي في نقاط البيع",
+          "description": "قدرة تتيح تغييرات القائمة الفورية عبر قنوات الطلب المتعددة للحفاظ على دقة المعلومات."
+        },
+        "portionControlPos": {
+          "title": "مراقبة الحصص في أنظمة نقاط البيع",
+          "description": "ميزات تساعد في توحيد أحجام الحصص للحفاظ على الاتساق وإدارة تكاليف الطعام."
+        },
+        "wasteReductionTools": {
+          "title": "أدوات تقليل الهدر للمطاعم",
+          "description": "ميزات نقاط البيع المصممة لتقليل هدر الطعام من خلال التتبع التفصيلي والتنبؤ."
+        },
+        "restaurantRecipeSystem": {
+          "title": "نظام إدارة وصفات المطاعم",
+          "description": "برنامج يدعم إنشاء الوصفات التفصيلي والتتبع والتعديل لمراقبة الجودة والتكلفة."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تتبع الوصفات<br>التفصيلي</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">أنشئ وصفات دقيقة مع قوائم مكونات خطوة بخطوة والكميات. هذا يحسن اتساق القائمة، ويدعم مراقبة الجودة، ويبسط تدريب الموظفين عبر المطبخ.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">تحليل تكلفة<br>المكونات</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">تتبع تكاليف واستخدام المكونات في الوقت الفعلي لفهم التكلفة الدقيقة لكل وصفة. هذه الرؤى تساعد المطاعم على وضع أسعار قائمة مربحة، والتحكم في تكاليف الطعام، وتجنب خسارة الإيرادات غير الضرورية.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">الهدر ومراقبة<br>الحصص</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">راقب استخدام المكونات عن كثب لضمان التحصيص الدقيق وتقليل الهدر. الاتساق لا يحسن الربحية فحسب بل يعزز أيضاً رضا العملاء مع جودة طبق موثوقة.</p></article></div></div></section>"
+    },
+    "inventoryManagement": {
+      "name": "إدارة المخزون",
+      "category": "المكتب الخلفي",
+      "heroTitle": "إدارة المخزون",
+      "heroDescription": "إدارة المخزون الفعالة ضرورية للمطاعم لتقليل الهدر وخفض التكاليف والحفاظ على العمليات السلسة. نظام نقاط البيع السحابي مع أدوات المخزون الذكية يمنح المديرين رؤية في الوقت الفعلي لمستويات المخزون واستخدام المكونات واحتياجات إعادة الطلب، مما يساعد المطابخ على العمل بربحية واتساق أكبر.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "إدارة مخزون ذكية للمطاعم مع نقاط البيع السحابية",
+      "features": {
+        "cloudBasedPosSystem": {
+          "title": "نظام نقاط البيع السحابي",
+          "description": "حل نقاط بيع حديث مستضاف على السحابة يتيح الوصول للبيانات والإدارة في الوقت الفعلي من أي مكان."
+        },
+        "restaurantInventoryManagement": {
+          "title": "إدارة مخزون المطاعم",
+          "description": "ميزة نظام تتبع مستويات مخزون المكونات والاستخدام لتقليل الهدر وضمان إعادة الطلب في الوقت المناسب."
+        },
+        "recipeCostAnalysis": {
+          "title": "تحليل تكلفة الوصفات",
+          "description": "أداة تحسب التكلفة الدقيقة للأطباق من خلال تتبع أسعار وكميات المكونات لقرارات تسعير أفضل."
+        },
+        "menuManagementSoftware": {
+          "title": "برنامج إدارة القوائم",
+          "description": "برنامج يساعد المطاعم على تنظيم وتحديث عناصر القائمة والأسعار والأوصاف بسهولة وسرعة."
+        },
+        "realTimeStockTracking": {
+          "title": "تتبع المخزون في الوقت الفعلي",
+          "description": "تقنية توفر رؤية محدثة لمستويات المخزون لتجنب نفاد المخزون أو المخزون الزائد."
+        },
+        "portionControlRestaurants": {
+          "title": "مراقبة الحصص في المطاعم",
+          "description": "ميزة توحد أحجام الحصص للحفاظ على الاتساق ومراقبة تكاليف الطعام."
+        },
+        "automatedReorderAlerts": {
+          "title": "تنبيهات إعادة الطلب التلقائية",
+          "description": "إشعارات يولدها النظام تعلم المطبخ عندما تصل مخزونات المكونات إلى مستوى منخفض محدد."
+        },
+        "wasteReductionStrategies": {
+          "title": "استراتيجيات تقليل الهدر",
+          "description": "تقنيات وأدوات تهدف إلى تقليل هدر الطعام لتوفير التكلفة وتحسين الاستدامة."
+        },
+        "menuProfitabilityInsights": {
+          "title": "رؤى ربحية القائمة",
+          "description": "تحليلات تساعد في تحديد الأطباق الأكثر والأقل ربحية لتحسين عروض قائمة المطعم."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تتبع المخزون<br>في الوقت الفعلي</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">راقب كل مكون ومنتج أثناء استخدامه مع تتبع المخزون المباشر. هذا يمنع النقص، ويقلل الإفراط في التخزين، ويضمن التوفر الدقيق حتى يكون مطبخك مستعداً دائماً.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">تنبيهات إعادة الطلب<br>التلقائية</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">حدد عتبات مخصصة واستلم تنبيهات إعادة طلب فورية عندما تنخفض المكونات. هذا النظام الاستباقي يمنع النقص في اللحظة الأخيرة ويحافظ على توازن الإمدادات دون الإفراط في الشراء.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تقليل الهدر<br>ومراقبة التكلفة</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">تتبع استخدام المكونات عن كثب لتحديد أنماط الهدر وتحسين إدارة التكلفة. من خلال تقليل التلف والإفراط في التحصيص، تزيد المطاعم الربحية مع الاستخدام الأذكى للموارد.</p></article></div></div></section>"
+    },
+    "purchaseSupplyChain": {
+      "name": "إدارة المشتريات وسلسلة التوريد",
+      "category": "المكتب الخلفي",
+      "heroTitle": "إدارة المشتريات وسلسلة التوريد",
+      "heroDescription": "تبسيط المشتريات وإدارة الموردين أمر بالغ الأهمية لعمليات المطاعم السلسة. نظام نقاط البيع السحابي يوفر الوضوح والتحكم عبر سلسلة التوريد، مما يساعد المطاعم على الطلب بذكاء وإدارة الموردين بكفاءة وتقليل التكاليف.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "إدارة المشتريات وسلسلة التوريد للمطاعم مع نقاط البيع السحابية",
+      "features": {
+        "cloudBasedPosSystem": {
+          "title": "نظام نقاط البيع السحابي",
+          "description": "نظام برمجي مستضاف عبر الإنترنت يدير مبيعات المطاعم والمخزون والعمليات من أي مكان في الوقت الفعلي."
+        },
+        "restaurantInventoryManagement": {
+          "title": "إدارة مخزون المطاعم",
+          "description": "أدوات ضمن نظام نقاط البيع تراقب مخزون المكونات والاستخدام واحتياجات إعادة الطلب لتقليل الهدر ومنع النقص."
+        },
+        "recipeCostAnalysis": {
+          "title": "تحليل تكلفة الوصفات",
+          "description": "وظيفة تحسب تكلفة كل طبق من خلال تتبع أسعار وكميات المكونات، مما يساعد في تحسين تسعير القائمة."
+        },
+        "menuManagementSoftware": {
+          "title": "برنامج إدارة القوائم",
+          "description": "ميزات التطبيق التي تتيح للمطاعم إنشاء وتحديث وتنظيم قوائم الطعام والشراب بسهولة."
+        },
+        "integratedPurchaseManagement": {
+          "title": "إدارة المشتريات المتكاملة",
+          "description": "نظام يربط بيانات المخزون بأوامر الشراء لتبسيط سير عمل الشراء وسلسلة التوريد."
+        },
+        "vendorRelationshipManagement": {
+          "title": "إدارة علاقات الموردين",
+          "description": "أدوات تركز جهات اتصال الموردين والتسعير وتاريخ الطلبات لتحسين التواصل مع الموردين وقرارات الشراء."
+        },
+        "automatedStockAlerts": {
+          "title": "تنبيهات مخزون تلقائية",
+          "description": "إشعارات تُفعل عندما تصل مستويات المخزون إلى حد أدنى مسبق، مما يساعد المطابخ على إعادة طلب الإمدادات بشكل استباقي."
+        },
+        "portionControlTools": {
+          "title": "أدوات مراقبة الحصص",
+          "description": "ميزات تحدد أحجام الحصص الدقيقة لضمان جودة طعام متسقة ومراقبة تكاليف الطعام."
+        },
+        "salesPurchaseReporting": {
+          "title": "تقارير المبيعات والمشتريات",
+          "description": "تحليلات وتقارير مفصلة حول اتجاهات المبيعات واستخدام المكونات وأنماط الشراء لدعم قرارات الأعمال المدروسة."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">إدارة المخزون والمشتريات<br>المتكاملة</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">ربط مستويات المخزون تلقائياً بأوامر الشراء لضمان عدم نفاد المكونات الأساسية أبداً. هذا التكامل يقلل العمل اليدوي، ويمنع أخطاء الطلب، ويحافظ على المطابخ مجهزة باستمرار.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">قاعدة بيانات موردين<br>مركزية</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">احفظ جميع جهات اتصال الموردين والتسعير وتاريخ الطلبات في منصة واحدة. إدارة موردين متعددين تصبح أسرع وأكثر تنظيماً وأسهل للإشراف عليها من لوحة واحدة.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تقارير مشتريات<br>مفصلة</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">الوصول إلى تقارير مشتريات مدمجة تسلط الضوء على اتجاهات الإنفاق وأداء الموردين وتفاصيل التكلفة. هذه الرؤى تدعم وضع ميزانية أفضل ومفاوضات أذكى ومراقبة مالية أقوى.</p></article></div></div></section>"
+    }
+  },
+  "businessData": {
+    "cafeBakery": {
+      "name": "المقاهي والمخابز",
+      "heroTitle": "المقاهي والمخابز",
+      "heroDescription": "إدارة مقهى أو مخبز تعني أكثر من مجرد الطعام والمشروبات اللذيذة، فهي تتطلب خدمة سريعة وطلبات دقيقة وأدوات إدارة ذكية. مع نظام نقاط البيع السحابي المصمم للمقاهي والمخابز، يمكن للملاك تبسيط إدارة القوائم وتقليل الهدر والحفاظ على عودة العملاء للمزيد.",
+      "ctaText": "ابدأ الآن",
+      "featuresHeaderText": "حلول مخصصة لتميز المقاهي والمخابز",
+      "ctaBottomText": "هل أنت مستعد لتحويل أعمال المقهى والمخبز؟",
+      "learnMoreText": "تواصل معنا اليوم لتتعلم كيف يمكن لـ DigiPOS مساعدتك في تبسيط عمليات المقهى والمخبز مع الحفاظ على جودتك الحرفية.",
+      "features": {
+        "cafePosSystem": {
+          "title": "نظام نقاط البيع للمقاهي",
+          "description": "يبسط أخذ الطلبات للمشروبات المتخصصة والوجبات الخفيفة مع قوائم قابلة للتخصيص."
+        },
+        "bakeryPosSoftware": {
+          "title": "برنامج نقاط البيع للمخابز",
+          "description": "يساعد الخبازين على إدارة المبيعات اليومية واستخدام المكونات وتكلفة الوصفات بسهولة."
+        },
+        "cloudBasedOrdering": {
+          "title": "نظام الطلبات السحابي",
+          "description": "يدعم الطلبات عبر الإنترنت وفي المتجر بسلاسة مع المزامنة في الوقت الفعلي."
+        },
+        "inventoryManagement": {
+          "title": "إدارة المخزون للمقاهي",
+          "description": "تتبع المكونات ومنع التلف، مما يوفر التكاليف على المواد القابلة للتلف."
+        },
+        "bakeryCloudPos": {
+          "title": "حل نقاط البيع السحابي للمخابز",
+          "description": "يبسط العمليات من الطلب إلى التسليم مع ميزات سحابية يمكن الوصول إليها."
+        },
+        "customerLoyalty": {
+          "title": "برامج ولاء العملاء للمقاهي",
+          "description": "يزيد الأعمال المتكررة من خلال المكافآت الرقمية والعروض الترويجية."
+        },
+        "realTimeSalesReporting": {
+          "title": "تقارير المبيعات في الوقت الفعلي",
+          "description": "يوفر نظرات ثاقبة حول العناصر الأكثر مبيعاً وخيارات القائمة الرائجة."
+        },
+        "mobilePos": {
+          "title": "نقاط البيع المحمولة للمقاهي والمخابز",
+          "description": "يتيح الطلب بجانب الطاولة أو جانب المنضدة مع معاملات سريعة."
+        },
+        "costEffectivePos": {
+          "title": "نظام نقاط بيع فعال من حيث التكلفة",
+          "description": "يقلل التكاليف المقدمة مع توفير قابلية التوسع للمقاهي والمخابز النامية."
+        }
+      }
+    },
+    "casualDining": {
+      "name": "المطاعم العادية",
+      "heroTitle": "مطاعم الطعام العادي",
+      "heroDescription": "تحتاج مطاعم الطعام العادي إلى الموازنة بين السرعة والجودة وتجربة الضيوف، مع الحفاظ على التحكم في التكاليف. نظام نقاط البيع السحابي المصمم للطعام العادي يبسط عمليات الواجهة الأمامية والخلفية، ويوفر رؤى فورية، ويقدم تجربة سلسة لعملاء تناول الطعام في المكان والاستلاف والتوصيل.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "من تقسيم الفواتير إلى ساعات السعادة، نقاط البيع السحابية تجعل إدارة مطعمك سهلة.",
+      "ctaBottomText": "هل أنت مستعد لتحويل مطعم الطعام العادي الخاص بك؟",
+      "learnMoreText": "تواصل معنا اليوم لتتعلم كيف يمكن لـ DigiPOS مساعدتك في تبسيط عمليات الطعام العادي وتعزيز رضا الضيوف.",
+      "features": {
+        "casualDiningPosSystem": {
+          "title": "نظام نقاط البيع للمطاعم العادية",
+          "description": "نقاط بيع سحابية تحسن دقة الطلبات وسرعة الخدمة للمطاعم العادية."
+        },
+        "mobileTablesideOrdering": {
+          "title": "الطلب المحمول بجانب الطاولة",
+          "description": "يتيح للخوادم أخذ الطلبات والمدفوعات مباشرة في الطاولة لخدمة أسرع."
+        },
+        "cloudRestaurantManagement": {
+          "title": "إدارة المطاعم السحابية",
+          "description": "التحكم المركزي في المبيعات والمخزون وأداء الموظفين من أي مكان."
+        },
+        "realTimeInventoryTracking": {
+          "title": "تتبع المخزون في الوقت الفعلي",
+          "description": "المراقبة التلقائية للمكونات لتجنب الهدر والنقص."
+        },
+        "multiChannelOrderManagement": {
+          "title": "إدارة الطلبات متعددة القنوات",
+          "description": "يدمج طلبات تناول الطعام في المكان والاستلاف والتوصيل والطلبات عبر الإنترنت في منصة واحدة."
+        },
+        "contactlessPaymentIntegration": {
+          "title": "تكامل الدفع بدون تلامس",
+          "description": "يقبل المدفوعات المحمولة ومدفوعات البطاقات بأمان لتسريع عملية الدفع."
+        },
+        "guestLoyaltyPrograms": {
+          "title": "برامج ولاء الضيوف",
+          "description": "يكافئ العملاء المتكررين ويخصص تجاربهم."
+        },
+        "onlineOrderingIntegration": {
+          "title": "تكامل الطلبات عبر الإنترنت",
+          "description": "يربط نقاط البيع بتطبيقات التوصيل ومنصات الطلبات عبر الإنترنت."
+        },
+        "restaurantAnalyticsDashboard": {
+          "title": "لوحة تحليلات المطعم",
+          "description": "التقارير والرؤى التي تساعد في تحسين الخدمة وقرارات الأعمال."
+        }
+      }
+    },
+    "cloudKitchens": {
+      "name": "المطابخ السحابية",
+      "heroTitle": "المطبخ السحابي",
+      "heroDescription": "تعتمد المطابخ السحابية كلياً على الطلبات عبر الإنترنت وسرعة التوصيل. للنجاح في هذا السوق سريع الحركة، تحتاج إلى نظام نقاط بيع سحابي يركز الطلبات ويحسن سير عمل المطبخ ويقدم رؤى فورية للتوسع بربحية.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "الميزات الأساسية لنجاح المطبخ السحابي",
+      "ctaBottomText": "هل أنت مستعد لتحسين عمليات المطبخ السحابي؟",
+      "learnMoreText": "تواصل مع فريقنا لاستكشاف حلول نقاط البيع المتخصصة المصممة للمطاعم التي تركز على التوصيل والعلامات التجارية الافتراضية.",
+      "features": {
+        "cloudKitchenPosSystem": {
+          "title": "نظام نقاط البيع للمطبخ السحابي",
+          "description": "حل نقاط بيع شامل مصمم خصيصاً للمطابخ السحابية والمطابخ الشبح والمطاعم التي تقدم التوصيل فقط مع إدارة طلبات مبسطة."
+        },
+        "menuManagementSoftware": {
+          "title": "برنامج إدارة القوائم",
+          "description": "أدوات إدارة القوائم الديناميكية التي تتزامن عبر جميع منصات التوصيل، مما يتيح التحديثات الفورية للتوفر والأسعار والعناصر الترويجية."
+        },
+        "deliveryPlatformIntegration": {
+          "title": "تكامل منصة التوصيل",
+          "description": "التكامل السلس مع منصات التوصيل الرئيسية بما في ذلك Uber Eats و DoorDash و Grubhub وخدمات التوصيل المحلية لإدارة موحدة للطلبات."
+        },
+        "tabletPosGhostKitchens": {
+          "title": "نقاط بيع الأجهزة اللوحية للمطابخ الشبح",
+          "description": "نظام نقاط بيع محمول قائم على الأجهزة اللوحية محسن لبيئات المطابخ المدمجة مع واجهات تعمل باللمس وسير عمل خاص بالمطبخ."
+        },
+        "encryptedTransactionSecurity": {
+          "title": "أمان المعاملات المشفرة",
+          "description": "أمان دفع متقدم مع تشفير من النهاية إلى النهاية، امتثال PCI، ومعالجة معاملات آمنة لجميع طرق الدفع عبر الإنترنت."
+        },
+        "automaticPosUpdates": {
+          "title": "تحديثات نقاط البيع التلقائية",
+          "description": "التحديثات التلقائية للنظام السحابي تضمن أن نقاط البيع تحصل دائماً على أحدث الميزات وتصحيحات الأمان وتكاملات المنصة دون توقف."
+        },
+        "costEffectivePosSolution": {
+          "title": "حل نقاط بيع فعال من حيث التكلفة",
+          "description": "نموذج تسعير قائم على الاشتراك بأسعار معقولة بدون تكاليف مقدمة كبيرة، مثالي لشركات المطابخ السحابية الناشئة والعلامات التجارية للمطاعم الافتراضية المتوسعة."
+        },
+        "dataBackupRecovery": {
+          "title": "النسخ الاحتياطي واستعادة البيانات",
+          "description": "نسخ احتياطي تلقائي للبيانات السحابية مع قدرات استعادة فورية، مما يضمن حماية تاريخ الطلبات وبيانات القائمة والتحليلات دائماً."
+        },
+        "scalableRestaurantTechnology": {
+          "title": "تكنولوجيا مطاعم قابلة للتوسع",
+          "description": "هيكل نظام مرن ينمو مع أعمال المطبخ السحابي، يدعم عدة علامات تجارية افتراضية وتوسع حجم الطلبات غير المحدود."
+        }
+      }
+    },
+    "quickService": {
+      "name": "الخدمة السريعة",
+      "heroTitle": "مطاعم الخدمة السريعة",
+      "heroDescription": "تعمل مطاعم الخدمة السريعة (QSRs) في بيئات سريعة الإيقاع وعالية الحجم حيث السرعة والدقة هما كل شيء. نظام نقاط البيع السحابي المصمم لمطاعم الخدمة السريعة يبسط معالجة الطلبات، ويوفر رؤى فورية، ويجعل إدارة المواقع المتعددة بسيطة—مما يساعد المطاعم على التوسع بسلاسة مع الحفاظ على رضا العملاء.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "مطبخك، منضدتك، بياناتك، كلها في نقاط البيع السحابية لمطاعم الخدمة السريعة",
+      "ctaBottomText": "هل أنت مستعد لتسريع عمليات الخدمة السريعة؟",
+      "learnMoreText": "تواصل مع فريقنا لاستكشاف حلول نقاط البيع لمطاعم الخدمة السريعة المصممة للبيئات عالية الحجم وسريعة الإيقاع.",
+      "features": {
+        "cloudPosQuickService": {
+          "title": "نقاط البيع السحابية لمطاعم الخدمة السريعة",
+          "description": "تقدم خدمة أسرع وأكثر موثوقية مع إمكانية الوصول للبيانات في الوقت الفعلي."
+        },
+        "restaurantInventoryManagement": {
+          "title": "إدارة مخزون المطاعم",
+          "description": "يتتبع المخزون تلقائياً لتقليل الهدر وتجنب نفاد المخزون."
+        },
+        "mobilePosSystem": {
+          "title": "نظام نقاط البيع المحمول",
+          "description": "يتيح للموظفين أخذ الطلبات والمدفوعات في أي مكان لتجربة أكثر سلاسة."
+        },
+        "multiLocationPosSolution": {
+          "title": "حل نقاط البيع متعدد المواقع",
+          "description": "يتحكم في منافذ متعددة من نظام واحد للحصول على جودة متسقة."
+        },
+        "realTimeSalesAnalytics": {
+          "title": "تحليلات المبيعات في الوقت الفعلي",
+          "description": "يقدم رؤى فورية حول اتجاهات المبيعات لتحسين القوائم والأسعار."
+        },
+        "fasterOrderProcessing": {
+          "title": "معالجة طلبات أسرع",
+          "description": "يقلل أوقات الانتظار ويحافظ على سرعة الخدمة خلال أوقات الذروة."
+        },
+        "secureCloudDataStorage": {
+          "title": "تخزين البيانات السحابي الآمن",
+          "description": "يحمي بيانات الأعمال بنسخ احتياطية مشفرة ومتاحة دائماً."
+        },
+        "integratedPaymentSolutions": {
+          "title": "حلول الدفع المتكاملة",
+          "description": "يقبل أنواع دفع متعددة لراحة العملاء."
+        },
+        "scalablePosSystem": {
+          "title": "نظام نقاط بيع قابل للتوسع",
+          "description": "ينمو مع المطعم، يدعم التوسع دون تكاليف إضافية."
+        },
+        "improvedCustomerSatisfaction": {
+          "title": "تحسين رضا العملاء",
+          "description": "يضمن الدقة والسرعة حتى يتم خدمة المزيد من العملاء بشكل صحيح."
+        }
+      }
+    },
+    "foodTrucks": {
+      "name": "شاحنات الطعام",
+      "heroTitle": "شاحنات الطعام",
+      "heroDescription": "تعمل شاحنات الطعام في بيئات سريعة الإيقاع ومتنقلة حيث السرعة والموثوقية والمرونة أساسية. نظام نقاط البيع السحابي المصمم لشاحنات الطعام يساعد الملاك على معالجة المبيعات في أي مكان، وقبول مدفوعات متعددة بسرعة، وتتبع الأداء في الوقت الفعلي، مما يحافظ على سلاسة الخدمة وربحيتها.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "حافظ على دوران عجلاتك ونمو أرباحك مع نقاط البيع السحابية لشاحنات الطعام.",
+      "ctaBottomText": "هل أنت مستعد للارتقاء بأعمال شاحنة الطعام إلى المستوى التالي؟",
+      "learnMoreText": "تواصل مع فريقنا لاستكشاف حلول نقاط البيع المحمولة المصممة لعمليات شاحنات الطعام.",
+      "features": {
+        "foodTruckPosSystem": {
+          "title": "نظام نقاط البيع لشاحنات الطعام",
+          "description": "حل محمول حديث مصمم لتبسيط مبيعات وعمليات شاحنات الطعام."
+        },
+        "digitalMenuManagement": {
+          "title": "إدارة القائمة الرقمية",
+          "description": "تحديث وتخصيص القوائم فوراً للعروض الخاصة والأسعار والعناصر الموسمية."
+        },
+        "onlineOrderingIntegration": {
+          "title": "تكامل الطلبات عبر الإنترنت",
+          "description": "يربط شاحنات الطعام بتطبيقات الهاتف المحمول وخدمات التوصيل لوصول أوسع."
+        },
+        "tabletPosFoodTrucks": {
+          "title": "نقاط البيع بالأجهزة اللوحية لشاحنات الطعام",
+          "description": "أجهزة نقاط بيع محمولة وموفرة للمساحة مثالية لإعدادات شاحنات الطعام الصغيرة."
+        },
+        "cloudBasedPaymentSecurity": {
+          "title": "أمان الدفع السحابي",
+          "description": "يحمي المعاملات بالتشفير والنسخ الاحتياطية السحابية الآمنة."
+        },
+        "contactlessOrderingTechnology": {
+          "title": "تقنية الطلبات بدون تلامس",
+          "description": "تمكن معاملات أسرع وخالية من اللمس مما يحسن سرعة الخدمة."
+        },
+        "posSoftwareAutoUpdates": {
+          "title": "تحديثات برنامج نقاط البيع التلقائية",
+          "description": "يضمن حصول شاحنات الطعام على أحدث الميزات وإصلاحات الأمان تلقائياً."
+        },
+        "smallBusinessCloudTools": {
+          "title": "أدوات سحابية للشركات الصغيرة",
+          "description": "يوفر حلول رقمية متاحة وفعالة من حيث التكلفة للمطاعم المتنقلة."
+        },
+        "mobileRestaurantTechnology": {
+          "title": "تكنولوجيا المطاعم المتنقلة",
+          "description": "تمكن شاحنات الطعام من العمل مثل المطاعم كاملة الخدمة مع الابتكارات السحابية."
+        }
+      }
+    },
+    "fineDining": {
+      "name": "المطاعم الفاخرة",
+      "heroTitle": "المطاعم الفاخرة",
+      "heroDescription": "تتطلب المطاعم الراقية الدقة والتخصيص والخدمة المثالية. نظام نقاط البيع السحابي المصمم للمطاعم الفاخرة يعزز تجارب الضيوف، ويحسن كفاءة الموظفين، ويمنح الملاك رؤى فورية للعمل بربحية أكبر.",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "الخدمة السلسة هي المعيار الجديد، ارتق بتجربة المطاعم الفاخرة مع نقاط البيع السحابية",
+      "ctaBottomText": "هل أنت مستعد لترتقي بتجربة المطاعم الفاخرة؟",
+      "learnMoreText": "تواصل مع فريقنا لاستكشاف حلول نقاط البيع المتميزة المصممة لمؤسسات الطعام الراقية.",
+      "features": {
+        "tablesideOrderingSystem": {
+          "title": "نظام الطلب بجانب الطاولة",
+          "description": "ميزة نقاط بيع محمولة تتيح للخوادم إرسال الطلبات من الطاولة، مما يقلل أوقات الانتظار والأخطاء."
+        },
+        "digitalMenuCustomization": {
+          "title": "تخصيص القائمة الرقمية",
+          "description": "يتيح تغييرات فورية في القائمة للعروض الخاصة أو العناصر الموسمية أو الاحتياجات الغذائية للضيوف باستخدام برنامج نقاط البيع."
+        },
+        "integratedKitchenCommunication": {
+          "title": "التواصل المتكامل مع المطبخ",
+          "description": "يرسل الطلبات مباشرة إلى محطات المطبخ، مما يضمن تحضير طعام دقيق وفي الوقت المناسب."
+        },
+        "vipGuestProfiles": {
+          "title": "ملفات الضيوف المميزين",
+          "description": "يحفظ تفاصيل الضيوف مثل الأطباق المفضلة، خيارات المشروبات، والتواريخ الخاصة لخدمة طعام فاخر مخصصة."
+        },
+        "reservationWaitlistManagement": {
+          "title": "إدارة الحجوزات وقائمة الانتظار",
+          "description": "أدوات نقاط البيع التي تتعامل مع الحجوزات والجلوس لتحسين دوران الطاولات وتدفق الضيوف."
+        },
+        "loyaltyProgramIntegration": {
+          "title": "تكامل برنامج الولاء",
+          "description": "يتتبع زيارات الضيوف ويكافئ العملاء المخلصين بعروض حصرية واعتراف."
+        },
+        "realTimeInventoryTracking": {
+          "title": "تتبع المخزون في الوقت الفعلي",
+          "description": "يراقب مستويات المكونات، يرسل تنبيهات، ويساعد في تقليل الهدر أو مشاكل المخزون."
+        },
+        "advancedAnalyticsDashboard": {
+          "title": "لوحة التحليلات المتقدمة",
+          "description": "أداة تقارير توفر رؤى حول المبيعات، العناصر الأفضل، سلوك الضيوف، وكفاءة الموظفين."
+        },
+        "cloudBasedRestaurantPos": {
+          "title": "نقاط البيع السحابية للمطاعم",
+          "description": "منصة آمنة تتيح لأصحاب المطاعم إدارة العمليات عن بُعد مع إمكانية الوصول الكامل للنظام."
+        }
+      }
     }
   }
 }

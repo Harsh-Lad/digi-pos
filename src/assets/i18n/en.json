@@ -1246,5 +1246,293 @@
       },
       "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Integrated Inventory &<br>Purchase Management</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Automatically connect inventory levels with purchase orders to ensure essential ingredients never run out. This integration reduces manual work, prevents ordering errors, and keeps kitchens consistently stocked.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Centralized<br>Vendor Database</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Store all vendor contacts, pricing, and order histories in one platform. Managing multiple suppliers becomes faster, more organized, and easier to oversee from a single dashboard.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Detailed Purchase<br>Reporting</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Access built-in purchase reports that highlight spending trends, vendor performance, and cost breakdowns. These insights support better budgeting, smarter negotiations, and stronger financial control.</p></article></div></div></section>"
     }
+  },
+  "businessData": {
+    "fineDining": {
+      "name": "Fine Dining",
+      "heroTitle": "Fine Dining",
+      "heroDescription": "Upscale dining requires precision, personalization, and flawless service. A cloud-based POS system built for fine dining enhances guest experiences, optimizes staff efficiency, and gives owners real-time insights to operate more profitably.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Seamless service is the new standard, elevate your fine dining experience with Cloud POS",
+      "ctaBottomText": "Ready to elevate your fine dining experience?",
+      "learnMoreText": "Contact our team to explore premium POS solutions designed for upscale dining establishments.",
+      "features": {
+        "tablesideOrderingSystem": {
+          "title": "Tableside Ordering System",
+          "description": "A mobile POS feature that lets servers send orders from the table, reducing wait times and errors."
+        },
+        "digitalMenuCustomization": {
+          "title": "Digital Menu Customization",
+          "description": "Allows instant menu changes for specials, seasonal items, or guest dietary needs using POS software."
+        },
+        "integratedKitchenCommunication": {
+          "title": "Integrated Kitchen Communication",
+          "description": "Sends orders directly to kitchen stations, ensuring accurate and timely food preparation."
+        },
+        "vipGuestProfiles": {
+          "title": "VIP Guest Profiles",
+          "description": "Stores guest details like favorite dishes, beverages choices, and special dates for personalized fine dining service."
+        },
+        "reservationWaitlistManagement": {
+          "title": "Reservation & Waitlist Management",
+          "description": "POS tools that handle bookings and seating to improve table turnover and guest flow."
+        },
+        "loyaltyProgramIntegration": {
+          "title": "Loyalty Program Integration",
+          "description": "Tracks guest visits and rewards loyal customers with exclusive offers and recognition."
+        },
+        "realTimeInventoryTracking": {
+          "title": "Real-Time Inventory Tracking",
+          "description": "Monitors ingredient levels, sends alerts, and helps reduce waste or stock issues."
+        },
+        "advancedAnalyticsDashboard": {
+          "title": "Advanced Analytics Dashboard",
+          "description": "A reporting tool that provides insights into sales, top items, guest behavior, and staff efficiency."
+        },
+        "cloudBasedRestaurantPos": {
+          "title": "Cloud-Based Restaurant POS",
+          "description": "A secure platform that allows restaurant owners to manage operations remotely with full system access."
+        }
+      }
+    },
+    "quickService": {
+      "name": "Quick Service",
+      "heroTitle": "Quick Service Restaurants",
+      "heroDescription": "Quick service restaurants (QSRs) run in fast-paced, high-volume environments where speed and accuracy are everything. A cloud-based POS system designed for QSRs streamlines order processing, provides real-time insights, and makes managing multiple locations simple—helping restaurants scale smoothly while keeping customers satisfied.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Your kitchen, your counter, your data, all in the Cloud POS for QSR",
+      "ctaBottomText": "Ready to accelerate your quick service operations?",
+      "learnMoreText": "Contact our team to explore QSR POS solutions designed for high-volume, fast-paced environments.",
+      "features": {
+        "cloudPosQuickService": {
+          "title": "Cloud POS for Quick Service Restaurants",
+          "description": "Delivers faster, more reliable service with real-time data access."
+        },
+        "restaurantInventoryManagement": {
+          "title": "Restaurant Inventory Management",
+          "description": "Tracks stock automatically to reduce waste and avoid stockouts."
+        },
+        "mobilePosSystem": {
+          "title": "Mobile POS System",
+          "description": "Lets staff take orders and payments anywhere for a smoother experience."
+        },
+        "multiLocationPosSolution": {
+          "title": "Multi-Location POS Solution",
+          "description": "Controls multiple outlets from one system for consistent quality."
+        },
+        "realTimeSalesAnalytics": {
+          "title": "Real-Time Sales Analytics",
+          "description": "Gives instant insights into sales trends to improve menus and pricing."
+        },
+        "fasterOrderProcessing": {
+          "title": "Faster Order Processing",
+          "description": "Cuts wait times and keeps service fast during peak hours."
+        },
+        "secureCloudDataStorage": {
+          "title": "Secure Cloud Data Storage",
+          "description": "Protects business data with encrypted, always-available backups."
+        },
+        "integratedPaymentSolutions": {
+          "title": "Integrated Payment Solutions",
+          "description": "Accepts multiple payment types for customer convenience."
+        },
+        "scalablePosSystem": {
+          "title": "Scalable POS System",
+          "description": "Grows with the restaurant, supporting expansion without extra costs."
+        },
+        "improvedCustomerSatisfaction": {
+          "title": "Improved Customer Satisfaction",
+          "description": "Ensures accuracy and speed so more customers are served correctly."
+        }
+      }
+    },
+    "foodTrucks": {
+      "name": "Food Trucks",
+      "heroTitle": "Food Trucks",
+      "heroDescription": "Food trucks run in fast-paced, mobile environments where speed, reliability, and flexibility are essential. A cloud-based POS system designed for food trucks helps owners process sales anywhere, accept multiple payments quickly, and track performance in real time, keeping service smooth and profitable.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Keep your wheels turning and your profits growing with Cloud POS for Food Trucks.",
+      "ctaBottomText": "Ready to take your food truck business to the next level?",
+      "learnMoreText": "Contact our team to explore mobile POS solutions designed for food truck operations.",
+      "features": {
+        "foodTruckPosSystem": {
+          "title": "Food Truck POS System",
+          "description": "Modern mobile solution designed to streamline food truck sales and operations."
+        },
+        "digitalMenuManagement": {
+          "title": "Digital Menu Management",
+          "description": "Instantly update and customize menus for specials, pricing, and seasonal items."
+        },
+        "onlineOrderingIntegration": {
+          "title": "Online Ordering Integration",
+          "description": "Connects food trucks to mobile apps and delivery services for wider reach."
+        },
+        "tabletPosFoodTrucks": {
+          "title": "Tablet POS for Food Trucks",
+          "description": "Space-saving, portable POS hardware ideal for small food truck setups."
+        },
+        "cloudBasedPaymentSecurity": {
+          "title": "Cloud-Based Payment Security",
+          "description": "Protects transactions with encryption and secure cloud backups."
+        },
+        "contactlessOrderingTechnology": {
+          "title": "Contactless Ordering Technology",
+          "description": "Enables faster, touch-free transactions that improve service speed."
+        },
+        "posSoftwareAutoUpdates": {
+          "title": "POS Software Auto Updates",
+          "description": "Ensures food trucks receive the latest features and security fixes automatically."
+        },
+        "smallBusinessCloudTools": {
+          "title": "Small Business Cloud Tools",
+          "description": "Provides accessible, cost-effective digital solutions for mobile eateries."
+        },
+        "mobileRestaurantTechnology": {
+          "title": "Mobile Restaurant Technology",
+          "description": "Empowers food trucks to operate like full-service restaurants with cloud innovations."
+        }
+      }
+    },
+    "cafeBakery": {
+      "name": "Café & Bakery",
+      "heroTitle": "Café & Bakery Solutions",
+      "heroDescription": "Running a café or bakery means more than delicious food and drinks, it requires fast service, accurate orders, and smart management tools. With a cloud-based POS system built for cafés and bakeries, owners can simplify menu management, reduce waste, and keep customers coming back for more.",
+      "ctaText": "Get Started",
+      "featuresHeaderText": "Tailored solutions for café and bakery excellence",
+      "ctaBottomText": "Ready to transform your café and bakery business?",
+      "learnMoreText": "Contact us today to learn how DigiPOS can help streamline your café and bakery operations while preserving your artisanal quality.",
+      "features": {
+        "cafePosSystem": {
+          "title": "Cafe POS System",
+          "description": "Streamlines order-taking for specialty drinks and snacks with customizable menus."
+        },
+        "bakeryPosSoftware": {
+          "title": "Bakery POS Software",
+          "description": "Helps bakers manage daily sales, ingredient use, and recipe costing with ease."
+        },
+        "cloudBasedOrdering": {
+          "title": "Cloud-Based Ordering System",
+          "description": "Supports online and in-store orders seamlessly with real-time syncing."
+        },
+        "inventoryManagement": {
+          "title": "Inventory Management for Cafes",
+          "description": "Tracks ingredients and prevents spoilage, saving costs on perishables."
+        },
+        "bakeryCloudPos": {
+          "title": "Bakery Cloud POS Solution",
+          "description": "Simplifies operations from order to delivery with accessible cloud features."
+        },
+        "customerLoyalty": {
+          "title": "Customer Loyalty Programs for Cafes",
+          "description": "Increases repeat business with digital rewards and promotions."
+        },
+        "realTimeSalesReporting": {
+          "title": "Real-Time Sales Reporting",
+          "description": "Provides insights into best-selling items and trending menu choices."
+        },
+        "mobilePos": {
+          "title": "Mobile POS for Cafes and Bakeries",
+          "description": "Enables table-side or counter-side ordering with fast transactions."
+        },
+        "costEffectivePos": {
+          "title": "Cost-Effective POS System",
+          "description": "Lowers upfront costs while offering scalability for growing cafes and bakeries."
+        }
+      }
+    },
+    "casualDining": {
+      "name": "Casual Dining",
+      "heroTitle": "Casual Dining Restaurants",
+      "heroDescription": "Casual dining restaurants need to balance speed, quality, and guest experience, all while keeping costs under control. A cloud-based POS system built for casual dining streamlines front-of-house and back-of-house operations, provides real-time insights, and delivers a seamless experience for dine-in, takeout, and delivery customers.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "From split checks to happy hours, our cloud POS makes managing your restaurant effortless.",
+      "ctaBottomText": "Ready to transform your casual dining restaurant?",
+      "learnMoreText": "Contact us today to learn how DigiPOS can help streamline your casual dining operations and enhance guest satisfaction.",
+      "features": {
+        "casualDiningPosSystem": {
+          "title": "Casual Dining POS System",
+          "description": "A cloud-based POS that improves order accuracy and service speed for casual restaurants."
+        },
+        "mobileTablesideOrdering": {
+          "title": "Mobile Tableside Ordering",
+          "description": "Lets servers take orders and payments right at the table for faster service."
+        },
+        "cloudRestaurantManagement": {
+          "title": "Cloud Restaurant Management",
+          "description": "Centralized control of sales, inventory, and staff performance from anywhere."
+        },
+        "realTimeInventoryTracking": {
+          "title": "Real-Time Inventory Tracking",
+          "description": "Automatic monitoring of ingredients to avoid waste and shortages."
+        },
+        "multiChannelOrderManagement": {
+          "title": "Multi-Channel Order Management",
+          "description": "Combines dine-in, takeout, delivery, and online orders on one platform."
+        },
+        "contactlessPaymentIntegration": {
+          "title": "Contactless Payment Integration",
+          "description": "Accepts mobile and card payments securely to speed up checkout."
+        },
+        "guestLoyaltyPrograms": {
+          "title": "Guest Loyalty Programs",
+          "description": "Rewards frequent customers and personalizes their experiences."
+        },
+        "onlineOrderingIntegration": {
+          "title": "Online Ordering Integration",
+          "description": "Connects POS with delivery apps and online ordering platforms."
+        },
+        "restaurantAnalyticsDashboard": {
+          "title": "Restaurant Analytics Dashboard",
+          "description": "Reports and insights that help improve service and business decisions."
+        }
+      }
+    },
+    "cloudKitchens": {
+      "name": "Cloud Kitchens",
+      "heroTitle": "Cloud Kitchen",
+      "heroDescription": "Cloud kitchens depend entirely on online orders and delivery speed. To succeed in this fast-moving market, they need a cloud-based POS system that centralizes orders, optimizes kitchen workflows, and delivers real-time insights to scale profitably.",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Essential Features for Cloud Kitchen Success",
+      "ctaBottomText": "Ready to optimize your cloud kitchen operations?",
+      "learnMoreText": "Contact our team to explore specialized POS solutions designed for delivery-focused restaurants and virtual brands.",
+      "features": {
+        "cloudKitchenPosSystem": {
+          "title": "Cloud Kitchen POS System",
+          "description": "Comprehensive point-of-sale solution specifically designed for cloud kitchens, ghost kitchens, and delivery-only restaurants with streamlined order management."
+        },
+        "menuManagementSoftware": {
+          "title": "Menu Management Software",
+          "description": "Dynamic menu management tools that sync across all delivery platforms, allowing real-time updates for availability, pricing, and promotional items."
+        },
+        "deliveryPlatformIntegration": {
+          "title": "Delivery Platform Integration",
+          "description": "Seamless integration with major delivery platforms including Uber Eats, DoorDash, Grubhub, and local delivery services for unified order management."
+        },
+        "tabletPosGhostKitchens": {
+          "title": "Tablet POS for Ghost Kitchens",
+          "description": "Mobile tablet-based POS system optimized for compact kitchen environments with touch-friendly interfaces and kitchen-specific workflows."
+        },
+        "encryptedTransactionSecurity": {
+          "title": "Encrypted Transaction Security",
+          "description": "Advanced payment security with end-to-end encryption, PCI compliance, and secure transaction processing for all online payment methods."
+        },
+        "automaticPosUpdates": {
+          "title": "Automatic POS Updates",
+          "description": "Cloud-based automatic system updates ensure your POS always has the latest features, security patches, and platform integrations without downtime."
+        },
+        "costEffectivePosSolution": {
+          "title": "Cost-Effective POS Solution",
+          "description": "Affordable subscription-based pricing model with no large upfront costs, perfect for startup cloud kitchens and expanding virtual restaurant brands."
+        },
+        "dataBackupRecovery": {
+          "title": "Data Backup & Recovery",
+          "description": "Automatic cloud-based data backup with instant recovery capabilities, ensuring your order history, menu data, and analytics are always protected."
+        },
+        "scalableRestaurantTechnology": {
+          "title": "Scalable Restaurant Technology",
+          "description": "Flexible system architecture that grows with your cloud kitchen business, supporting multiple virtual brands and unlimited order volume expansion."
+        }
+      }
+    }
   }
 }

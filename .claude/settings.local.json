@@ -9,7 +9,9 @@
       "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic/**)",
       "Read(C:\\Users\\ASIT\\Downloads\\Arabic\\Arabic\\/**)",
       "Read(C:\\Users\\ASIT\\Downloads/**)",
-      "Bash(ng build:*)"
+      "Bash(ng build:*)",
+      "Read(//Users/dev/Downloads/Pages/Pdfs/**)",
+      "Bash(mkdir:*)"
     ],
     "deny": [],
     "ask": []

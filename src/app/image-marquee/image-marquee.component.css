@@ -1,8 +1,4 @@
-@keyframes scroll {
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
-  }
-}
+/* Scroll animations moved to global styles.css for RTL support */
 
 .marquee-container {
   position: relative;
@@ -50,6 +46,8 @@
   align-items: center;
   animation: scroll 30s linear infinite;
 }
+
+/* RTL animation moved to global styles.css */
 
 /* Change from .marquee:hover to .marquee-container:hover */
 .marquee-container:hover .marquee-content {

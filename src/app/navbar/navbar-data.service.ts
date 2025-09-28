@@ -154,7 +154,7 @@ export class NavbarDataService {
               { 
                 name: "Cloud Point of Sales", 
                 nameKey: "navbar.megaMenu.products.retailPos",
-                link: "/products/retail-pos", 
+                link: "/products/cloud-pos", 
                 description: "In-depth sales analysis and performance tracking for retail.", 
                 descKey: "navbar.megaMenu.products.retailPosDesc",
                 icon: "storefront" 
@@ -250,7 +250,7 @@ export class NavbarDataService {
               { 
                 name: "Fine Dine", 
                 nameKey: "navbar.megaMenu.business.fineDine",
-                link: "/business/cafe-bakery", 
+                link: "/business/fine-dining", 
                 description: "POS solutions tailored for cafés and bakeries.", 
                 descKey: "navbar.megaMenu.business.fineDineDesc",
                 icon: "restaurant_menu" 
@@ -274,7 +274,7 @@ export class NavbarDataService {
               { 
                 name: "Food Trucks", 
                 nameKey: "navbar.megaMenu.business.foodTrucks",
-                link: "/business/kiosks-food-trucks", 
+                link: "/business/food-trucks", 
                 description: "Mobile POS solutions for food trucks and kiosks.", 
                 descKey: "navbar.megaMenu.business.foodTrucksDesc",
                 icon: "local_shipping" 

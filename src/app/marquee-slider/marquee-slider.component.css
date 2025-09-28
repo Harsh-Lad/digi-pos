@@ -1,9 +1,24 @@
-@keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-  
-  .animate-marquee {
-    animation: marquee 20s linear infinite;
-  }
-  
+/* Marquee styles moved to global styles.css for RTL support */
+  .edge-fade-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 33%;
+  background: linear-gradient(to right, white, transparent);
+  z-index: 10;
+  pointer-events: none; /* Allow hover events to pass through */
+
+}
+
+.edge-fade-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 33%;
+  background: linear-gradient(to left, white, transparent);
+  z-index: 10;
+  pointer-events: none; /* Allow hover events to pass through */
+
+}

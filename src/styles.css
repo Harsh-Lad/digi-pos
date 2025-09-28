@@ -277,13 +277,13 @@ html[dir="rtl"] .justify-center {
   justify-content: center;
 }
 
-html[dir="rtl"] .justify-end {
+/* html[dir="rtl"] .justify-end {
   justify-content: flex-start;
 }
 
 html[dir="rtl"] .justify-start {
   justify-content: flex-end;
-}
+} */
 
 /* Fix gap spacing in RTL */
 html[dir="rtl"] .gap-2 {
@@ -319,4 +319,40 @@ html[dir="rtl"] .aspect-square {
 
 html[dir="rtl"] .platform-image {
   left: calc(var(--spacing) * 17) !important;
+}
+
+/* Marquee RTL styles */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+html[dir="rtl"] .animate-marquee {
+  animation: marquee-rtl 20s linear infinite;
+}
+
+/* Image Marquee and Integrations Marquee RTL styles */
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes scroll-rtl {
+  to {
+    transform: translateX(calc(100% + var(--gap)));
+  }
+}
+
+html[dir="rtl"] .marquee-content {
+  animation: scroll-rtl 30s linear infinite;
 }

@@ -1,0 +1,43 @@
+/* Add styles for the Business page */
+.business-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.business-page h1 {
+  color: #333;
+}
+
+.business-page p {
+  font-size: 16px;
+  color: #555;
+}
+
+.filter-orange {
+  filter: invert(62%) sepia(94%) saturate(7492%) hue-rotate(2deg) brightness(251%) contrast(70%);
+}
+
+@media (min-resolution: 120dpi) {
+  .responsive-margin {
+    margin-top: 6rem !important;
+    /* mt-24 (6rem) instead of mt-32 (8rem) */
+  }
+}
+
+@media (min-resolution: 144dpi) {
+  .responsive-margin {
+    margin-top: 6rem !important;
+    /* mt-24 (6rem) instead of mt-32 (8rem) */
+  }
+}
+
+/* Center last row with 2 cards for 8 features */
+@media (min-width: 1024px) {
+  .grid-cols-3>.lg\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .grid-cols-3>.lg\:col-start-3 {
+    grid-column-start: 3;
+  }
+}

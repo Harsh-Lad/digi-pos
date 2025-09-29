@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import axios from 'axios';
 
 @Component({
@@ -254,7 +254,7 @@ export class DemoFormComponent implements OnInit {
 
   @ViewChild('formRef') formRef: any;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private translate: TranslateService) {
     this.demoForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
@@ -321,11 +321,15 @@ export class DemoFormComponent implements OnInit {
 
   onSubmit() {
     this.submitted = true;
-    
+    let alertMsg = 'Form submitted successfully!';
+    const lang = this.translate.currentLang || this.translate.getDefaultLang() || 'en';
+    if (lang === 'ar') {
+      alertMsg = 'تم إرسال النموذج بنجاح!';
+    }
     if (this.demoForm.valid) {
       console.log(this.demoForm.value);
       // Here you would typically call a service to send the form data
-      alert('Form submitted successfully!');
+      alert(alertMsg);
       this.demoForm.reset();
       this.submitted = false;
     } else {

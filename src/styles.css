@@ -356,3 +356,11 @@ html[dir="rtl"] .animate-marquee {
 html[dir="rtl"] .marquee-content {
   animation: scroll-rtl 30s linear infinite;
 }
+
+html[dir="rtl"] #testimonial-navigation  {
+  direction: ltr !important;
+}
+
+html[dir="rtl"] .testimonial-section > .flex {
+  direction: ltr !important;
+}

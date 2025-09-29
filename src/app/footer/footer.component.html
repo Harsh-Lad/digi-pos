@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
       <!-- Logo + Socials -->
       <div class="flex flex-col justify-start items-start md:flex-1">
-        <img src="/logo.png" alt="{{ 'footer.altTexts.logo' | translate }}" class="-mt-10 h-32 w-auto object-contain" />
+  <img [src]="currentLanguage === 'ar' ? 'arabic_logo.jpg' : 'logo.png'" alt="{{ 'footer.altTexts.logo' | translate }}" class="-mt-10 h-32 w-auto object-contain" />
         <div class="flex ml-4 -mt-4 gap-4 items-center">
           <a target="_blank" href="https://www.linkedin.com/company/digiposio" class="text-gray-500 hover:text-gray-700"><img class="w-6 h-6 object-cover" src="/footer/linkedin.png"/></a>
           <a target="_blank" href="https://x.com/digiposio" class="text-gray-500 hover:text-gray-700"><img class="w-5 h-5 object-cover" src="/footer/twitter.png"/></a>
@@ -38,15 +38,15 @@
             <li><a href="/products/customer-display">{{ 'footer.products.customerDisplay' | translate }}</a></li>
             <li><a href="/products/kiosk">{{ 'footer.products.kiosk' | translate }}</a></li>
             <li><a href="/products/table-ordering">{{ 'footer.products.tableOrdering' | translate }}</a></li>
-            <li><a href="#">{{ 'footer.products.onlineOrdering' | translate }}</a></li>
-            <li><a href="#">{{ 'footer.products.queueManagement' | translate }}</a></li>
+            <li><a href="/products/online-ordering">{{ 'footer.products.onlineOrdering' | translate }}</a></li>
+            <li><a href="/products/queue-management-system">{{ 'footer.products.queueManagement' | translate }}</a></li>
           </ul>
           <p class="font-medium text-sm text-gray-800 mt-4">{{ 'footer.products.backOffice' | translate }}</p>
           <ul class="space-y-1">
-            <li><a href="#">{{ 'footer.products.productMenuManagement' | translate }}</a></li>
-            <li><a href="#">{{ 'footer.products.recipeManagement' | translate }}</a></li>
-            <li><a href="#">{{ 'footer.products.inventoryManagement' | translate }}</a></li>
-            <li><a href="#">{{ 'footer.products.purchaseSupplyChain' | translate }}</a></li>
+            <li><a href="/products/product-menu-management">{{ 'footer.products.productMenuManagement' | translate }}</a></li>
+            <li><a href="/products/recipe-management">{{ 'footer.products.recipeManagement' | translate }}</a></li>
+            <li><a href="/products/inventory-management">{{ 'footer.products.inventoryManagement' | translate }}</a></li>
+            <li><a href="/products/purchase-supply-chain-management">{{ 'footer.products.purchaseSupplyChain' | translate }}</a></li>
           </ul>
           <p class="font-medium text-sm text-gray-800 mt-4">{{ 'footer.products.retail' | translate }}</p>
           <ul class="space-y-1">
@@ -61,12 +61,12 @@
         <h4 class="font-semibold text-gray-800 mb-2">{{ 'footer.sections.businessTypes' | translate }}</h4>
         <p class="font-medium text-sm text-gray-800 mt-2">{{ 'footer.businessTypes.restaurants' | translate }}</p>
         <ul class="space-y-1">
-          <li><a href="#">{{ 'navbar.megaMenu.businessModels.fineDining.title' | translate }}</a></li>
-          <li><a href="#">{{ 'footer.businessTypes.casualDining' | translate }}</a></li>
-          <li><a href="#">{{ 'navbar.megaMenu.businessModels.quickService.title' | translate }}</a></li>
-          <li><a href="#">{{ 'navbar.megaMenu.businessModels.foodTrucks.title' | translate }}</a></li>
-          <li><a href="#">{{ 'navbar.megaMenu.businessModels.cafeBakery.title' | translate }}</a></li>
-          <li><a href="#">{{ 'footer.businessTypes.cloudKitchen' | translate }}</a></li>
+          <li><a href="/business/fine-dining">{{ 'navbar.megaMenu.businessModels.fineDining.title' | translate }}</a></li>
+          <li><a href="/business/dine-in-service">{{ 'footer.businessTypes.casualDining' | translate }}</a></li>
+          <li><a href="/business/quick-service">{{ 'navbar.megaMenu.businessModels.quickService.title' | translate }}</a></li>
+          <li><a href="/business/food-trucks">{{ 'navbar.megaMenu.businessModels.foodTrucks.title' | translate }}</a></li>
+          <li><a href="/business/cafe-bakery">{{ 'navbar.megaMenu.businessModels.cafeBakery.title' | translate }}</a></li>
+          <li><a href="/business/cloud-kitchen">{{ 'footer.businessTypes.cloudKitchen' | translate }}</a></li>
         </ul>
         <p class="font-medium text-sm text-gray-800 mt-4">{{ 'footer.businessTypes.retail' | translate }}</p>
         <ul class="space-y-1">

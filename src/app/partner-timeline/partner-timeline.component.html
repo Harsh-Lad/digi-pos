@@ -1,0 +1,110 @@
+<!-- Timeline canvas -->
+<div class="relative md:pt-12 md:pb-20">
+  <!-- center line -->
+  <div class="hidden md:block absolute left-0 right-0 top-1/2 -translate-y-1/2 h-[2px] bg-gray-300"></div>
+
+  <!-- end arrows -->
+  <div class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -ml-1">
+    <div class="w-0 h-0 border-y-8 border-y-transparent border-r-8 border-r-gray-400"></div>
+  </div>
+  <div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 -mr-1">
+    <div class="w-0 h-0 border-y-8 border-y-transparent border-l-8 border-l-gray-400"></div>
+  </div>
+
+  <!-- five timeline nodes aligned to 5 columns -->
+  <div class="hidden md:flex absolute top-1/2 -translate-y-1/2 left-0 right-0 px-6 md:px-4">
+    <div class="grid grid-cols-5 w-full">
+      <div class="flex justify-center"><div class="w-5 h-5 rounded-full bg-white ring-2 ring-gray-400"></div></div>
+      <div class="flex justify-center"><div class="w-5 h-5 rounded-full bg-white ring-2 ring-gray-400"></div></div>
+      <div class="flex justify-center"><div class="w-5 h-5 rounded-full bg-white ring-2 ring-gray-400"></div></div>
+      <div class="flex justify-center"><div class="w-5 h-5 rounded-full bg-white ring-2 ring-gray-400"></div></div>
+      <div class="flex justify-center"><div class="w-5 h-5 rounded-full bg-white ring-2 ring-gray-400"></div></div>
+    </div>
+  </div>
+
+  <!-- CONTENT laid out on 5 columns -->
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-12 relative z-10">
+    <!-- TOP 1 (col 1) -->
+    <div class="md:col-start-1 text-center">
+      <h3 class="text-lg md:text-xl font-bold text-[#002999] mb-1">
+        {{ 'becomePartner.whyPartner.benefits.commissions.title' | translate }}
+      </h3>
+      <p class="text-gray-600 max-w-sm mx-auto mb-5">
+        {{ 'becomePartner.whyPartner.benefits.commissions.description' | translate }}
+      </p>
+      <div class="relative inline-flex">
+        <!-- connector down to line -->
+        <div class="hidden md:block absolute top-full left-1/2 -translate-x-1/2 w-[2px] h-[110px] bg-gray-300"></div>
+        <!-- pin -->
+        <div class="w-24 h-24 rounded-full bg-white ring-8 ring-[#002999] flex items-center justify-center shadow-sm">
+          <span class="material-icons text-[#f48021] text-5xl">paid</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM 1 (col 2) -->
+    <div class="md:col-start-2 text-center md:flex md:flex-col md:justify-end">
+      <div class="relative inline-flex mb-5">
+        <!-- connector up to line -->
+        <div class="hidden md:block absolute bottom-full left-1/2 -translate-x-1/2 w-[2px] h-[110px] bg-gray-300"></div>
+        <div class="w-24 h-24 rounded-full bg-white ring-8 ring-[#f48021] flex items-center justify-center shadow-sm">
+          <span class="material-icons text-[#002999] text-5xl">trending_up</span>
+        </div>
+      </div>
+      <h3 class="text-lg md:text-xl font-bold text-[#002999] mb-1">
+        {{ 'becomePartner.whyPartner.benefits.zeroRisk.title' | translate }}
+      </h3>
+      <p class="text-gray-600 max-w-sm mx-auto">
+        {{ 'becomePartner.whyPartner.benefits.zeroRisk.description' | translate }}
+      </p>
+    </div>
+
+    <!-- TOP 2 (col 3) -->
+    <div class="md:col-start-3 text-center">
+      <h3 class="text-lg md:text-xl font-bold text-[#002999] mb-1">
+        {{ 'becomePartner.whyPartner.benefits.support.title' | translate }}
+      </h3>
+      <p class="text-gray-600 max-w-sm mx-auto mb-5">
+        {{ 'becomePartner.whyPartner.benefits.support.description' | translate }}
+      </p>
+      <div class="relative inline-flex">
+        <div class="hidden md:block absolute top-full left-1/2 -translate-x-1/2 w-[2px] h-[110px] bg-gray-300"></div>
+        <div class="w-24 h-24 rounded-full bg-white ring-8 ring-[#002999] flex items-center justify-center shadow-sm">
+          <span class="material-icons text-[#f48021] text-5xl">support_agent</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM 2 (col 4) -->
+    <div class="md:col-start-4 text-center md:flex md:flex-col md:justify-end">
+      <div class="relative inline-flex mb-5">
+        <div class="hidden md:block absolute bottom-full left-1/2 -translate-x-1/2 w-[2px] h-[110px] bg-gray-300"></div>
+        <div class="w-24 h-24 rounded-full bg-white ring-8 ring-[#f48021] flex items-center justify-center shadow-sm">
+          <span class="material-icons text-[#002999] text-5xl">lightbulb</span>
+        </div>
+      </div>
+      <h3 class="text-lg md:text-xl font-bold text-[#002999] mb-1">
+        {{ 'becomePartner.whyPartner.benefits.futureReady.title' | translate }}
+      </h3>
+      <p class="text-gray-600 max-w-sm mx-auto">
+        {{ 'becomePartner.whyPartner.benefits.futureReady.description' | translate }}
+      </p>
+    </div>
+
+    <!-- TOP 3 (col 5) -->
+    <div class="md:col-start-5 text-center">
+      <h3 class="text-lg md:text-xl font-bold text-[#002999] mb-1">
+        {{ 'becomePartner.whyPartner.benefits.leadership.title' | translate }}
+      </h3>
+      <p class="text-gray-600 max-w-sm mx-auto mb-5">
+        {{ 'becomePartner.whyPartner.benefits.leadership.description' | translate }}
+      </p>
+      <div class="relative inline-flex">
+        <div class="hidden md:block absolute top-full left-1/2 -translate-x-1/2 w-[2px] h-[110px] bg-gray-300"></div>
+        <div class="w-24 h-24 rounded-full bg-white ring-8 ring-[#002999] flex items-center justify-center shadow-sm">
+          <span class="material-icons text-[#f48021] text-5xl">public</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

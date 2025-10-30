@@ -290,6 +290,129 @@ export const PRODUCTS_DATA: ProductData[] = [
     isKiosk: false
   },
   {
+    slug: 'kds-screens',
+    nameKey: 'productsData.kdsScreens.name',
+    categoryKey: 'productsData.kdsScreens.category',
+    heroTitleKey: 'productsData.kdsScreens.heroTitle',
+    heroDescriptionKey: 'productsData.kdsScreens.heroDescription',
+    heroImages: 'products/KDS Screen.png',
+    complianceTagKey: 'productsData.kdsScreens.complianceTag',
+    
+    ctaTextKey: 'productsData.kdsScreens.ctaText',
+    featuresHeaderTextKey: 'productsData.kdsScreens.featuresHeaderText',
+    features: [
+      {
+        icon: 'monitor',
+        titleKey: 'productsData.kdsScreens.features.realTimeDisplay.title',
+        descriptionKey: 'productsData.kdsScreens.features.realTimeDisplay.description',
+      },
+      {
+        icon: 'receipt_long',
+        titleKey: 'productsData.kdsScreens.features.paperless.title',
+        descriptionKey: 'productsData.kdsScreens.features.paperless.description',
+      },
+      {
+        icon: 'sort',
+        titleKey: 'productsData.kdsScreens.features.prioritization.title',
+        descriptionKey: 'productsData.kdsScreens.features.prioritization.description',
+      },
+      {
+        icon: 'track_changes',
+        titleKey: 'productsData.kdsScreens.features.tracking.title',
+        descriptionKey: 'productsData.kdsScreens.features.tracking.description',
+      },
+      {
+        icon: 'history',
+        titleKey: 'productsData.kdsScreens.features.recall.title',
+        descriptionKey: 'productsData.kdsScreens.features.recall.description',
+      },
+      {
+        icon: 'speed',
+        titleKey: 'productsData.kdsScreens.features.fasterService.title',
+        descriptionKey: 'productsData.kdsScreens.features.fasterService.description',
+      },
+      {
+        icon: 'eco',
+        titleKey: 'productsData.kdsScreens.features.reducedWaste.title',
+        descriptionKey: 'productsData.kdsScreens.features.reducedWaste.description',
+      },
+      {
+        icon: 'devices_other',
+        titleKey: 'productsData.kdsScreens.features.multiDevice.title',
+        descriptionKey: 'productsData.kdsScreens.features.multiDevice.description',
+      },
+      {
+        icon: 'cloud_sync',
+        titleKey: 'productsData.kdsScreens.features.realTimeUpdates.title',
+        descriptionKey: 'productsData.kdsScreens.features.realTimeUpdates.description',
+      },
+    ],
+    isSideBarVisible: false,
+    horizontalBarKey: 'productsData.kdsScreens.horizontalBar',
+    isKiosk: false
+  },
+  {
+    slug: 'hardware-tablets',
+    nameKey: 'productsData.hardwareTablets.name',
+    categoryKey: 'productsData.hardwareTablets.category',
+    heroTitleKey: 'productsData.hardwareTablets.heroTitle',
+    heroDescriptionKey: 'productsData.hardwareTablets.heroDescription',
+    heroImages: 'products/Tab Page.png',
+
+    ctaTextKey: 'productsData.hardwareTablets.ctaText',
+    featuresHeaderTextKey: 'productsData.hardwareTablets.featuresHeaderText',
+    features: [
+      {
+        icon: 'tablet',
+        titleKey: 'productsData.hardwareTablets.features.realTimeDisplay.title',
+        descriptionKey: 'productsData.hardwareTablets.features.realTimeDisplay.description',
+      },
+      {
+        icon: 'devices',
+        titleKey: 'productsData.hardwareTablets.features.paperless.title',
+        descriptionKey: 'productsData.hardwareTablets.features.paperless.description',
+      },
+      {
+        icon: 'touch_app',
+        titleKey: 'productsData.hardwareTablets.features.prioritization.title',
+        descriptionKey: 'productsData.hardwareTablets.features.prioritization.description',
+      },
+      {
+        icon: 'battery_charging_full',
+        titleKey: 'productsData.hardwareTablets.features.tracking.title',
+        descriptionKey: 'productsData.hardwareTablets.features.tracking.description',
+      },
+      {
+        icon: 'wifi',
+        titleKey: 'productsData.hardwareTablets.features.recall.title',
+        descriptionKey: 'productsData.hardwareTablets.features.recall.description',
+      },
+      {
+        icon: 'speed',
+        titleKey: 'productsData.hardwareTablets.features.fasterService.title',
+        descriptionKey: 'productsData.hardwareTablets.features.fasterService.description',
+      },
+      {
+        icon: 'smartphone',
+        titleKey: 'productsData.hardwareTablets.features.reducedWaste.title',
+        descriptionKey: 'productsData.hardwareTablets.features.reducedWaste.description',
+      },
+      {
+        icon: 'sync',
+        titleKey: 'productsData.hardwareTablets.features.multiDevice.title',
+        descriptionKey: 'productsData.hardwareTablets.features.multiDevice.description',
+      },
+      {
+        icon: 'cloud_done',
+        titleKey: 'productsData.hardwareTablets.features.realTimeUpdates.title',
+        descriptionKey: 'productsData.hardwareTablets.features.realTimeUpdates.description',
+      },
+    ],
+    isSideBarVisible: false,
+    horizontalBarKey: 'productsData.hardwareTablets.horizontalBar',
+    isKiosk: false
+  },
+  {
     slug: 'customer-display',
     nameKey: 'productsData.customerDisplay.name',
     categoryKey: 'productsData.customerDisplay.category',
@@ -823,6 +946,256 @@ export const PRODUCTS_DATA: ProductData[] = [
     ],
     isSideBarVisible: false,
     keyBenefitsSectionKey: 'productsData.purchaseSupplyChain.keyBenefitsSection',
+    isKiosk: false
+  },
+  {
+    slug: 'retail-pos',
+    nameKey: 'productsData.retailPos.name',
+    categoryKey: 'productsData.retailPos.category',
+    heroTitleKey: 'productsData.retailPos.heroTitle',
+    heroDescriptionKey: 'productsData.retailPos.heroDescription',
+    heroImages: 'products/POS Retail.png',
+    complianceTagKey: 'productsData.retailPos.complianceTag',
+    complianceImage:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIyG9CImBv66uEEChinrNgQL_s05hCggeBg&s',
+    ctaTextKey: 'productsData.retailPos.ctaText',
+    featuresHeaderTextKey: 'productsData.retailPos.featuresHeaderText',
+    features: [
+      {
+        icon: 'bolt',
+        titleKey: 'productsData.retailPos.features.quickSetup.title',
+        descriptionKey: 'productsData.retailPos.features.quickSetup.description',
+      },
+      {
+        icon: 'wifi_off',
+        titleKey: 'productsData.retailPos.features.offlineFunctionality.title',
+        descriptionKey: 'productsData.retailPos.features.offlineFunctionality.description',
+      },
+      {
+        icon: 'query_stats',
+        titleKey: 'productsData.retailPos.features.realTimeData.title',
+        descriptionKey: 'productsData.retailPos.features.realTimeData.description',
+      },
+      {
+        icon: 'touch_app',
+        titleKey: 'productsData.retailPos.features.userFriendly.title',
+        descriptionKey: 'productsData.retailPos.features.userFriendly.description',
+      },
+      {
+        icon: 'devices',
+        titleKey: 'productsData.retailPos.features.multiDevice.title',
+        descriptionKey: 'productsData.retailPos.features.multiDevice.description',
+      },
+      {
+        icon: 'insights',
+        titleKey: 'productsData.retailPos.features.reporting.title',
+        descriptionKey: 'productsData.retailPos.features.reporting.description',
+      },
+      {
+        icon: 'cloud_done',
+        titleKey: 'productsData.retailPos.features.cloudBackup.title',
+        descriptionKey: 'productsData.retailPos.features.cloudBackup.description',
+      },
+      {
+        icon: 'sync_alt',
+        titleKey: 'productsData.retailPos.features.integration.title',
+        descriptionKey: 'productsData.retailPos.features.integration.description',
+      },
+      {
+        icon: 'support_agent',
+        titleKey: 'productsData.retailPos.features.support.title',
+        descriptionKey: 'productsData.retailPos.features.support.description',
+      },
+    ],
+    isSideBarVisible: false,
+    sidebarMenu: [
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.dashboards.label',
+        active: true,
+        titleKey: 'productsData.retailPos.sidebarMenu.dashboards.title',
+        image: 'products/Features-01.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.dashboards.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.menu.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.menu.title',
+        image: 'products/Features-02.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.menu.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.tableManagement.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.tableManagement.title',
+        image: 'products/Features-03.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.tableManagement.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.reporting.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.reporting.title',
+        image: 'products/Features-04.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.reporting.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.outlets.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.outlets.title',
+        image: 'products/Features-05.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.outlets.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.recipes.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.recipes.title',
+        image: 'products/Features-06.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.recipes.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.inventory.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.inventory.title',
+        image: 'products/Features-07.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.inventory.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.purchase.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.purchase.title',
+        image: 'products/Features-08.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.purchase.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.offline.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.offline.title',
+        image: 'products/Features-09.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.offline.bullets',
+      },
+      {
+        labelKey: 'productsData.retailPos.sidebarMenu.zatca.label',
+        titleKey: 'productsData.retailPos.sidebarMenu.zatca.title',
+        image: 'products/Features-10.png',
+        bulletsKey: 'productsData.retailPos.sidebarMenu.zatca.bullets',
+      },
+    ],
+    sidebarImage: 'products/Features-01.png',
+    overlayImage: 'products/Features-01.png',
+    sidebarTitleKey: 'productsData.retailPos.sidebarTitle',
+    sidebarBulletsKey: 'productsData.retailPos.sidebarBullets',
+    isKiosk: false
+  },
+  {
+    slug: 'pos-terminals',
+    nameKey: 'productsData.posTerminals.name',
+    categoryKey: 'productsData.posTerminals.category',
+    heroTitleKey: 'productsData.posTerminals.heroTitle',
+    heroDescriptionKey: 'productsData.posTerminals.heroDescription',
+    heroImages: 'products/POS ACessories.png',
+    complianceTagKey: 'productsData.posTerminals.complianceTag',
+    ctaTextKey: 'productsData.posTerminals.ctaText',
+    featuresHeaderTextKey: 'productsData.posTerminals.featuresHeaderText',
+    features: [
+      {
+        icon: 'point_of_sale',
+        titleKey: 'productsData.posTerminals.features.allInOne.title',
+        descriptionKey: 'productsData.posTerminals.features.allInOne.description',
+      },
+      {
+        icon: 'touch_app',
+        titleKey: 'productsData.posTerminals.features.touchScreen.title',
+        descriptionKey: 'productsData.posTerminals.features.touchScreen.description',
+      },
+      {
+        icon: 'print',
+        titleKey: 'productsData.posTerminals.features.builtInPrinter.title',
+        descriptionKey: 'productsData.posTerminals.features.builtInPrinter.description',
+      },
+      {
+        icon: 'credit_card',
+        titleKey: 'productsData.posTerminals.features.paymentIntegration.title',
+        descriptionKey: 'productsData.posTerminals.features.paymentIntegration.description',
+      },
+      {
+        icon: 'construction',
+        titleKey: 'productsData.posTerminals.features.durableDesign.title',
+        descriptionKey: 'productsData.posTerminals.features.durableDesign.description',
+      },
+      {
+        icon: 'speed',
+        titleKey: 'productsData.posTerminals.features.fastPerformance.title',
+        descriptionKey: 'productsData.posTerminals.features.fastPerformance.description',
+      },
+      {
+        icon: 'fit_screen',
+        titleKey: 'productsData.posTerminals.features.compactFootprint.title',
+        descriptionKey: 'productsData.posTerminals.features.compactFootprint.description',
+      },
+      {
+        icon: 'usb',
+        titleKey: 'productsData.posTerminals.features.multipleConnections.title',
+        descriptionKey: 'productsData.posTerminals.features.multipleConnections.description',
+      },
+      {
+        icon: 'security',
+        titleKey: 'productsData.posTerminals.features.secureTransactions.title',
+        descriptionKey: 'productsData.posTerminals.features.secureTransactions.description',
+      },
+    ],
+    isSideBarVisible: false,
+    horizontalBarKey: 'productsData.posTerminals.horizontalBar',
+    isKiosk: false
+  },
+  {
+    slug: 'pos-accessories',
+    nameKey: 'productsData.posAccessories.name',
+    categoryKey: 'productsData.posAccessories.category',
+    heroTitleKey: 'productsData.posAccessories.heroTitle',
+    heroDescriptionKey: 'productsData.posAccessories.heroDescription',
+    heroImages: 'products/pos-accessories.png',
+    ctaTextKey: 'productsData.posAccessories.ctaText',
+    featuresHeaderTextKey: 'productsData.posAccessories.featuresHeaderText',
+    features: [
+      {
+        icon: 'print',
+        titleKey: 'productsData.posAccessories.features.thermalPrinter.title',
+        descriptionKey: 'productsData.posAccessories.features.thermalPrinter.description',
+      },
+      {
+        icon: 'speed',
+        titleKey: 'productsData.posAccessories.features.highSpeed.title',
+        descriptionKey: 'productsData.posAccessories.features.highSpeed.description',
+      },
+      {
+        icon: 'description',
+        titleKey: 'productsData.posAccessories.features.sharpOutput.title',
+        descriptionKey: 'productsData.posAccessories.features.sharpOutput.description',
+      },
+      {
+        icon: 'settings',
+        titleKey: 'productsData.posAccessories.features.easyLoading.title',
+        descriptionKey: 'productsData.posAccessories.features.easyLoading.description',
+      },
+      {
+        icon: 'fit_screen',
+        titleKey: 'productsData.posAccessories.features.compactSize.title',
+        descriptionKey: 'productsData.posAccessories.features.compactSize.description',
+      },
+      {
+        icon: 'cable',
+        titleKey: 'productsData.posAccessories.features.connectivity.title',
+        descriptionKey: 'productsData.posAccessories.features.connectivity.description',
+      },
+      {
+        icon: 'build',
+        titleKey: 'productsData.posAccessories.features.lowMaintenance.title',
+        descriptionKey: 'productsData.posAccessories.features.lowMaintenance.description',
+      },
+      {
+        icon: 'account_balance_wallet',
+        titleKey: 'productsData.posAccessories.features.cashDrawers.title',
+        descriptionKey: 'productsData.posAccessories.features.cashDrawers.description',
+      },
+      {
+        icon: 'qr_code_scanner',
+        titleKey: 'productsData.posAccessories.features.barcodeScanner.title',
+        descriptionKey: 'productsData.posAccessories.features.barcodeScanner.description',
+      },
+    ],
+    isSideBarVisible: false,
+    keyBenefitsSectionKey: 'productsData.posAccessories.keyBenefitsSection',
     isKiosk: false
   },
 ];

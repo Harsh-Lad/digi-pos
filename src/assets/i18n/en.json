@@ -5,9 +5,14 @@
     "demo": "DigiPOS | Book a Demo - See Our POS System in Action",
     "products": "DigiPOS | Products - Complete POS Solutions",
     "partner": "DigiPOS | Become a Partner - Join Our Network",
+    "marketplace": "DigiPOS | Marketplace - Integrations & Add-ons",
     "cloudPos": "DigiPOS | Cloud POS System - Modern Point of Sale",
     "waiterTab": "DigiPOS | Waiter Tab - Digital Ordering Solution",
     "digiKds": "DigiPOS | Kitchen Display System - Digital KDS",
+    "kdsScreens": "DigiPOS | Kitchen Display Screens - Hardware KDS",
+    "hardwareTablets": "DigiPOS | Hardware Tablets - iOS & Android POS Tablets",
+    "posTerminals": "DigiPOS | POS Terminals - All-in-One Hardware Solutions",
+    "posAccessories": "DigiPOS | POS Accessories - Complete Hardware Solutions",
     "customerDisplay": "DigiPOS | Customer Display - Interactive Experience",
     "kiosk": "DigiPOS | Self-Service Kiosk - Automated Ordering",
     "tableOrdering": "DigiPOS | Table Ordering - QR Code Menu System",
@@ -272,6 +277,28 @@
   "demo": {
     "title": "Explore DigiPOS Risk-Free.",
     "subtitle": "Let us walk you through a hands-on demo tailored to your needs, showcasing DigiPOS features built for your success."
+  },
+  "marketplace": {
+    "heroTitle": "Transform Your Business with DigiPOS Integrated Marketplace Apps",
+    "heroDescription": "Easily connect your POS system to top online marketplaces. Streamline orders, inventory, and customer interactions, all in real time.",
+    "items": {
+      "geidea": "Business management and integration services.",
+      "zatca": "Tax authority e-invoicing compliance solution.",
+      "namipay": "Seamless payment processing integration.",
+      "deliverect": "Delivery integration for restaurants.",
+      "neoleap": "Modern payment solutions for businesses.",
+      "qlub": "Digital payment solution for restaurant tables.",
+      "myfatoorah": "Online payment gateway integration.",
+      "erpnext": "Open source ERP system integration.",
+      "credimax": "Credit card processing solutions.",
+      "hyperpay": "Secure online payment gateway.",
+      "ingenico": "Payment hardware and software solutions.",
+      "benefitpay": "Mobile payment solution integration."
+    },
+    "ctaTitle": "Ready to Enhance Your Business?",
+    "ctaDescription": "Get started with DigiPOS and unlock the full potential of our marketplace integrations",
+    "requestDemo": "Request a Demo",
+    "contactSales": "Contact Sales"
   },
   "pricing": {
     "contactSales": "Contact Sales: +966 55 337 8286",
@@ -818,6 +845,197 @@
       },
       "horizontalBar": "<section class=\"w-screen bg-[#f48021] md:flex mt-12 extraWaiterTab\"><div class=\"left md:w-1/2 flex items-center justify-center md:pl-8 \"><div class=\" md:w-[85%] p-4 md:p-0 \"><h2 class=\"text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight \"> Empower Your Team with Effortless Table Service Anywhere </h2><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\">Upgrade your restaurant's efficiency by ditching traditional paper slips. Our solution eliminates the need for physical exchanges, promoting a cleaner, more sanitary environment. Plus, with reliable and clean input tools, you can wave goodbye to smudged, greasy screens that are a constant battle in busy kitchens.</p></div></div><div class=\"right md:w-1/2 flex items-center justify-center\"><img src=\"/front-office/KDS.png\" class=\"m-auto h-[70%] w-auto pb-4 md:pb-0\" /></div></section>"
     },
+    "kdsScreens": {
+      "name": "Kitchen Display Screens Hardware",
+      "category": "Hardware",
+      "heroTitle": "Powering the Heart of Your Kitchen",
+      "heroDescription": "DigiPOS has set the standard in reliable restaurant technology. Our Kitchen Display Systems (KDS) are engineered to keep your operations running smoothly, handling every task a busy restaurant or retail environment demands with speed, precision, and consistency.",
+      "complianceTag": "",
+      "ctaText": "Get Now!",
+      "featuresHeaderText": "Everything Your Kitchen Needs to Perform Seamlessly.",
+      "features": {
+        "realTimeDisplay": {
+          "title": "Real-Time Order Display",
+          "description": "Orders appear instantly on the digital screen, eliminating delays and ensuring timely kitchen responses."
+        },
+        "paperless": {
+          "title": "No More Paper Ticket",
+          "description": "Say goodbye to lost, messy, or hard-to-read paper receipts. Everything is displayed clearly and digitally."
+        },
+        "prioritization": {
+          "title": "Order Prioritization",
+          "description": "Orders are automatically organized by priority (e.g. appetizers, entrees), so the kitchen stays focused on what's next."
+        },
+        "tracking": {
+          "title": "Easy Order Tracking",
+          "description": "Track, update, and manage orders seamlessly, ensuring all modifications or special requests are handled with accuracy."
+        },
+        "recall": {
+          "title": "Bump Order Recall",
+          "description": "Quickly recall previous or missed orders, preventing confusion and ensuring nothing is overlooked."
+        },
+        "fasterService": {
+          "title": "Faster Service",
+          "description": "With streamlined processes and real-time order tracking, the kitchen delivers food faster, improving overall service times."
+        },
+        "reducedWaste": {
+          "title": "Reduced Food Waste",
+          "description": "Better tracking and real-time updates reduce food waste and improve portion accuracy."
+        },
+        "multiDevice": {
+          "title": "Multi-Device Compatibility",
+          "description": "DigiKDS offers ultimate flexibility for restaurant operations, working seamlessly across Android, iOS, and Web Browsers."
+        },
+        "realTimeUpdates": {
+          "title": "Real-Time Updates",
+          "description": "Orders and changes are synced in real-time cloud, so the kitchen always works with the most up-to-date information."
+        }
+      },
+      "horizontalBar": "<section class=\"w-screen bg-[#002999]  md:flex mt-12 extraWaiterTab\"><div class=\"left md:w-1/2 flex items-center justify-center md:pl-8 \"><div class=\" md:w-[85%] p-4 md:p-0 \"><h2 class=\"text-xl md:text-[2.75rem] font-bold text-[#f48021] leading-tight \">Built to Perform. Designed to Last.</h2><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\">DigiPOS KDS Screens seamlessly connects your POS with back-of-house operations, ensuring clear order communication, faster ticket times, and improved order accuracy for a better guest experience. Empower your kitchen team to focus on perfecting every dish, not juggling paper tickets. With programmable bump bars, you can customize workflows to match your kitchen's rhythm. Engineered with industrial-grade screens, a durable build, and versatile mounting options, DigiPOS KDS Screens is designed to withstand the heat of your kitchen, and deliver performance you can rely on for years.</p></div></div><div class=\"right md:w-1/2 flex items-center justify-center\"><img src=\"/products/KDS. Screen Page.png\" class=\"m-auto h-[70%] w-auto pb-4 md:pb-0\" /></div></section>"
+    },
+    "hardwareTablets": {
+      "name": "Hardware Tablets - iOS & Android",
+      "category": "Hardware",
+      "heroTitle": "Built for the Rush. Ready for Anything.",
+      "heroDescription": "When lines are long and the pressure is high, your tech needs to keep up, not give up. Unlike consumer tablets, our Tablets are purpose-built for the restaurant environment—tough enough for hot kitchens, busy counters, and constant use.",
+      "complianceTag": "Operating System",
+      "ctaText": "Get Now!",
+      "featuresHeaderText": "Tablets keep your team moving and your service seamless",
+      "features": {
+        "realTimeDisplay": {
+          "title": "Order Taking at the Table",
+          "description": "Waiter can take customer orders directly at the table using the DigiPOS tablet, delivering a smooth and efficient dining experience."
+        },
+        "paperless": {
+          "title": "Quick & Accurate Ordering",
+          "description": "Reducing errors that may occur when writing orders by hand."
+        },
+        "prioritization": {
+          "title": "Customizable Orders",
+          "description": "Allows customization of orders (e.g., special dietary requirements, extra toppings) on the spot."
+        },
+        "tracking": {
+          "title": "Instant Order-to-Kitchen Sync",
+          "description": "No more lost tickets or delays; orders fire in real time."
+        },
+        "recall": {
+          "title": "Food trucks & pop-ups",
+          "description": "Process orders anywhere with cloud sync."
+        },
+        "fasterService": {
+          "title": "Split & Merge Orders",
+          "description": "Quick Process orders merge and split bills."
+        },
+        "reducedWaste": {
+          "title": "User-Friendly Interface",
+          "description": "Designed with intuitive workflows for quick onboarding and faster staff adoption."
+        },
+        "multiDevice": {
+          "title": "Multi-Device Compatibility",
+          "description": "Works seamlessly across tablets mobile devices iOS and Android."
+        },
+        "realTimeUpdates": {
+          "title": "Secure Cloud Backup",
+          "description": "All data is encrypted and automatically backed up, ensuring business continuity and data protection."
+        }
+      },
+      "horizontalBar": "<section class=\"w-screen bg-[#002999] md:flex mt-12 extraWaiterTab\"><div class=\"left md:w-1/2 flex items-center justify-center md:pl-8 \"><div class=\" md:w-[85%] p-4 md:p-0 \"><h2 class=\"text-xl md:text-[2.75rem] font-bold text-[#f48021] leading-tight \">Expand What Your Tablet Can Do</h2><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\">Transform your Tablet into a complete mobile workstation with a full suite of smart, restaurant-ready accessories. Each piece is designed to boost productivity, streamline service, and keep your operations moving smoothly.</p><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\"><strong>Mobile payment attachment:</strong> Enable fast, secure checkouts anywhere in your restaurant.</p><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-2\"><strong>Durable hand strap:</strong> Built for comfort and control during high-volume service.</p><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-2\"><strong>Multi-slot charging dock:</strong> Power multiple devices to stay ready through every shift.</p><p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-2\"><strong>Peripheral and scanner support:</strong> Connect tools and customize your setup for any workflow.</p></div></div><div class=\"right md:w-1/2 flex items-center justify-center\"><img src=\"/products/tab.png\" class=\"m-auto h-[70%] w-auto pb-4 md:pb-0\" /></div></section>"
+    },
+    "posTerminals": {
+      "name": "POS Terminals - All-in-One Hardware",
+      "category": "Hardware",
+      "heroTitle": "Your Complete POS Solution in One Powerful Terminal",
+      "heroDescription": "DigiPOS Terminals combine cutting-edge hardware with seamless software integration to deliver a complete point-of-sale solution. Designed for reliability and built for performance, our terminals handle everything from order processing to payment acceptance with lightning-fast speed and unwavering accuracy.",
+      "complianceTag": "Operating System",
+      "ctaText": "Get Now!",
+      "featuresHeaderText": "Everything You Need. Nothing You Don't.",
+      "features": {
+        "allInOne": {
+          "title": "All-in-One Design",
+          "description": "Complete POS system with integrated display, printer, and payment processing in one sleek unit."
+        },
+        "touchScreen": {
+          "title": "High-Resolution Touchscreen",
+          "description": "Responsive capacitive touch display for fast, accurate order entry and intuitive navigation."
+        },
+        "builtInPrinter": {
+          "title": "Built-In Receipt Printer",
+          "description": "Thermal printer delivers crisp, clear receipts at high speed with minimal maintenance required."
+        },
+        "paymentIntegration": {
+          "title": "Integrated Payment Processing",
+          "description": "Accept all major payment methods including cards, contactless, and digital wallets seamlessly."
+        },
+        "durableDesign": {
+          "title": "Commercial-Grade Durability",
+          "description": "Built to withstand the demands of busy restaurant and retail environments with robust construction."
+        },
+        "fastPerformance": {
+          "title": "Lightning-Fast Performance",
+          "description": "Powerful processor ensures quick transaction processing and smooth multitasking during peak hours."
+        },
+        "compactFootprint": {
+          "title": "Space-Saving Footprint",
+          "description": "Maximizes counter space while delivering full POS functionality in a compact, modern design."
+        },
+        "multipleConnections": {
+          "title": "Multiple Connectivity Options",
+          "description": "Ethernet, Wi-Fi, Bluetooth, and USB ports for flexible peripheral and network connections."
+        },
+        "secureTransactions": {
+          "title": "Enterprise-Level Security",
+          "description": "Advanced encryption and secure payment processing protect customer data and business information."
+        }
+      },
+      "horizontalBar": "<section class=\"relative bg-white mx-auto py-12 lg:py-20\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8\"><h2 class=\"text-3xl lg:text-4xl font-extrabold text-center text-[#002999] mb-12\">Complete Range of POS Accessories Built to Integrate Seamlessly with Your System</h2><div class=\"space-y-16\"><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/Printer.png\" alt=\"Thermal Receipt Printer\" class=\"rounded-2xl \" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">Thermal<br>Receipt Printer</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>High-speed printing for faster checkout</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Sharp, clear text and graphics output</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Easy paper loading with drop-in design</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Compact size fits any counter space</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>USB, Ethernet, and Bluetooth connectivity</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Low maintenance with no ink or ribbon needed</span></li></ul></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-1\"><div class=\"flex items-start mb-4\"><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">Cash Drawers</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Secure and durable metal construction</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Smooth, reliable opening mechanism</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Multiple bill and coin compartments</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Compatible with all POS systems</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Key lock and electronic release options</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Designed for high-traffic retail and F&B use</span></li></ul></div><div class=\"order-2\"><img src=\"/products/Drawer.png\" alt=\"Cash Drawer\" class=\"rounded-2xl \" /></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/Scanner.png\" alt=\"Barcode Scanner\" class=\"rounded-2xl \" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">Barcode Scanner</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Fast and accurate scanning performance</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Reads 1D and 2D barcodes with ease</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Plug-and-play USB or Bluetooth connection</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Durable build for heavy daily use</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Works seamlessly with POS systems</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Reduces checkout time and human errors</span></li></ul></div></article></div></div></section>"
+    },
+    "posAccessories": {
+      "name": "POS System Accessories",
+      "category": "Hardware",
+      "heroTitle": "POS Hardware Solutions for Every Business",
+      "heroDescription": "From printers to cash drawers and beyond, DigiPOS provides a full range of POS System Accessories designed to seamlessly integrate with your POS hardware and software, ensuring your entire setup works together effortlessly.",
+      "ctaText": "Get Now!",
+      "featuresHeaderText": "Complete Range of POS Accessories Built to Integrate Seamlessly with Your System",
+      "features": {
+        "thermalPrinter": {
+          "title": "Thermal Receipt Printer",
+          "description": "High-speed printing for faster checkout with sharp, clear text and graphics output."
+        },
+        "highSpeed": {
+          "title": "High-Speed Printing",
+          "description": "Fast receipt printing ensures quick customer checkout and improved service efficiency."
+        },
+        "sharpOutput": {
+          "title": "Sharp, Clear Output",
+          "description": "Professional-quality text and graphics on every receipt for a polished brand image."
+        },
+        "easyLoading": {
+          "title": "Easy Paper Loading",
+          "description": "Drop-in design makes paper replacement quick and hassle-free during busy shifts."
+        },
+        "compactSize": {
+          "title": "Compact Size",
+          "description": "Space-saving design fits any counter space without sacrificing functionality."
+        },
+        "connectivity": {
+          "title": "Multiple Connectivity",
+          "description": "USB, Ethernet, and Bluetooth options provide flexible integration with any POS system."
+        },
+        "lowMaintenance": {
+          "title": "Low Maintenance",
+          "description": "No ink or ribbon needed—thermal printing reduces ongoing costs and maintenance time."
+        },
+        "cashDrawers": {
+          "title": "Secure Cash Drawers",
+          "description": "Durable metal construction with smooth opening mechanism, multiple compartments, and key lock options."
+        },
+        "barcodeScanner": {
+          "title": "Barcode Scanner",
+          "description": "Fast, accurate scanning of 1D and 2D barcodes with plug-and-play connectivity for seamless checkout."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative bg-white py-12 lg:py-20\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8\"><h2 class=\"text-3xl lg:text-4xl font-extrabold text-center text-[#002999] mb-12\">Complete Range of POS Accessories Built to Integrate Seamlessly with Your System</h2><div class=\"space-y-16\"><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/thermal-printer.png\" alt=\"Thermal Receipt Printer\" class=\"rounded-2xl shadow-lg w-full\" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">Thermal<br>Receipt Printer</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>High-speed printing for faster checkout</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Sharp, clear text and graphics output</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Easy paper loading with drop-in design</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Compact size fits any counter space</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>USB, Ethernet, and Bluetooth connectivity</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Low maintenance with no ink or ribbon needed</span></li></ul></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-1\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#f48021] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">Cash Drawers</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Secure and durable metal construction</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Smooth, reliable opening mechanism</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Multiple bill and coin compartments</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Compatible with all POS systems</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Key lock and electronic release options</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Designed for high-traffic retail and F&B use</span></li></ul></div><div class=\"order-2\"><img src=\"/products/cash-drawer.png\" alt=\"Cash Drawer\" class=\"rounded-2xl shadow-lg w-full\" /></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/barcode-scanner.png\" alt=\"Barcode Scanner\" class=\"rounded-2xl shadow-lg w-full\" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">Barcode Scanner</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Fast and accurate scanning performance</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Reads 1D and 2D barcodes with ease</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Plug-and-play USB or Bluetooth connection</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Durable build for heavy daily use</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Works seamlessly with POS systems</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>Reduces checkout time and human errors</span></li></ul></div></article></div></div></section>"
+    },
     "customerDisplay": {
       "name": "Customer Display",
       "category": "Front Office",
@@ -1245,6 +1463,163 @@
         }
       },
       "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Integrated Inventory &<br>Purchase Management</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Automatically connect inventory levels with purchase orders to ensure essential ingredients never run out. This integration reduces manual work, prevents ordering errors, and keeps kitchens consistently stocked.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">Centralized<br>Vendor Database</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Store all vendor contacts, pricing, and order histories in one platform. Managing multiple suppliers becomes faster, more organized, and easier to oversee from a single dashboard.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">Detailed Purchase<br>Reporting</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">Access built-in purchase reports that highlight spending trends, vendor performance, and cost breakdowns. These insights support better budgeting, smarter negotiations, and stronger financial control.</p></article></div></div></section>"
+    },
+    "retailPos": {
+      "name": "Cloud Point of Sale",
+      "category": "Retail",
+      "heroTitle": "Cloud Point of Sale",
+      "heroDescription": "DigiPOS is a next-generation, cloud-powered Point of Sale system built specifically for retail stores. It works seamlessly both online and offline, ensuring uninterrupted operations even during network downtime. With DigiPOS, you can track real-time sales, monitor inventory across branches, manage staff performance, and understand customer buying patterns all from any device. It helps you streamline daily operations, reduce losses, and boost profitability through smart automation and live business insights.",
+      "complianceTag": "Compliant with:",
+      "ctaText": "Get a Demo",
+      "featuresHeaderText": "Cloud-Powered Point of Sale System Built Specifically for Retail",
+      "features": {
+        "quickSetup": {
+          "title": "Quick & Easy Setup",
+          "description": "Switch to DigiPOS effortlessly with a quick and hassle-free installation."
+        },
+        "offlineFunctionality": {
+          "title": "Online & Offline Functionality",
+          "description": "Ensures full operational continuity even during internet outages."
+        },
+        "realTimeData": {
+          "title": "Real-Time Data Access",
+          "description": "View up-to-the-minute reports, sales trends, and inventory levels from any device."
+        },
+        "userFriendly": {
+          "title": "User-Friendly Interface",
+          "description": "Designed with intuitive workflows for quick onboarding and faster staff adoption."
+        },
+        "multiDevice": {
+          "title": "Multi-Device Compatibility",
+          "description": "Works seamlessly across tablets, desktops, and mobile devices."
+        },
+        "reporting": {
+          "title": "Comprehensive Reporting",
+          "description": "Generate insightful reports on sales transactions, peak hours, and more to support decision-making."
+        },
+        "cloudBackup": {
+          "title": "Secure Cloud Backup",
+          "description": "All data is encrypted and automatically backed up, ensuring business continuity and data protection."
+        },
+        "integration": {
+          "title": "Integration Capabilities",
+          "description": "Easily integrates with accounting software, payment gateways, and third-party applications."
+        },
+        "support": {
+          "title": "24/7 Customer Support",
+          "description": "Our dedicated support team is available around the clock to help you with any questions or issues you may have."
+        }
+      },
+      "sidebarTitle": "Dashboard Management",
+      "sidebarMenu": {
+        "dashboards": {
+          "label": "Dashboard Management",
+          "title": "Dashboard Management",
+          "bullets": [
+            "With DigiPOS Dashboard Management, you can easily visualize real-time data. Performance indicators related to sales transactions and overall business operations.",
+            "Monitor key metrics such as:",
+            "Sales: Track daily, hourly, weekly, and monthly sales performance.",
+            "Sales by Status: View sales by order status to understand workflow and identify bottlenecks.",
+            "Top Products and Category Sales: Identify best-selling products and categories to optimize inventory and promotions.",
+            "Customer Trends: Understand customer preferences and behaviors to improve service and marketing strategies."
+          ]
+        },
+        "menu": {
+          "label": "Menu Management",
+          "title": "Menu Management",
+          "bullets": [
+            "Manage your menu anytime, anywhere.",
+            "With DigiPOS, you can create, update, and control your menu in real-time from any device, ensuring seamless operations and maximum profits.",
+            "Real-time menu control for real-world speed.",
+            "DigiPOS empowers your team to make instant changes, manage item availability, and keep front-end and back-end in sync."
+          ]
+        },
+        "tableManagement": {
+          "label": "Dine-in Table Management",
+          "title": "Dine-in Table Management",
+          "bullets": [
+            "Using DigiPOS's Table Management feature is essential for efficiently managing dine-in orders, allocating tables and tracking orders.",
+            "Real-time updates: The system provides real-time updates, allowing staff to see occupied, available tables or those being prepared for new guests.",
+            "Customer count: Track the number of customers at each table to adjust order size and personalize the dining experience."
+          ]
+        },
+        "reporting": {
+          "label": "Reporting Management",
+          "title": "Reporting Management",
+          "bullets": [
+            "Want to uncover hidden trends in your sales data?",
+            "Generate comprehensive reports to analyze your business performance.",
+            "Track sales trends, identify peak hours, and gain valuable insights to optimize your operations."
+          ]
+        },
+        "outlets": {
+          "label": "Outlet Management",
+          "title": "Outlet Management",
+          "bullets": [
+            "Managing multiple outlets? DigiPOS has the solution.",
+            "If you have multiple outlets, DigiPOS simplifies management across all locations.",
+            "Sync inventory, track sales, and maintain consistent operations, no matter where your customers are."
+          ]
+        },
+        "recipes": {
+          "label": "Food Recipes and Costing",
+          "title": "Food Recipes and Costing",
+          "bullets": [
+            "Tired of wondering where your profits are going? Want to take control of your food costs?",
+            "Let's do it with DigiPOS.",
+            "Create detailed recipes, track ingredient usage, and optimize your menu prices for maximum profitability."
+          ]
+        },
+        "inventory": {
+          "label": "Inventory Management",
+          "title": "Inventory Management",
+          "bullets": [
+            "Inventory management is the process of effectively overseeing, tracking, and controlling a company's stock of raw materials and manufactured products.",
+            "Opening Inventory",
+            "Inventory Transfer Note (Inventory Out)",
+            "Inventory Receive Note (Inventory In)",
+            "Inventory Damage (Wastage)",
+            "Physical Inventory Count"
+          ]
+        },
+        "purchase": {
+          "label": "Purchase Management",
+          "title": "Purchase Management",
+          "bullets": [
+            "Purchase management is the process of efficiently procuring goods and services while controlling costs and ensuring quality. Here are the key features of purchase management.",
+            "Purchase Request (PR)",
+            "Purchase Order (PO)",
+            "Goods Received Note (GRN)",
+            "Purchase Return"
+          ]
+        },
+        "offline": {
+          "label": "Offline Mode & Utilities",
+          "title": "Offline Mode & Utilities",
+          "bullets": [
+            "DigiPOS is a flexible and reliable POS solution designed to keep your business running smoothly regardless of your internet connection.",
+            "With an active internet connection, DigiPOS operates in real-time allowing you to process orders, manage inventory, and access up-to-date sales reports instantly across all devices.",
+            "During offline mode, DigiPOS securely stores all transaction data locally on the device. Once connectivity is restored, all data is automatically synced to the cloud, keeping your entire system up to date."
+          ]
+        },
+        "zatca": {
+          "label": "Zatca E-Invoicing Compliant",
+          "title": "Zatca Integration",
+          "bullets": [
+            "DigiPOS is now fully integrated with Zatca requirements in Saudi Arabia, providing businesses with a streamlined and efficient way to manage their sales and inventory while remaining fully compliant with the latest tax regulations.",
+            "Our team of experts has worked hard to ensure that DigiPOS integrates seamlessly with Zatca, providing businesses with a seamless and user-friendly way to comply with the latest tax regulations.",
+            "The integration allows businesses in Saudi Arabia to easily comply with the latest tax regulations, without needing to worry about the complexities of tax compliance."
+          ]
+        }
+      },
+      "sidebarBullets": [
+        "With DigiPOS Dashboard Management, you can easily visualize real-time data. Performance indicators related to sales transactions and overall business operations.",
+        "Monitor key metrics such as:",
+        "Sales: Track daily, hourly, weekly, and monthly sales performance.",
+        "Sales by Status: View sales by order status to understand workflow and identify bottlenecks.",
+        "Top Products and Category Sales: Identify best-selling products and categories to optimize inventory and promotions.",
+        "Customer Trends: Understand customer preferences and behaviors to improve service and marketing strategies."
+      ]
     }
   },
   "businessData": {
@@ -1531,6 +1906,37 @@
         "scalableRestaurantTechnology": {
           "title": "Scalable Restaurant Technology",
           "description": "Flexible system architecture that grows with your cloud kitchen business, supporting multiple virtual brands and unlimited order volume expansion."
+        }
+      }
+    }
+  },
+  "becomePartner": {
+    "heroTitle": "Grow with DigiPOS. Earn, Resell, and Succeed Together",
+    "heroDescription": "Join our Partner Network and unlock new earning opportunities, whether you're referring businesses or reselling DigiPOS solutions in your market. Be part of a fast-growing ecosystem that's redefining POS technology for restaurants, cafés, and retail businesses across the region.",
+    "ctaText": "Join Now!",
+    "whyPartner": {
+      "subtitle": "Why Partner with DigiPOS?",
+      "title": "Empower Businesses. Earn Rewards. Build Growth.",
+      "benefits": {
+        "commissions": {
+          "title": "High-Value Commissions",
+          "description": "Earn for every successful referral or sale."
+        },
+        "support": {
+          "title": "Comprehensive Support",
+          "description": "Get access to marketing kits, training, and partner tools."
+        },
+        "leadership": {
+          "title": "Regional Leadership",
+          "description": "Represent a trusted POS brand with a growing footprint across the GCC."
+        },
+        "zeroRisk": {
+          "title": "Zero Investment Risk",
+          "description": "No joining fees, no inventory, just opportunity."
+        },
+        "futureReady": {
+          "title": "Future-Ready Solutions",
+          "description": "Offer cutting-edge POS hardware and software designed for hospitality and retail."
         }
       }
     }

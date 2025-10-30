@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 // Define menu types for type safety
-export type MenuKey = 'products' | 'hardware' | 'business' | 'marketplace';
+export type MenuKey = 'products' | 'hardware' | 'business';
 
 export type MenuItem = {
   name: string;
@@ -154,7 +154,7 @@ export class NavbarDataService {
               { 
                 name: "Cloud Point of Sales", 
                 nameKey: "navbar.megaMenu.products.retailPos",
-                link: "/products/cloud-pos", 
+                link: "/products/retail-pos", 
                 description: "In-depth sales analysis and performance tracking for retail.", 
                 descKey: "navbar.megaMenu.products.retailPosDesc",
                 icon: "storefront" 
@@ -190,7 +190,7 @@ export class NavbarDataService {
               { 
                 name: "KDS Screens", 
                 nameKey: "navbar.megaMenu.hardware.kdsScreens",
-                link: "/hardware/kds-screens", 
+                link: "/products/kds-screens", 
                 description: "Kitchen display screens for order management.", 
                 descKey: "navbar.megaMenu.hardware.kdsScreensDesc",
                 icon: "kitchen" 
@@ -198,7 +198,7 @@ export class NavbarDataService {
               { 
                 name: "Tablets", 
                 nameKey: "navbar.megaMenu.hardware.tablets",
-                link: "/hardware/tablets", 
+                link: "/products/hardware-tablets", 
                 description: "iOS & Android tablets for mobile POS solutions.", 
                 descKey: "navbar.megaMenu.hardware.tabletsDesc",
                 icon: "tablet" 
@@ -206,7 +206,7 @@ export class NavbarDataService {
               { 
                 name: "Handheld Devices", 
                 nameKey: "navbar.megaMenu.hardware.handheldDevices",
-                link: "/hardware/handheld-devices", 
+                link: "/products/handheld-devices", 
                 description: "Portable devices for on-the-go order taking.", 
                 descKey: "navbar.megaMenu.hardware.handheldDevicesDesc",
                 icon: "devices" 
@@ -348,120 +348,6 @@ export class NavbarDataService {
                 description: "POS and appointment systems for salons and spas.", 
                 descKey: "navbar.megaMenu.business.salonDesc",
                 icon: "spa" 
-              },
-            ],
-          },
-        ],
-      },
-      marketplace: {
-        title: "Marketplace",
-        titleKey: "navbar.marketplace",
-        sections: [
-          {
-            title: "PAYMENT INTEGRATIONS",
-            titleKey: "navbar.megaMenu.marketplace.paymentIntegrations",
-            items: [
-              { 
-                name: "Geidea", 
-                nameKey: "navbar.megaMenu.marketplace.geidea",
-                link: "/marketplace/geidea", 
-                description: "Business management and integration services.", 
-                descKey: "navbar.megaMenu.marketplace.geideaDesc",
-                icon: "business_center" 
-              },
-              { 
-                name: "NamiPay", 
-                nameKey: "navbar.megaMenu.marketplace.namipay",
-                link: "/marketplace/namipay", 
-                description: "Seamless payment processing integration.", 
-                descKey: "navbar.megaMenu.marketplace.namipayDesc",
-                icon: "payments" 
-              },
-              { 
-                name: "Neoleap", 
-                nameKey: "navbar.megaMenu.marketplace.neoleap",
-                link: "/marketplace/neoleap", 
-                description: "Modern payment solutions for businesses.", 
-                descKey: "navbar.megaMenu.marketplace.neoleapDesc",
-                icon: "credit_score" 
-              },
-              { 
-                name: "Credimax", 
-                nameKey: "navbar.megaMenu.marketplace.credimax",
-                link: "/marketplace/credimax", 
-                description: "Credit card processing solutions.", 
-                descKey: "navbar.megaMenu.marketplace.credimaxDesc",
-                icon: "credit_card" 
-              },
-              { 
-                name: "Hyperpay", 
-                nameKey: "navbar.megaMenu.marketplace.hyperpay",
-                link: "/marketplace/hyperpay", 
-                description: "Secure online payment gateway.", 
-                descKey: "navbar.megaMenu.marketplace.hyperpayDesc",
-                icon: "security" 
-              },
-              { 
-                name: "BenefitPay", 
-                nameKey: "navbar.megaMenu.marketplace.benefitpay",
-                link: "/marketplace/benefitpay", 
-                description: "Mobile payment solution integration.", 
-                descKey: "navbar.megaMenu.marketplace.benefitpayDesc",
-                icon: "smartphone" 
-              },
-              { 
-                name: "MyFatoora", 
-                nameKey: "navbar.megaMenu.marketplace.myfatoora",
-                link: "/marketplace/myfatoora", 
-                description: "Online payment gateway integration.", 
-                descKey: "navbar.megaMenu.marketplace.myfatooraDesc",
-                icon: "payment" 
-              },
-              { 
-                name: "Ingenico", 
-                nameKey: "navbar.megaMenu.marketplace.ingenico",
-                link: "/marketplace/ingenico", 
-                description: "Payment hardware and software solutions.", 
-                descKey: "navbar.megaMenu.marketplace.ingenicoDesc",
-                icon: "contactless" 
-              },
-            ],
-          },
-          {
-            title: "BUSINESS INTEGRATIONS",
-            titleKey: "navbar.megaMenu.marketplace.businessIntegrations",
-            items: [
-              { 
-                name: "Zatca E-Invoicing", 
-                nameKey: "navbar.megaMenu.marketplace.zatca",
-                link: "/marketplace/zatca", 
-                description: "Tax authority e-invoicing compliance solution.", 
-                descKey: "navbar.megaMenu.marketplace.zatcaDesc",
-                icon: "receipt" 
-              },
-              { 
-                name: "Deliverect", 
-                nameKey: "navbar.megaMenu.marketplace.deliverect",
-                link: "/marketplace/deliverect", 
-                description: "Delivery integration for restaurants.", 
-                descKey: "navbar.megaMenu.marketplace.deliverectDesc",
-                icon: "delivery_dining" 
-              },
-              { 
-                name: "Qlub", 
-                nameKey: "navbar.megaMenu.marketplace.qlub",
-                link: "/marketplace/qlub", 
-                description: "Digital payment solution for restaurant tables.", 
-                descKey: "navbar.megaMenu.marketplace.qlubDesc",
-                icon: "restaurant_menu" 
-              },
-              { 
-                name: "ERPNext", 
-                nameKey: "navbar.megaMenu.marketplace.erpnext",
-                link: "/marketplace/erpnext", 
-                description: "Open source ERP system integration.", 
-                descKey: "navbar.megaMenu.marketplace.erpnextDesc",
-                icon: "integration_instructions" 
               },
             ],
           },

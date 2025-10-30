@@ -1,0 +1,169 @@
+.timeline-container {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.timeline-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Timeline Line */
+.timeline-line {
+  position: relative;
+  height: 60px;
+  margin: 80px 0;
+}
+
+.line-track {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #d0d0d0;
+  transform: translateY(-50%);
+}
+
+.line-dots {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background-color: #999;
+  border: 3px solid #f5f5f5;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Timeline Items */
+.timeline-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.top-items {
+  margin-bottom: 100px;
+}
+
+.bottom-items {
+  margin-top: 100px;
+  justify-content: center;
+  gap: 80px;
+}
+
+.timeline-item {
+  text-align: center;
+  flex: 1;
+  max-width: 280px;
+}
+
+.timeline-item.top {
+  margin-bottom: 40px;
+}
+
+.timeline-item.bottom {
+  margin-top: 40px;
+}
+
+/* Icon Wrapper */
+.icon-wrapper {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-wrapper.blue {
+  background-color: #003da5;
+  border: 8px solid #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 61, 165, 0.2);
+}
+
+.icon-wrapper.orange {
+  background-color: #ff8c00;
+  border: 8px solid #f5f5f5;
+  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.2);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  color: #ff8c00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-wrapper.blue .icon {
+  color: #ff8c00;
+}
+
+.icon-wrapper.orange .icon {
+  color: #003da5;
+}
+
+/* Content */
+.content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #003da5;
+  margin: 0 0 10px 0;
+}
+
+.content p {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-item {
+    max-width: 100%;
+  }
+
+  .bottom-items {
+    flex-direction: column;
+  }
+
+  .icon-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .content h3 {
+    font-size: 16px;
+  }
+
+  .content p {
+    font-size: 13px;
+  }
+}

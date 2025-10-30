@@ -11,7 +11,9 @@
       "Read(C:\\Users\\ASIT\\Downloads/**)",
       "Bash(ng build:*)",
       "Read(//Users/dev/Downloads/Pages/Pdfs/**)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Read(//c/Users/produ/OneDrive/Desktop/**)",
+      "Read(//c/Users/produ/OneDrive/Pictures/**)"
     ],
     "deny": [],
     "ask": []

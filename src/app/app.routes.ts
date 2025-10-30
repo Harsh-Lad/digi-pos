@@ -4,6 +4,8 @@ import { PricingTableComponent } from './pricing/pricing.component';
 import { ProductsComponent } from './products/products.component';
 import { BusinessComponent } from './business/business.component';
 import { DemoComponent } from './demo/demo.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -11,6 +13,8 @@ export const routes: Routes = [
   { path: 'products/:slug', component: ProductsComponent },
   { path: 'business/:slug', component: BusinessComponent },
   { path: 'demo', component: DemoComponent},
+  { path: 'marketplace', component: MarketplaceComponent },
+  { path: 'become-partner', component: BecomePartnerComponent },
   // Redirect any unknown paths to home
   { path: '**', redirectTo: '' }
 ];

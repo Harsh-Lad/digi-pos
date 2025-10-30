@@ -14,7 +14,7 @@ import { NavbarDataService, type MenuKey, type MegaMenus } from './navbar-data.s
 export class NavbarComponent implements OnInit, OnDestroy {
   activeMenu: MenuKey | null = null;
   mobileMenuOpen: boolean = false; // Add property to track mobile menu state
-  menuKeys: MenuKey[] = ['products', 'hardware', 'business', 'marketplace'];
+  menuKeys: MenuKey[] = ['products', 'hardware', 'business'];
   closeTimeout: any = null; // Add this to manage the close timeout
   resizeListener: any;
   isBrowser: boolean;

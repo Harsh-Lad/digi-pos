@@ -1,0 +1,24 @@
+.responsive-margin {
+  margin-top: 7rem;
+}
+
+@media (max-width: 768px) {
+  .responsive-margin {
+    margin-top: 5rem;
+  }
+}
+
+/* Video aspect ratio */
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+/* Logo container hover effect */
+.grid > div:hover .aspect-video {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Smooth transitions */
+.aspect-video {
+  transition: box-shadow 0.3s ease;
+}

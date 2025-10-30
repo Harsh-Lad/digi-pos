@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<section class="mt-32 responsive-margin min-h-screen bg-white px-4 sm:px-6 py-8 sm:py-12">
+  <!-- Hero Section -->
+  <div class="bg-white py-12 px-6 md:px-12 text-center">
+    <h2 class="text-2xl md:text-4xl font-bold text-[#002999] mx-auto md:w-[49%] mb-6">
+      {{ 'marketplace.heroTitle' | translate }}
+    </h2>
+    <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto font-medium mb-12">
+      {{ 'marketplace.heroDescription' | translate }}
+    </p>
+  </div>
+
+  <!-- Marketplace Grid -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div 
+        *ngFor="let item of marketplaceItems"
+        class="bg-white rounded-lg p-6">
+        
+        <!-- Logo and Description in horizontal layout -->
+        <div class="flex items-center gap-6">
+          <!-- Logo Container with video aspect ratio and shadow -->
+          <div class="flex-shrink-0 w-48 aspect-video bg-white rounded-lg shadow-md flex items-center justify-center p-4">
+            <img 
+              [src]="item.logo" 
+              [alt]="item.name"
+              class="max-w-full max-h-full object-contain">
+          </div>
+          
+          <!-- Text Content -->
+          <div class="flex-1 min-w-0">
+            <p class="text-lg text-gray-500 font-semibold leading-relaxed">
+              {{ item.descriptionKey | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>  
+<section class="my-auto md:min-h-[100vh]  flex items-center  md:pb-0 ">
+  <app-contact-form></app-contact-form>
+</section>
+
+<app-footer></app-footer>

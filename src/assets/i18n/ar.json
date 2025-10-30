@@ -5,9 +5,14 @@
     "demo": "ديجي بوس | احجز عرض تجريبي - شاهد نظامنا في العمل",
     "products": "ديجي بوس | المنتجات - حلول نقاط البيع الشاملة",
     "partner": "ديجي بوس | كن شريكاً - انضم إلى شبكتنا",
+    "marketplace": "ديجي بوس | السوق - التكاملات والإضافات",
     "cloudPos": "ديجي بوس | نظام نقاط البيع السحابي - نقطة بيع حديثة",
     "waiterTab": "ديجي بوس | تاب النادل - حل الطلبات الرقمية",
     "digiKds": "ديجي بوس | نظام عرض المطبخ - شاشة المطبخ الرقمية",
+    "kdsScreens": "ديجي بوس | شاشات عرض المطبخ - أجهزة KDS",
+    "hardwareTablets": "ديجي بوس | أجهزة التابلت - تابلت iOS و Android لنقاط البيع",
+    "posTerminals": "ديجي بوس | طرفيات نقاط البيع - حلول الأجهزة الشاملة",
+    "posAccessories": "ديجي بوس | ملحقات نقاط البيع - حلول أجهزة شاملة",
     "customerDisplay": "ديجي بوس | شاشة العميل - تجربة تفاعلية",
     "kiosk": "ديجي بوس | كشك الخدمة الذاتية - طلبات آلية",
     "tableOrdering": "ديجي بوس | طلب الطاولة - نظام قائمة رمز الاستجابة السريعة",
@@ -272,6 +277,28 @@
   "demo": {
     "title": "استكشف DigiPOS بدون مخاطر.",
     "subtitle": "دعنا نأخذك في جولة عملية مخصصة لاحتياجاتك، تعرض ميزات DigiPOS المصممة لنجاحك."
+  },
+  "marketplace": {
+    "heroTitle": "حوّل عملك مع تطبيقات سوق ديجي بوس المتكاملة",
+    "heroDescription": "اربط نظام نقاط البيع الخاص بك بسهولة بأفضل الأسواق عبر الإنترنت. بسّط الطلبات والمخزون وتفاعلات العملاء، كل ذلك في الوقت الفعلي.",
+    "items": {
+      "geidea": "خدمات إدارة الأعمال والتكامل.",
+      "zatca": "حل الامتثال للفوترة الإلكترونية لهيئة الزكاة والضريبة والجمارك.",
+      "namipay": "تكامل معالجة المدفوعات السلس.",
+      "deliverect": "تكامل التوصيل للمطاعم.",
+      "neoleap": "حلول الدفع الحديثة للشركات.",
+      "qlub": "حل الدفع الرقمي لطاولات المطاعم.",
+      "myfatoorah": "تكامل بوابة الدفع عبر الإنترنت.",
+      "erpnext": "تكامل نظام تخطيط موارد المؤسسات مفتوح المصدر.",
+      "credimax": "حلول معالجة بطاقات الائتمان.",
+      "hyperpay": "بوابة دفع آمنة عبر الإنترنت.",
+      "ingenico": "حلول أجهزة وبرامج الدفع.",
+      "benefitpay": "تكامل حلول الدفع عبر الهاتف المحمول."
+    },
+    "ctaTitle": "هل أنت مستعد لتعزيز عملك؟",
+    "ctaDescription": "ابدأ مع ديجي بوس واطلق الإمكانات الكاملة لتكاملات السوق لدينا",
+    "requestDemo": "اطلب عرض توضيحي",
+    "contactSales": "اتصل بالمبيعات"
   },
   "pricing": {
     "contactSales": "اتصل بالمبيعات: +966 55 337 8286",
@@ -832,6 +859,197 @@
       },
       "horizontalBar": "<section class=\"w-screen bg-[#f48021] md:flex mt-12 extraWaiterTab\"> <div class=\"left md:w-1/2 flex items-center justify-center md:pl-8 \"> <div class=\" md:w-[85%] p-4 md:p-0 \"> <h2 class=\"text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight \"> مكن فريقك بخدمة طاولة سهلة في أي مكان </h2> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\"> قم بترقية كفاءة مطعمك بالتخلص من القسائم الورقية التقليدية. حلنا يلغي الحاجة للتبادلات المادية، مما يعزز بيئة أنظف وأكثر صحة. بالإضافة إلى ذلك، مع أدوات الإدخال الموثوقة والنظيفة، يمكنك أن تقول وداعًا للشاشات الملطخة والدهنية التي هي معركة مستمرة في المطابخ المزدحمة. </p> </div> </div> <div class=\"right md:w-1/2 flex items-center justify-center\"> <img src=\"/front-office/KDS.png\" class=\"m-auto h-[70%] w-auto pb-4 md:pb-0\" /> </div> </section>"
     },
+    "kdsScreens": {
+      "name": "شاشات عرض المطبخ - الأجهزة",
+      "category": "الأجهزة",
+      "heroTitle": "تشغيل قلب مطبخك",
+      "heroDescription": "حددت ديجي بوس المعيار في تكنولوجيا المطاعم الموثوقة. أنظمة عرض المطبخ (KDS) الخاصة بنا مصممة للحفاظ على سير عملياتك بسلاسة، والتعامل مع كل مهمة يتطلبها مطعم أو بيئة تجزئة مزدحمة بسرعة ودقة واتساق.",
+      "complianceTag": "نظام التشغيل",
+      "ctaText": "احصل عليها الآن!",
+      "featuresHeaderText": "كل ما يحتاجه مطبخك للأداء السلس.",
+      "features": {
+        "realTimeDisplay": {
+          "title": "عرض الطلبات في الوقت الفعلي",
+          "description": "تظهر الطلبات فوريًا على الشاشة الرقمية، مما يلغي التأخير ويضمن استجابات المطبخ في الوقت المناسب."
+        },
+        "paperless": {
+          "title": "لا مزيد من التذاكر الورقية",
+          "description": "قل وداعًا للإيصالات الورقية المفقودة أو الفوضوية أو صعبة القراءة. كل شيء معروض بوضوح ورقميًا."
+        },
+        "prioritization": {
+          "title": "ترتيب الطلبات حسب الأولوية",
+          "description": "يتم تنظيم الطلبات تلقائيًا حسب الأولوية (مثل المقبلات، الأطباق الرئيسية)، لذا يبقى المطبخ مركزًا على ما هو تالي."
+        },
+        "tracking": {
+          "title": "تتبع الطلبات السهل",
+          "description": "تتبع وتحديث وإدارة الطلبات بسلاسة، مما يضمن التعامل مع جميع التعديلات أو الطلبات الخاصة بدقة."
+        },
+        "recall": {
+          "title": "استدعاء الطلبات السابقة",
+          "description": "استدعِ بسرعة الطلبات السابقة أو المفقودة، مما يمنع الالتباس ويضمن عدم تجاهل أي شيء."
+        },
+        "fasterService": {
+          "title": "خدمة أسرع",
+          "description": "مع العمليات المبسطة وتتبع الطلبات في الوقت الفعلي، يقدم المطبخ الطعام بشكل أسرع، مما يحسن أوقات الخدمة الإجمالية."
+        },
+        "reducedWaste": {
+          "title": "تقليل نفايات الطعام",
+          "description": "التتبع الأفضل والتحديثات في الوقت الفعلي تقلل من نفايات الطعام وتحسن دقة الأجزاء."
+        },
+        "multiDevice": {
+          "title": "توافق متعدد الأجهزة",
+          "description": "DigiKDS يوفر مرونة قصوى لعمليات المطاعم، يعمل بسلاسة عبر Android وiOS ومتصفحات الويب."
+        },
+        "realTimeUpdates": {
+          "title": "التحديثات في الوقت الفعلي",
+          "description": "الطلبات والتغييرات متزامنة في السحابة في الوقت الفعلي، لذا يعمل المطبخ دائمًا مع المعلومات الأكثر حداثة."
+        }
+      },
+      "horizontalBar": "<section class=\"w-screen bg-[#002999] md:flex mt-12 extraWaiterTab\"> <div class=\"left md:w-1/2 flex items-center justify-center md:pl-8 \"> <div class=\" md:w-[85%] p-4 md:p-0 \"> <h2 class=\"text-xl md:text-[2.75rem] font-bold text-[#f48021] leading-tight \">مصممة للأداء. مبنية لتدوم.</h2> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\">شاشات KDS من ديجي بوس تربط نظام نقاط البيع الخاص بك بسلاسة بعمليات المطبخ الخلفية، مما يضمن التواصل الواضح للطلبات، وأوقات تذاكر أسرع، ودقة أفضل للطلبات لتجربة ضيف أفضل. مكّن فريق مطبخك من التركيز على إتقان كل طبق، وليس التلاعب بالتذاكر الورقية. مع أشرطة الضغط القابلة للبرمجة، يمكنك تخصيص سير العمل لتتناسب مع إيقاع مطبخك. تم تصميمها بشاشات ذات مستوى صناعي، وبناء متين، وخيارات تركيب متعددة الاستخدامات، شاشات KDS من ديجي بوس مصممة لتحمل حرارة مطبخك، وتقديم أداء يمكنك الاعتماد عليه لسنوات.</p> </div> </div> <div class=\"right md:w-1/2 flex items-center justify-center\"> <img src=\"/front-office/KDS.png\" class=\"m-auto h-[70%] w-auto pb-4 md:pb-0\" /> </div> </section>"
+    },
+    "hardwareTablets": {
+      "name": "أجهزة التابلت - iOS و Android",
+      "category": "الأجهزة",
+      "heroTitle": "مصممة للضغط. جاهزة لأي شيء.",
+      "heroDescription": "عندما تكون الطوابير طويلة والضغط مرتفعًا، يجب أن تواكب تقنيتك الوتيرة، وليس أن تستسلم. على عكس الأجهزة اللوحية الاستهلاكية، تم تصميم أجهزتنا اللوحية خصيصًا لبيئة المطاعم - قوية بما يكفي للمطابخ الساخنة والعدادات المزدحمة والاستخدام المستمر.",
+      "complianceTag": "نظام التشغيل",
+      "ctaText": "احصل عليها الآن!",
+      "featuresHeaderText": "الأجهزة اللوحية تبقي فريقك متحركًا وخدمتك سلسة",
+      "features": {
+        "realTimeDisplay": {
+          "title": "أخذ الطلبات على الطاولة",
+          "description": "يمكن للنادل أخذ طلبات العملاء مباشرة على الطاولة باستخدام تابلت ديجي بوس، مما يوفر تجربة طعام سلسة وفعالة."
+        },
+        "paperless": {
+          "title": "طلبات سريعة ودقيقة",
+          "description": "تقليل الأخطاء التي قد تحدث عند كتابة الطلبات باليد."
+        },
+        "prioritization": {
+          "title": "طلبات قابلة للتخصيص",
+          "description": "يسمح بتخصيص الطلبات (مثل المتطلبات الغذائية الخاصة، الإضافات) في الحال."
+        },
+        "tracking": {
+          "title": "مزامنة فورية من الطلب إلى المطبخ",
+          "description": "لا مزيد من التذاكر المفقودة أو التأخير؛ الطلبات تُرسل في الوقت الفعلي."
+        },
+        "recall": {
+          "title": "عربات الطعام والمتاجر المؤقتة",
+          "description": "معالجة الطلبات في أي مكان مع المزامنة السحابية."
+        },
+        "fasterService": {
+          "title": "تقسيم ودمج الطلبات",
+          "description": "معالجة سريعة لدمج وتقسيم الفواتير."
+        },
+        "reducedWaste": {
+          "title": "واجهة سهلة الاستخدام",
+          "description": "مصممة بسير عمل بديهي للإعداد السريع واعتماد أسرع للموظفين."
+        },
+        "multiDevice": {
+          "title": "توافق متعدد الأجهزة",
+          "description": "يعمل بسلاسة عبر الأجهزة اللوحية والأجهزة المحمولة iOS و Android."
+        },
+        "realTimeUpdates": {
+          "title": "نسخ احتياطي سحابي آمن",
+          "description": "جميع البيانات مشفرة ويتم نسخها احتياطيًا تلقائيًا، مما يضمن استمرارية الأعمال وحماية البيانات."
+        }
+      },
+      "horizontalBar": "<section class=\"w-screen bg-[#002999] md:flex mt-12 extraWaiterTab\"> <div class=\"left md:w-1/2 flex items-center justify-center md:pl-8 \"> <div class=\" md:w-[85%] p-4 md:p-0 \"> <h2 class=\"text-xl md:text-[2.75rem] font-bold text-[#f48021] leading-tight \">وسّع ما يمكن أن يفعله تابلتك</h2> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\">حوّل تابلتك إلى محطة عمل متنقلة كاملة مع مجموعة كاملة من الملحقات الذكية الجاهزة للمطاعم. كل قطعة مصممة لتعزيز الإنتاجية وتبسيط الخدمة والحفاظ على سير عملياتك بسلاسة.</p> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-4\"><strong>ملحق الدفع المتنقل:</strong> تمكين عمليات الدفع السريعة والآمنة في أي مكان في مطعمك.</p> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-2\"><strong>حزام يد متين:</strong> مصمم للراحة والتحكم أثناء الخدمة عالية الحجم.</p> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-2\"><strong>قاعدة شحن متعددة الفتحات:</strong> شحن أجهزة متعددة للبقاء جاهزًا طوال كل فترة عمل.</p> <p class=\"text-white text-md md:text-lg xl:text-xl leading-relaxed mt-2\"><strong>دعم الأجهزة الطرفية والماسح الضوئي:</strong> ربط الأدوات وتخصيص إعدادك لأي سير عمل.</p> </div> </div> <div class=\"right md:w-1/2 flex items-center justify-center\"> <img src=\"/products/tab.png\" class=\"m-auto h-[70%] w-auto pb-4 md:pb-0\" /> </div> </section>"
+    },
+    "posTerminals": {
+      "name": "طرفيات نقاط البيع - أجهزة شاملة",
+      "category": "الأجهزة",
+      "heroTitle": "حل نقاط البيع الكامل في طرفية واحدة قوية",
+      "heroDescription": "طرفيات ديجي بوس تجمع بين الأجهزة المتطورة والتكامل السلس للبرمجيات لتقديم حل نقاط بيع كامل. مصممة للموثوقية ومصنوعة للأداء، تتعامل طرفياتنا مع كل شيء من معالجة الطلبات إلى قبول المدفوعات بسرعة فائقة ودقة لا تتزعزع.",
+      "complianceTag": "نظام التشغيل",
+      "ctaText": "احصل عليها الآن!",
+      "featuresHeaderText": "كل ما تحتاجه. لا شيء لا تحتاجه.",
+      "features": {
+        "allInOne": {
+          "title": "تصميم شامل متكامل",
+          "description": "نظام نقاط بيع كامل مع شاشة عرض متكاملة وطابعة ومعالجة دفع في وحدة واحدة أنيقة."
+        },
+        "touchScreen": {
+          "title": "شاشة لمس عالية الدقة",
+          "description": "شاشة لمس سعوية استجابة لإدخال طلبات سريع ودقيق وتصفح بديهي."
+        },
+        "builtInPrinter": {
+          "title": "طابعة إيصالات مدمجة",
+          "description": "طابعة حرارية توفر إيصالات واضحة ونقية بسرعة عالية مع الحد الأدنى من الصيانة المطلوبة."
+        },
+        "paymentIntegration": {
+          "title": "معالجة دفع متكاملة",
+          "description": "قبول جميع طرق الدفع الرئيسية بما في ذلك البطاقات واللا تلامسية والمحافظ الرقمية بسلاسة."
+        },
+        "durableDesign": {
+          "title": "متانة تجارية عالية",
+          "description": "مصممة لتحمل متطلبات بيئات المطاعم والتجزئة المزدحمة ببناء قوي."
+        },
+        "fastPerformance": {
+          "title": "أداء فائق السرعة",
+          "description": "معالج قوي يضمن معالجة معاملات سريعة وتعدد مهام سلس خلال ساعات الذروة."
+        },
+        "compactFootprint": {
+          "title": "مساحة موفرة للمكان",
+          "description": "يزيد من مساحة العداد مع توفير وظائف نقاط البيع الكاملة في تصميم مدمج وحديث."
+        },
+        "multipleConnections": {
+          "title": "خيارات اتصال متعددة",
+          "description": "منافذ Ethernet و Wi-Fi و Bluetooth و USB لاتصالات طرفية وشبكة مرنة."
+        },
+        "secureTransactions": {
+          "title": "أمان على مستوى المؤسسة",
+          "description": "تشفير متقدم ومعالجة دفع آمنة لحماية بيانات العملاء ومعلومات الأعمال."
+        }
+      },
+      "horizontalBar": "<section class=\"relative bg-white py-12 lg:py-20\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8\"><h2 class=\"text-3xl lg:text-4xl font-extrabold text-center text-[#002999] mb-12\">مجموعة كاملة من ملحقات نقاط البيع مصممة للتكامل السلس مع نظامك</h2><div class=\"space-y-16\"><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/thermal-printer.png\" alt=\"طابعة إيصالات حرارية\" class=\"rounded-2xl shadow-lg w-full\" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">طابعة إيصالات<br>حرارية</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>طباعة عالية السرعة لعملية دفع أسرع</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>نص ورسومات واضحة وحادة</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>تحميل ورق سهل بتصميم الإسقاط</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>حجم صغير يناسب أي مساحة عداد</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>اتصال USB و Ethernet و Bluetooth</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>صيانة منخفضة بدون حبر أو شريط</span></li></ul></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-1\"><div class=\"flex items-start mb-4\"><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">أدراج النقد</h3><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl ml-4\">●</span></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>بناء معدني آمن ومتين</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>آلية فتح سلسة وموثوقة</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>أقسام متعددة للأوراق والعملات</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>متوافق مع جميع أنظمة نقاط البيع</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>خيارات قفل بالمفتاح والإطلاق الإلكتروني</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>مصمم للبيع بالتجزئة والأغذية والمشروبات عالية الحركة</span></li></ul></div><div class=\"order-2\"><img src=\"/products/cash-drawer.png\" alt=\"درج النقد\" class=\"rounded-2xl shadow-lg w-full\" /></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/barcode-scanner.png\" alt=\"ماسح الباركود\" class=\"rounded-2xl shadow-lg w-full\" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">ماسح الباركود</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>أداء مسح سريع ودقيق</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>يقرأ الباركود 1D و 2D بسهولة</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>اتصال USB أو Bluetooth سهل التوصيل</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>بناء متين للاستخدام اليومي المكثف</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>يعمل بسلاسة مع أنظمة نقاط البيع</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>يقلل من وقت الخروج والأخطاء البشرية</span></li></ul></div></article></div></div></section>"
+    },
+    "posAccessories": {
+      "name": "ملحقات نظام نقاط البيع",
+      "category": "الأجهزة",
+      "heroTitle": "حلول أجهزة نقاط البيع لكل عمل",
+      "heroDescription": "من الطابعات إلى أدراج النقد وما بعدها، يوفر ديجي بوس مجموعة كاملة من ملحقات نظام نقاط البيع المصممة للتكامل بسلاسة مع أجهزة وبرامج نقاط البيع الخاصة بك، مما يضمن عمل الإعداد الكامل معًا بسهولة.",
+      "ctaText": "احصل عليها الآن!",
+      "featuresHeaderText": "مجموعة كاملة من ملحقات نقاط البيع المصممة للتكامل بسلاسة مع نظامك",
+      "features": {
+        "thermalPrinter": {
+          "title": "طابعة إيصالات حرارية",
+          "description": "طباعة عالية السرعة لدفع أسرع مع نص ورسومات واضحة وحادة."
+        },
+        "highSpeed": {
+          "title": "طباعة عالية السرعة",
+          "description": "طباعة إيصالات سريعة تضمن دفع العملاء بسرعة وتحسين كفاءة الخدمة."
+        },
+        "sharpOutput": {
+          "title": "إخراج واضح وحاد",
+          "description": "نص ورسومات بجودة احترافية على كل إيصال لصورة علامة تجارية راقية."
+        },
+        "easyLoading": {
+          "title": "تحميل ورق سهل",
+          "description": "تصميم إسقاط يجعل استبدال الورق سريعًا وخاليًا من المتاعب خلال الفترات المزدحمة."
+        },
+        "compactSize": {
+          "title": "حجم مدمج",
+          "description": "تصميم موفر للمساحة يناسب أي مساحة عداد دون التضحية بالوظائف."
+        },
+        "connectivity": {
+          "title": "اتصال متعدد",
+          "description": "خيارات USB و Ethernet و Bluetooth توفر تكاملًا مرنًا مع أي نظام نقاط بيع."
+        },
+        "lowMaintenance": {
+          "title": "صيانة منخفضة",
+          "description": "لا حاجة للحبر أو الشريط - الطباعة الحرارية تقلل التكاليف الجارية ووقت الصيانة."
+        },
+        "cashDrawers": {
+          "title": "أدراج نقدية آمنة",
+          "description": "بناء معدني متين مع آلية فتح سلسة، وحجرات متعددة، وخيارات قفل بالمفتاح."
+        },
+        "barcodeScanner": {
+          "title": "ماسح الباركود",
+          "description": "مسح سريع ودقيق للباركود 1D و 2D مع اتصال سهل التوصيل والتشغيل للدفع السلس."
+        }
+      },
+      "keyBenefitsSection": "<section class=\"relative bg-white py-12 lg:py-20\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8\"><h2 class=\"text-3xl lg:text-4xl font-extrabold text-center text-[#002999] mb-12\">مجموعة كاملة من ملحقات نقاط البيع المصممة للتكامل بسلاسة مع نظامك</h2><div class=\"space-y-16\"><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/thermal-printer.png\" alt=\"طابعة إيصالات حرارية\" class=\"rounded-2xl shadow-lg w-full\" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">طابعة إيصالات<br>حرارية</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>طباعة عالية السرعة لدفع أسرع</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>نص ورسومات واضحة وحادة</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>تحميل ورق سهل بتصميم إسقاط</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>حجم مدمج يناسب أي مساحة عداد</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>اتصال USB و Ethernet و Bluetooth</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>صيانة منخفضة بدون حبر أو شريط</span></li></ul></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-1\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#f48021] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">أدراج النقد</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>بناء معدني آمن ومتين</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>آلية فتح سلسة وموثوقة</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>حجرات متعددة للأوراق النقدية والعملات المعدنية</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>متوافق مع جميع أنظمة نقاط البيع</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>خيارات قفل بالمفتاح والإصدار الإلكتروني</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>مصممة للاستخدام المكثف في التجزئة والأطعمة والمشروبات</span></li></ul></div><div class=\"order-2\"><img src=\"/products/cash-drawer.png\" alt=\"درج النقد\" class=\"rounded-2xl shadow-lg w-full\" /></div></article><article class=\"grid md:grid-cols-2 gap-8 items-center\"><div class=\"order-2 md:order-1\"><img src=\"/products/barcode-scanner.png\" alt=\"ماسح الباركود\" class=\"rounded-2xl shadow-lg w-full\" /></div><div class=\"order-1 md:order-2\"><div class=\"flex items-start mb-4\"><span class=\"inline-block w-12 h-12 rounded-full bg-[#002999] flex items-center justify-center text-white font-bold text-xl mr-4\">●</span><h3 class=\"text-3xl lg:text-4xl font-extrabold text-[#f48021] leading-tight\">ماسح الباركود</h3></div><ul class=\"space-y-3 text-slate-600 text-lg\"><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>أداء مسح سريع ودقيق</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>قراءة باركود 1D و 2D بسهولة</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>اتصال USB أو Bluetooth سهل التوصيل والتشغيل</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>بناء متين للاستخدام اليومي المكثف</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>يعمل بسلاسة مع أنظمة نقاط البيع</span></li><li class=\"flex items-start\"><span class=\"inline-block w-2 h-2 rounded-full bg-[#002999] mt-2 mr-3 flex-shrink-0\"></span><span>يقلل وقت الدفع والأخطاء البشرية</span></li></ul></div></article></div></div></section>"
+    },
     "customerDisplay": {
       "name": "شاشة العميل",
       "category": "الواجهة الأمامية",
@@ -1259,6 +1477,163 @@
         }
       },
       "keyBenefitsSection": "<section class=\"relative\"><div class=\"max-w-7xl mx-auto px-6 lg:px-8 py-12 lg:py-20\"><div class=\"grid gap-6 lg:gap-8 md:grid-cols-3\"><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.2)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">إدارة المخزون والمشتريات<br>المتكاملة</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">ربط مستويات المخزون تلقائياً بأوامر الشراء لضمان عدم نفاد المكونات الأساسية أبداً. هذا التكامل يقلل العمل اليدوي، ويمنع أخطاء الطلب، ويحافظ على المطابخ مجهزة باستمرار.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(255_136_0_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-blue-900 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-orange-500\">قاعدة بيانات موردين<br>مركزية</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">احفظ جميع جهات اتصال الموردين والتسعير وتاريخ الطلبات في منصة واحدة. إدارة موردين متعددين تصبح أسرع وأكثر تنظيماً وأسهل للإشراف عليها من لوحة واحدة.</p></article><article class=\"relative bg-white rounded-[28px] p-8 lg:p-10 shadow-sm ring-1 ring-[rgb(16_56_131_/_0.25)]\"><span class=\"absolute -top-3 -left-3 h-10 w-10 rounded-full bg-orange-500 shadow\" aria-hidden=\"true\"></span><h3 class=\"text-3xl lg:text-[34px] font-extrabold leading-tight tracking-tight text-[#0A2E8A]\">تقارير مشتريات<br>مفصلة</h3><p class=\"mt-4 text-slate-500 text-lg leading-7\">الوصول إلى تقارير مشتريات مدمجة تسلط الضوء على اتجاهات الإنفاق وأداء الموردين وتفاصيل التكلفة. هذه الرؤى تدعم وضع ميزانية أفضل ومفاوضات أذكى ومراقبة مالية أقوى.</p></article></div></div></section>"
+    },
+    "retailPos": {
+      "name": "نقاط بيع سحابية",
+      "category": "التجزئة",
+      "heroTitle": "نقاط بيع سحابية",
+      "heroDescription": "ديجي بوس هو نظام نقاط بيع من الجيل التالي يعمل بالسحابة مصمم خصيصاً لمتاجر التجزئة. يعمل بسلاسة عبر الإنترنت وخارجها، مما يضمن عمليات غير متقطعة حتى أثناء انقطاع الشبكة. مع ديجي بوس، يمكنك تتبع المبيعات في الوقت الفعلي، ومراقبة المخزون عبر الفروع، وإدارة أداء الموظفين، وفهم أنماط شراء العملاء من أي جهاز. يساعدك على تبسيط العمليات اليومية، وتقليل الخسائر، وتعزيز الربحية من خلال الأتمتة الذكية ورؤى الأعمال المباشرة.",
+      "complianceTag": "متوافق مع:",
+      "ctaText": "احصل على عرض توضيحي",
+      "featuresHeaderText": "نظام نقاط بيع سحابي مصمم خصيصاً للتجزئة",
+      "features": {
+        "quickSetup": {
+          "title": "إعداد سريع وسهل",
+          "description": "انتقل إلى ديجي بوس بسهولة مع تثبيت سريع وخالي من المتاعب."
+        },
+        "offlineFunctionality": {
+          "title": "وظائف عبر الإنترنت وخارجها",
+          "description": "يضمن الاستمرارية التشغيلية الكاملة حتى أثناء انقطاع الإنترنت."
+        },
+        "realTimeData": {
+          "title": "الوصول إلى البيانات في الوقت الفعلي",
+          "description": "اعرض التقارير المحدثة، واتجاهات المبيعات، ومستويات المخزون من أي جهاز."
+        },
+        "userFriendly": {
+          "title": "واجهة سهلة الاستخدام",
+          "description": "مصمم بسير عمل بديهي للإعداد السريع واعتماد أسرع للموظفين."
+        },
+        "multiDevice": {
+          "title": "توافق متعدد الأجهزة",
+          "description": "يعمل بسلاسة عبر الأجهزة اللوحية وأجهزة سطح المكتب والأجهزة المحمولة."
+        },
+        "reporting": {
+          "title": "تقارير شاملة",
+          "description": "أنشئ تقارير ثاقبة حول معاملات المبيعات وساعات الذروة والمزيد لدعم اتخاذ القرارات."
+        },
+        "cloudBackup": {
+          "title": "نسخ احتياطي آمن في السحابة",
+          "description": "جميع البيانات مشفرة ومنسوخة احتياطياً تلقائياً، مما يضمن استمرارية العمل وحماية البيانات."
+        },
+        "integration": {
+          "title": "قدرات التكامل",
+          "description": "يتكامل بسهولة مع برامج المحاسبة وبوابات الدفع والتطبيقات الخارجية."
+        },
+        "support": {
+          "title": "دعم العملاء 24/7",
+          "description": "فريق الدعم المتخصص لدينا متاح على مدار الساعة لمساعدتك في أي أسئلة أو مشاكل قد تواجهها."
+        }
+      },
+      "sidebarTitle": "إدارة لوحة المعلومات",
+      "sidebarMenu": {
+        "dashboards": {
+          "label": "إدارة لوحات المعلومات",
+          "title": "إدارة لوحة المعلومات",
+          "bullets": [
+            "مع إدارة لوحة معلومات ديجي بوس، يمكنك بسهولة تصور البيانات في الوقت الفعلي. مؤشرات الأداء المتعلقة بمعاملات المبيعات والعمليات التجارية العامة.",
+            "راقب المقاييس الرئيسية مثل:",
+            "المبيعات: تتبع أداء المبيعات اليومي والساعي والأسبوعي والشهري.",
+            "مبيعات حسب الحالة: اعرض المبيعات حسب حالة الطلب لفهم سير العمل وتحديد العقد.",
+            "أفضل المنتجات ومبيعات الفئات: حدد أفضل المنتجات والفئات مبيعاً لتحسين المخزون والترويج.",
+            "اتجاهات العملاء: افهم تفضيلات العملاء وسلوكياتهم لتحسين الخدمة واستراتيجيات التسويق."
+          ]
+        },
+        "menu": {
+          "label": "إدارة القائمة",
+          "title": "إدارة القائمة",
+          "bullets": [
+            "أدر قائمتك في أي وقت، في أي مكان.",
+            "مع ديجي بوس، يمكنك إنشاء وتحديث والتحكم في قائمتك في الوقت الفعلي من أي جهاز، مما يضمن عمليات سلسة وأرباحاً قصوى.",
+            "تحكم في القائمة في الوقت الفعلي للسرعة في العالم الحقيقي.",
+            "ديجي بوس يمكن فريقك من إجراء تغييرات فورية، وإدارة توفر العناصر، والحفاظ على تزامن الواجهة الأمامية والخلفية."
+          ]
+        },
+        "tableManagement": {
+          "label": "إدارة طاولات تناول الطعام",
+          "title": "إدارة طاولات تناول الطعام",
+          "bullets": [
+            "استخدام ميزة إدارة الطاولات في ديجي بوس أمر ضروري لإدارة طلبات تناول الطعام بكفاءة، وتخصيص الطاولات وتتبع الطلبات.",
+            "التحديثات في الوقت الفعلي: يوفر النظام تحديثات في الوقت الفعلي، مما يسمح للموظفين برؤية الطاولات المحتلة والمتاحة أو التي يتم إعدادها للضيوف الجدد.",
+            "عدد العملاء: تتبع عدد العملاء في كل طاولة لتعديل حجم الطلب وتخصيص تجربة تناول الطعام."
+          ]
+        },
+        "reporting": {
+          "label": "إدارة التقارير",
+          "title": "إدارة التقارير",
+          "bullets": [
+            "هل تريد كشف الاتجاهات المخفية في بيانات مبيعاتك؟",
+            "أنشئ تقارير شاملة لتحليل أداء عملك.",
+            "تتبع اتجاهات المبيعات، وحدد ساعات الذروة، واحصل على رؤى قيمة لتحسين عملياتك."
+          ]
+        },
+        "outlets": {
+          "label": "إدارة المنافذ",
+          "title": "إدارة المنافذ",
+          "bullets": [
+            "تدير منافذ متعددة؟ ديجي بوس لديه الحل.",
+            "إذا كان لديك منافذ متعددة، فإن ديجي بوس يبسط الإدارة عبر جميع المواقع.",
+            "زامن المخزون، وتتبع المبيعات، وحافظ على عمليات متسقة، بغض النظر عن مكان عملائك."
+          ]
+        },
+        "recipes": {
+          "label": "وصفات الطعام والتكلفة",
+          "title": "وصفات الطعام والتكلفة",
+          "bullets": [
+            "تعبت من التساؤل عن أين تذهب أرباحك؟ تريد السيطرة على تكاليف طعامك؟",
+            "لنفعل ذلك مع ديجي بوس.",
+            "أنشئ وصفات مفصلة، وتتبع استخدام المكونات، وحسن أسعار قائمتك لزيادة الربحية."
+          ]
+        },
+        "inventory": {
+          "label": "إدارة المخزون",
+          "title": "إدارة المخزون",
+          "bullets": [
+            "إدارة المخزون هي عملية الإشراف الفعال والتتبع والتحكم في مخزون الشركة من المواد الخام والمنتجات المُصنَّعة.",
+            "افتتاح المخزون",
+            "ملاحظة تحويلات المخزون (إخراج المخزون)",
+            "ملاحظة استلام المخزون (دخول المخزون)",
+            "ضرر المخزون (النفايات)",
+            "العد الفعلي للمخزون"
+          ]
+        },
+        "purchase": {
+          "label": "إدارة المشتريات",
+          "title": "إدارة المشتريات",
+          "bullets": [
+            "إدارة المشتريات هي عملية الحصول على السلع والخدمات بكفاءة مع التحكم في التكاليف وضمان الجودة. إليك الميزات الرئيسية لإدارة المشتريات.",
+            "طلب الشراء (PR)",
+            "أمر الشراء (PO)",
+            "ملاحظة البضائع المستلمة (GRN)",
+            "إرجاع المشتريات"
+          ]
+        },
+        "offline": {
+          "label": "الوضع غير المتصل والمرافق",
+          "title": "الوضع غير المتصل والمرافق",
+          "bullets": [
+            "ديجي بوس هو حل نقاط بيع مرن وموثوق مصمم للحفاظ على سير عملك بسلاسة بغض النظر عن اتصالك بالإنترنت.",
+            "مع اتصال إنترنت نشط، يعمل ديجي بوس في الوقت الفعلي مما يسمح لك بمعالجة الطلبات وإدارة المخزون والوصول إلى تقارير المبيعات المحدثة فوريًا عبر جميع الأجهزة.",
+            "أثناء وضع عدم الاتصال، يخزن ديجي بوس جميع بيانات المعاملات بأمان محليًا على الجهاز. بمجرد استعادة الاتصال، يتم مزامنة جميع البيانات تلقائيًا إلى السحابة، مما يحافظ على تحديث نظامك بالكامل."
+          ]
+        },
+        "zatca": {
+          "label": "متوافق مع الفوترة الإلكترونية لزاتكا",
+          "title": "تكامل زاتكا",
+          "bullets": [
+            "ديجي بوس متكامل الآن بالكامل مع متطلبات زاتكا في المملكة العربية السعودية، مما يوفر للشركات طريقة مبسطة وفعالة لإدارة مبيعاتها ومخزونها مع البقاء متوافقة بالكامل مع أحدث اللوائح الضريبية.",
+            "عمل فريق خبرائنا بجد لضمان أن ديجي بوس يتكامل بسلاسة مع زاتكا، مما يوفر للشركات طريقة سلسة وسهلة الاستخدام للامتثال لأحدث اللوائح الضريبية.",
+            "يسمح التكامل للشركات في المملكة العربية السعودية بالامتثال بسهولة لأحدث اللوائح الضريبية، دون الحاجة للقلق بشأن تعقيدات الامتثال الضريبي."
+          ]
+        }
+      },
+      "sidebarBullets": [
+        "مع إدارة لوحة معلومات ديجي بوس، يمكنك بسهولة تصور البيانات في الوقت الفعلي. مؤشرات الأداء المتعلقة بمعاملات المبيعات والعمليات التجارية العامة.",
+        "راقب المقاييس الرئيسية مثل:",
+        "المبيعات: تتبع أداء المبيعات اليومي والساعي والأسبوعي والشهري.",
+        "مبيعات حسب الحالة: اعرض المبيعات حسب حالة الطلب لفهم سير العمل وتحديد العقد.",
+        "أفضل المنتجات ومبيعات الفئات: حدد أفضل المنتجات والفئات مبيعاً لتحسين المخزون والترويج.",
+        "اتجاهات العملاء: افهم تفضيلات العملاء وسلوكياتهم لتحسين الخدمة واستراتيجيات التسويق."
+      ]
     }
   },
   "businessData": {
@@ -1545,6 +1920,37 @@
         "cloudBasedRestaurantPos": {
           "title": "نقاط البيع السحابية للمطاعم",
           "description": "منصة آمنة تتيح لأصحاب المطاعم إدارة العمليات عن بُعد مع إمكانية الوصول الكامل للنظام."
+        }
+      }
+    }
+  },
+  "becomePartner": {
+    "heroTitle": "اكبر مع DigiPOS. اكسب، أعد البيع، وانجح معاً",
+    "heroDescription": "انضم إلى شبكة شركائنا وافتح فرص ربح جديدة، سواء كنت تحيل الشركات أو تعيد بيع حلول DigiPOS في سوقك. كن جزءاً من نظام بيئي سريع النمو يعيد تعريف تكنولوجيا نقاط البيع للمطاعم والمقاهي وشركات البيع بالتجزئة في جميع أنحاء المنطقة.",
+    "ctaText": "ابدأ اليوم",
+    "whyPartner": {
+      "subtitle": "لماذا تصبح شريكاً مع DigiPOS؟",
+      "title": "تمكين الشركات. اكسب المكافآت. ابنِ النمو.",
+      "benefits": {
+        "commissions": {
+          "title": "عمولات عالية القيمة",
+          "description": "اكسب من كل إحالة أو بيع ناجح."
+        },
+        "support": {
+          "title": "دعم شامل",
+          "description": "احصل على مجموعات تسويقية وتدريب وأدوات للشركاء."
+        },
+        "leadership": {
+          "title": "قيادة إقليمية",
+          "description": "مثّل علامة نقاط بيع موثوقة مع بصمة متنامية في دول مجلس التعاون الخليجي."
+        },
+        "zeroRisk": {
+          "title": "مخاطر استثمار صفرية",
+          "description": "لا رسوم انضمام، لا مخزون، فقط فرص."
+        },
+        "futureReady": {
+          "title": "حلول جاهزة للمستقبل",
+          "description": "قدم أجهزة وبرامج نقاط بيع متطورة مصممة للضيافة والتجزئة."
         }
       }
     }

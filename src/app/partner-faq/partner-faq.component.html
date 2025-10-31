@@ -1,0 +1,149 @@
+<div class="max-w-4xl mx-auto">
+  <!-- Title -->
+  <h2 class="text-3xl md:text-4xl font-bold text-[#002999] text-center mb-12">
+    {{ 'becomePartner.faq.title' | translate }}
+  </h2>
+
+  <!-- FAQ Grid - 2 columns -->
+  <div class="grid md:grid-cols-2 gap-6">
+    
+    <!-- FAQ Item 1 - Cost (Blue, Left) -->
+    <div class="rounded-4xl overflow-hidden transition-all duration-300"
+         [ngClass]="faqs[0].isOpen ? 'bg-[#002999]' : 'bg-gray-200'">
+      <button 
+        (click)="toggleFaq(0)"
+        class="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300"
+        [ngClass]="faqs[0].isOpen ? 'text-white' : 'text-gray-800'">
+        <span class="font-bold text-lg pr-4">
+          {{ 'becomePartner.faq.questions.cost.question' | translate }}
+        </span>
+        <span class="material-icons flex-shrink-0 transform transition-transform duration-300"
+              [ngClass]="faqs[0].isOpen ? 'rotate-180' : 'rotate-0'">
+          {{ faqs[0].isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
+        </span>
+      </button>
+      <div class="overflow-hidden transition-all duration-300"
+           [ngClass]="faqs[0].isOpen ? 'max-h-40' : 'max-h-0'">
+        <div class="px-6 pb-5 text-gray-100">
+          {{ 'becomePartner.faq.questions.cost.answer' | translate }}
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Item 2 - Both (Gray, Right) -->
+    <div class="rounded-4xl overflow-hidden transition-all duration-300"
+         [ngClass]="faqs[1].isOpen ? 'bg-[#002999]' : 'bg-gray-200'">
+      <button 
+        (click)="toggleFaq(1)"
+        class="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300"
+        [ngClass]="faqs[1].isOpen ? 'text-white' : 'text-gray-800'">
+        <span class="font-bold text-lg pr-4">
+          {{ 'becomePartner.faq.questions.both.question' | translate }}
+        </span>
+        <span class="material-icons flex-shrink-0 transform transition-transform duration-300"
+              [ngClass]="faqs[1].isOpen ? 'rotate-180' : 'rotate-0'">
+          {{ faqs[1].isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
+        </span>
+      </button>
+      <div class="overflow-hidden transition-all duration-300"
+           [ngClass]="faqs[1].isOpen ? 'max-h-40' : 'max-h-0'">
+        <div class="px-6 pb-5 text-gray-100">
+          {{ 'becomePartner.faq.questions.both.answer' | translate }}
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Item 3 - Payment (Gray, Left) -->
+    <div class="rounded-4xl overflow-hidden transition-all duration-300"
+         [ngClass]="faqs[2].isOpen ? 'bg-[#002999]' : 'bg-gray-200'">
+      <button 
+        (click)="toggleFaq(2)"
+        class="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300"
+        [ngClass]="faqs[2].isOpen ? 'text-white' : 'text-gray-800'">
+        <span class="font-bold text-lg pr-4">
+          {{ 'becomePartner.faq.questions.payment.question' | translate }}
+        </span>
+        <span class="material-icons flex-shrink-0 transform transition-transform duration-300"
+              [ngClass]="faqs[2].isOpen ? 'rotate-180' : 'rotate-0'">
+          {{ faqs[2].isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
+        </span>
+      </button>
+      <div class="overflow-hidden transition-all duration-300"
+           [ngClass]="faqs[2].isOpen ? 'max-h-40' : 'max-h-0'">
+        <div class="px-6 pb-5 text-gray-100">
+          {{ 'becomePartner.faq.questions.payment.answer' | translate }}
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Item 4 - Support (Gray, Right) -->
+    <div class="rounded-4xl overflow-hidden transition-all duration-300"
+         [ngClass]="faqs[3].isOpen ? 'bg-[#002999]' : 'bg-gray-200'">
+      <button 
+        (click)="toggleFaq(3)"
+        class="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300"
+        [ngClass]="faqs[3].isOpen ? 'text-white' : 'text-gray-800'">
+        <span class="font-bold text-lg pr-4">
+          {{ 'becomePartner.faq.questions.support.question' | translate }}
+        </span>
+        <span class="material-icons flex-shrink-0 transform transition-transform duration-300"
+              [ngClass]="faqs[3].isOpen ? 'rotate-180' : 'rotate-0'">
+          {{ faqs[3].isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
+        </span>
+      </button>
+      <div class="overflow-hidden transition-all duration-300"
+           [ngClass]="faqs[3].isOpen ? 'max-h-40' : 'max-h-0'">
+        <div class="px-6 pb-5 text-gray-100">
+          {{ 'becomePartner.faq.questions.support.answer' | translate }}
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Item 5 - Individuals (Gray, Left) -->
+    <div class="rounded-4xl overflow-hidden transition-all duration-300"
+         [ngClass]="faqs[4].isOpen ? 'bg-[#002999]' : 'bg-gray-200'">
+      <button 
+        (click)="toggleFaq(4)"
+        class="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300"
+        [ngClass]="faqs[4].isOpen ? 'text-white' : 'text-gray-800'">
+        <span class="font-bold text-lg pr-4">
+          {{ 'becomePartner.faq.questions.individuals.question' | translate }}
+        </span>
+        <span class="material-icons flex-shrink-0 transform transition-transform duration-300"
+              [ngClass]="faqs[4].isOpen ? 'rotate-180' : 'rotate-0'">
+          {{ faqs[4].isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
+        </span>
+      </button>
+      <div class="overflow-hidden transition-all duration-300"
+           [ngClass]="faqs[4].isOpen ? 'max-h-40' : 'max-h-0'">
+        <div class="px-6 pb-5 text-gray-100">
+          {{ 'becomePartner.faq.questions.individuals.answer' | translate }}
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Item 6 - Help (Gray, Right) -->
+    <div class="rounded-4xl overflow-hidden transition-all duration-300"
+         [ngClass]="faqs[5].isOpen ? 'bg-[#002999]' : 'bg-gray-200'">
+      <button 
+        (click)="toggleFaq(5)"
+        class="w-full px-6 py-5 flex items-center justify-between text-left transition-colors duration-300"
+        [ngClass]="faqs[5].isOpen ? 'text-white' : 'text-gray-800'">
+        <span class="font-bold text-lg pr-4">
+          {{ 'becomePartner.faq.questions.help.question' | translate }}
+        </span>
+        <span class="material-icons flex-shrink-0 transform transition-transform duration-300"
+              [ngClass]="faqs[5].isOpen ? 'rotate-180' : 'rotate-0'">
+          {{ faqs[5].isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_up' }}
+        </span>
+      </button>
+      <div class="overflow-hidden transition-all duration-300"
+           [ngClass]="faqs[5].isOpen ? 'max-h-96' : 'max-h-0'">
+        <div class="px-6 pb-5 text-gray-100">
+          {{ 'becomePartner.faq.questions.help.answer' | translate }}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

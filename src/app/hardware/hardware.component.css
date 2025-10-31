@@ -1,0 +1,16 @@
+/* Hardware page styles */
+.responsive-margin {
+  margin-top: 8rem;
+}
+
+@media (min-resolution: 120dpi) {
+  .responsive-margin {
+    margin-top: 6rem !important;
+  }
+}
+
+@media (min-resolution: 144dpi) {
+  .responsive-margin {
+    margin-top: 6rem !important;
+  }
+}

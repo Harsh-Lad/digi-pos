@@ -944,8 +944,8 @@
     "posTerminals": {
       "name": "POS Terminals - All-in-One Hardware",
       "category": "Hardware",
-      "heroTitle": "Your Complete POS Solution in One Powerful Terminal",
-      "heroDescription": "DigiPOS Terminals combine cutting-edge hardware with seamless software integration to deliver a complete point-of-sale solution. Designed for reliability and built for performance, our terminals handle everything from order processing to payment acceptance with lightning-fast speed and unwavering accuracy.",
+      "heroTitle": "Engineered for Performance. Designed for Restaurants",
+      "heroDescription": "We understand that your hardware is the backbone of seamless restaurant operations. Every second, every sale, and every customer interaction matters and our technology keeps you ready for it all. Whether you need a fast countertop terminal, a sleek guest-facing display, or a durable kitchen screen built to handle the rush, DigiPOS delivers hardware trusted by the industry's top operators",
       "complianceTag": "Operating System",
       "ctaText": "Get Now!",
       "featuresHeaderText": "Everything You Need. Nothing You Don't.",
@@ -1937,6 +1937,35 @@
         "futureReady": {
           "title": "Future-Ready Solutions",
           "description": "Offer cutting-edge POS hardware and software designed for hospitality and retail."
+        }
+      }
+    },
+    "faq": {
+      "title": "Partnership Program FAQ's",
+      "questions": {
+        "cost": {
+          "question": "Is there any cost to join the program?",
+          "answer": "No. Both referral and reseller partnerships are completely free to join."
+        },
+        "both": {
+          "question": "Can I join as both a referral and reseller partner?",
+          "answer": "Yes, you can. Many of our partners start as referrers and later upgrade to resellers."
+        },
+        "payment": {
+          "question": "How will I get paid?",
+          "answer": "All commissions are tracked in your portal and transferred monthly based on verified conversions."
+        },
+        "support": {
+          "question": "Do I need to handle customer support?",
+          "answer": "Resellers receive backend assistance from DigiPOS, so you can focus on sales and growth."
+        },
+        "individuals": {
+          "question": "Can individuals join?",
+          "answer": "Absolutely, freelancers, consultants, and influencers are welcome in the referral program."
+        },
+        "help": {
+          "question": "Who can I turn to when I need support?",
+          "answer": "Any inquiry or problem you encounter, do not hesitate to contact the DigiPOS Support team at partnerships@digipos.com who will guide you through the entire process."
         }
       }
     }

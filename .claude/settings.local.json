@@ -13,7 +13,8 @@
       "Read(//Users/dev/Downloads/Pages/Pdfs/**)",
       "Bash(mkdir:*)",
       "Read(//c/Users/produ/OneDrive/Desktop/**)",
-      "Read(//c/Users/produ/OneDrive/Pictures/**)"
+      "Read(//c/Users/produ/OneDrive/Pictures/**)",
+      "Bash(ng serve:*)"
     ],
     "deny": [],
     "ask": []

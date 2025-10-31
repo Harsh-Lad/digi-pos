@@ -31,6 +31,7 @@ export class TitleService {
     '/products/recipe-management': 'pageTitle.recipeManagement',
     '/products/inventory-management': 'pageTitle.inventoryManagement',
     '/products/purchase-supply-chain-management': 'pageTitle.purchaseSupplyChain',
+    '/hardware/pos-terminals': 'pageTitle.posTerminals',
     '/business/fine-dining': 'pageTitle.fineDining',
     '/business/casual-dining': 'pageTitle.casualDining',
     '/business/quick-service': 'pageTitle.quickService',

@@ -18,6 +18,7 @@ export interface ProductData {
   slug: string;
   nameKey: string;
   categoryKey: string;
+  heroSubtitleKey?: string;
   heroTitleKey: string;
   heroDescriptionKey: string;
   heroImages: string;
@@ -293,6 +294,7 @@ export const PRODUCTS_DATA: ProductData[] = [
     slug: 'kds-screens',
     nameKey: 'productsData.kdsScreens.name',
     categoryKey: 'productsData.kdsScreens.category',
+    heroSubtitleKey: 'productsData.kdsScreens.heroSubtitle',
     heroTitleKey: 'productsData.kdsScreens.heroTitle',
     heroDescriptionKey: 'productsData.kdsScreens.heroDescription',
     heroImages: 'products/KDS Screen.png',
@@ -355,6 +357,7 @@ export const PRODUCTS_DATA: ProductData[] = [
     slug: 'hardware-tablets',
     nameKey: 'productsData.hardwareTablets.name',
     categoryKey: 'productsData.hardwareTablets.category',
+    heroSubtitleKey: 'productsData.hardwareTablets.heroSubtitle',
     heroTitleKey: 'productsData.hardwareTablets.heroTitle',
     heroDescriptionKey: 'productsData.hardwareTablets.heroDescription',
     heroImages: 'products/Tab Page.png',
@@ -1081,6 +1084,7 @@ export const PRODUCTS_DATA: ProductData[] = [
     slug: 'pos-terminals',
     nameKey: 'productsData.posTerminals.name',
     categoryKey: 'productsData.posTerminals.category',
+    heroSubtitleKey: 'productsData.posTerminals.heroSubtitle',
     heroTitleKey: 'productsData.posTerminals.heroTitle',
     heroDescriptionKey: 'productsData.posTerminals.heroDescription',
     heroImages: 'products/POS ACessories.png',
@@ -1144,7 +1148,7 @@ export const PRODUCTS_DATA: ProductData[] = [
     categoryKey: 'productsData.posAccessories.category',
     heroTitleKey: 'productsData.posAccessories.heroTitle',
     heroDescriptionKey: 'productsData.posAccessories.heroDescription',
-    heroImages: 'products/pos-accessories.png',
+    heroImages: 'products/POS ACessories.png',
     ctaTextKey: 'productsData.posAccessories.ctaText',
     featuresHeaderTextKey: 'productsData.posAccessories.featuresHeaderText',
     features: [

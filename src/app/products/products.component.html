@@ -7,6 +7,12 @@
       <!-- Left Column -->
       <div class="flex-1 space-y-6 md:self-start md:pt-24">
 
+        <!-- Hardware Subtitle for specific products -->
+        <p class="text-[#f48021] text-lg md:text-xl font-bold mb-2" 
+           *ngIf="selectedProduct.slug === 'kds-screens' || selectedProduct.slug === 'hardware-tablets' || selectedProduct.slug === 'pos-terminals'">
+          {{ selectedProduct.heroSubtitleKey | translate }}
+        </p>
+
         <h2 class="text-3xl md:text-5xl font-bold text-blue-900">{{ selectedProduct.heroTitleKey | translate }}</h2>
 
         <p class="text-gray-700 text-lg leading-relaxed">
@@ -157,7 +163,7 @@
 
   <!-- <div *ngIf="selectedProduct?.horizontalBarKey" class="w-screen bg-[#f48021] md:flex mt-12"> -->
     <!-- <div class="left md:w-1/2 flex items-center justify-center md:pl-8"> -->
-      <div class="md:w-[85%] p-4 md:p-0 mx-auto " *ngIf="selectedProduct?.horizontalBarKey">
+      <div class=" p-4 md:p-0 mx-auto " *ngIf="selectedProduct?.horizontalBarKey">
         <h2 class="text-xl md:text-[2.75rem] font-bold text-[#002999] leading-tight" [innerHTML]="selectedProduct?.horizontalBarKey | translate"></h2>
       </div>
     <!-- </div> -->

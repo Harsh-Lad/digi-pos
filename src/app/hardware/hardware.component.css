@@ -3,6 +3,68 @@
   margin-top: 8rem;
 }
 
+/* Hardware benefits section styles */
+.hardware-benefits {
+  position: relative;
+}
+
+.hardware-benefits .grid > div {
+  position: relative;
+  z-index: 10;
+}
+
+/* Timeline connecting lines */
+.hardware-benefits .grid > div:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -4rem;
+  width: 8rem;
+  height: 2px;
+  background: linear-gradient(to right, #f48021, #002999);
+  z-index: 5;
+}
+
+/* POS Upgrade Section Styles */
+.pos-upgrade-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.pos-upgrade-section .blue-bg {
+  background: #002999;
+  border-radius: 50%;
+  transform: scaleX(1.5);
+}
+
+/* Ensure text is properly positioned over the blue background */
+.pos-upgrade-section h2 {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hardware-benefits .grid > div::after {
+    display: none;
+  }
+  
+  .pos-upgrade-section .blue-bg {
+    transform: scaleX(2);
+    height: 120px;
+  }
+  
+  .pos-upgrade-section h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pos-upgrade-section .blue-bg {
+    transform: scaleX(1.25);
+  }
+}
+
 @media (min-resolution: 120dpi) {
   .responsive-margin {
     margin-top: 6rem !important;

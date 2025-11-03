@@ -182,7 +182,7 @@ export class NavbarDataService {
               { 
                 name: "Self-Ordering Kiosks", 
                 nameKey: "navbar.megaMenu.hardware.selfOrderingKiosks",
-                link: "/hardware/self-ordering-kiosks", 
+                link: "/products/kiosk", 
                 description: "Customer-facing kiosks for self-service ordering.", 
                 descKey: "navbar.megaMenu.hardware.selfOrderingKiosksDesc",
                 icon: "touch_app" 
@@ -206,7 +206,7 @@ export class NavbarDataService {
               { 
                 name: "Handheld Devices", 
                 nameKey: "navbar.megaMenu.hardware.handheldDevices",
-                link: "/products/handheld-devices", 
+                link: "/products/waiter-tab", 
                 description: "Portable devices for on-the-go order taking.", 
                 descKey: "navbar.megaMenu.hardware.handheldDevicesDesc",
                 icon: "devices" 
@@ -214,7 +214,7 @@ export class NavbarDataService {
               { 
                 name: "Printers", 
                 nameKey: "navbar.megaMenu.hardware.printers",
-                link: "/hardware/printers", 
+                link: "/products/pos-accessories", 
                 description: "Receipt and kitchen printers for your business.", 
                 descKey: "navbar.megaMenu.hardware.printersDesc",
                 icon: "print" 
@@ -222,7 +222,7 @@ export class NavbarDataService {
               { 
                 name: "Cash Drawers", 
                 nameKey: "navbar.megaMenu.hardware.cashDrawers",
-                link: "/hardware/cash-drawers", 
+                link: "/products/pos-accessories", 
                 description: "Secure cash storage solutions.", 
                 descKey: "navbar.megaMenu.hardware.cashDrawersDesc",
                 icon: "payments" 
@@ -230,7 +230,7 @@ export class NavbarDataService {
               { 
                 name: "Bar Code Scanners", 
                 nameKey: "navbar.megaMenu.hardware.barcodeScanners",
-                link: "/hardware/barcode-scanners", 
+                link: "/products/pos-accessories", 
                 description: "Fast and accurate product scanning devices.", 
                 descKey: "navbar.megaMenu.hardware.barcodeScannersDesc",
                 icon: "qr_code_scanner" 

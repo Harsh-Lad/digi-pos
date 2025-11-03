@@ -8,6 +8,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .responsive-margin {
+    margin-top: 4rem;
+  }
+}
+
 /* Video aspect ratio */
 .aspect-video {
   aspect-ratio: 16 / 9;
@@ -21,4 +27,25 @@
 /* Smooth transitions */
 .aspect-video {
   transition: box-shadow 0.3s ease;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 640px) {
+  /* Ensure cards have proper spacing on mobile */
+  .grid > div {
+    border: 1px solid #f3f4f6;
+  }
+  
+  /* Better image sizing on very small screens */
+  .aspect-video {
+    min-height: 120px;
+  }
+}
+
+/* Prevent horizontal scroll on very small screens */
+@media (max-width: 320px) {
+  .aspect-video {
+    width: 100%;
+    max-width: 280px;
+  }
 }

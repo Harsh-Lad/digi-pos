@@ -1,0 +1,231 @@
+<app-navbar></app-navbar>
+<div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-32">
+  <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
+    <!-- Logo -->
+    <div class="flex justify-center mb-8">
+      <img [src]="currentLanguage === 'ar' ? 'arabic_logo.jpg' : 'logo.png'"
+           [alt]="'privacyPolicy.logoAlt' | translate"
+           class="h-20 w-auto object-contain" />
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+      {{ 'privacyPolicy.title' | translate }}
+    </h1>
+
+    <!-- Privacy Statement -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.statement.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'privacyPolicy.statement.intro' | translate }}</p>
+        <p>{{ 'privacyPolicy.statement.processing' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Scope of Privacy Policy -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.scope.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>2.1</strong> {{ 'privacyPolicy.scope.intro' | translate }}</p>
+        <ul class="list-disc ml-8 space-y-2">
+          <li>{{ 'privacyPolicy.scope.point_a' | translate }}</li>
+          <li>{{ 'privacyPolicy.scope.point_b' | translate }}</li>
+          <li>{{ 'privacyPolicy.scope.point_c' | translate }}</li>
+          <li>{{ 'privacyPolicy.scope.point_d' | translate }}</li>
+          <li>{{ 'privacyPolicy.scope.point_e' | translate }}</li>
+          <li>{{ 'privacyPolicy.scope.point_f' | translate }}</li>
+          <li>{{ 'privacyPolicy.scope.point_g' | translate }}</li>
+        </ul>
+        <p><strong>2.2</strong> {{ 'privacyPolicy.scope.acceptance' | translate }}</p>
+        <p><strong>2.3</strong> {{ 'privacyPolicy.scope.requirement' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Types of Personal Data -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.dataTypes.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>3.1</strong> {{ 'privacyPolicy.dataTypes.collected' | translate }}</p>
+        <p><strong>3.2</strong> {{ 'privacyPolicy.dataTypes.additional' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Cookies and Tracking -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.cookies.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>4.1</strong> {{ 'privacyPolicy.cookies.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Sources of Personal Data -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.sources.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>5.1</strong> {{ 'privacyPolicy.sources.description' | translate }}</p>
+        <ul class="list-decimal ml-8 space-y-2">
+          <li>{{ 'privacyPolicy.sources.elm' | translate }}</li>
+          <li>{{ 'privacyPolicy.sources.wathiq' | translate }}</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Purposes for Collecting Data -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.purposes.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>6.1</strong> {{ 'privacyPolicy.purposes.intro' | translate }}</p>
+        <ul class="list-none ml-4 space-y-2">
+          <li>(a) {{ 'privacyPolicy.purposes.point_a' | translate }}</li>
+          <li>(b) {{ 'privacyPolicy.purposes.point_b' | translate }}</li>
+          <li>(c) {{ 'privacyPolicy.purposes.point_c' | translate }}</li>
+          <li>(d) {{ 'privacyPolicy.purposes.point_d' | translate }}</li>
+          <li>(e) {{ 'privacyPolicy.purposes.point_e' | translate }}</li>
+          <li>(f) {{ 'privacyPolicy.purposes.point_f' | translate }}</li>
+          <li>(g) {{ 'privacyPolicy.purposes.point_g' | translate }}</li>
+          <li>(h) {{ 'privacyPolicy.purposes.point_h' | translate }}</li>
+          <li>(i) {{ 'privacyPolicy.purposes.point_i' | translate }}</li>
+          <li>(j) {{ 'privacyPolicy.purposes.point_j' | translate }}</li>
+          <li>(k) {{ 'privacyPolicy.purposes.point_k' | translate }}</li>
+          <li>(l) {{ 'privacyPolicy.purposes.point_l' | translate }}</li>
+          <li>(m) {{ 'privacyPolicy.purposes.point_m' | translate }}</li>
+          <li>(n) {{ 'privacyPolicy.purposes.point_n' | translate }}</li>
+          <li>(o) {{ 'privacyPolicy.purposes.point_o' | translate }}</li>
+          <li>(p) {{ 'privacyPolicy.purposes.point_p' | translate }}</li>
+          <li>(q) {{ 'privacyPolicy.purposes.point_q' | translate }}</li>
+          <li>(r) {{ 'privacyPolicy.purposes.point_r' | translate }}</li>
+          <li>(s) {{ 'privacyPolicy.purposes.point_s' | translate }}</li>
+          <li>(t) {{ 'privacyPolicy.purposes.point_t' | translate }}</li>
+          <li>(u) {{ 'privacyPolicy.purposes.point_u' | translate }}</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Retention -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.retention.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>7.1</strong> {{ 'privacyPolicy.retention.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Disclosure -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.disclosure.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>8.1</strong> {{ 'privacyPolicy.disclosure.intro' | translate }}</p>
+        <ul class="list-none ml-4 space-y-2">
+          <li>(a) <strong>{{ 'privacyPolicy.disclosure.group.title' | translate }}</strong> {{ 'privacyPolicy.disclosure.group.description' | translate }}</li>
+          <li>(b) <strong>{{ 'privacyPolicy.disclosure.newOwners.title' | translate }}</strong> {{ 'privacyPolicy.disclosure.newOwners.description' | translate }}</li>
+          <li>(c) <strong>{{ 'privacyPolicy.disclosure.thirdParty.title' | translate }}</strong> {{ 'privacyPolicy.disclosure.thirdParty.description' | translate }}</li>
+          <li>(d) <strong>{{ 'privacyPolicy.disclosure.government.title' | translate }}</strong> {{ 'privacyPolicy.disclosure.government.description' | translate }}</li>
+          <li>(e) <strong>{{ 'privacyPolicy.disclosure.employees.title' | translate }}</strong> {{ 'privacyPolicy.disclosure.employees.description' | translate }}</li>
+          <li>(f) <strong>{{ 'privacyPolicy.disclosure.banks.title' | translate }}</strong> {{ 'privacyPolicy.disclosure.banks.description' | translate }}</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Links to Third Party -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.thirdPartyLinks.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>9.1</strong> {{ 'privacyPolicy.thirdPartyLinks.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Data Storage -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.dataStorage.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>10.1</strong> {{ 'privacyPolicy.dataStorage.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Protecting Data -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.protecting.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>11.1</strong> {{ 'privacyPolicy.protecting.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Updates -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.updates.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>12.1</strong> {{ 'privacyPolicy.updates.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Your Rights -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.rights.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>13.1</strong> {{ 'privacyPolicy.rights.intro' | translate }}</p>
+        <ul class="list-none ml-4 space-y-2">
+          <li>(a) {{ 'privacyPolicy.rights.informed' | translate }}</li>
+          <li>(b) {{ 'privacyPolicy.rights.access' | translate }}</li>
+          <li>(c) {{ 'privacyPolicy.rights.correct' | translate }}</li>
+          <li>(d) {{ 'privacyPolicy.rights.deletion' | translate }}</li>
+          <li>(e) {{ 'privacyPolicy.rights.withdraw' | translate }}</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.contact.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p><strong>14.1</strong> {{ 'privacyPolicy.contact.description' | translate }}</p>
+        <p>{{ 'privacyPolicy.contact.email' | translate }} <a href="mailto:info&#64;digipos.io" class="text-[#f48021] hover:underline">info&#64;digipos.io</a></p>
+      </div>
+    </section>
+
+    <!-- Changes -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'privacyPolicy.changes.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'privacyPolicy.changes.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Back to Home -->
+    <div class="text-center mt-12 pt-8 border-t border-gray-200">
+      <a routerLink="/" class="text-[#f48021] hover:text-[#d66d1a] font-semibold">
+        {{ 'privacyPolicy.backToHome' | translate }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

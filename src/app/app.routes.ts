@@ -7,6 +7,9 @@ import { DemoComponent } from './demo/demo.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { HardwareComponent } from './hardware/hardware.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
+import { DataProtectionPolicyComponent } from './data-protection-policy/data-protection-policy.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,6 +20,9 @@ export const routes: Routes = [
   { path: 'marketplace', component: MarketplaceComponent },
   { path: 'become-partner', component: BecomePartnerComponent },
   { path: 'hardware/pos-terminals', component: HardwareComponent },
+  { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
+  { path: 'data-protection-policy', component: DataProtectionPolicyComponent },
+  { path: 'privacy-policy', component: PrivacyPolicyComponent },
   // Redirect any unknown paths to home
   { path: '**', redirectTo: '' }
 ];

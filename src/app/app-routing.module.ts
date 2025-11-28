@@ -7,6 +7,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 
 import { PricingTableComponent } from './pricing/pricing.component';
 import { DemoComponent } from './demo/demo.component';
+import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'pricing', component: PricingTableComponent },
   { path: 'contact', component: ContactFormComponent },
   { path: 'demo', component: DemoComponent },
+  { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
 
 
 //   { path: '**', redirectTo: '' } // Redirect to home for any unknown routes

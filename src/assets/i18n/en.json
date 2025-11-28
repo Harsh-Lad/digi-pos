@@ -511,6 +511,7 @@
       "salonShop": "Salon Shop"
     },
     "legal": {
+      "dataProtection": "Data Protection Policy",
       "privacyPolicy": "Privacy Policy",
       "termsOfService": "Terms of Services",
       "consumerProtection": "Consumer Protection"
@@ -2042,6 +2043,363 @@
           "Safe from scratches and can keep a clean screen for a long time"
         ]
       }
+    }
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "logoAlt": "DigiPOS Logo",
+    "backToHome": "← Back to Home",
+    "background": {
+      "title": "Background",
+      "intro": "DigiPOS (the Point of Sales System) is made available to you by KAEM Solutions Limited Company, otherwise known as (KAEM Solutions), the user (\"you,\" \"your\") and KAEM Solutions, an affiliate with branch of MIA Holding & Partners Limited Company, which includes [insert all sister companies/subsidiaries] (\"KAEM Solutions\", \"we\", \"us\", \"our\"), in order to govern your use of KAEM Solutions' services, including cloud-base application, software development, websites, mobile applications, hardware, and other products and services (collectively, the \"Services\").",
+      "governance": "These Terms and Conditions, and all other terms and conditions and documents referred to herein govern the conditions on which you are entitled to access and use the Software. Please take the time to read them carefully.",
+      "acceptance": "By accessing and continuing to use the Software, you will be deemed to agree to these Terms and Conditions and shall be bound by them. If you do not agree to these Terms & Conditions, then you must stop using or accessing the Software immediately.",
+      "modifications": "We reserve the right to modify or amend these Terms and Conditions from time to time. You should check these Terms and Conditions each time you access the Software to ensure that you are aware of and are complying with the current version. Changes are binding on users of the Software and will take effect immediately from posting of the revised documentation on the Software.",
+      "privacyPolicy": "You must read, agree with and accept all of the terms and conditions contained or expressly referenced in these Terms and Conditions, including our Privacy Policy (defined below).",
+      "continuedUse": "By continuing to use DigiPOS' Services, you agree to abide and be bound by those changes. If you do not agree to any of the aforementioned changes, you must cease your use of the Services."
+    },
+    "registration": {
+      "title": "Registration & Account Responsibilities",
+      "description": "DigiPOS provides a cloud-based Point of Sale (POS) system that enables restaurants, cafes, food trucks, and retail shops (\"Customers\") to manage, monitor, and scale their business operations. To access the Services, you must create a DigiPOS account (\"DigiPOS Account\"). During the registration process, you will be required to provide certain information, including but not limited to your name and other personal details. You agree to provide accurate, complete, and up-to-date information at all times.",
+      "responsibilities": "You are solely responsible for all activities that occur under your DigiPOS Account, including any actions taken by individuals to whom you grant access. DigiPOS reserves the right to modify your account type or suspend or terminate your DigiPOS Account if any information provided is inaccurate, false, incomplete, or if you fail to meet the registration requirements for both online and offline sales activities.",
+      "availability": "DigiPOS may, at its sole discretion, decline or terminate an account registration with or without cause or notice, except where notice is required by Applicable International Comparative Law. At this time, DigiPOS Services are available only to users residing in the Kingdom of Saudi Arabia, Bahrain, and Pakistan."
+    },
+    "deactivation": {
+      "title": "Account Deactivation & Privacy Measures",
+      "violation": "DigiPOS reserves the right to cancel or terminate any DigiPOS Account that violates these Terms and Conditions or the Privacy Policy. In such cases, DigiPOS may retain the customer's personal information in its database for a period of one (1) month from the date of cancellation.",
+      "voluntary": "If, however, a customer chooses to cancel or terminate their DigiPOS Account voluntarily, DigiPOS will promptly delete and remove all personal information associated with that customer from its database."
+    },
+    "dataProtection": {
+      "title": "Data Protection & Security",
+      "description": "The privacy and security of your personal information are very important to us. The DigiPOS Privacy Policy explains what personal information we collect, how we use it, and how we keep it safe, in line with international laws. We encourage you to read the Privacy Policy carefully, as it is part of these Terms and Conditions and includes important details about your rights."
+    },
+    "rules": {
+      "title": "Rules for Using the Service",
+      "intro": "By using DigiPOS Services, you agree to follow these rules:",
+      "followLaw": {
+        "title": "Follow the Law",
+        "description": "You must not use the Services in any way that breaks international laws, these Terms and Conditions, or any Privacy Policies."
+      },
+      "respectRights": {
+        "title": "Respect Others' Rights",
+        "description": "You must not post or share content that violates someone else's intellectual property, proprietary rights, or legal rights."
+      },
+      "keepSafe": {
+        "title": "Keep the Services Safe",
+        "description": "You must not upload or share viruses, malware, or any harmful software."
+      },
+      "trueInfo": {
+        "title": "Provide True Information",
+        "description": "You must not give false information, impersonate others, collect information about other users without permission, or mislead others."
+      },
+      "noInterference": {
+        "title": "No Interference or Damage",
+        "description": "You must not damage, disrupt, or try to access parts of the Services, servers, or networks without authorization."
+      },
+      "accountSuspension": {
+        "title": "Account Suspension",
+        "description": "DigiPOS may suspend or terminate your account if you break these rules or any other policies."
+      },
+      "giveCredit": {
+        "title": "Give Credit",
+        "description": "You must not copy, republish, or distribute DigiPOS materials without proper credit."
+      },
+      "noCommercialUse": {
+        "title": "No Commercial Use Without Permission",
+        "description": "You must not sell, rent, or sub-license DigiPOS content without prior approval."
+      },
+      "noAlter": {
+        "title": "Do Not Alter Website Appearance",
+        "description": "You must not change the look or layout of DigiPOS web pages without written permission."
+      }
+    },
+    "thirdParty": {
+      "title": "Content Provided by Third Parties",
+      "description": "While using our Services, you may see content provided by third parties, including partners or other users. This may include APIs, links, software, text, graphics, videos, images, or advertisements (collectively, \"Third-Party Content\").",
+      "protection": "All Third-Party Content and the Services are protected by intellectual property laws. You do not have any ownership rights to the Services or Third-Party Content. You may only use, view, or display them as allowed under these Terms and Conditions. Any other use, including copying, selling, distributing, modifying, or creating derivative works, is not allowed without DigiPOS written permission.",
+      "copyrightNotice": "You must keep all copyright and proprietary notices intact. If you violate these rules, your right to access or use the Services and Third-Party Content will be automatically terminated."
+    },
+    "communications": {
+      "title": "Communications",
+      "notices": "We may send notices to customers in different ways, such as email, phone, or through your DigiPOS dashboard. Notices will appear in the most suitable area of the site. It is your responsibility to stay updated and keep your registration information current. You can update your information by contacting info@digipos.io.",
+      "userSubmissions": "If you share ideas, information, or content about DigiPOS Services in public areas (\"User Submissions\"), DigiPOS may use them for any purpose, including developing or marketing products or services, without giving you credit or compensation. By submitting, you waive any claims of ownership or payment."
+    },
+    "accountClosure": {
+      "title": "Account Closure",
+      "description": "You may close your DigiPOS account at any time and free of charge. However, you are still responsible for any outstanding purchases, fees, or other charges incurred before closing your account. DigiPOS will not issue refunds for amounts already incurred through our Services once your account is closed.",
+      "howToClose": "To close your account, you can either:",
+      "contactEmail": "Contact us at info@digipos.io, or",
+      "console": "Close it directly from your DigiPOS console.",
+      "dataProtectionRef": "Please also review the \"Account Cancellation & Data Protection\" section above for information about how we handle your personal information.",
+      "restrictionsTitle": "In some cases, we may not allow you to close your account, such as:",
+      "restriction1": "If closing the account would interfere with an ongoing investigation;",
+      "restriction2": "If you have open or pending purchases or payment transactions;",
+      "restriction3": "If you owe money to DigiPOS due to your use of the Services."
+    }
+  },
+  "dataProtection": {
+    "title": "Data Protection Policy",
+    "logoAlt": "DigiPOS Logo",
+    "backToHome": "← Back to Home",
+    "background": {
+      "title": "Background",
+      "intro": "DigiPOS cares about protecting the privacy of our users, restaurant partners using our POS system, employees using the software, and visitors to our website or app. This policy explains how we collect, use, store, share, and protect personal information. Our services include cloud-based POS systems, managing orders, tracking inventory, monitoring staff performance, and providing business insights. By using DigiPOS, you agree to this policy.",
+      "updates": "Any updates will be posted on https://digipos.io, and continued use means you accept the changes."
+    },
+    "scope": {
+      "title": "1. Scope and Data Collection",
+      "appliesTo": "This policy applies to: Restaurant Partners: Businesses using DigiPOS for point-of-sale operations. Employees: Staff using DigiPOS for operational purposes. Visitors: Users accessing our website or app. Personal data includes identifiable information such as names, business registration details, and transaction/order information.",
+      "weCollect": "We collect:",
+      "providedData": {
+        "title": "Provided Data:",
+        "description": "Name, email, phone, delivery address (if relevant), payment details, restaurant Commercial Registration (CR), and feedback."
+      },
+      "automaticData": {
+        "title": "Automatic Data:",
+        "description": "Usage information (pages accessed, features used), device information (IP, browser, OS), location data (with consent), and cookies."
+      },
+      "thirdPartyData": {
+        "title": "Third-Party Data:",
+        "description": "Transaction confirmations, POS hardware vendor information, analytics tools, or social login data."
+      },
+      "nonPersonalData": {
+        "title": "Non-Personal Data:",
+        "description": "Anonymized or aggregated data for analytics and operational insights."
+      }
+    },
+    "usage": {
+      "title": "2. How We Use Your Data",
+      "intro": "We use personal data to:",
+      "point1": "Process transactions, orders, and payments.",
+      "point2": "Manage restaurant operations, staff performance, and inventory.",
+      "point3": "Personalize analytics and business insights.",
+      "point4": "Improve platform functionality, detect issues, and resolve complaints.",
+      "point5": "Send operational updates or optional promotions (marketing communications may be opted out).",
+      "point6": "Ensure security and detect fraud.",
+      "point7": "Comply with applicable data protection laws and regulatory requirements."
+    },
+    "sharing": {
+      "title": "3. Data Sharing",
+      "intro": "DigiPOS does not sell personal data. We share data with:",
+      "restaurantPartners": {
+        "title": "Restaurant Partners:",
+        "description": "For order fulfillment and operational purposes."
+      },
+      "serviceProviders": {
+        "title": "Service Providers:",
+        "description": "Payment processors, POS hardware vendors, delivery or logistics partners."
+      },
+      "analyticsPartners": {
+        "title": "Analytics Partners:",
+        "description": "Only anonymized data for business insights."
+      },
+      "authorities": {
+        "title": "Authorities:",
+        "description": "When required by law."
+      },
+      "businessTransfers": {
+        "title": "Business Transfers:",
+        "description": "During mergers or acquisitions, with appropriate safeguards."
+      },
+      "withConsent": {
+        "title": "With Consent:",
+        "description": "For reviews, feedback, or promotional purposes."
+      }
+    },
+    "security": {
+      "title": "4. Data Security and Breach Notification",
+      "protects": "DigiPOS protects personal data using:",
+      "encryption": {
+        "title": "Encryption:",
+        "description": "SSL/TLS for transmissions, secure storage for payment information."
+      },
+      "accessControls": {
+        "title": "Access Controls:",
+        "description": "Restricted to authorized staff."
+      },
+      "audits": {
+        "title": "Audits:",
+        "description": "Regular security checks and monitoring."
+      },
+      "anonymization": {
+        "title": "Anonymization:",
+        "description": "For analytics purposes."
+      },
+      "breach": {
+        "title": "In the event of a breach, DigiPOS will:",
+        "notify": "Notify affected users within a reasonable timeframe.",
+        "remedial": "Implement remedial measures (e.g., password resets).",
+        "report": "Report incidents to relevant authorities where required."
+      }
+    },
+    "rights": {
+      "title": "5. Your Rights",
+      "intro": "You may:",
+      "access": "Access or correct your personal data.",
+      "deletion": "Request deletion (subject to retention for legal compliance).",
+      "restrict": "Restrict or object to processing (e.g., marketing).",
+      "portability": "Request portability or withdraw consent.",
+      "contact": "Contact our Data Protection Officer at info@digipos.io"
+    },
+    "retention": {
+      "title": "6. Data Retention and Cookies",
+      "subtitle": "Retention:",
+      "customerData": "Customer and transaction data: 5 years (for compliance).",
+      "accounts": "Accounts: Deleted 30 days after closure.",
+      "operationalData": "Restaurant operational data: 7 years.",
+      "usageData": "Usage data: Anonymized after 12 months."
+    },
+    "cookies": {
+      "title": "Cookies:",
+      "description": "Used for login, analytics, and optional marketing. Can be disabled via browser settings or our platform tools; some functionality may be limited."
+    },
+    "international": {
+      "title": "7. Third Parties and International Transfers",
+      "thirdPartyLinks": {
+        "title": "Third-Party Links:",
+        "description": "Some services (payment providers, analytics tools) are subject to their privacy policies."
+      },
+      "transfers": {
+        "title": "International Transfers:",
+        "description": "Data may be stored or processed outside the country under applicable safeguards."
+      },
+      "compliance": {
+        "title": "Regional Compliance:",
+        "description": "We adhere to relevant laws such as GDPR for EU users or other local regulations where applicable."
+      }
+    },
+    "contact": {
+      "title": "8. Contact and Governance",
+      "officer": "Data Protection Officer:"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "logoAlt": "DigiPOS Logo",
+    "backToHome": "← Back to Home",
+    "statement": {
+      "title": "Privacy Statement",
+      "intro": "This Privacy Statement explains how DigiPOS and its subsidiaries and affiliates (collectively \"DigiPOS\", \"we\", \"us\", and/or \"our\") collect, use, and protect your personal information as part of providing our Point of Sale (POS) Services (the \"Services\"). Personal information means any information that can identify you directly or indirectly.",
+      "processing": "In providing the Products, DigiPOS will process personal data. This document explains how DigiPOS processes personal data for both DigiPOS RMS and DigiPOS Pay. This includes personal data collected when you use our website (\"Website\") and Products (together, the \"Services\")."
+    },
+    "scope": {
+      "title": "SCOPE OF THIS PRIVACY POLICY",
+      "intro": "DigiPOS takes your personal data seriously and processes it in accordance with applicable laws and regulations. DigiPOS acts as the 'controller' (i.e., the person responsible for deciding how your personal data is processed) and has adopted this Privacy Policy (\"Policy\") to establish and maintain the privacy and security of your personal data. This Policy:",
+      "point_a": "(a) sets out the types of personal data we collect about you;",
+      "point_b": "(b) explains how and why we collect and use your personal data;",
+      "point_c": "(c) explains how long we keep your personal data;",
+      "point_d": "(d) explains how we will share your personal data – when, why, and with whom;",
+      "point_e": "(e) explains the different rights and choices you have regarding your personal data;",
+      "point_f": "(f) explains the security measures we apply to protect your personal data; and",
+      "point_g": "(g) explains how we may contact you and how you can contact us.",
+      "acceptance": "By accepting this Policy and submitting any personal data to us, you agree that we may collect, use, disclose, and retain such data in accordance with this Privacy Policy and as permitted or required by law. If you do not agree with these terms, please do not accept them or provide personal data to us.",
+      "requirement": "Please note that we may not be able to respond to your inquiries, provide the relevant Services, or process your requests unless you provide the personal data required as outlined in this Privacy Policy, unless we indicate that providing such data is optional."
+    },
+    "dataTypes": {
+      "title": "3. TYPES OF PERSONAL DATA COLLECTED AND HOW WE COLLECT IT",
+      "collected": "We collect the content, communications, and other information you provide when you use our Services, including when you sign up for an account or communicate with us (e.g., by email). This includes your name, email address, phone number, business name (if relevant), location/country, and payment information (if relevant).",
+      "additional": "We also collect additional personal data depending on the Services you use:"
+    },
+    "cookies": {
+      "title": "4. USE OF COOKIES AND TRACKING TECHNOLOGIES",
+      "description": "When you use our website, we use cookies to collect personal data to improve our Services and make your experience easier, such as allowing you to log in without re-entering credentials or preferences. We also collect web statistics automatically based on your IP address to enhance your experience."
+    },
+    "sources": {
+      "title": "5. SOURCES OF PERSONAL DATA",
+      "description": "We collect personal data directly from you when using our Services or communicating with us. We also collect data via cookies and may collect personal data when you visit our offices (e.g., CCTV). We may collect personal data from your organization, third-party partners, or government entities as follows:",
+      "elm": "ID information from ELM via API integration",
+      "wathiq": "CR information from WATHIQ via API integration"
+    },
+    "purposes": {
+      "title": "6. PURPOSES FOR COLLECTING AND USING PERSONAL DATA",
+      "intro": "We use your personal data for purposes including:",
+      "point_a": "providing information about our products and services",
+      "point_b": "responding to your communications",
+      "point_c": "managing our relationship with you or your organization",
+      "point_d": "managing relationships with third-party partners",
+      "point_e": "billing and payment processing",
+      "point_f": "dispute resolution",
+      "point_g": "providing our Services",
+      "point_h": "validating under KYC, AML, and sanctions screening",
+      "point_i": "marketing and promotions (with opt-out options)",
+      "point_j": "customizing content and services",
+      "point_k": "understanding your interests and improving our Services",
+      "point_l": "analysis, research, and reporting",
+      "point_m": "training purposes",
+      "point_n": "archiving",
+      "point_o": "securing our Services and systems",
+      "point_p": "complying with legal or regulatory obligations",
+      "point_q": "establishing, exercising, or defending legal rights",
+      "point_r": "detecting and preventing crime and fraud",
+      "point_s": "protecting health, safety, and security",
+      "point_t": "meeting contractual requirements",
+      "point_u": "internal business purposes, including audits, transactions, and data analysis"
+    },
+    "retention": {
+      "title": "7. RETENTION OF PERSONAL DATA",
+      "description": "Retention depends on the purpose for which the data was collected and applicable legal requirements. Once no longer needed, we take reasonable steps to erase personal data from our systems."
+    },
+    "disclosure": {
+      "title": "8. DISCLOSURE OF PERSONAL DATA",
+      "intro": "We may share personal data with:",
+      "group": {
+        "title": "Group companies:",
+        "description": "to process your information as described in this Policy"
+      },
+      "newOwners": {
+        "title": "New owners:",
+        "description": "in case of changes in ownership of DigiPOS or the Services"
+      },
+      "thirdParty": {
+        "title": "Third-party providers and partners:",
+        "description": "to improve our Services, offer new products, and process payments"
+      },
+      "government": {
+        "title": "Government authorities:",
+        "description": "to respond to inquiries, legal proceedings, or enforce rights"
+      },
+      "employees": {
+        "title": "Employees, agents, consultants, and contractors:",
+        "description": "to process information securely"
+      },
+      "banks": {
+        "title": "Banks, payment providers, and payment technology providers:",
+        "description": "for processing and regulatory compliance (e.g., AMEX, POS hardware vendors)"
+      }
+    },
+    "thirdPartyLinks": {
+      "title": "9. LINKS TO THIRD-PARTY SITES AND SERVICES",
+      "description": "Our Website may contain links to third-party sites or integrations. DigiPOS is not responsible for the privacy practices of these third parties. Please review their policies before sharing personal data."
+    },
+    "dataStorage": {
+      "title": "10. DATA STORAGE AND INTERNATIONAL TRANSFERS",
+      "description": "By accepting this Policy, you consent to the storage and processing of your data in the Kingdom of Saudi Arabia and any subcontracted service providers within the country. We comply with legal requirements for international transfers of personal data."
+    },
+    "protecting": {
+      "title": "11. PROTECTING YOUR PERSONAL DATA",
+      "description": "We implement technical, administrative, and physical measures to protect personal data. However, no method of internet transmission or storage is completely secure."
+    },
+    "updates": {
+      "title": "12. UPDATES TO THIS PRIVACY POLICY",
+      "description": "We may update this Policy periodically. Continued use of our Services constitutes acceptance of the updated Policy."
+    },
+    "rights": {
+      "title": "13. YOUR PRIVACY RIGHTS",
+      "intro": "You have rights under applicable laws, including:",
+      "informed": "Right to be informed about collection and processing",
+      "access": "Right to access your personal data",
+      "correct": "Right to correct or update your data",
+      "deletion": "Right to request deletion of personal data no longer needed",
+      "withdraw": "Right to withdraw consent for processing, with the understanding that Services may be affected"
+    },
+    "contact": {
+      "title": "14. CONTACTING DIGIPOS",
+      "description": "For questions about your personal data, contact us via:",
+      "email": "Email:"
+    },
+    "changes": {
+      "title": "15. Changes to this Privacy Statement",
+      "description": "From time to time, DigiPOS may update this Privacy Statement to comply with applicable laws or to reflect changes in our business practices. Unless required by law to provide a specific notice or obtain your consent, updated versions of this Privacy Statement will be posted on our website. Please review this page regularly to stay informed of any changes."
     }
   }
 }

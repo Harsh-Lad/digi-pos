@@ -14,7 +14,8 @@
       "Bash(mkdir:*)",
       "Read(//c/Users/produ/OneDrive/Desktop/**)",
       "Read(//c/Users/produ/OneDrive/Pictures/**)",
-      "Bash(ng serve:*)"
+      "Bash(ng serve:*)",
+      "Bash(ng generate:*)"
     ],
     "deny": [],
     "ask": []

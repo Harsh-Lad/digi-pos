@@ -1,0 +1,182 @@
+<app-navbar></app-navbar>
+<div class="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-32">
+  <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8 md:p-12">
+    <!-- Logo -->
+    <div class="flex justify-center mb-8">
+      <img [src]="currentLanguage === 'ar' ? 'arabic_logo.jpg' : 'logo.png'"
+           [alt]="'termsAndConditions.logoAlt' | translate"
+           class="h-20 w-auto object-contain" />
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+      {{ 'termsAndConditions.title' | translate }}
+    </h1>
+
+    <!-- Background Section -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.background.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.background.intro' | translate }}</p>
+        <p>{{ 'termsAndConditions.background.governance' | translate }}</p>
+        <p>{{ 'termsAndConditions.background.acceptance' | translate }}</p>
+        <p>{{ 'termsAndConditions.background.modifications' | translate }}</p>
+        <p>{{ 'termsAndConditions.background.privacyPolicy' | translate }}</p>
+        <p>{{ 'termsAndConditions.background.continuedUse' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Registration & Account Responsibilities -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.registration.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.registration.description' | translate }}</p>
+        <p>{{ 'termsAndConditions.registration.responsibilities' | translate }}</p>
+        <p>{{ 'termsAndConditions.registration.availability' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Account Deactivation & Privacy Measures -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.deactivation.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.deactivation.violation' | translate }}</p>
+        <p>{{ 'termsAndConditions.deactivation.voluntary' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Data Protection & Security -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.dataProtection.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.dataProtection.description' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Rules for Using the Service -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.rules.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.rules.intro' | translate }}</p>
+
+        <div class="space-y-3 ml-4">
+          <div>
+            <h3 class="font-semibold text-gray-800">1. {{ 'termsAndConditions.rules.followLaw.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.followLaw.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">2. {{ 'termsAndConditions.rules.respectRights.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.respectRights.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">3. {{ 'termsAndConditions.rules.keepSafe.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.keepSafe.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">4. {{ 'termsAndConditions.rules.trueInfo.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.trueInfo.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">5. {{ 'termsAndConditions.rules.noInterference.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.noInterference.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">6. {{ 'termsAndConditions.rules.accountSuspension.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.accountSuspension.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">7. {{ 'termsAndConditions.rules.giveCredit.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.giveCredit.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">8. {{ 'termsAndConditions.rules.noCommercialUse.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.noCommercialUse.description' | translate }}</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-gray-800">9. {{ 'termsAndConditions.rules.noAlter.title' | translate }}</h3>
+            <p class="ml-4">{{ 'termsAndConditions.rules.noAlter.description' | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Provided by Third Parties -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.thirdParty.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.thirdParty.description' | translate }}</p>
+        <p>{{ 'termsAndConditions.thirdParty.protection' | translate }}</p>
+        <p>{{ 'termsAndConditions.thirdParty.copyrightNotice' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Communications -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.communications.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.communications.notices' | translate }}</p>
+        <p>{{ 'termsAndConditions.communications.userSubmissions' | translate }}</p>
+      </div>
+    </section>
+
+    <!-- Account Closure -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        {{ 'termsAndConditions.accountClosure.title' | translate }}
+      </h2>
+      <div class="text-gray-600 space-y-4 leading-relaxed">
+        <p>{{ 'termsAndConditions.accountClosure.description' | translate }}</p>
+
+        <div class="ml-4">
+          <p class="font-semibold text-gray-800">{{ 'termsAndConditions.accountClosure.howToClose' | translate }}</p>
+          <ul class="list-disc ml-8 space-y-2">
+            <li>{{ 'termsAndConditions.accountClosure.contactEmail' | translate }}</li>
+            <li>{{ 'termsAndConditions.accountClosure.console' | translate }}</li>
+          </ul>
+        </div>
+
+        <p>{{ 'termsAndConditions.accountClosure.dataProtectionRef' | translate }}</p>
+
+        <div class="ml-4">
+          <p class="font-semibold text-gray-800">{{ 'termsAndConditions.accountClosure.restrictionsTitle' | translate }}</p>
+          <ul class="list-disc ml-8 space-y-2">
+            <li>{{ 'termsAndConditions.accountClosure.restriction1' | translate }}</li>
+            <li>{{ 'termsAndConditions.accountClosure.restriction2' | translate }}</li>
+            <li>{{ 'termsAndConditions.accountClosure.restriction3' | translate }}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Home -->
+    <div class="text-center mt-12 pt-8 border-t border-gray-200">
+      <a routerLink="/" class="text-[#f48021] hover:text-[#d66d1a] font-semibold">
+        {{ 'termsAndConditions.backToHome' | translate }}
+      </a>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
